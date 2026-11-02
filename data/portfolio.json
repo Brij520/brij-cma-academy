@@ -1,0 +1,544 @@
+{
+  "meta": {
+    "purpose": "Professional Portfolio Builder — every completed skill must produce a tangible artefact, documented to a consistent standard.",
+    "lastReviewed": "2026-11-02",
+    "standard": "Three finished projects with full documentation outrank fifteen unfinished ones. Each artefact must state the business problem, the data, the method, the analysis, the results, the limitations and the recommendations.",
+    "dataEthics": "Use synthetic, anonymised or public data only. Never publish employer, client or personal data. State the data source and any masking applied.",
+    "organisation": [
+      "By skill",
+      "By complexity (foundation / applied / advanced)",
+      "By completion status",
+      "By evidence type (model, dashboard, report, automation, case)"
+    ]
+  },
+  "documentationTemplate": [
+    {
+      "section": "Business problem",
+      "prompt": "What decision was the work meant to support? Who is the audience?"
+    },
+    {
+      "section": "Data",
+      "prompt": "Source, period, grain, volume, known quality issues, and what you excluded and why."
+    },
+    {
+      "section": "Methodology",
+      "prompt": "Approach, tools, assumptions, and the alternatives you rejected."
+    },
+    {
+      "section": "Analysis",
+      "prompt": "The computations and the reasoning, with the working shown or linked."
+    },
+    {
+      "section": "Results",
+      "prompt": "What the numbers show, with the three most important findings."
+    },
+    {
+      "section": "Limitations",
+      "prompt": "What the analysis cannot tell you, and where it could be wrong."
+    },
+    {
+      "section": "Recommendations",
+      "prompt": "Specific actions, owners, timings and expected impact."
+    },
+    {
+      "section": "Reflection",
+      "prompt": "What you would do differently, and what you learned about your own judgement."
+    }
+  ],
+  "complexityLevels": [
+    {
+      "level": 1,
+      "name": "Foundation",
+      "description": "A single-technique artefact with clear scope and a defensible answer."
+    },
+    {
+      "level": 2,
+      "name": "Applied",
+      "description": "A multi-step analysis with real trade-offs and a professional recommendation."
+    },
+    {
+      "level": 3,
+      "name": "Advanced",
+      "description": "A model or system that others could use, with documentation, validation and stated limitations."
+    }
+  ],
+  "projects": [
+    {
+      "id": "pf-01",
+      "title": "Cost sheet and pricing model",
+      "skill": "skill-advanced-excel",
+      "evidence": "model",
+      "complexity": 1,
+      "hours": 6,
+      "problem": "Cost a three-product range and set prices to hit a target margin.",
+      "deliverables": [
+        "Costing workbook",
+        "Price recommendation note"
+      ],
+      "papers": [
+        "p08"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-02",
+      "title": "Standard costing and variance engine",
+      "skill": "skill-advanced-excel",
+      "evidence": "model",
+      "complexity": 2,
+      "hours": 8,
+      "problem": "Automate variance computation and reconcile budgeted to actual profit.",
+      "deliverables": [
+        "Variance model",
+        "Reconciliation statement",
+        "Investigation memo"
+      ],
+      "papers": [
+        "p08",
+        "p12"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-03",
+      "title": "Process costing with abnormal loss",
+      "skill": "skill-excel",
+      "evidence": "model",
+      "complexity": 1,
+      "hours": 4,
+      "problem": "Cost a two-process production line and value abnormal loss and closing WIP.",
+      "deliverables": [
+        "Process accounts",
+        "Equivalent production schedule"
+      ],
+      "papers": [
+        "p08"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-04",
+      "title": "Product and customer profitability analysis",
+      "skill": "skill-power-bi",
+      "evidence": "dashboard",
+      "complexity": 2,
+      "hours": 10,
+      "problem": "Identify which products and customers create or destroy profit.",
+      "deliverables": [
+        "Profitability model",
+        "Dashboard",
+        "Insight memo"
+      ],
+      "papers": [
+        "p12",
+        "p16"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-05",
+      "title": "Annual operating budget",
+      "skill": "skill-financial-modelling",
+      "evidence": "model",
+      "complexity": 3,
+      "hours": 20,
+      "problem": "Build a driver-based budget for a fictional company with department P&Ls.",
+      "deliverables": [
+        "Budget model",
+        "Assumption register",
+        "Board summary"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-06",
+      "title": "Three-statement financial model",
+      "skill": "skill-financial-modelling",
+      "evidence": "model",
+      "complexity": 3,
+      "hours": 24,
+      "problem": "Integrate P&L, balance sheet and cash flow with scenarios and a debt schedule.",
+      "deliverables": [
+        "Integrated model",
+        "Scenario summary",
+        "Model guide"
+      ],
+      "papers": [
+        "p11"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-07",
+      "title": "Valuation report",
+      "skill": "skill-financial-modelling",
+      "evidence": "model",
+      "complexity": 3,
+      "hours": 16,
+      "problem": "Value a business with DCF and comparables and reconcile the range.",
+      "deliverables": [
+        "Valuation model",
+        "Valuation report"
+      ],
+      "papers": [
+        "p18",
+        "p14"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-08",
+      "title": "Budget variance dashboard",
+      "skill": "skill-power-bi",
+      "evidence": "dashboard",
+      "complexity": 2,
+      "hours": 10,
+      "problem": "Give department heads self-service variance analysis with exception flags.",
+      "deliverables": [
+        "PBIX dashboard",
+        "Model documentation",
+        "User guide"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-09",
+      "title": "Working capital monitor",
+      "skill": "skill-power-bi",
+      "evidence": "dashboard",
+      "complexity": 2,
+      "hours": 8,
+      "problem": "Track DSO, DIO, DPO and the cash conversion cycle by business unit.",
+      "deliverables": [
+        "Dashboard",
+        "Methodology note"
+      ],
+      "papers": [
+        "p11"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-10",
+      "title": "Monthly MIS pack",
+      "skill": "skill-powerpoint",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 10,
+      "problem": "Produce and present a management information pack from raw extracts.",
+      "deliverables": [
+        "MIS pack",
+        "Workbook",
+        "Validation log"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-11",
+      "title": "Consolidated financial statements",
+      "skill": "skill-advanced-excel",
+      "evidence": "model",
+      "complexity": 3,
+      "hours": 10,
+      "problem": "Consolidate a parent and two subsidiaries with intra-group eliminations.",
+      "deliverables": [
+        "Consolidation workbook",
+        "Elimination schedule"
+      ],
+      "papers": [
+        "p10",
+        "p18"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-12",
+      "title": "GST reconciliation pack",
+      "skill": "skill-tally",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 5,
+      "problem": "Reconcile books with GST returns and document every exception.",
+      "deliverables": [
+        "Reconciliation pack",
+        "Exception list"
+      ],
+      "papers": [
+        "p07"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-13",
+      "title": "Financial database analysis in SQL",
+      "skill": "skill-sql",
+      "evidence": "analysis",
+      "complexity": 2,
+      "hours": 10,
+      "problem": "Build a finance schema and answer 12 analytical questions in SQL.",
+      "deliverables": [
+        "Schema",
+        "Query library",
+        "Findings note"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-14",
+      "title": "Audit analytics pack",
+      "skill": "skill-sql",
+      "evidence": "analysis",
+      "complexity": 3,
+      "hours": 8,
+      "problem": "Run full-population tests for duplicates, unusual postings and segregation conflicts.",
+      "deliverables": [
+        "SQL tests",
+        "Findings memo"
+      ],
+      "papers": [
+        "p17"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-15",
+      "title": "Automated MIS generator",
+      "skill": "skill-python",
+      "evidence": "automation",
+      "complexity": 3,
+      "hours": 18,
+      "problem": "Generate the monthly pack from raw extracts with validation and logging.",
+      "deliverables": [
+        "Python package",
+        "Sample output",
+        "README"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-16",
+      "title": "Invoice extraction system",
+      "skill": "skill-ai-automation",
+      "evidence": "automation",
+      "complexity": 3,
+      "hours": 22,
+      "problem": "Extract, validate and match invoices with an accuracy report.",
+      "deliverables": [
+        "Pipeline",
+        "Accuracy report",
+        "Exception report"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-17",
+      "title": "Accounting Q&A assistant",
+      "skill": "skill-ai-automation",
+      "evidence": "automation",
+      "complexity": 2,
+      "hours": 16,
+      "problem": "A grounded assistant over your own curated notes, with citations and an evaluation set.",
+      "deliverables": [
+        "Assistant",
+        "Test results",
+        "Content gap log"
+      ],
+      "papers": [
+        "p06",
+        "p18"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-18",
+      "title": "Reconciliation automation prototype",
+      "skill": "skill-python",
+      "evidence": "automation",
+      "complexity": 3,
+      "hours": 20,
+      "problem": "Match two data sets, classify exceptions and produce a reconciliation statement.",
+      "deliverables": [
+        "Reconciler",
+        "Reconciliation statement",
+        "Accuracy metrics"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-19",
+      "title": "Business case study: manufacturing margin decline",
+      "skill": "case-study",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 3,
+      "problem": "Diagnose a margin decline and recommend action.",
+      "deliverables": [
+        "Analysis",
+        "Board recommendation"
+      ],
+      "papers": [
+        "p08",
+        "p12"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-20",
+      "title": "Business case study: working capital crisis",
+      "skill": "case-study",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 3,
+      "problem": "Explain a working capital deterioration and design a cash release plan.",
+      "deliverables": [
+        "Analysis",
+        "90-day plan"
+      ],
+      "papers": [
+        "p11"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-21",
+      "title": "Business case study: lease versus buy",
+      "skill": "case-study",
+      "evidence": "model",
+      "complexity": 3,
+      "hours": 4,
+      "problem": "Evaluate an equipment financing decision with a break-even sensitivity.",
+      "deliverables": [
+        "NPV comparison",
+        "Decision memo"
+      ],
+      "papers": [
+        "p11",
+        "p14"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-22",
+      "title": "Business case study: loss-making product",
+      "skill": "case-study",
+      "evidence": "report",
+      "complexity": 3,
+      "hours": 4,
+      "problem": "Test a discontinuation decision against relevant costing and strategic dependency.",
+      "deliverables": [
+        "Analysis",
+        "Recommendation"
+      ],
+      "papers": [
+        "p12",
+        "p16"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-23",
+      "title": "Monthly MIS report (FP&A project 3)",
+      "skill": "skill-powerpoint",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 12,
+      "problem": "Produce an actual vs budget MIS with driver commentary.",
+      "deliverables": [
+        "PDF pack",
+        "Workbook"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-24",
+      "title": "13-week cash flow forecast",
+      "skill": "skill-financial-modelling",
+      "evidence": "model",
+      "complexity": 3,
+      "hours": 14,
+      "problem": "Forecast liquidity and test a covenant across three levers.",
+      "deliverables": [
+        "Cash model",
+        "Covenant dashboard",
+        "Lever memo"
+      ],
+      "papers": [
+        "p11"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-25",
+      "title": "Research note on a listed company",
+      "skill": "skill-word",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 16,
+      "problem": "Produce an evidence-based fundamental view with a valuation range.",
+      "deliverables": [
+        "6–8 page note",
+        "Valuation model"
+      ],
+      "papers": [
+        "p14"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-26",
+      "title": "Simulated portfolio and attribution",
+      "skill": "skill-python",
+      "evidence": "analysis",
+      "complexity": 3,
+      "hours": 12,
+      "problem": "Construct, track and attribute a simulated portfolio.",
+      "deliverables": [
+        "Tracker",
+        "Monthly reviews",
+        "Attribution report"
+      ],
+      "papers": [],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-27",
+      "title": "Cost optimisation proposal",
+      "skill": "skill-advanced-excel",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 8,
+      "problem": "Identify, quantify and validate recurring cost savings.",
+      "deliverables": [
+        "Opportunity register",
+        "Savings tracking model"
+      ],
+      "papers": [
+        "p16"
+      ],
+      "status": "not-started"
+    },
+    {
+      "id": "pf-28",
+      "title": "Management reporting presentation",
+      "skill": "skill-powerpoint",
+      "evidence": "report",
+      "complexity": 2,
+      "hours": 10,
+      "problem": "Present a quarterly performance review and defend it.",
+      "deliverables": [
+        "Deck",
+        "Speaker notes"
+      ],
+      "papers": [],
+      "status": "not-started"
+    }
+  ]
+}

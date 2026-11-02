@@ -1,0 +1,34 @@
+{
+  "meta": { "purpose": "Default student profile. Everything personal is stored locally in your browser and never leaves your device.", "lastReviewed": "2026-11-02" },
+  "defaults": {
+    "name": "",
+    "headline": "CMA student → CMА professional → Finance analyst → FP&A professional → Strategic finance leader",
+    "course": "CMA",
+    "syllabus": "ICMAI Syllabus 2022",
+    "stage": "Intermediate",
+    "targetSession": "December 2026",
+    "targetPapers": ["p05", "p06", "p07", "p08"],
+    "secondSession": "June 2027",
+    "secondPapers": ["p09", "p10", "p11", "p12"],
+    "weeklyCapacityHours": 40,
+    "studyStartDate": "2026-11-02",
+    "timezone": "Asia/Kolkata",
+    "currency": "INR",
+    "preferredStudyWindow": "Evening",
+    "theme": "dark",
+    "notifications": false
+  },
+  "privacy": {
+    "storage": "Browser localStorage only",
+    "export": "Settings → Export data produces a JSON file you control",
+    "network": "No analytics, no tracking, no third-party requests. The app loads only its own local data files.",
+    "advice": "Nothing in this application is investment, tax or legal advice."
+  },
+  "unlockPath": [
+    { "stage": "CMA student", "evidence": "Intermediate papers cleared and study discipline demonstrated" },
+    { "stage": "CMA professional", "evidence": "Qualification completed with practical training and portfolio" },
+    { "stage": "Finance analyst", "evidence": "Three-statement modelling, analysis and reporting capability" },
+    { "stage": "FP&A professional", "evidence": "Budget, forecast and business partnering ownership" },
+    { "stage": "Strategic finance leader", "evidence": "Decision influence, team leadership and commercial judgement" }
+  ]
+}

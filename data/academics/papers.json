@@ -1,0 +1,489 @@
+{
+  "meta": {
+    "syllabus": "ICMAI Syllabus 2022",
+    "source": "https://icmai.co.in/upload/Students/Syllabus2022/Curriculum_2022.pdf",
+    "lastVerified": "2026-11-02",
+    "note": "Section weights are taken from the published ICMAI 2022 curriculum. Per-chapter marks are INDICATIVE only: they are derived by dividing the section weight across the chapters in that section. Always confirm the current syllabus, study material edition and amendments on icmai.in before relying on any figure.",
+    "weightBasis": "section"
+  },
+  "levels": [
+    { "id": "foundation", "name": "CMA Foundation", "order": 0, "papers": ["p01", "p02", "p03", "p04"] },
+    { "id": "intermediate", "name": "CMA Intermediate", "order": 1, "papers": ["p05", "p06", "p07", "p08", "p09", "p10", "p11", "p12"] },
+    { "id": "final", "name": "CMA Final", "order": 2, "papers": ["p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"] }
+  ],
+  "papers": [
+    {
+      "id": "p01", "code": 1, "level": "foundation", "group": "Foundation",
+      "name": "Fundamentals of Business Laws and Business Communication", "short": "FBLBC",
+      "priority": 4, "target": null, "status": "reference",
+      "summary": "Legal foundations (contracts, sale of goods, negotiable instruments, partnership, LLP, Companies Act, Code on Wages) plus business communication.",
+      "sections": [
+        { "id": "A", "name": "Fundamentals of Business Laws", "weight": 80 },
+        { "id": "B", "name": "Business Communication", "weight": 20 }
+      ],
+      "chapters": [
+        { "id": "p01-c01", "no": 1, "section": "A", "title": "Introduction to Law and Legal System in India", "topics": ["Sources of law", "Court hierarchy", "Civil vs criminal", "Doctrine of precedent"] },
+        { "id": "p01-c02", "no": 2, "section": "A", "title": "Indian Contract Act, 1872 — Fundamentals", "topics": ["Offer and acceptance", "Consideration", "Capacity", "Free consent", "Void and voidable agreements", "Contingent and quasi contracts", "Breach and remedies"] },
+        { "id": "p01-c03", "no": 3, "section": "A", "title": "Sale of Goods Act, 1930", "topics": ["Sale vs agreement to sell", "Conditions and warranties", "Caveat emptor", "Transfer of ownership", "Unpaid seller"] },
+        { "id": "p01-c04", "no": 4, "section": "A", "title": "Negotiable Instruments Act, 1881", "topics": ["Promissory note, bill of exchange, cheque", "Holder and holder in due course", "Crossing", "Dishonour and noting"] },
+        { "id": "p01-c05", "no": 5, "section": "A", "title": "Indian Partnership Act, 1932", "topics": ["Definition and essentials", "Types of partners", "Registration", "Rights and duties", "Dissolution"] },
+        { "id": "p01-c06", "no": 6, "section": "A", "title": "Limited Liability Partnership Act, 2008", "topics": ["Salient features", "Incorporation", "LLP agreement", "Partner vs designated partner", "Conversion", "Winding up"] },
+        { "id": "p01-c07", "no": 7, "section": "A", "title": "Companies Act, 2013 — Fundamentals", "topics": ["Definition of company", "Types of companies", "Incorporation", "Memorandum and articles", "Share capital", "Directors", "Meetings", "Winding up"] },
+        { "id": "p01-c08", "no": 8, "section": "A", "title": "The Code on Wages, 2019 and Industrial Law Overview", "topics": ["Minimum wages", "Payment of wages", "Bonus", "Equal remuneration", "Gratuity and social security overview"] },
+        { "id": "p01-c09", "no": 9, "section": "B", "title": "Introduction to Business Communication", "topics": ["Process and types", "Barriers", "7 Cs", "Listening"] },
+        { "id": "p01-c10", "no": 10, "section": "B", "title": "Business Correspondence", "topics": ["Enquiries and replies", "Orders", "Complaints and adjustment", "Collection letters", "E-mail etiquette"] },
+        { "id": "p01-c11", "no": 11, "section": "B", "title": "Reports, Presentations and Interviews", "topics": ["Report structure", "Executive summary", "Presentation design", "Interview preparation", "Group discussion"] },
+        { "id": "p01-c12", "no": 12, "section": "B", "title": "Business Communication in the Digital Workplace", "topics": ["Memos and notices", "Digital collaboration", "Meeting minutes", "Professional tone"] }
+      ]
+    },
+    {
+      "id": "p02", "code": 2, "level": "foundation", "group": "Foundation",
+      "name": "Fundamentals of Financial and Cost Accounting", "short": "FFCA",
+      "priority": 4, "target": null, "status": "reference",
+      "summary": "Double entry to final accounts, plus the cost accounting foundations that Paper 8 builds on.",
+      "sections": [
+        { "id": "A", "name": "Fundamentals of Financial Accounting", "weight": 70 },
+        { "id": "B", "name": "Fundamentals of Cost Accounting", "weight": 30 }
+      ],
+      "chapters": [
+        { "id": "p02-c01", "no": 1, "section": "A", "title": "Meaning, Scope and Principles of Accounting", "topics": ["Users of accounting information", "GAAP", "Accounting concepts and conventions", "Accounting equation"] },
+        { "id": "p02-c02", "no": 2, "section": "A", "title": "Accounting Process — Journal to Trial Balance", "topics": ["Journal", "Ledger", "Subsidiary books", "Trial balance", "Suspense"] },
+        { "id": "p02-c03", "no": 3, "section": "A", "title": "Capital and Revenue Transactions; Depreciation", "topics": ["Capital vs revenue expenditure and receipts", "Deferred revenue", "SLM and WDV depreciation", "Change in method"] },
+        { "id": "p02-c04", "no": 4, "section": "A", "title": "Bank Reconciliation Statement", "topics": ["Causes of difference", "Preparation", "Adjusted cash book"] },
+        { "id": "p02-c05", "no": 5, "section": "A", "title": "Rectification of Errors", "topics": ["Types of errors", "Errors affecting trial balance", "Suspense account", "Effect on profit"] },
+        { "id": "p02-c06", "no": 6, "section": "A", "title": "Final Accounts of a Sole Proprietor", "topics": ["Trading account", "Profit and loss account", "Balance sheet", "Adjusting entries", "Provisions and reserves"] },
+        { "id": "p02-c07", "no": 7, "section": "A", "title": "Bills of Exchange, Consignment and Joint Venture", "topics": ["Bills receivable and payable", "Discounting and endorsement", "Consignment valuation", "Joint venture methods"] },
+        { "id": "p02-c08", "no": 8, "section": "A", "title": "Accounting for Not-for-Profit Organisations and Incomplete Records", "topics": ["Receipts and payments", "Income and expenditure", "Statement of affairs", "Statement of profit"] },
+        { "id": "p02-c09", "no": 9, "section": "A", "title": "Computerised Accounting Fundamentals", "topics": ["Accounting software architecture", "Chart of accounts", "Data security", "Report generation"] },
+        { "id": "p02-c10", "no": 10, "section": "B", "title": "Introduction to Cost Accounting", "topics": ["Cost vs financial accounting", "Cost object", "Cost centre", "Classification of costs"] },
+        { "id": "p02-c11", "no": 11, "section": "B", "title": "Cost Sheet and Elements of Cost", "topics": ["Material, labour, overheads", "Prime cost", "Works cost", "Cost of production", "Cost of sales"] },
+        { "id": "p02-c12", "no": 12, "section": "B", "title": "Basic Costing Methods and Reconciliation", "topics": ["Job and contract costing", "Process costing basics", "Reconciliation of cost and financial accounts"] }
+      ]
+    },
+    {
+      "id": "p03", "code": 3, "level": "foundation", "group": "Foundation",
+      "name": "Fundamentals of Business Mathematics and Statistics", "short": "FBMS",
+      "priority": 4, "target": null, "status": "reference",
+      "summary": "Quantitative toolkit — algebra, calculus, probability and statistics — used across costing, analytics and valuation.",
+      "sections": [
+        { "id": "A", "name": "Fundamentals of Business Mathematics", "weight": 40 },
+        { "id": "B", "name": "Fundamentals of Business Statistics", "weight": 60 }
+      ],
+      "chapters": [
+        { "id": "p03-c01", "no": 1, "section": "A", "title": "Algebra and Proportion", "topics": ["Indices", "Ratios and proportions", "Variation", "Simultaneous equations", "Quadratic equations"] },
+        { "id": "p03-c02", "no": 2, "section": "A", "title": "Permutations, Combinations and Series", "topics": ["Permutations", "Combinations", "Arithmetic progression", "Geometric progression", "Annuities"] },
+        { "id": "p03-c03", "no": 3, "section": "A", "title": "Calculus and Applications", "topics": ["Limits", "Differentiation", "Maxima and minima", "Integration basics", "Marginal cost and revenue"] },
+        { "id": "p03-c04", "no": 4, "section": "A", "title": "Coordinate Geometry and Set Theory", "topics": ["Straight line", "Slope", "Set operations", "Applications to break-even"] },
+        { "id": "p03-c05", "no": 5, "section": "B", "title": "Measures of Central Tendency and Dispersion", "topics": ["Mean, median, mode", "Quartiles", "Range, SD, variance", "Coefficient of variation"] },
+        { "id": "p03-c06", "no": 6, "section": "B", "title": "Correlation and Regression", "topics": ["Scatter diagrams", "Karl Pearson coefficient", "Rank correlation", "Regression lines", "Coefficient of determination"] },
+        { "id": "p03-c07", "no": 7, "section": "B", "title": "Probability and Probability Distributions", "topics": ["Rules of probability", "Bayes theorem", "Binomial", "Poisson", "Normal distribution"] },
+        { "id": "p03-c08", "no": 8, "section": "B", "title": "Sampling and Estimation", "topics": ["Sampling methods", "Sampling distribution", "Standard error", "Confidence intervals"] },
+        { "id": "p03-c09", "no": 9, "section": "B", "title": "Index Numbers and Time Series", "topics": ["Laspeyres and Paasche", "Deflators", "Trend", "Seasonal variation", "Forecasting"] }
+      ]
+    },
+    {
+      "id": "p04", "code": 4, "level": "foundation", "group": "Foundation",
+      "name": "Fundamentals of Business Economics and Management", "short": "FBEM",
+      "priority": 4, "target": null, "status": "reference",
+      "summary": "Micro and macro economics for pricing and cost decisions, plus management process fundamentals.",
+      "sections": [
+        { "id": "A", "name": "Fundamentals of Business Economics", "weight": 70 },
+        { "id": "B", "name": "Fundamentals of Management", "weight": 30 }
+      ],
+      "chapters": [
+        { "id": "p04-c01", "no": 1, "section": "A", "title": "Demand and Supply Analysis", "topics": ["Law of demand", "Determinants", "Elasticity of demand", "Supply and equilibrium", "Shifts vs movements"] },
+        { "id": "p04-c02", "no": 2, "section": "A", "title": "Theory of Production and Cost", "topics": ["Production function", "Law of variable proportions", "Returns to scale", "Short-run and long-run cost curves", "Economies of scale"] },
+        { "id": "p04-c03", "no": 3, "section": "A", "title": "Market Structures and Pricing", "topics": ["Perfect competition", "Monopoly", "Monopolistic competition", "Oligopoly", "Price discrimination"] },
+        { "id": "p04-c04", "no": 4, "section": "A", "title": "National Income and Business Cycles", "topics": ["GDP, GNP, NNP", "Methods of measurement", "Inflation", "Business cycle phases"] },
+        { "id": "p04-c05", "no": 5, "section": "A", "title": "Money, Banking and International Trade", "topics": ["Money supply", "Central banking", "Exchange rates", "Balance of payments"] },
+        { "id": "p04-c06", "no": 6, "section": "B", "title": "Management — Nature and Process", "topics": ["Functions of management", "Managerial roles", "Levels", "Business environment"] },
+        { "id": "p04-c07", "no": 7, "section": "B", "title": "Planning and Organising", "topics": ["Planning process", "MBO", "Delegation", "Span of control", "Organisation structures"] },
+        { "id": "p04-c08", "no": 8, "section": "B", "title": "Staffing, Directing and Controlling", "topics": ["Recruitment and selection", "Motivation theories", "Leadership styles", "Communication", "Control process"] }
+      ]
+    },
+
+    {
+      "id": "p05", "code": 5, "level": "intermediate", "group": "Group I",
+      "name": "Business Laws and Ethics", "short": "BLE",
+      "priority": 1, "target": "2026-12", "status": "active",
+      "summary": "Commercial law, industrial law, the Companies Act 2013 and business ethics. Commercially weighted, highly predictable paper.",
+      "strategy": "Companies Act 2013 is 40% of the paper — secure it first. Contracts is the second anchor. Industrial laws are largely memory-based and can be revised in short cycles close to the exam.",
+      "sections": [
+        { "id": "A", "name": "Commercial Laws", "weight": 30 },
+        { "id": "B", "name": "Industrial Laws", "weight": 15 },
+        { "id": "C", "name": "Corporate Laws", "weight": 40 },
+        { "id": "D", "name": "Business Ethics", "weight": 15 }
+      ],
+      "chapters": [
+        { "id": "p05-c01", "no": 1, "section": "A", "title": "Introduction to Law and Legal System in India", "topics": ["Nature and sources of law", "Judicial system and precedent", "Substantive vs procedural law", "Statute and interpretation"] },
+        { "id": "p05-c02", "no": 2, "section": "A", "title": "The Indian Contract Act, 1872", "topics": ["Offer, acceptance and communication", "Consideration and privity", "Capacity and free consent", "Legality of object", "Void, voidable and illegal agreements", "Contingent contracts", "Quasi contracts", "Performance, discharge and breach", "Remedies and damages"] },
+        { "id": "p05-c03", "no": 3, "section": "A", "title": "The Sale of Goods Act, 1930", "topics": ["Sale vs agreement to sell", "Conditions and warranties", "Caveat emptor and exceptions", "Transfer of property", "Unpaid seller and lien"] },
+        { "id": "p05-c04", "no": 4, "section": "A", "title": "The Negotiable Instruments Act, 1881", "topics": ["Characteristics of negotiable instruments", "Promissory note, bill of exchange, cheque", "Holder and holder in due course", "Crossing and endorsement", "Dishonour and section 138"] },
+        { "id": "p05-c05", "no": 5, "section": "A", "title": "The Indian Partnership Act, 1932", "topics": ["Definition and essentials", "Kinds of partners", "Registration and effects", "Mutual rights and duties", "Minor as partner", "Dissolution"] },
+        { "id": "p05-c06", "no": 6, "section": "A", "title": "The Limited Liability Partnership Act, 2008", "topics": ["Salient features", "Incorporation and LLP agreement", "Designated partners", "Extent of liability", "Conversion and winding up"] },
+        { "id": "p05-c07", "no": 7, "section": "B", "title": "The Factories Act, 1948", "topics": ["Coverage and definitions", "Health, safety and welfare provisions", "Working hours", "Annual leave", "Occupier and occupier's liability"] },
+        { "id": "p05-c08", "no": 8, "section": "B", "title": "The Payment of Gratuity Act, 1972", "topics": ["Applicability", "Continuous service", "Eligibility and quantum", "Forfeiture", "Nomination"] },
+        { "id": "p05-c09", "no": 9, "section": "B", "title": "Employees' Provident Funds and Miscellaneous Provisions Act, 1952", "topics": ["Applicability thresholds", "Contributions and rates", "EPF, EPS and EDLI", "Withdrawals and advances", "Employer obligations"] },
+        { "id": "p05-c10", "no": 10, "section": "B", "title": "Employees' State Insurance Act, 1948", "topics": ["Coverage", "Contribution rates", "Benefits", "Business process outsourcing", "Corporation and committees"] },
+        { "id": "p05-c11", "no": 11, "section": "B", "title": "The Code on Wages, 2019", "topics": ["Unified wage definitions", "Minimum wage in target: Inspector-cum-Ch", "Payment of wages", "Bonus and equal remuneration", "Offences and penalties"] },
+        { "id": "p05-c12", "no": 12, "section": "C", "title": "The Companies Act, 2013", "topics": ["Definition and types of companies", "Incorporation and principles of lifting the corporate veil", "Memorandum, articles and doctrine of ultra vires", "Shares, share capital and debentures", "Acceptance of deposits", "Directors, KMP and board powers", "Meetings and resolutions", "Registration of charges", "Dividends", "Compromise and arrangement", "Winding up and NCLT powers", "Audit, accounts and filing"] },
+        { "id": "p05-c13", "no": 13, "section": "D", "title": "Business Ethics and Emotional Intelligence", "topics": ["Ethics and values", "Corporate governance and code of ethics", "Conflict of interest", "Whistle-blowing", "Emotional intelligence frameworks", "Ethical decision-making models", "Case application"] }
+      ]
+    },
+    {
+      "id": "p06", "code": 6, "level": "intermediate", "group": "Group I",
+      "name": "Financial Accounting", "short": "FA",
+      "priority": 1, "target": "2026-12", "status": "active",
+      "summary": "Financial statement preparation, partnership, special transactions and 12 specified Accounting Standards. The backbone for Paper 10 and Paper 18.",
+      "strategy": "Accounting Standards (20%) and final accounts (20%) are the highest-yield blocks and also the most repeated. Partnership is mechanically predictable — practise admission and retirement full-sums cold.",
+      "sections": [
+        { "id": "A", "name": "Accounting Fundamentals", "weight": 15 },
+        { "id": "B", "name": "Accounting for Special Transactions", "weight": 10 },
+        { "id": "C", "name": "Preparation of Financial Statements", "weight": 20 },
+        { "id": "D", "name": "Partnership Accounting", "weight": 20 },
+        { "id": "E", "name": "Lease, Branch and Departmental Accounts etc.", "weight": 15 },
+        { "id": "F", "name": "Accounting Standards", "weight": 20 }
+      ],
+      "chapters": [
+        { "id": "p06-c01", "no": 1, "section": "A", "title": "Accounting Fundamentals", "topics": ["Accounting concepts and conventions", "Capital vs revenue", "Trial balance and suspense", "Depreciation and change of method", "Rectification of errors", "Bills of exchange"], "status": "complete" },
+        { "id": "p06-c02", "no": 2, "section": "B", "title": "Consignment Accounts", "topics": ["Valuation of closing stock", "Goods on consignment and proforma invoice", "Commission computation", "Loss of stock in transit", "Accounting in consignee books"] },
+        { "id": "p06-c03", "no": 3, "section": "B", "title": "Joint Venture Accounts", "topics": ["Joint venture vs partnership", "Separate book method", "Investment method", "Memorandum method"] },
+        { "id": "p06-c04", "no": 4, "section": "C", "title": "Final Accounts of Commercial Organisations", "topics": ["Trading and P&L account", "Balance sheet", "Adjusting entries", "Goods in transit and goods on consignment", "Abnormal loss", "Managerial commission"] },
+        { "id": "p06-c05", "no": 5, "section": "C", "title": "Not-for-Profit Organisations", "topics": ["Receipts and payments", "Income and expenditure", "Subscription apportionment", "Special funds", "Consumption of stock"] },
+        { "id": "p06-c06", "no": 6, "section": "C", "title": "Financial Statements from Incomplete Records", "topics": ["Statement of affairs", "Total debtors and creditors", "Missing figures", "Statement of profit"] },
+        { "id": "p06-c07", "no": 7, "section": "D", "title": "Partnership Accounting", "topics": ["Profit sharing and capital accounts", "Fixed vs fluctuating capital", "Admission of partner", "Retirement and death", "Goodwill valuation", "Dissolution and Insolvency"] },
+        { "id": "p06-c08", "no": 8, "section": "E", "title": "Lease Accounting", "topics": ["Finance vs operating lease", "Minimum lease payments", "Interest rate implicit", "Lessee and lessor books", "Sale and lease back"] },
+        { "id": "p06-c09", "no": 9, "section": "E", "title": "Branch Accounts including Foreign Branch", "topics": ["Debtors method", "Stock and debtors method", "Invoice price adjustment", "Independent branch", "Foreign branch translation"] },
+        { "id": "p06-c10", "no": 10, "section": "E", "title": "Departmental Accounts", "topics": ["Allocation of expenses", "Inter-departmental transfers", "Unrealised profit adjustment", "Columnar trading account"] },
+        { "id": "p06-c11", "no": 11, "section": "E", "title": "Insurance Claims for Loss of Stock and Loss of Profit", "topics": ["Loss of stock computation", "Average clause", "Loss of profit policy", "Increase in cost of working", "Standing charges"] },
+        { "id": "p06-c12", "no": 12, "section": "E", "title": "Hire Purchase and Instalment Sale", "topics": ["Hire purchase price computation", "Interest calculation", "Repossession", "Instalment sale method", "Disclosure"] },
+        { "id": "p06-c13", "no": 13, "section": "F", "title": "Accounting Standards", "topics": ["AS 1 Disclosure of Accounting Policies", "AS 2 Valuation of Inventories", "AS 3 Cash Flow Statements", "AS 9 Revenue Recognition", "AS 10 Property, Plant and Equipment", "AS 11 Effects of Changes in Foreign Exchange Rates", "AS 12 Government Grants", "AS 13 Accounting for Investments", "AS 14 Amalgamation", "AS 16 Borrowing Costs", "AS 17 Segment Reporting", "AS 19 Leases"] }
+      ]
+    },
+    {
+      "id": "p07", "code": 7, "level": "intermediate", "group": "Group I",
+      "name": "Direct and Indirect Taxation", "short": "DITX",
+      "priority": 1, "target": "2026-12", "status": "active",
+      "summary": "Half direct tax (income tax computation) and half indirect tax (GST + Customs). The most amendment-sensitive paper in Group I.",
+      "strategy": "GST at 35% is the single largest block. Direct tax computation is technique: drill the PGBP and salary computations until they are mechanical. Track Finance Act and GST circular amendments every month — this paper punishes stale notes.",
+      "amendmentRisk": "high",
+      "sections": [
+        { "id": "A", "name": "Direct Taxation", "weight": 50 },
+        { "id": "B", "name": "Indirect Taxation", "weight": 50 }
+      ],
+      "chapters": [
+        { "id": "p07-c01", "no": 1, "section": "A", "title": "Basics of Income Tax Act, 1961", "topics": ["Scope and charge of tax", "Residential status and incidence of tax", "Income deemed to accrue in India", "Agricultural income", "Rates of tax and rebate", "Capital vs revenue receipts", "Exemptions under section 10"] },
+        { "id": "p07-c02", "no": 2, "section": "A", "title": "Salaries", "topics": ["Allowances", "Perquisites and valuation", "Provident fund", "Gratuity and pension", "Deductions u/s 16", "Relief u/s 89"] },
+        { "id": "p07-c03", "no": 3, "section": "A", "title": "Income from House Property", "topics": ["Annual value and municipal value", "Standard deduction and interest", "Let out and self-occupied", "Vacancy and unrealised rent", "Deemed owner"] },
+        { "id": "p07-c04", "no": 4, "section": "A", "title": "Profits and Gains of Business or Profession", "topics": ["General principles and admissible deductions", "Sections 30 to 43B", "Depreciation and block of assets", "Presumptive taxation", "Deemed profits and cash payments", "Maintenance of books and audit"] },
+        { "id": "p07-c05", "no": 5, "section": "A", "title": "Capital Gains", "topics": ["Transfer and types of assets", "Short-term and long-term", "Cost of acquisition and improvement", "Indexation and grandfathering", "Exemptions u/s 54 series", "Reference to valuation"] },
+        { "id": "p07-c06", "no": 6, "section": "A", "title": "Income from Other Sources", "topics": ["General and specific incomes", "Gifts and section 56(2)(x)", "Interest and dividends", "Family pension", "Deductions"] },
+        { "id": "p07-c07", "no": 7, "section": "A", "title": "Total Income and Tax Liability of Individuals and HUF", "topics": ["Clubbing of income", "Set-off and carry forward", "Deductions u/s 80C to 80U", "Special rates", "Alternate minimum tax for non-corporates", "Computation formats"] },
+        { "id": "p07-c08", "no": 8, "section": "B", "title": "Concept of Indirect Taxes", "topics": ["Features of indirect taxes", "Taxable event", "Forward and backward shifting", "Cascading effect", "GST vs earlier regime", "GST Council and constitutional framework"] },
+        { "id": "p07-c09", "no": 9, "section": "B", "title": "Goods and Services Tax — Law and Practice", "topics": ["Supply — scope, composite and mixed", "Place of supply", "Time of supply and value of supply", "Charge of tax and exemption", "Registration thresholds and procedure", "Input tax credit and blocked credits", "Invoicing, e-way bill and returns", "Reverse charge mechanism", "Assessment, demand and refunds", "Appeals, offences and penalties"] },
+        { "id": "p07-c10", "no": 10, "section": "B", "title": "Customs Act and Rules", "topics": ["Levy and collection", "Types of duties", "Valuation of imported and export goods", "Customs procedures and warehousing", "Duty drawback", "Baggage, postal goods and stores", "Refund, appeal and demand"] }
+      ]
+    },
+    {
+      "id": "p08", "code": 8, "level": "intermediate", "group": "Group I",
+      "name": "Cost Accounting", "short": "CA",
+      "priority": 1, "target": "2026-12", "status": "active",
+      "summary": "Cost ascertainment, methods and techniques. The paper that most distinguishes a CMA and the base for Papers 12, 16 and 17.",
+      "strategy": "This is a practice paper. Marks come from working notes, not theory. Target 25–30 full-length problems per week from Chapter 2, 5 and 6. Learn the 24 Cost Accounting Standards for the theory block.",
+      "sections": [
+        { "id": "A", "name": "Introduction to Cost Accounting", "weight": 40 },
+        { "id": "B", "name": "Methods of Costing", "weight": 30 },
+        { "id": "C", "name": "Cost Accounting Techniques", "weight": 30 }
+      ],
+      "chapters": [
+        { "id": "p08-c01", "no": 1, "section": "A", "title": "Introduction to Cost Accounting", "topics": ["Cost accounting vs financial accounting vs management accounting", "Cost object, cost centre, cost unit", "Classification and elements of cost", "Installation of costing system", "Cost reduction vs cost control", "Role of the cost accountant"] },
+        { "id": "p08-c02", "no": 2, "section": "A", "title": "Cost Ascertainment — Elements of Cost", "topics": ["Material: procurement, storage, EOQ, ABC, VED, JIT", "Valuation of receipts and issues — FIFO, LIFO, weighted average", "Labour: remuneration systems, idle time, overtime, labour turnover", "Overheads: allocation, apportionment, re-apportionment", "Primary and secondary distribution, reciprocal services", "Absorption of overheads and under/over recovery", "Activity-based overhead absorption"] },
+        { "id": "p08-c03", "no": 3, "section": "A", "title": "Cost Accounting Standards (CAS 1 to 24)", "topics": ["Classification of cost (CAS 1)", "Raw material, employee cost, overheads", "Cost of production and cost of sales", "Depreciation, packing and interest", "Utilities, royalties, pollution control", "Joint costs, by-products and abnormal costs", "Quality control and research cost", "Transport cost and captive power"] },
+        { "id": "p08-c04", "no": 4, "section": "A", "title": "Cost Book Keeping", "topics": ["Cost ledgers and control accounts", "Integral and non-integral accounting", "Reconciliation of cost and financial accounts", "Reasons for divergence", "Memorandum reconciliation account"] },
+        { "id": "p08-c05", "no": 5, "section": "B", "title": "Job, Batch and Contract Costing", "topics": ["Job costing procedure", "Batch costing and EBQ", "Contract costing and work certified", "Retention money and uncertified work", "Escalation clause", "Profit on incomplete contracts"] },
+        { "id": "p08-c06", "no": 6, "section": "B", "title": "Process Costing, Joint Products and By-products", "topics": ["Normal and abnormal loss and gain", "Equivalent production and degree of completion", "FIFO and weighted average", "Inter-process profit", "Joint cost apportionment", "By-product and waste accounting"] },
+        { "id": "p08-c07", "no": 7, "section": "B", "title": "Operating Costing and Service Costing", "topics": ["Transport costing", "Hospital and hotel costing", "Power and utility costing", "Composite cost units", "Cost per passenger-km and tonne-km"] },
+        { "id": "p08-c08", "no": 8, "section": "B", "title": "Unit, Output and Single Costing", "topics": ["Unit costing", "Output costing and cost sheet", "Treatment of scrap and defectives", "Cost estimation vs cost ascertainment"] },
+        { "id": "p08-c09", "no": 9, "section": "C", "title": "Standard Costing and Variance Analysis", "topics": ["Setting standards", "Material and labour variances", "Overhead variances", "Sales and profit variances", "Reconciliation of variances", "Investigation of variances"] },
+        { "id": "p08-c10", "no": 10, "section": "C", "title": "Budgeting and Budgetary Control", "topics": ["Budget hierarchy", "Functional budgets", "Cash budget", "Flexible budget and capacity levels", "Zero-based and performance budgeting", "Behavioural aspects"] },
+        { "id": "p08-c11", "no": 11, "section": "C", "title": "Marginal Costing and Cost-Volume-Profit", "topics": ["Absorption vs marginal costing", "Contribution and P/V ratio", "Break-even and margin of safety", "Multi-product BEP", "Profit reconciliation", "Limitations"] },
+        { "id": "p08-c12", "no": 12, "section": "C", "title": "Cost Control, Cost Reduction and Productivity", "topics": ["Cost control techniques", "Value analysis", "Learning curve", "Productivity measurement", "Target costing introduction", "Cost management in a competitive market"] }
+      ]
+    },
+
+    {
+      "id": "p09", "code": 9, "level": "intermediate", "group": "Group II",
+      "name": "Operations Management and Strategic Management", "short": "OMSM",
+      "priority": 2, "target": "2027-06", "status": "queued",
+      "summary": "Operations planning, OR applications, project management and strategy formulation. Heavy on theory plus quantitative OR problems.",
+      "strategy": "Section A carries 60%, and within it OR/PPC (20%) and project management (15%) are numerical. Strategic management is 40% and is answer-structure driven — practise writing 5-mark structured answers.",
+      "sections": [
+        { "id": "A", "name": "Operations Management", "weight": 60 },
+        { "id": "B", "name": "Strategic Management", "weight": 40 }
+      ],
+      "chapters": [
+        { "id": "p09-c01", "no": 1, "section": "A", "title": "Introduction to Operations Management", "topics": ["Operations as a system", "Manufacturing vs service operations", "Productivity and competitiveness", "Operations strategy fit"] },
+        { "id": "p09-c02", "no": 2, "section": "A", "title": "Operations Planning", "topics": ["Aggregate planning", "Capacity planning", "Forecast techniques", "Master production schedule"] },
+        { "id": "p09-c03", "no": 3, "section": "A", "title": "Designing Operational Systems and Control", "topics": ["Process design", "Layout types", "Facility location", "Line balancing", "Work study"] },
+        { "id": "p09-c04", "no": 4, "section": "A", "title": "Application of Operations Research — Production Planning and Control", "topics": ["Linear programming", "Transportation", "Assignment", "Sequencing and scheduling", "Inventory models and EOQ", "Queuing theory", "Simulation", "Replacement"] },
+        { "id": "p09-c05", "no": 5, "section": "A", "title": "Productivity Management and Quality Management", "topics": ["Productivity measurement", "TQM", "Six Sigma", "Lean and 5S", "ISO 9000", "Cost of quality"] },
+        { "id": "p09-c06", "no": 6, "section": "A", "title": "Project Management, Monitoring and Control", "topics": ["Project life cycle", "PERT and CPM", "Crashing", "Resource levelling", "Earned value", "Project risk"] },
+        { "id": "p09-c07", "no": 7, "section": "A", "title": "Economics of Maintenance and Spares Management", "topics": ["Preventive vs breakdown maintenance", "MTBF and MTTR", "Spare parts classification", "Replacement decisions"] },
+        { "id": "p09-c08", "no": 8, "section": "B", "title": "Introduction to Strategic Management", "topics": ["Strategy and strategic intent", "Mission, vision, objectives", "Strategic management process", "Levels of strategy"] },
+        { "id": "p09-c09", "no": 9, "section": "B", "title": "Strategic Analysis and Strategic Planning", "topics": ["PESTLE", "Porter's five forces", "SWOT and TOWS", "Value chain", "Core competence", "BCG and Ansoff"] },
+        { "id": "p09-c10", "no": 10, "section": "B", "title": "Formulation and Implementation of Strategy", "topics": ["Generic strategies", "Diversification and integration", "Strategy-structure fit", "Change management", "Balanced scorecard", "Strategy evaluation"] },
+        { "id": "p09-c11", "no": 11, "section": "B", "title": "Digital Strategy", "topics": ["Digital disruption", "Platform and ecosystem models", "Digital transformation levers", "Analytics-driven strategy", "Tech risk and governance"] }
+      ]
+    },
+    {
+      "id": "p10", "code": 10, "level": "intermediate", "group": "Group II",
+      "name": "Corporate Accounting and Auditing", "short": "CAA",
+      "priority": 2, "target": "2027-06", "status": "queued",
+      "summary": "Company accounts under Schedule III, sector accounts, plus audit concepts and the Companies Act audit provisions.",
+      "strategy": "Accounting and auditing are 50/50. Schedule III presentation and cash flow statement are near-certain. Audit is where a well-structured answer with standard references scores fastest.",
+      "sections": [
+        { "id": "A", "name": "Corporate Accounting", "weight": 50 },
+        { "id": "B", "name": "Auditing", "weight": 50 }
+      ],
+      "chapters": [
+        { "id": "p10-c01", "no": 1, "section": "A", "title": "Accounting for Shares and Debentures", "topics": ["Issue at par and premium", "Pro-rata and rights issue", "Forfeiture and reissue", "Bonus and split", "Buy-back", "Redemption of preference shares", "Issue and redemption of debentures", "Interest and sinking fund"] },
+        { "id": "p10-c02", "no": 2, "section": "A", "title": "Financial Statements as per Schedule III", "topics": ["Statement of profit and loss", "Balance sheet formats", "Notes and disclosures", "Prior period items", "Exceptional items", "EPS presentation"] },
+        { "id": "p10-c03", "no": 3, "section": "A", "title": "Cash Flow Statement", "topics": ["Operating, investing and financing activities", "Indirect and direct method", "Adjustments", "Non-cash transactions", "Interpretation"] },
+        { "id": "p10-c04", "no": 4, "section": "A", "title": "Accounts of Banking, Electricity and Insurance Companies", "topics": ["Banking company formats and NPA provisions", "Statutory reserves", "Electricity company accounts", "Insurance: revenue account and balance sheet", "Solvency margin"] },
+        { "id": "p10-c05", "no": 5, "section": "A", "title": "Accounting Standards relevant to Companies", "topics": ["AS 7 Construction Contracts", "AS 22 Taxes on Income", "AS 24 Discontinuing Operations", "AS 26 Intangible Assets", "AS 28 Impairment", "Convergence with Ind AS"] },
+        { "id": "p10-c06", "no": 6, "section": "B", "title": "Basic Concepts of Auditing", "topics": ["Nature and objectives of audit", "True and fair view", "Types of audit and auditor", "Audit evidence and documentation", "Materiality", "Professional scepticism and ethics", "Audit risk model"] },
+        { "id": "p10-c07", "no": 7, "section": "B", "title": "Provisions Relating to Audit under the Companies Act, 2013", "topics": ["Appointment, rotation and removal", "Eligibility and disqualifications", "Powers and duties", "Audit committee", "Cost audit and secretarial audit", "Fraud reporting", "Penalties"] },
+        { "id": "p10-c08", "no": 8, "section": "B", "title": "Auditing of Different Types of Undertakings", "topics": ["Bank audit", "Insurance audit", "Cooperative societies", "Government audit", "Branch and joint audit", "Audit of charitable institutions"] },
+        { "id": "p10-c09", "no": 9, "section": "B", "title": "Audit Report, Certificates and Assurance", "topics": ["Forms of audit report", "Qualifications and emphasis of matter", "Key audit matters", "Auditor's certificate vs report", "Engagement and quality standards"] },
+        { "id": "p10-c10", "no": 10, "section": "B", "title": "Internal Control, Internal Audit and Audit Sampling", "topics": ["COSO components", "Internal control questionnaire", "Internal audit vs statutory audit", "Risk-based internal audit", "Sampling techniques", "Automated controls and CAAT"] }
+      ]
+    },
+    {
+      "id": "p11", "code": 11, "level": "intermediate", "group": "Group II",
+      "name": "Financial Management and Business Data Analytics", "short": "FMDA",
+      "priority": 2, "target": "2027-06", "status": "queued",
+      "summary": "Financial management (80%) plus business data analytics (20%) — the bridge between the CMA syllabus and the analytics academy in this repository.",
+      "strategy": "Ratio analysis (15%), capital budgeting (15%) and working capital (15%) are the three biggest blocks. The analytics section is 20% and is comparatively easy marks if you can read a chart and explain a model.",
+      "sections": [
+        { "id": "A", "name": "Financial Management", "weight": 80 },
+        { "id": "B", "name": "Business Data Analytics", "weight": 20 }
+      ],
+      "chapters": [
+        { "id": "p11-c01", "no": 1, "section": "A", "title": "Fundamentals of Financial Management", "topics": ["Objectives and scope", "Wealth maximisation vs profit maximisation", "Agency problem", "Time value of money", "Risk and return"] },
+        { "id": "p11-c02", "no": 2, "section": "A", "title": "Institutions and Instruments in Financial Markets", "topics": ["Primary and secondary markets", "SEBI and regulation", "Money market instruments", "Capital market instruments", "Mutual funds and AIFs", "Derivatives overview"] },
+        { "id": "p11-c03", "no": 3, "section": "A", "title": "Tools for Financial Analyses", "topics": ["Comparative and common size statements", "Ratio analysis categories", "DuPont analysis", "Cash flow analysis", "Liquidity and solvency diagnostics"] },
+        { "id": "p11-c04", "no": 4, "section": "A", "title": "Sources of Finance and Cost of Capital", "topics": ["Long-term sources", "Cost of debt, preference and equity", "CAPM", "WACC and marginal cost", "Leverage analysis"] },
+        { "id": "p11-c05", "no": 5, "section": "A", "title": "Capital Budgeting", "topics": ["Payback and discounted payback", "NPV, IRR, MIRR, PI", "Incremental cash flows", "Tax and depreciation effects", "Replacement decisions", "Risk-adjusted discounting"] },
+        { "id": "p11-c06", "no": 6, "section": "A", "title": "Working Capital Management", "topics": ["Operating cycle", "Estimation of working capital", "Receivables and credit policy", "Inventory management", "Cash management models", "Financing of working capital"] },
+        { "id": "p11-c07", "no": 7, "section": "A", "title": "Financing Decisions of a Firm", "topics": ["Capital structure theories", "NI, NOI and MM", "Trade-off theory and pecking order", "Dividend theories", "Dividend policy and valuation"] },
+        { "id": "p11-c08", "no": 8, "section": "B", "title": "Introduction to Data Science for Business Decisions", "topics": ["Data science lifecycle", "Descriptive, predictive and prescriptive analytics", "Types of data", "Business framing of analytics questions"] },
+        { "id": "p11-c09", "no": 9, "section": "B", "title": "Data Processing, Organisation, Cleaning and Validation", "topics": ["Data collection and sources", "Data quality dimensions", "Cleaning techniques", "Outliers", "Validation and documentation"] },
+        { "id": "p11-c10", "no": 10, "section": "B", "title": "Data Presentation — Visualisation and Graphics", "topics": ["Chart selection", "Dashboard principles", "Misleading visuals", "Storytelling with data"] },
+        { "id": "p11-c11", "no": 11, "section": "B", "title": "Data Analysis and Modelling", "topics": ["Descriptive statistics in business", "Regression and correlation", "Forecasting", "Classification and clustering basics", "Model evaluation and limits"] }
+      ]
+    },
+    {
+      "id": "p12", "code": 12, "level": "intermediate", "group": "Group II",
+      "name": "Management Accounting", "short": "MA",
+      "priority": 2, "target": "2027-06", "status": "queued",
+      "summary": "Decision-making tools: marginal costing and CVP, ABC, transfer pricing, standard costing, budgeting, divisional performance and decision theory.",
+      "strategy": "Marginal costing plus its applications is a combined 30% — the largest single block in the whole Intermediate course. Build decision tables and always present the differential analysis, not just the final number.",
+      "sections": [
+        { "id": "A", "name": "Introduction to Management Accounting", "weight": 5 },
+        { "id": "B", "name": "Activity Based Costing", "weight": 10 },
+        { "id": "C", "name": "Decision Making Tools", "weight": 30 },
+        { "id": "D", "name": "Standard Costing and Variance Analysis", "weight": 15 },
+        { "id": "E", "name": "Forecasting, Budgeting and Budgetary Control", "weight": 15 },
+        { "id": "F", "name": "Divisional Performance Measurement", "weight": 10 },
+        { "id": "G", "name": "Responsibility Accounting", "weight": 5 },
+        { "id": "H", "name": "Decision Theory", "weight": 10 }
+      ],
+      "chapters": [
+        { "id": "p12-c01", "no": 1, "section": "A", "title": "Introduction to Management Accounting", "topics": ["Scope and objectives", "Management accounting vs cost accounting", "Information for decisions", "Limitations"] },
+        { "id": "p12-c02", "no": 2, "section": "B", "title": "Activity Based Costing", "topics": ["Limitations of traditional absorption", "Cost drivers", "Activity hierarchy", "ABM", "ABC in service industries", "Implementation issues"] },
+        { "id": "p12-c03", "no": 3, "section": "C", "title": "Marginal Costing", "topics": ["Marginal cost and contribution", "P/V ratio", "Break-even and margin of safety", "CVP under multi-product", "Absorption vs marginal profit", "Break-even chart"] },
+        { "id": "p12-c04", "no": 4, "section": "C", "title": "Applications of Marginal Costing in Short-term Decisions", "topics": ["Make or buy", "Accept or reject special order", "Product mix and limiting factors", "Shutdown vs continue", "Sell or process further", "Pricing decisions", "Key factor analysis"] },
+        { "id": "p12-c05", "no": 5, "section": "C", "title": "Transfer Pricing", "topics": ["Objectives and methods", "Market price and cost-plus", "Negotiated and dual pricing", "Divisional autonomy", "Goal congruence", "International transfer pricing interface"] },
+        { "id": "p12-c06", "no": 6, "section": "D", "title": "Standard Costing and Variance Analysis", "topics": ["Standards and types", "Material mix and yield variances", "Labour mix and idle time", "Variable and fixed overhead variances", "Sales margin variances", "Reconciliation and interpretation"] },
+        { "id": "p12-c07", "no": 7, "section": "E", "title": "Forecasting, Budgeting and Budgetary Control", "topics": ["Sales and production forecasting", "Functional budgets", "Cash and capital budgets", "Flexible budgets", "Zero-based budgeting", "Budgetary control process and behavioural issues"] },
+        { "id": "p12-c08", "no": 8, "section": "F", "title": "Divisional Performance Measurement", "topics": ["ROI vs RI", "EVA", "Balanced scorecard", "Transfer pricing impact", "Controllability"] },
+        { "id": "p12-c09", "no": 9, "section": "G", "title": "Responsibility Accounting", "topics": ["Responsibility centres", "Controllable vs non-controllable costs", "Performance reports", "Behavioural and ethical issues"] },
+        { "id": "p12-c10", "no": 10, "section": "H", "title": "Decision Theory", "topics": ["Certainty, risk and uncertainty", "Expected value and EVPI", "Decision trees", "Maximin, maximax, minimax regret", "Bayesian revision", "Utility theory"] }
+      ]
+    },
+
+    {
+      "id": "p13", "code": 13, "level": "final", "group": "Group III",
+      "name": "Corporate and Economic Laws", "short": "CEL",
+      "priority": 3, "target": null, "status": "planned",
+      "summary": "Advanced company law, IBC, governance, and the economic-law cluster (SEBI, competition, FEMA, banking, insurance, MSME, cyber, AML).",
+      "sections": [
+        { "id": "A", "name": "Corporate Laws", "weight": 60 },
+        { "id": "B", "name": "Economic Laws and Regulations", "weight": 40 }
+      ],
+      "chapters": [
+        { "id": "p13-c01", "no": 1, "section": "A", "title": "Companies Act, 2013 — Advanced", "topics": ["Prospectus and allotment", "Share capital and reduction (Sections 61-66)", "Related party transactions", "Corporate restructuring and NCLT schemes", "Dividend and unpaid dividend fund", "Accounts, audit and NFRA", "Board and committee governance", "Serious fraud and class actions"] },
+        { "id": "p13-c02", "no": 2, "section": "A", "title": "Insolvency and Bankruptcy Code, 2016", "topics": ["Corporate insolvency process", "CIRP timelines and resolution professional", "Committee of creditors", "Resolution plan and liquidation", "Personal insolvency overview", "Cross-border insolvency"] },
+        { "id": "p13-c03", "no": 3, "section": "A", "title": "Corporate Governance and Social Responsibility", "topics": ["SEBI LODR governance", "Board composition and independence", "Audit and nomination committees", "Whistle-blower policy", "CSR under Section 135", "Governance reporting"] },
+        { "id": "p13-c04", "no": 4, "section": "B", "title": "SEBI Act and Securities Regulation", "topics": ["SEBI constitution and powers", "Primary market regulation", "Insider trading", "Takeover code", "SAPA", "Mutual fund and intermediary regulation"] },
+        { "id": "p13-c05", "no": 5, "section": "B", "title": "Competition Act, 2002", "topics": ["Anti-competitive agreements", "Abuse of dominance", "Combinations and thresholds", "CCI powers and leniency", "Competition advocacy"] },
+        { "id": "p13-c06", "no": 6, "section": "B", "title": "Foreign Exchange Management Act, 1999", "topics": ["Current and capital account", "Authorised persons", "FDI and ODI framework", "External commercial borrowing", "Contraventions and adjudication"] },
+        { "id": "p13-c07", "no": 7, "section": "B", "title": "Banking and Insurance Regulation", "topics": ["Banking Regulation Act", "RBI regulatory powers", "NPA and resolution framework", "IRDAI framework", "Insurance products and solvency", "Deposit insurance"] },
+        { "id": "p13-c08", "no": 8, "section": "B", "title": "MSME Development Act and Industrial Regulation", "topics": ["Classification of MSMEs", "Facilitation councils", "Delayed payment provisions", "Cluster and credit support", "Udyam registration"] },
+        { "id": "p13-c09", "no": 9, "section": "B", "title": "Cyber Laws and IT Act, 2000", "topics": ["Digital signature and e-governance", "Cyber contraventions", "Data protection framework", "Intermediary liability", "Cyber-crime and adjudication"] },
+        { "id": "p13-c10", "no": 10, "section": "B", "title": "Prevention of Money Laundering and Anti-Corruption", "topics": ["PMLA process and reporting", "KYC and AML obligations", "Benami transactions", "Prevention of Corruption Act", "FCPA/UK Bribery interface"] }
+      ]
+    },
+    {
+      "id": "p14", "code": 14, "level": "final", "group": "Group III",
+      "name": "Strategic Financial Management", "short": "SFM",
+      "priority": 3, "target": null, "status": "planned",
+      "summary": "Advanced investment and portfolio decisions, risk management, international finance and digital finance.",
+      "sections": [
+        { "id": "A", "name": "Investment Decisions", "weight": 25 },
+        { "id": "B", "name": "Security Analysis and Portfolio Management", "weight": 35 },
+        { "id": "C", "name": "Financial Risk Management", "weight": 20 },
+        { "id": "D", "name": "International Financial Management", "weight": 15 },
+        { "id": "E", "name": "Digital Finance", "weight": 5 }
+      ],
+      "chapters": [
+        { "id": "p14-c01", "no": 1, "section": "A", "title": "Advanced Investment Decisions", "topics": ["Real options", "Adjusted present value", "Capital rationing", "Risk analysis techniques", "Behavioural finance and biases", "Infrastructure project appraisal"] },
+        { "id": "p14-c02", "no": 2, "section": "A", "title": "Leasing, Hire Purchase and Project Finance", "topics": ["Lease vs buy analysis", "Lessor evaluation", "Infrastructure financing", "Public private partnership", "Project cash flow modelling"] },
+        { "id": "p14-c03", "no": 3, "section": "B", "title": "Security Analysis", "topics": ["Fundamental analysis frameworks", "Valuation models", "EIC framework", "Technical analysis basics", "Efficient market hypothesis", "Behavioural anomalies"] },
+        { "id": "p14-c04", "no": 4, "section": "B", "title": "Portfolio Management", "topics": ["Risk and return of a portfolio", "Markowitz diversification", "CAPM and factor models", "Sharpe, Treynor and Jensen", "Portfolio construction and rebalancing", "Performance attribution"] },
+        { "id": "p14-c05", "no": 5, "section": "B", "title": "Derivatives and Risk Hedging", "topics": ["Forwards and futures", "Options and payoffs", "Option pricing intuition", "Hedging with futures", "Interest rate and currency swaps", "Credit derivatives overview"] },
+        { "id": "p14-c06", "no": 6, "section": "C", "title": "Financial Risk Management", "topics": ["Risk governance", "Market, credit and operational risk", "VaR and stress testing", "Hedging policy", "Covenants and treasury risk", "Basel framework overview"] },
+        { "id": "p14-c07", "no": 7, "section": "D", "title": "International Financial Management", "topics": ["Exchange rate determination", "Purchasing power and interest rate parity", "Transaction, translation and economic exposure", "Cross-border capital budgeting", "International financing and ADR/GDR", "Country risk"] },
+        { "id": "p14-c08", "no": 8, "section": "D", "title": "Foreign Exchange Risk Management", "topics": ["Forward and money market hedges", "Currency options and futures", "Leading and lagging", "Netting and swaps", "Forecasting exposure"] },
+        { "id": "p14-c09", "no": 9, "section": "E", "title": "Digital Finance", "topics": ["Digital payments and UPI", "Fintech business models", "Blockchain and CBDC", "Robo-advisory", "Algorithmic trading risks", "Regulatory sandbox"] }
+      ]
+    },
+    {
+      "id": "p15", "code": 15, "level": "final", "group": "Group III",
+      "name": "Direct Tax Laws and International Taxation", "short": "DTIT",
+      "priority": 3, "target": null, "status": "planned",
+      "summary": "Advanced direct tax including corporate assessment, and international taxation (DTAA, transfer pricing, BEPS, GAAR).",
+      "sections": [
+        { "id": "A", "name": "Direct Tax Laws", "weight": 60 },
+        { "id": "B", "name": "International Taxation", "weight": 40 }
+      ],
+      "chapters": [
+        { "id": "p15-c01", "no": 1, "section": "A", "title": "Assessment of Various Entities", "topics": ["Companies including MAT and AMT", "Firms and LLP", "Trusts and AOP/BOI", "Co-operative societies", "Special rates and surcharge"] },
+        { "id": "p15-c02", "no": 2, "section": "A", "title": "Corporate Taxation and Business Restructuring", "topics": ["Minimum alternate tax", "Dividend distribution tax history", "Business restructuring tax neutrality", "Conversion of firm into company", "Demerger and slump sale"] },
+        { "id": "p15-c03", "no": 3, "section": "A", "title": "TDS, TCS, Advance Tax and Refunds", "topics": ["TDS sections and rates", "TCS provisions", "Advance tax instalments and interest", "Return filing and processing", "Refund and interest on refund"] },
+        { "id": "p15-c04", "no": 4, "section": "A", "title": "Assessment, Appeals, Penalties and Offences", "topics": ["Assessment types", "Reassessment", "Appeal hierarchy", "Penalties and prosecution", "Faceless assessment", "Settlement of disputes"] },
+        { "id": "p15-c05", "no": 5, "section": "A", "title": "Tax Planning, Avoidance and GAAR", "topics": ["Tax planning vs evasion vs avoidance", "GAAR provisions", "Specific anti-avoidance rules", "Tax planning for business decisions", "Ethics in tax practice"] },
+        { "id": "p15-c06", "no": 6, "section": "A", "title": "Income Computation and Disclosure Standards", "topics": ["ICDS applicability", "Key standards overview", "Transitional issues", "Interaction with Ind AS"] },
+        { "id": "p15-c07", "no": 7, "section": "B", "title": "Double Taxation Avoidance Agreements", "topics": ["Model conventions", "Tie-breaker rules", "Permanent establishment", "Business profits and attribution", "Withholding on cross-border payments", "Treaty benefit and MLI"] },
+        { "id": "p15-c08", "no": 8, "section": "B", "title": "Transfer Pricing", "topics": ["Associated enterprises", "Arm's length principle", "Methods and comparables", "Documentation", "Advance pricing agreements", "Specified domestic transactions", "Secondary adjustment"] },
+        { "id": "p15-c09", "no": 9, "section": "B", "title": "BEPS, Equalisation Levy and International Cooperation", "topics": ["BEPS action points", "Pillar One and Two", "Equalisation levy", "Country-by-country reporting", "Tax information exchange", "Expatriate taxation"] }
+      ]
+    },
+    {
+      "id": "p16", "code": 16, "level": "final", "group": "Group III",
+      "name": "Strategic Cost Management", "short": "SCM",
+      "priority": 3, "target": null, "status": "planned",
+      "summary": "Cost management as a strategic weapon, plus quantitative techniques — LP, assignment, queuing, simulation, PERT/CPM, decision trees.",
+      "sections": [
+        { "id": "A", "name": "Strategic Cost Management for Decision Making", "weight": 60 },
+        { "id": "B", "name": "Quantitative Techniques in Decision Making", "weight": 40 }
+      ],
+      "chapters": [
+        { "id": "p16-c01", "no": 1, "section": "A", "title": "Strategic Cost Management Framework", "topics": ["Strategic cost management model", "Value chain analysis", "Cost driver analysis", "Porter's cost and differentiation strategy", "Industry life cycle costing"] },
+        { "id": "p16-c02", "no": 2, "section": "A", "title": "Activity Based Management and Value Analysis", "topics": ["ABM operational and strategic", "Process value analysis", "Value engineering", "Business process reengineering", "Non-value-added activity reduction"] },
+        { "id": "p16-c03", "no": 3, "section": "A", "title": "Target Costing, Life Cycle and Kaizen Costing", "topics": ["Target costing process", "Cost tables and value engineering", "Life cycle costing", "Kaizen costing", "Learning curve and cost estimation"] },
+        { "id": "p16-c04", "no": 4, "section": "A", "title": "Throughput and Lean Cost Management", "topics": ["Theory of constraints", "Throughput accounting", "Lean accounting", "Just-in-time", "Backflush costing", "Cost of quality"] },
+        { "id": "p16-c05", "no": 5, "section": "A", "title": "Pricing Decisions and Strategic Profitability", "topics": ["Pricing strategies and elasticity", "Cost-plus, target and value pricing", "Product mix and capacity constraints", "Customer profitability analysis", "Competitive positioning"] },
+        { "id": "p16-c06", "no": 6, "section": "A", "title": "Performance Measurement and Strategic Control", "topics": ["Balanced scorecard", "KPI design", "Divisional performance", "EFQM and quality frameworks", "Sustainability reporting metrics", "Incentive design"] },
+        { "id": "p16-c07", "no": 7, "section": "B", "title": "Linear Programming and Optimisation", "topics": ["Formulation", "Graphical method", "Simplex overview", "Duality and shadow pricing", "Sensitivity analysis", "Application to product mix"] },
+        { "id": "p16-c08", "no": 8, "section": "B", "title": "Transportation and Assignment", "topics": ["Initial solutions — NWC, LCM, VAM", "Optimality tests", "Degeneracy", "Assignment problem", "Travelling salesman"] },
+        { "id": "p16-c09", "no": 9, "section": "B", "title": "Queuing, Simulation and Decision Trees", "topics": ["Queuing models and parameters", "Monte Carlo simulation", "Decision trees with EVPI", "Expected value under risk", "Utility and risk preference"] },
+        { "id": "p16-c10", "no": 10, "section": "B", "title": "Project Management and Network Techniques", "topics": ["PERT probabilistic time", "CPM crashing", "Resource levelling", "Cost-time trade-off", "Project evaluation and review"] }
+      ]
+    },
+    {
+      "id": "p17", "code": 17, "level": "final", "group": "Group IV",
+      "name": "Cost and Management Audit", "short": "CMA",
+      "priority": 3, "target": null, "status": "planned",
+      "summary": "Cost audit, management audit, internal audit and operational audit, plus forensic audit and AML — the CMA's signature practice area.",
+      "sections": [
+        { "id": "A", "name": "Cost Audit", "weight": 50 },
+        { "id": "B", "name": "Management Audit", "weight": 25 },
+        { "id": "C", "name": "Internal Control, Internal Audit and Operational Audit", "weight": 15 },
+        { "id": "D", "name": "Forensic Audit and Anti-Money Laundering", "weight": 10 }
+      ],
+      "chapters": [
+        { "id": "p17-c01", "no": 1, "section": "A", "title": "Cost Audit — Framework", "topics": ["Definition and objectives", "Cost auditor qualification and appointment", "Cost audit report formats", "Companies (Cost Records and Audit) Rules", "Cost audit vs financial audit"] },
+        { "id": "p17-c02", "no": 2, "section": "A", "title": "Cost Audit Planning and Execution", "topics": ["Engagement planning", "Audit programme and materiality", "Cost records verification", "Verification of cost statements", "Reporting and follow-up", "Quality control"] },
+        { "id": "p17-c03", "no": 3, "section": "A", "title": "Cost Accounting Standards and Cost Audit Practice", "topics": ["CAS application in audit", "Costing of regulated industries", "Capacity and utilisation", "Reconciliation and variance analysis review", "Industry-specific audit issues"] },
+        { "id": "p17-c04", "no": 4, "section": "B", "title": "Management Audit", "topics": ["Definition and scope", "Management audit vs cost audit", "Efficiency, economy and effectiveness", "Corporate social audit", "Audit of governance and risk", "Report writing"] },
+        { "id": "p17-c05", "no": 5, "section": "B", "title": "Audit of Business Functions", "topics": ["Audit of purchase and inventory", "Audit of production and quality", "Audit of marketing and sales", "Audit of human resources", "Audit of information systems"] },
+        { "id": "p17-c06", "no": 6, "section": "C", "title": "Internal Control and Internal Audit", "topics": ["Internal control frameworks", "Risk-based internal audit", "Internal audit charter and standards", "Audit committee interface", "Whistle-blowing"] },
+        { "id": "p17-c07", "no": 7, "section": "C", "title": "Operational Audit", "topics": ["Scope and methodology", "Performance indicators", "Process audits", "Value for money audit", "Reporting operational findings"] },
+        { "id": "p17-c08", "no": 8, "section": "D", "title": "Forensic Audit", "topics": ["Nature of forensic audit", "Fraud schemes and red flags", "Digital forensics and data analytics", "Investigation methodology", "Evidence and expert testimony", "Fraud risk management"] },
+        { "id": "p17-c09", "no": 9, "section": "D", "title": "Anti-Money Laundering and Compliance", "topics": ["Money laundering stages", "PMLA obligations", "Risk-based approach", "Reporting obligations", "Sanctions screening", "Technology in AML"] }
+      ]
+    },
+    {
+      "id": "p18", "code": 18, "level": "final", "group": "Group IV",
+      "name": "Corporate Financial Reporting", "short": "CFR",
+      "priority": 3, "target": null, "status": "planned",
+      "summary": "Ind AS, valuation, business combinations, consolidated financial statements, recent developments and government accounting.",
+      "sections": [
+        { "id": "A", "name": "Indian Accounting Standards (Ind AS)", "weight": 25 },
+        { "id": "B", "name": "Valuation of Shares, Financial Instruments and NBFCs", "weight": 15 },
+        { "id": "C", "name": "Business Combinations and Restructuring", "weight": 20 },
+        { "id": "D", "name": "Consolidated and Separate Financial Statements", "weight": 20 },
+        { "id": "E", "name": "Recent Developments in Financial Reporting", "weight": 10 },
+        { "id": "F", "name": "Government Accounting in India", "weight": 10 }
+      ],
+      "chapters": [
+        { "id": "p18-c01", "no": 1, "section": "A", "title": "Ind AS Framework and Presentation", "topics": ["Conceptual framework", "Ind AS 1 Presentation", "Ind AS 34 Interim Reporting", "Ind AS 8 Policies and Errors", "Ind AS 10 Events after Reporting Period", "First-time adoption (Ind AS 101)"] },
+        { "id": "p18-c02", "no": 2, "section": "A", "title": "Ind AS on Assets and Liabilities", "topics": ["Ind AS 16 PPE", "Ind AS 38 Intangibles", "Ind AS 36 Impairment", "Ind AS 40 Investment Property", "Ind AS 2 Inventories", "Ind AS 37 Provisions", "Ind AS 19 Employee Benefits", "Ind AS 12 Income Taxes"] },
+        { "id": "p18-c03", "no": 3, "section": "A", "title": "Ind AS on Revenue, Leases and Financial Instruments", "topics": ["Ind AS 115 five-step model", "Ind AS 116 leases", "Ind AS 109 classification and ECL", "Ind AS 32 presentation", "Ind AS 107 disclosures", "Ind AS 113 fair value"] },
+        { "id": "p18-c04", "no": 4, "section": "B", "title": "Valuation of Shares and Business Valuation", "topics": ["Net asset method", "Yield and earnings capitalisation", "Dividend growth models", "DCF valuation", "Relative valuation multiples", "Valuation of intangibles"] },
+        { "id": "p18-c05", "no": 5, "section": "B", "title": "NBFC Accounting and Reporting", "topics": ["NBFC classification", "Income recognition and NPA norms", "Provisioning", "Capital adequacy", "Regulatory reporting"] },
+        { "id": "p18-c06", "no": 6, "section": "C", "title": "Business Combinations", "topics": ["Ind AS 103 scope and method", "Identification of acquirer", "Consideration and goodwill", "Bargain purchase", "Contingent consideration", "Common control combinations", "Push-down accounting"] },
+        { "id": "p18-c07", "no": 7, "section": "C", "title": "Corporate Restructuring", "topics": ["Amalgamation and absorption", "Demerger", "Purchase method vs pooling", "Scheme accounting entries", "Tax and legal interface"] },
+        { "id": "p18-c08", "no": 8, "section": "D", "title": "Consolidated Financial Statements", "topics": ["Ind AS 110 control model", "Ind AS 111 joint arrangements", "Ind AS 112 disclosures", "Ind AS 28 associates", "Consolidation procedures and eliminations", "Non-controlling interest", "Separate financial statements (Ind AS 27)"] },
+        { "id": "p18-c09", "no": 9, "section": "D", "title": "Advanced Consolidation Issues", "topics": ["Step acquisition", "Partial disposal and loss of control", "Intra-group profits", "Unrealised profit on inventory and PPE", "Foreign subsidiary translation", "Equity accounting"] },
+        { "id": "p18-c10", "no": 10, "section": "E", "title": "Recent Developments in Financial Reporting", "topics": ["Sustainability and BRSR", "Integrated reporting", "Digital reporting and XBRL", "Segment and interim reporting", "Related party and KAM disclosures", "New standards in issue"] },
+        { "id": "p18-c11", "no": 11, "section": "F", "title": "Government Accounting in India", "topics": ["Constitutional framework", "Funds and appropriations", "Government accounting standards", "Finance accounts and appropriations", "Public expenditure management", "GPF and public debt accounting"] }
+      ]
+    },
+    {
+      "id": "p19", "code": 19, "level": "final", "group": "Group IV",
+      "name": "Indirect Tax Laws and Practice", "short": "ITLP",
+      "priority": 3, "target": null, "status": "planned",
+      "note": "The 2022 syllabus places indirect tax law and practice in Final Paper 19. It is included here for completeness even though the current study priority stops at Paper 18.",
+      "summary": "Advanced GST and Customs practice, including litigation, refunds, assessments and export-import procedures.",
+      "sections": [
+        { "id": "A", "name": "Goods and Services Tax Act and Rules", "weight": 70 },
+        { "id": "B", "name": "Customs Act and Rules", "weight": 30 }
+      ],
+      "chapters": [
+        { "id": "p19-c01", "no": 1, "section": "A", "title": "GST — Supply, Levy and Exemptions", "topics": ["Taxable event", "Composite and mixed supply", "Exemptions and notifications", "Rate structure", "Territorial nexus"] },
+        { "id": "p19-c02", "no": 2, "section": "A", "title": "GST — Input Tax Credit and Valuation", "topics": ["Conditions for ITC", "Blocked and restricted credits", "Common credit apportionment", "Rule 42 and 43", "Value of supply rules", "Related party transactions"] },
+        { "id": "p19-c03", "no": 3, "section": "A", "title": "GST — Procedure, Returns and Assessments", "topics": ["Registration", "Invoicing and e-way bill", "Returns and reconciliation", "Assessment and audit", "Demand and recovery", "Refunds including exports"] },
+        { "id": "p19-c04", "no": 4, "section": "A", "title": "GST — Appeals, Offences and Advance Ruling", "topics": ["Appellate process", "Offences and penalties", "Advance ruling", "Anti-profiteering", "Job work and works contract"] },
+        { "id": "p19-c05", "no": 5, "section": "B", "title": "Customs — Levy, Valuation and Procedures", "topics": ["Duties and exemption", "Transaction value", "Valuation rules", "Imports and warehousing", "Bonded goods", "Export procedures and EPCG"] },
+        { "id": "p19-c06", "no": 6, "section": "B", "title": "Customs — Duty Drawback, Refund and Litigation", "topics": ["Drawback computation", "Deemed exports", "Refund claims", "Appeals and settlement", "Recovery and interest"] }
+      ]
+    },
+    {
+      "id": "p20", "code": 20, "level": "final", "group": "Group IV",
+      "name": "Elective Paper (20A / 20B / 20C)", "short": "ELECTIVE",
+      "priority": 3, "target": null, "status": "planned",
+      "note": "Paper 20 is an elective choice. Confirm the options open in your session on icmai.in.",
+      "summary": "Choose one elective: 20A Strategic Performance Management and Business Valuation, 20B Risk Management in Banking and Insurance, or 20C Entrepreneurship and Startup.",
+      "sections": [
+        { "id": "A", "name": "Elective option", "weight": 100 }
+      ],
+      "chapters": [
+        { "id": "p20-c01", "no": 1, "section": "A", "title": "20A — Strategic Performance Management and Business Valuation", "topics": ["Performance management frameworks", "Business valuation techniques", "Value creation and EVA", "Mergers and acquisitions", "Value-based performance measurement"] },
+        { "id": "p20-c02", "no": 2, "section": "A", "title": "20B — Risk Management in Banking and Insurance", "topics": ["Banking risk types and CAMELS", "Credit and market risk measurement", "ALM and liquidity", "Insurance risk and solvency", "Underwriting and reinsurance"] },
+        { "id": "p20-c03", "no": 3, "section": "A", "title": "20C — Entrepreneurship and Startup", "topics": ["Entrepreneurial skill sets", "Idea to action", "Startup ecosystem", "Value addition and scaling", "Risk management for startups", "Leadership and new-age business models"] }
+      ]
+    }
+  ]
+}

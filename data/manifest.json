@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "name": "PROJECT CMA",
+  "lastUpdated": "2026-11-02",
+  "datasets": [
+    { "id": "profile", "path": "data/profile.json", "label": "Student profile", "required": true },
+    { "id": "priority", "path": "data/priority.json", "label": "Priority hierarchy and time budget", "required": true },
+    { "id": "papers", "path": "data/academics/papers.json", "label": "CMA papers, groups and syllabus map", "required": true },
+    { "id": "knowledgeFoundation", "path": "data/academics/knowledge/foundation.json", "label": "Foundation revision notes", "required": false },
+    { "id": "knowledgeP05", "path": "data/academics/knowledge/p05.json", "label": "Paper 5 Business Laws and Ethics", "required": false },
+    { "id": "knowledgeP06", "path": "data/academics/knowledge/p06.json", "label": "Paper 6 Financial Accounting", "required": false },
+    { "id": "knowledgeP07", "path": "data/academics/knowledge/p07.json", "label": "Paper 7 Direct and Indirect Taxation", "required": false },
+    { "id": "knowledgeP08", "path": "data/academics/knowledge/p08.json", "label": "Paper 8 Cost Accounting", "required": false },
+    { "id": "knowledgeInter2", "path": "data/academics/knowledge/intermediate-2.json", "label": "Papers 9 to 12", "required": false },
+    { "id": "knowledgeFinal", "path": "data/academics/knowledge/final.json", "label": "Final papers 13 to 20", "required": false },
+    { "id": "subjects", "path": "data/subjects.json", "label": "Subject taxonomy", "required": true },
+    { "id": "concepts", "path": "data/concepts.json", "label": "Concept dependency map", "required": true },
+    { "id": "formulas", "path": "data/formulas.json", "label": "Formula database", "required": true },
+    { "id": "software", "path": "data/skills/software.json", "label": "Software academy (16 skills)", "required": true },
+    { "id": "financeAcademy", "path": "data/finance-academy.json", "label": "Accounting and finance academy", "required": true },
+    { "id": "fpa", "path": "data/fpa.json", "label": "FP&A and CFO skills academy", "required": true },
+    { "id": "markets", "path": "data/markets.json", "label": "Financial markets and investment knowledge", "required": true },
+    { "id": "dataAi", "path": "data/data-ai.json", "label": "Data science, AI and automation", "required": true },
+    { "id": "communication", "path": "data/communication.json", "label": "Professional communication academy", "required": true },
+    { "id": "careers", "path": "data/careers.json", "label": "Career development and job preparation", "required": true },
+    { "id": "certifications", "path": "data/certifications.json", "label": "Certification database", "required": true },
+    { "id": "cases", "path": "data/cases.json", "label": "Business case study laboratory", "required": true },
+    { "id": "portfolio", "path": "data/portfolio.json", "label": "Portfolio project registry", "required": true },
+    { "id": "examIntel", "path": "data/exam-intel.json", "label": "Examination intelligence", "required": true },
+    { "id": "knowledgeSeed", "path": "data/knowledge-seed.json", "label": "Knowledge library seeds", "required": true },
+    { "id": "performance", "path": "data/performance.json", "label": "Performance and discipline system", "required": true }
+  ]
+}

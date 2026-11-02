@@ -1,0 +1,362 @@
+{
+  "scope": ["p09", "p10", "p11", "p12"],
+  "syllabus": "ICMAI Syllabus 2022",
+  "lastReviewed": "2026-11-02",
+  "note": "Priority 2 (June 2027). Chapters listed here are the highest-yield anchors for each paper; the full chapter map lives in data/academics/papers.json. Content depth is deliberately concentrated on the quantitative blocks that carry the most marks.",
+  "chapters": [
+    {
+      "id": "p09-c04",
+      "paperId": "p09",
+      "status": "complete",
+      "summary": "Operations research supplies the quantitative core of Paper 9: linear programming, transportation, assignment, sequencing, inventory and queuing. Nearly every question is a formulation plus a computational procedure, so method marks are available even if arithmetic slips.",
+      "keyTerms": [
+        { "term": "Linear programming", "definition": "Optimising a linear objective function subject to linear constraints, with non-negativity restrictions." },
+        { "term": "Shadow price", "definition": "The marginal value of relaxing a binding constraint by one unit — the dual price." },
+        { "term": "Vogel's approximation method", "definition": "A transportation initial-solution heuristic that allocates on the basis of penalty cost, usually closer to optimal than the north-west corner method." },
+        { "term": "Assignment problem", "definition": "A special transportation problem with one-to-one allocation, solved by the Hungarian method." },
+        { "term": "Sequencing", "definition": "Determining the order of jobs on machines to minimise total elapsed time; Johnson's rule applies to two machines." },
+        { "term": "Queuing theory", "definition": "Analysis of waiting lines using arrival and service distributions to trade service cost against waiting cost." }
+      ],
+      "formulas": [
+        { "name": "Transportation — optimality test", "expression": "Number of basic allocations = m + n − 1 (otherwise degenerate); compute opportunity costs using u + v = c for allocated cells", "meaning": "A negative opportunity cost for an unallocated cell indicates improvement is possible.", "example": "3 × 4 problem requires 3 + 4 − 1 = 6 basic cells." },
+        { "name": "Johnson's rule (two machines)", "expression": "Select the smallest time; if it belongs to machine 1 place the job first, if machine 2 place it last; repeat", "meaning": "Minimises total makespan for n jobs on two machines.", "example": "Jobs with times (M1, M2): A(2,5), B(6,3), C(4,7) → order A, C, B." },
+        { "name": "Economic order quantity for production runs", "expression": "EBQ = √(2 × Annual demand × Setup cost / (Carrying cost per unit × (1 − d/p)))", "meaning": "Where d is the demand rate and p the production rate.", "example": "Demand 20,000; setup ₹500; carrying ₹20; p=100/day, d=80/day → √(2×20,000×500/(20×0.2)) = 2,236 units." },
+        { "name": "PERT expected time", "expression": "te = (Optimistic + 4 × Most likely + Pessimistic) / 6; variance = ((P − O)/6)²", "meaning": "Probabilistic project duration using the normal distribution.", "example": "O=4, M=6, P=14 → te = 7; variance = (10/6)² = 2.78." }
+      ],
+      "questions": [
+        { "id": "p09-c04-q1", "q": "Formulate a linear programming model for a firm producing two products with machine-hour constraints and material limits, maximising contribution.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Define decision variables x and y as units of each product. Objective: Maximise Z = c₁x + c₂y (contribution per unit). Constraints: machine hours a₁x + a₂y ≤ available hours; material b₁x + b₂y ≤ available units; market limits x ≤ demand₁, y ≤ demand₂; and x, y ≥ 0. State the units of each coefficient and the assumption of linearity and divisibility. Then solve graphically by plotting the constraint lines, identifying the feasible region and evaluating Z at each corner point.", "tags": ["operations research", "linear programming"] },
+        { "id": "p09-c04-q2", "q": "What is a degenerate transportation solution and how is it resolved?", "type": "theory", "marks": 4, "difficulty": "medium", "answer": "Degeneracy occurs when the number of occupied cells is less than m + n − 1, so the optimality test cannot be applied directly. It is resolved by allocating an infinitesimal quantity (epsilon) to an independent unoccupied cell to bring the number of allocations up to m + n − 1, and then proceeding with the stepping-stone or MODI method.", "tags": ["operations research", "transportation"] }
+      ],
+      "pitfalls": ["Forgetting the non-negativity constraints in a formulation.", "Applying the optimality test to a degenerate solution without adding the epsilon allocation."]
+    },
+    {
+      "id": "p09-c06",
+      "paperId": "p09",
+      "status": "complete",
+      "summary": "Project management covers network construction, critical path, floats, crashing and earned value. These are among the most reliable marks in the paper.",
+      "keyTerms": [
+        { "term": "Critical path", "definition": "The longest path through the network; determines the project duration and has zero total float." },
+        { "term": "Total float", "definition": "The amount of time an activity can be delayed without delaying the project: LST − EST or LFT − EFT." },
+        { "term": "Crashing", "definition": "Compressing a project by reducing the duration of critical activities at extra cost; the cost slope governs the sequence." },
+        { "term": "Earned value", "definition": "Budgeted cost of work performed; compared with planned value and actual cost to assess schedule and cost performance." }
+      ],
+      "formulas": [
+        { "name": "Total float", "expression": "Total float = LFT − EFT = LST − EST; Free float = EST of next activity − EFT of this activity", "meaning": "Activities on the critical path have zero total float.", "example": "EFT 12, LFT 17 → total float 5 days." },
+        { "name": "Cost slope", "expression": "Cost slope = (Crash cost − Normal cost) / (Normal time − Crash time)", "meaning": "Crash the critical activity with the lowest cost slope first.", "example": "(₹18,000 − ₹12,000)/(6 − 4) = ₹3,000 per day." },
+        { "name": "Earned value indices", "expression": "CV = EV − AC; SV = EV − PV; CPI = EV/AC; SPI = EV/PV", "meaning": "CPI below 1 means over budget; SPI below 1 means behind schedule.", "example": "EV ₹80 lakh, AC ₹90 lakh, PV ₹1 crore → CPI 0.89, SPI 0.80." }
+      ],
+      "questions": [
+        { "id": "p09-c06-q1", "q": "A project has normal duration 20 weeks at ₹10,00,000. Activity A on the critical path can be crashed from 6 to 4 weeks at an additional ₹60,000. Should it be crashed if the project penalty is ₹20,000 per week?", "type": "problem", "marks": 5, "difficulty": "medium", "answer": "Cost slope = 60,000/2 = ₹30,000 per week. Saving = ₹20,000 per week of penalty avoided. Crashing costs more than it saves, so it should not be crashed on cost grounds alone — unless there are non-cost reasons such as liquidated damages beyond the penalty or strategic early delivery. State that the decision changes if the project duration reduction also avoids overheads of more than ₹30,000 per week.", "tags": ["project management", "crashing"] }
+      ],
+      "pitfalls": ["Crashing a non-critical activity.", "Computing float with forward and backward passes that are not kept consistent."]
+    },
+    {
+      "id": "p09-c09",
+      "paperId": "p09",
+      "status": "complete",
+      "summary": "Strategic analysis uses external and internal appraisal tools — PESTLE, five forces, value chain, core competence, SWOT/TOWS, BCG and Ansoff — to identify where and how the firm should compete.",
+      "keyTerms": [
+        { "term": "PESTLE", "definition": "Political, economic, social, technological, legal and environmental factors affecting the industry." },
+        { "term": "Porter's five forces", "definition": "Supplier power, buyer power, threat of new entrants, threat of substitutes and competitive rivalry — determines industry attractiveness." },
+        { "term": "Value chain", "definition": "The set of primary and support activities through which value is created; used to locate cost and differentiation advantage." },
+        { "term": "Core competence", "definition": "A capability that is valuable, rare, difficult to imitate and non-substitutable, and that underpins competitive advantage." },
+        { "term": "BCG matrix", "definition": "Positions business units as stars, cash cows, question marks or dogs based on market growth and relative share." },
+        { "term": "Ansoff matrix", "definition": "Growth options: market penetration, market development, product development and diversification." }
+      ],
+      "questions": [
+        { "id": "p09-c09-q1", "q": "Apply Porter's five forces to the Indian organised retail sector.", "type": "case", "marks": 8, "difficulty": "hard", "answer": "Rivalry: high, with several large chains and deep discounting. Buyer power: high, because switching costs are low and price comparison is easy. Supplier power: moderate to low for packaged goods (many brands) but high for fresh produce and private-label sourcing. New entrants: moderate — capital and real estate are barriers, but foreign investment rules and e-commerce reduce them. Substitutes: high — kirana stores, quick-commerce and direct-to-consumer brands. Conclusion: structurally difficult for undifferentiated players; advantage accrues to those with supply-chain scale, private labels and location density. Structure the answer force by force, with a rating and a conclusion.", "tags": ["strategic management", "five forces"] }
+      ]
+    },
+    {
+      "id": "p09-c10",
+      "paperId": "p09",
+      "status": "outline",
+      "summary": "Strategy implementation links structure, systems, culture and control. The balanced scorecard, change management and strategy evaluation are the repeatedly examined frameworks.",
+      "keyTerms": [
+        { "term": "Balanced scorecard", "definition": "Performance framework across financial, customer, internal process and learning and growth perspectives." },
+        { "term": "Strategy-structure fit", "definition": "The principle that structure must follow strategy; different strategies require different organisational forms." },
+        { "term": "Digital strategy", "definition": "The use of digital capability to change business models, channels and value propositions rather than merely to automate existing processes." }
+      ]
+    },
+    {
+      "id": "p10-c01",
+      "paperId": "p10",
+      "status": "complete",
+      "summary": "Company share capital transactions — issue, forfeiture, reissue, bonus, buy-back and redemption — plus debentures. Journal entries and the securities premium and capital redemption reserve accounts are the core.",
+      "keyTerms": [
+        { "term": "Securities premium [Sec 52]", "definition": "Premium on shares issued; usable for specified purposes only, including bonus issue, buy-back and writing off preliminary expenses." },
+        { "term": "Forfeiture", "definition": "Cancellation of shares for non-payment of calls; the amount already received is transferred to a forfeited shares account." },
+        { "term": "Bonus issue", "definition": "Issue of free shares by capitalising reserves or securities premium; no cash inflow." },
+        { "term": "Buy-back [Sec 68]", "definition": "A company purchasing its own shares, subject to the statutory limits and funded from free reserves, securities premium or proceeds of a fresh issue." },
+        { "term": "Capital redemption reserve", "definition": "Created on redemption of preference shares out of profits, equal to the nominal value redeemed, to preserve capital." }
+      ],
+      "formulas": [
+        { "name": "Pro-rata allotment", "expression": "Shares allotted = Applications received × Allotment ratio; excess application money is adjusted against allotment or refunded", "meaning": "Compute per category of applicant before recording calls in arrears.", "example": "40,000 shares offered, 1,00,000 applied → ratio 2:5; an applicant for 5,000 gets 2,000." },
+        { "name": "Bonus issue limit", "expression": "Bonus shares ≤ accumulated free reserves + securities premium; cannot be issued from revaluation reserves", "meaning": "Must be fully paid-up shares and comply with the articles.", "example": "Free reserves ₹8,00,000 + premium ₹2,00,000 → bonus up to ₹10,00,000 of face value." },
+        { "name": "Buy-back limit [Sec 68]", "expression": "≤ 25% of aggregate paid-up capital and free reserves (or 10% of paid-up equity for board-approved buy-backs), with debt-equity ratio after buy-back ≤ 2:1", "meaning": "Verify current limits — they are amended by rules.", "example": "Paid-up ₹20 crore + free reserves ₹20 crore → maximum ₹10 crore." }
+      ],
+      "questions": [
+        { "id": "p10-c01-q1", "q": "A company issues 1,00,000 shares of ₹10 at ₹25. Applications for 2,50,000 shares are received, and allotment is made pro-rata. Pass the journal entries.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "On application: Bank A/c Dr. to Share Application A/c (2,50,000 × ₹10 if application money is ₹10). On allotment: Share Application A/c Dr. (₹10,00,000) and Share Allotment A/c Dr. to Share Capital and Securities Premium, adjusting the excess application money of ₹15,00,000 against allotment. Present the working note for the adjustment ratio first — that is where the examiner awards method marks.", "tags": ["company accounts", "shares"] },
+        { "id": "p10-c01-q2", "q": "Explain the conditions for a buy-back of shares under section 68.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "The buy-back must be authorised by the articles and by a board resolution (up to 10% of paid-up equity capital and free reserves) or a special resolution (up to 25% of paid-up capital and free reserves). The company must be able to meet its debts after buy-back, and must file the necessary returns. Sources: free reserves, securities premium, or proceeds of a fresh issue made specifically for the purpose. The debt-equity ratio after buy-back must not exceed 2:1 (except for certain cases), no further shares may be issued for six months (with exceptions), and buy-back must be completed within the prescribed period.", "tags": ["company accounts", "buy-back"] }
+      ],
+      "pitfalls": ["Crediting a forfeited amount to share capital instead of the forfeited shares account.", "Ignoring the use restrictions on the securities premium account."]
+    },
+    {
+      "id": "p10-c02",
+      "paperId": "p10",
+      "status": "complete",
+      "summary": "Schedule III prescribes the presentation of the statement of profit and loss and the balance sheet. Questions ask you to prepare or correct a statement, or to explain a specific disclosure.",
+      "keyTerms": [
+        { "term": "Current and non-current classification", "definition": "Assets and liabilities are split by operating cycle and 12-month tests; deferred tax is always non-current." },
+        { "term": "Exceptional items", "definition": "Material items of income or expense arising from ordinary activities that warrant separate disclosure." },
+        { "term": "Operating cycle", "definition": "The time between acquiring assets for processing and realising cash; used to classify current items when it exceeds 12 months." }
+      ],
+      "formulas": [
+        { "name": "Profit and loss presentation", "expression": "Revenue from operations ± Other income − Expenses (cost of materials, purchases, changes in inventory, employee benefits, finance costs, depreciation) = Profit before tax − Tax = Profit after tax", "meaning": "Follow the statutory order; do not merge lines that Schedule III separates.", "example": "Revenue ₹50 crore − expenses ₹44 crore = PBT ₹6 crore; tax ₹1.5 crore → PAT ₹4.5 crore." }
+      ],
+      "questions": [
+        { "id": "p10-c02-q1", "q": "Explain how a preference share redemption out of profits affects the balance sheet presentation.", "type": "theory", "marks": 4, "difficulty": "medium", "answer": "On redemption out of profits, the nominal value redeemed is transferred from retained earnings or the profit and loss account to the capital redemption reserve, while the preference share capital is reduced. The securities premium account, if it is a credit balance, is also credited to the capital redemption reserve. The balance sheet therefore shows lower preference share capital, a lower retained earnings balance and a new or higher capital redemption reserve, with total shareholders' funds unchanged except to the extent premium was paid on redemption.", "tags": ["company accounts", "schedule III"] }
+      ]
+    },
+    {
+      "id": "p10-c03",
+      "paperId": "p10",
+      "status": "complete",
+      "summary": "The cash flow statement is a near-certain question. The indirect method starts from profit before tax and adjusts for non-cash and working capital items.",
+      "keyTerms": [
+        { "term": "Operating activities", "definition": "Cash flows from principal revenue-producing activities, presented under the indirect method via adjustments to profit." },
+        { "term": "Investing activities", "definition": "Cash flows from acquisition and disposal of long-term assets and investments." },
+        { "term": "Financing activities", "definition": "Cash flows from equity, preference and borrowings, and dividends paid." },
+        { "term": "Non-cash transaction", "definition": "Investing or financing transactions not involving cash — these are excluded from the statement and disclosed separately." }
+      ],
+      "formulas": [
+        { "name": "Operating cash flow", "expression": "OCF = PBT + Depreciation + Non-cash charges − Finance cost (added back) ± Working capital changes − Income tax paid", "meaning": "Increase in current assets is a use; increase in current liabilities is a source.", "example": "PBT ₹10,00,000 + depreciation ₹2,00,000 − increase in debtors ₹1,00,000 + increase in creditors ₹50,000 = ₹11,50,000." },
+        { "name": "Cash flow reconciliation", "expression": "Net change in cash = Operating + Investing + Financing", "meaning": "Must equal the closing cash minus opening cash.", "example": "6,00,000 − 4,00,000 + 1,00,000 = ₹3,00,000 increase." }
+      ],
+      "questions": [
+        { "id": "p10-c03-q1", "q": "PBT ₹8,00,000; depreciation ₹1,50,000; interest paid ₹60,000; increase in trade receivables ₹90,000; decrease in inventories ₹40,000; increase in trade payables ₹70,000; tax paid ₹1,80,000. Compute cash flow from operations.", "type": "problem", "marks": 5, "difficulty": "medium", "answer": "Start with PBT 8,00,000; add depreciation 1,50,000 and interest 60,000 = 10,10,000; less increase in receivables 90,000; add decrease in inventories 40,000; add increase in payables 70,000 = 10,30,000; less tax paid 1,80,000 = ₹8,50,000. Note: interest paid is added back only to remove it to financing, so present it consistently.", "tags": ["cash flow"] }
+      ],
+      "pitfalls": ["Treating a share issue as an operating inflow.", "Forgetting to exclude cash and cash equivalents from the working capital changes."]
+    },
+    {
+      "id": "p10-c06",
+      "paperId": "p10",
+      "status": "complete",
+      "summary": "Auditing is 50% of Paper 10. The examination rewards precise definitions, standards (SA references), and a structured audit approach rather than long essays.",
+      "keyTerms": [
+        { "term": "Audit evidence", "definition": "Information used by the auditor in arriving at conclusions; must be sufficient and appropriate (relevant and reliable)." },
+        { "term": "Audit risk", "definition": "The risk of expressing an inappropriate opinion: inherent risk × control risk × detection risk." },
+        { "term": "Materiality", "definition": "Information whose omission or misstatement could influence economic decisions of users; determined at the financial statement and performance levels." },
+        { "term": "Professional scepticism", "definition": "An attitude of questioning and critical assessment of evidence, alert to possible misstatement due to fraud or error." },
+        { "term": "True and fair view", "definition": "The financial statements are prepared in accordance with the applicable framework and present fairly the financial position and results." }
+      ],
+      "formulas": [
+        { "name": "Audit risk model", "expression": "Audit risk = Inherent risk × Control risk × Detection risk", "meaning": "Higher inherent and control risk require lower detection risk, hence more substantive testing.", "example": "IR 70% × CR 50% × DR 10% = 3.5% overall audit risk." }
+      ],
+      "questions": [
+        { "id": "p10-c06-q1", "q": "Distinguish between audit risk and business risk.", "type": "theory", "marks": 5, "difficulty": "medium", "answer": "Audit risk is the risk that the auditor expresses an inappropriate opinion on materially misstated financial statements; it is a function of inherent, control and detection risk and is managed by the auditor through planning, evidence and documentation. Business risk is the risk that an entity's objectives are not achieved because of internal or external factors — market, operational, financial, compliance and reputational risk. Business risk is the entity's concern and is relevant to the auditor only because it may indicate a risk of material misstatement.", "tags": ["auditing", "risk"] },
+        { "id": "p10-c06-q2", "q": "Explain the types of audit opinion available to an auditor.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Modified or unmodified. Unmodified (clean): the financial statements give a true and fair view. Modified: qualified — matters are material but not pervasive; adverse — misstatements are both material and pervasive; disclaimer — the auditor is unable to obtain sufficient appropriate evidence and the possible effects are material and pervasive. An emphasis of matter paragraph does not modify the opinion but draws attention to a disclosed matter.", "tags": ["auditing", "audit report"] }
+      ],
+      "pitfalls": ["Confusing 'qualified' with 'adverse'.", "Quoting a standard (SA) number you are unsure of — describe the principle instead."]
+    },
+    {
+      "id": "p10-c07",
+      "paperId": "p10",
+      "status": "complete",
+      "summary": "The Companies Act, 2013 audit provisions cover appointment, rotation, eligibility, powers, duties and reporting. Section numbers must be precise.",
+      "keyTerms": [
+        { "term": "Sec 139 — appointment", "definition": "Auditor appointed at the AGM for 5 years; first auditor appointed by the Board within 30 days of registration; casual vacancy filled by the Board or members depending on the cause." },
+        { "term": "Sec 139(2) — rotation", "definition": "Mandatory rotation for listed companies and prescribed classes: individual 5 years, firm two terms of 5 years with a 5-year cooling-off." },
+        { "term": "Sec 141 — eligibility", "definition": "An auditor must be a chartered accountant holding a certificate of practice; disqualifications include indebtedness above the prescribed amount, business relationship, relative holding securities, and full-time employment elsewhere." },
+        { "term": "Sec 143 — powers and duties", "definition": "Right of access to books, right to require information, duty to report on specified matters, and duty to report fraud to the Central Government in prescribed cases." },
+        { "term": "Sec 148 — cost audit", "definition": "Cost audit for prescribed industries, conducted by a cost accountant, with the Audit Committee advising on appointment." }
+      ],
+      "questions": [
+        { "id": "p10-c07-q1", "q": "Explain the disqualifications of an auditor under section 141 of the Companies Act, 2013.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "A person is disqualified if: a body corporate other than an LLP; an officer or employee of the company; a partner or employee of an officer or employee of the company; indebted to the company, its subsidiary or holding company for more than the prescribed amount; has given a guarantee or security in connection with the indebtedness of a third person above the prescribed amount; has a business relationship with the company (with exceptions for commercial transactions in the ordinary course); a relative of such person holds securities of the company with a face value exceeding the prescribed amount; is in full-time employment elsewhere or holds more than the prescribed number of audits; or is convicted of fraud within the preceding 10 years.", "tags": ["auditing", "companies act"] }
+      ]
+    },
+    {
+      "id": "p11-c03",
+      "paperId": "p11",
+      "status": "complete",
+      "summary": "Ratio analysis converts statements into comparable diagnostics. Group ratios by liquidity, solvency, activity and profitability, and always finish with an interpretation and a DuPont decomposition.",
+      "keyTerms": [
+        { "term": "Liquidity ratios", "definition": "Current ratio (current assets/current liabilities) and quick ratio — ability to meet short-term obligations." },
+        { "term": "Solvency ratios", "definition": "Debt-equity, interest coverage and debt service coverage — long-term financial risk." },
+        { "term": "Activity ratios", "definition": "Inventory, receivable and payable turnover and the operating cycle — efficiency of working capital." },
+        { "term": "Profitability ratios", "definition": "Gross margin, operating margin, net margin, ROCE and ROE." },
+        { "term": "DuPont analysis", "definition": "ROE decomposed into net margin × asset turnover × equity multiplier to isolate the driver of returns." }
+      ],
+      "formulas": [
+        { "name": "Current ratio", "expression": "Current ratio = Current assets / Current liabilities", "meaning": "A broad liquidity indicator; 2:1 is a traditional benchmark, but the benchmark is industry-specific.", "example": "CA ₹12,00,000 / CL ₹7,50,000 = 1.6x." },
+        { "name": "Operating cycle", "expression": "Operating cycle = Inventory days + Receivable days − Payable days", "meaning": "Each component = (balance / relevant flow) × 365.", "example": "Inventory 90 + receivables 60 − payables 45 = 105 days." },
+        { "name": "ROCE", "expression": "ROCE = EBIT / (Total assets − Current liabilities) × 100", "meaning": "Measures return on capital employed before financing decisions.", "example": "EBIT ₹9,00,000; capital employed ₹60,00,000 → 15%." },
+        { "name": "DuPont", "expression": "ROE = Net profit margin × Asset turnover × Leverage = (PAT/Sales) × (Sales/Total assets) × (Total assets/Equity)", "meaning": "Identifies whether returns come from margin, efficiency or gearing.", "example": "6% × 1.5 × 2.0 = 18% ROE." }
+      ],
+      "questions": [
+        { "id": "p11-c03-q1", "q": "A company's ROE fell from 20% to 14% while its net margin rose from 5% to 6%. Analyse using DuPont.", "type": "case", "marks": 6, "difficulty": "hard", "answer": "Since margin improved, the decline must come from asset turnover or the equity multiplier. Compute both years: if leverage was reduced (equity multiplier down) the fall may be a deliberate deleveraging; if asset turnover fell, the company is generating less revenue per rupee of assets — a working capital or asset utilisation problem. Present the decomposition in a table, quantify each effect, and conclude with the dominant driver. Then recommend action based on which component moved.", "tags": ["ratio analysis", "dupont"] }
+      ],
+      "pitfalls": ["Averaging year-end balances when opening balances are available and material.", "Concluding on a single ratio without cross-checking against cash flow."]
+    },
+    {
+      "id": "p11-c04",
+      "paperId": "p11",
+      "status": "complete",
+      "summary": "Cost of capital and leverage determine the discount rate and the risk profile. WACC is the anchor, and leverage analysis explains the effect of fixed costs and fixed financing charges.",
+      "keyTerms": [
+        { "term": "Cost of debt", "definition": "Effective post-tax interest rate: Kd = Interest(1 − t) / Net proceeds." },
+        { "term": "Cost of equity — CAPM", "definition": "Ke = Rf + β(Rm − Rf)." },
+        { "term": "WACC", "definition": "Weighted average of the costs of each source using market-value or book-value weights." },
+        { "term": "Operating leverage", "definition": "Contribution / EBIT — sensitivity of EBIT to sales changes." },
+        { "term": "Financial leverage", "definition": "EBIT / (EBIT − interest) — sensitivity of EPS to EBIT changes." },
+        { "term": "Combined leverage", "definition": "Operating leverage × financial leverage." }
+      ],
+      "formulas": [
+        { "name": "WACC", "expression": "WACC = (E/V) × Ke + (D/V) × Kd × (1 − t)", "meaning": "Use market values where available; the tax shield applies to debt.", "example": "60% equity at 15% + 40% debt at 10% post-tax → 9% + 4% = 13%." },
+        { "name": "CAPM", "expression": "Ke = Rf + β × (Rm − Rf)", "meaning": "Beta measures systematic risk.", "example": "Rf 7%, β 1.2, market premium 8% → Ke = 16.6%." },
+        { "name": "Degree of operating leverage", "expression": "DOL = Contribution / EBIT", "meaning": "Higher fixed costs increase DOL and business risk.", "example": "Contribution ₹6,00,000; EBIT ₹2,00,000 → DOL 3, so a 10% sales rise raises EBIT 30%." },
+        { "name": "Degree of financial leverage", "expression": "DFL = EBIT / (EBIT − Interest)", "meaning": "Measures financial risk from fixed interest.", "example": "EBIT ₹2,00,000; interest ₹80,000 → DFL 1.67." }
+      ],
+      "questions": [
+        { "id": "p11-c04-q1", "q": "Equity ₹60,00,000 at 16%; debt ₹40,00,000 at 10%; tax rate 25%. Compute WACC.", "type": "problem", "marks": 4, "difficulty": "easy", "answer": "Weights: equity 60%, debt 40%. Post-tax cost of debt = 10% × (1 − 0.25) = 7.5%. WACC = 0.6 × 16% + 0.4 × 7.5% = 9.6% + 3% = 12.6%.", "tags": ["cost of capital", "wacc"] }
+      ]
+    },
+    {
+      "id": "p11-c05",
+      "paperId": "p11",
+      "status": "complete",
+      "summary": "Capital budgeting uses discounted and non-discounted techniques on incremental after-tax cash flows. NPV is the decision rule; IRR and payback are supporting measures.",
+      "keyTerms": [
+        { "term": "Incremental cash flow", "definition": "The change in the firm's total cash flows attributable to the project, including opportunity cost and working capital, excluding sunk costs and financing flows." },
+        { "term": "NPV", "definition": "Present value of cash inflows minus initial outlay, discounted at the WACC or project-specific rate." },
+        { "term": "IRR", "definition": "The discount rate at which NPV equals zero." },
+        { "term": "Profitability index", "definition": "PV of inflows / initial investment; used to rank projects under capital rationing." },
+        { "term": "Modified IRR", "definition": "IRR computed assuming reinvestment at the cost of capital, avoiding multiple-IRR problems." }
+      ],
+      "formulas": [
+        { "name": "Net present value", "expression": "NPV = Σ [CFt / (1 + k)^t] − Initial outlay", "meaning": "Accept if NPV > 0; choose the highest NPV among mutually exclusive projects.", "example": "Outlay ₹10,00,000; inflows ₹4,00,000 for 3 years at 10% (annuity 2.4869) → PV ₹9,94,760 → NPV −₹5,240, reject.", "step": "Show the discount factors used." },
+        { "name": "Profitability index", "expression": "PI = PV of inflows / Initial outlay", "meaning": "Accept if PI > 1; ideal for ranking under a capital constraint.", "example": "₹9,94,760/₹10,00,000 = 0.99." },
+        { "name": "Payback and discounted payback", "expression": "Payback = Years before full recovery + Unrecovered amount / Cash flow of the recovery year", "meaning": "A liquidity measure, not a value measure.", "example": "Outlay ₹10,00,000; inflows 3,00,000, 4,00,000, 5,00,000 → payback 2.6 years." },
+        { "name": "Tax on sale of asset", "expression": "Tax saving/cost = (W DV − Sale proceeds) × Tax rate", "meaning": "Include the tax effect of the terminal sale in the final year's cash flow.", "example": "WDV ₹2,00,000, sale ₹1,40,000, tax 25% → tax saving ₹15,000." }
+      ],
+      "questions": [
+        { "id": "p11-c05-q1", "q": "A machine costs ₹12,00,000, is depreciated on a straight-line basis over 5 years to nil, and generates annual cash savings of ₹4,00,000 before tax. Tax rate 30%, cost of capital 12%. Compute NPV.", "type": "problem", "marks": 8, "difficulty": "hard", "answer": "Depreciation = ₹2,40,000. Profit before tax = 4,00,000 − 2,40,000 = 1,60,000; tax ₹48,000; PAT ₹1,12,000; add back depreciation → cash flow ₹3,52,000 per year. PV annuity factor at 12% for 5 years = 3.6048 → ₹12,68,890. NPV = ₹68,890 before considering the terminal value. Accept the project. Show the working note for depreciation and the tax adjustment — they carry the marks.", "tags": ["capital budgeting", "npv"] }
+      ],
+      "pitfalls": ["Discounting accounting profit instead of cash flow.", "Including interest expense in project cash flows when the discount rate already reflects financing."]
+    },
+    {
+      "id": "p11-c06",
+      "paperId": "p11",
+      "status": "complete",
+      "summary": "Working capital management estimates the investment in current assets and finances it optimally. The operating cycle and the estimation format are the examined skills.",
+      "keyTerms": [
+        { "term": "Gross and net working capital", "definition": "Gross = total current assets; net = current assets − current liabilities." },
+        { "term": "Operating cycle", "definition": "The time from paying for raw materials to collecting cash from sales." },
+        { "term": "Cash conversion cycle", "definition": "Inventory days + receivable days − payable days." },
+        { "term": "Miller-Orr and Baumol models", "definition": "Cash balance models; Baumol applies a fixed-order quantity logic to cash, Miller-Orr allows stochastic flows and control limits." }
+      ],
+      "formulas": [
+        { "name": "Working capital estimation", "expression": "Current assets = Raw material + WIP + Finished goods + Debtors + Cash; less current liabilities = Creditors + Outstanding wages and expenses", "meaning": "Express each holding period in days or months of the relevant cost or sales figure.", "example": "RM 1 month of consumption ₹2,00,000; FG 1 month of cost ₹3,00,000; debtors 2 months of sales ₹10,00,000 → ₹20,00,000." },
+        { "name": "Baumol cash model", "expression": "Optimal cash balance = √(2 × Annual cash requirement × Transaction cost / Opportunity cost rate)", "meaning": "Assumes steady, predictable cash outflows.", "example": "₹60,00,000 requirement, ₹500 per transaction, 10% → √(2×60,00,000×500/0.10) = ₹77,460." },
+        { "name": "Cost of credit policy change", "expression": "Incremental profit = Incremental contribution − Incremental cost of investment in receivables − Bad debts", "meaning": "Compare the contribution from additional sales against the carrying cost.", "example": "Additional sales ₹10,00,000 × 30% contribution = ₹3,00,000; carrying cost ₹80,000; bad debts ₹40,000 → net benefit ₹1,80,000." }
+      ],
+      "questions": [
+        { "id": "p11-c06-q1", "q": "Inventory holding period 60 days, receivable period 45 days, payable period 30 days. Annual sales ₹36,50,000 (assume 365 days). Compute the operating cycle and the investment in working capital.", "type": "problem", "marks": 5, "difficulty": "medium", "answer": "Cash conversion cycle = 60 + 45 − 30 = 75 days. Daily sales = ₹10,000. Investment in debtors = 45 × 10,000 = ₹4,50,000; inventory at cost depends on the gross margin, which must be stated; payables = 30 days of purchases. Present the operating cycle first, then each component with its basis, and state the assumption about cost versus sales values.", "tags": ["working capital"] }
+      ]
+    },
+    {
+      "id": "p11-c08",
+      "paperId": "p11",
+      "status": "outline",
+      "summary": "Business data analytics (20%) introduces the data lifecycle, cleaning, visualisation and modelling. It is relatively quick to secure because it rewards clear explanation over derivation.",
+      "keyTerms": [
+        { "term": "Descriptive, predictive, prescriptive", "definition": "What happened, what will happen, and what should be done." },
+        { "term": "Data quality dimensions", "definition": "Accuracy, completeness, consistency, timeliness, validity and uniqueness." },
+        { "term": "Overfitting", "definition": "A model that fits training data noise and performs poorly on new data; controlled by validation and simplicity." },
+        { "term": "Correlation vs causation", "definition": "Correlation is association; causation requires a mechanism or a controlled design." }
+      ]
+    },
+    {
+      "id": "p12-c03",
+      "paperId": "p12",
+      "status": "complete",
+      "summary": "Management accounting's decision core begins with marginal costing and CVP. Paper 12 extends Paper 8's treatment into multi-product and profit-planning applications.",
+      "keyTerms": [
+        { "term": "CVP analysis", "definition": "Analysis of the interrelationship between cost, volume and profit within the relevant range." },
+        { "term": "Break-even chart", "definition": "A graphical representation of total cost, total revenue and the break-even point." },
+        { "term": "Angle of incidence", "definition": "The angle between the sales line and the total cost line at the break-even point; a wider angle indicates higher profitability." },
+        { "term": "Key factor", "definition": "The limiting resource that restricts output — material, labour, machine hours or demand." }
+      ],
+      "formulas": [
+        { "name": "Contribution per limiting factor", "expression": "Rank products by contribution per unit of the key factor, not by contribution per unit", "meaning": "This is the single most examined decision rule in the paper.", "example": "A: ₹30 contribution, 3 kg material → ₹10/kg. B: ₹24, 1.5 kg → ₹16/kg. Rank B first." },
+        { "name": "Break-even with a target profit", "expression": "Required units = (Fixed cost + Target profit) / Contribution per unit", "meaning": "Extend to a target return on capital employed by treating the required return as the target profit.", "example": "(₹6,00,000 + ₹2,00,000)/₹40 = 20,000 units." }
+      ],
+      "questions": [
+        { "id": "p12-c03-q1", "q": "A company sells two products: A at ₹100 with variable cost ₹60, B at ₹150 with variable cost ₹90. Fixed costs are ₹9,00,000 and the sales mix is 2:1 by units. Compute the break-even point.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Contribution A ₹40, B ₹60. For every 3 units, contribution = 2 × 40 + 1 × 60 = ₹140, so ₹46.67 per unit. BEP in units = 9,00,000/46.67 = 19,286 units, split A 12,857 and B 6,429. BEP in value = 12,857 × 100 + 6,429 × 150 = ₹12,85,700 + ₹9,64,350 = ₹22,50,050. State that the BEP is valid only for the assumed mix.", "tags": ["marginal costing", "multi-product"] }
+      ]
+    },
+    {
+      "id": "p12-c04",
+      "paperId": "p12",
+      "status": "complete",
+      "summary": "Short-term decisions use relevant costing: exclude sunk costs and allocated fixed costs, include opportunity costs and incremental costs. Each decision type has a standard analytical template.",
+      "keyTerms": [
+        { "term": "Relevant cost", "definition": "A future, incremental cash flow that differs between alternatives." },
+        { "term": "Sunk cost", "definition": "A cost already incurred and unaffected by the decision; always excluded." },
+        { "term": "Opportunity cost", "definition": "The contribution forgone by using a scarce resource in one way rather than its best alternative." },
+        { "term": "Shutdown point", "definition": "The level at which contribution fails to cover avoidable fixed costs; a segment should be discontinued only if its avoidable costs exceed its contribution." },
+        { "term": "Sell or process further", "definition": "Process further if incremental revenue exceeds incremental processing cost." }
+      ],
+      "formulas": [
+        { "name": "Make or buy", "expression": "Buy if purchase price < relevant variable cost of making + opportunity cost of freed capacity", "meaning": "Fixed costs are relevant only if they are avoidable.", "example": "Make variable ₹80, buy ₹95, freed capacity earns ₹10 contribution → make cost ₹90 → buy." },
+        { "name": "Special order", "expression": "Accept if incremental revenue > incremental cost, and spare capacity exists", "meaning": "Beware of effects on existing customers and long-run price expectations.", "example": "Order 5,000 units at ₹70 with variable cost ₹55 → contribution ₹75,000, accept." },
+        { "name": "Discontinue a product", "expression": "Loss avoided = Avoidable fixed costs; continue if contribution > avoidable fixed costs", "meaning": "Allocated common costs are not avoided and must be excluded.", "example": "Contribution ₹2,00,000; avoidable fixed ₹1,50,000 → continue." }
+      ],
+      "questions": [
+        { "id": "p12-c04-q1", "q": "A component costs ₹120 to make (variable ₹85, allocated fixed ₹35) and can be bought for ₹100. If the released capacity can earn ₹25,000 of contribution, advise on 1,000 units.", "type": "problem", "marks": 5, "difficulty": "medium", "answer": "Relevant cost of making = variable 85 × 1,000 = ₹85,000 + opportunity cost ₹25,000 = ₹1,10,000. Cost of buying = ₹1,00,000. Buying saves ₹10,000, so buy. The allocated fixed cost of ₹35,000 is irrelevant unless it is avoidable. State this explicitly — it is the most common examiner trap in make-or-buy questions.", "tags": ["decision making", "make or buy"] },
+        { "id": "p12-c04-q2", "q": "Explain why allocated fixed overheads should be excluded from a product discontinuation decision.", "type": "theory", "marks": 4, "difficulty": "easy", "answer": "Allocated fixed overheads are apportioned for product costing but are not caused by the individual product and usually continue regardless of the decision. They are therefore not avoidable and do not differ between alternatives. Discontinuation should be assessed on contribution less avoidable fixed costs, and on the opportunity cost of the capacity released.", "tags": ["decision making", "discontinuation"] }
+      ],
+      "pitfalls": ["Ranking products by contribution per unit instead of per key factor.", "Including allocated fixed costs in a make-or-buy comparison."]
+    },
+    {
+      "id": "p12-c05",
+      "paperId": "p12",
+      "status": "complete",
+      "summary": "Transfer pricing sets the internal price between divisions. The objective is goal congruence and divisional autonomy, and the correct method depends on whether a competitive external market exists and whether capacity is spare.",
+      "keyTerms": [
+        { "term": "Transfer price", "definition": "The price at which one division supplies goods or services to another division of the same organisation." },
+        { "term": "Goal congruence", "definition": "Alignment of divisional decisions with overall organisational objectives." },
+        { "term": "General transfer pricing rule", "definition": "Minimum transfer price = Incremental cost to the supplying division + opportunity cost of the transfer." },
+        { "term": "Dual pricing", "definition": "The supplying division is credited at one price while the buying division is charged at another, with the difference absorbed centrally." },
+        { "term": "Negotiated price", "definition": "A price agreed between divisions, preserving autonomy but potentially inefficient." }
+      ],
+      "formulas": [
+        { "name": "General transfer pricing rule", "expression": "Minimum TP = Incremental (variable) cost + Opportunity cost per unit", "meaning": "With spare capacity the opportunity cost is nil, so the floor is variable cost.", "example": "Variable cost ₹60; external contribution forgone ₹25 → minimum TP ₹85." },
+        { "name": "Maximum transfer price", "expression": "Maximum TP = Lower of the external purchase price and the contribution the buying division can earn", "meaning": "The buying division will not pay more than the market price.", "example": "External price ₹95 → ceiling ₹95; feasible range ₹85–₹95." }
+      ],
+      "questions": [
+        { "id": "p12-c05-q1", "q": "Division A has variable cost ₹50 per unit and sells externally at ₹90 with full capacity. Division B can buy the same component externally for ₹85. Advise on the transfer price.", "type": "problem", "marks": 6, "difficulty": "hard", "answer": "Because A is at full capacity, transferring internally forgoes ₹40 contribution per unit, so the minimum transfer price is 50 + 40 = ₹90. B's maximum is ₹85. Since the minimum exceeds the maximum, no internal transfer is economically viable — B should buy externally and A should continue selling outside. The answer must state that internal transfer would reduce total company profit by ₹5 per unit.", "tags": ["transfer pricing", "opportunity cost"] }
+      ],
+      "pitfalls": ["Using full cost as the minimum transfer price when capacity is spare.", "Ignoring the opportunity cost of lost external sales at full capacity."]
+    },
+    {
+      "id": "p12-c08",
+      "paperId": "p12",
+      "status": "complete",
+      "summary": "Divisional performance measurement uses ROI, residual income and EVA, and must consider controllability. ROI can cause dysfunctional behaviour; RI mitigates it but is not scale-free.",
+      "keyTerms": [
+        { "term": "ROI", "definition": "Divisional profit / Divisional investment; comparable across divisions but encourages rejection of projects below the current average." },
+        { "term": "Residual income", "definition": "Divisional profit − (Imputed interest × Investment); aligns decisions with the cost of capital but is an absolute measure." },
+        { "term": "EVA", "definition": "NOPAT − (WACC × Capital employed), with accounting adjustments to approximate economic profit." },
+        { "term": "Controllability principle", "definition": "Managers should be evaluated only on items they can influence." }
+      ],
+      "formulas": [
+        { "name": "ROI", "expression": "ROI = Divisional profit / Divisional investment × 100", "meaning": "Can be decomposed into margin and turnover.", "example": "Profit ₹18,00,000 on investment ₹1,20,00,000 = 15%." },
+        { "name": "Residual income", "expression": "RI = Divisional profit − (Required rate × Investment)", "meaning": "Accept projects whose return exceeds the required rate.", "example": "18,00,000 − (12% × 1,20,00,000) = ₹3,60,000." }
+      ],
+      "questions": [
+        { "id": "p12-c08-q1", "q": "A division has investment ₹50,00,000 and profit ₹7,50,000 (15% ROI). A new project requires ₹10,00,000 and earns ₹1,40,000 (14%). The company's cost of capital is 12%. Should the manager accept it under ROI and under RI?", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Under ROI: new ROI = 8,90,000/60,00,000 = 14.83%, below the current 15%, so a manager judged on ROI rejects it — although 14% exceeds the 12% cost of capital, which destroys value. Under RI: current RI = 7,50,000 − 6,00,000 = ₹1,50,000; new RI = 8,90,000 − 7,20,000 = ₹1,70,000, so the project is accepted and adds ₹20,000. This demonstrates the dysfunctional behaviour ROI can create and why RI or EVA is preferred where investment decisions are delegated.", "tags": ["divisional performance", "residual income"] }
+      ]
+    }
+  ]
+}

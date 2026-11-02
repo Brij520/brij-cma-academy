@@ -1,0 +1,1288 @@
+{
+  "scope": [
+    "p01",
+    "p02",
+    "p03",
+    "p04"
+  ],
+  "syllabus": "ICMAI Syllabus 2022",
+  "lastReviewed": "2026-11-02",
+  "note": "Foundation is treated as the revision layer. It is already passed or assumed knowledge for a student targeting Intermediate, but the formulas here are the ones that recur inside the Intermediate and Final papers.",
+  "chapters": [
+    {
+      "id": "p02-c01",
+      "paperId": "p02",
+      "status": "complete",
+      "summary": "Accounting rests on the dual aspect convention. Every transaction affects two accounts, and the accounting equation always holds. Concepts and conventions resolve the practical judgement calls.",
+      "keyTerms": [
+        {
+          "term": "Accounting equation",
+          "definition": "Assets = Liabilities + Capital; extended as Assets = Liabilities + Capital + Revenue − Expenses − Drawings."
+        },
+        {
+          "term": "Dual aspect",
+          "definition": "Every debit has an equal and corresponding credit."
+        },
+        {
+          "term": "Substance over form",
+          "definition": "Transactions are recorded according to their economic substance, not merely their legal form."
+        },
+        {
+          "term": "Consistency",
+          "definition": "The same accounting policies are applied from period to period unless a change is justified and disclosed."
+        }
+      ],
+      "formulas": [
+        {
+          "name": "Accounting equation",
+          "expression": "Assets = Liabilities + Capital",
+          "meaning": "Any transaction preserves the balance.",
+          "example": "Assets ₹8,00,000 = Liabilities ₹3,00,000 + Capital ₹5,00,000."
+        },
+        {
+          "name": "Profit from capital movement",
+          "expression": "Profit = Closing capital + Drawings − Additional capital − Opening capital",
+          "meaning": "The basis of single-entry profit computation.",
+          "example": "6,00,000 + 90,000 − 40,000 − 4,50,000 = ₹2,00,000."
+        }
+      ],
+      "questions": [
+        {
+          "id": "p02-c01-q1",
+          "q": "State the accounting equation and illustrate the effect of purchasing machinery for ₹2,00,000 on credit.",
+          "type": "theory",
+          "marks": 3,
+          "difficulty": "easy",
+          "answer": "Assets = Liabilities + Capital. The purchase increases machinery (asset) by ₹2,00,000 and increases creditors (liability) by the same amount, so the equation remains in balance.",
+          "tags": [
+            "foundation",
+            "accounting equation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p03-c05",
+      "paperId": "p03",
+      "status": "complete",
+      "summary": "Measures of central tendency and dispersion summarise a dataset. Dispersion measures are the bridge to risk, quality control and variance analysis.",
+      "keyTerms": [
+        {
+          "term": "Mean, median, mode",
+          "definition": "Arithmetic average; middle value; most frequent value. The median is resistant to outliers."
+        },
+        {
+          "term": "Standard deviation",
+          "definition": "The square root of the average squared deviation from the mean."
+        },
+        {
+          "term": "Coefficient of variation",
+          "definition": "Standard deviation divided by the mean, expressing relative risk."
+        },
+        {
+          "term": "Quartile deviation",
+          "definition": "(Q3 − Q1)/2 — a robust measure of spread."
+        }
+      ],
+      "formulas": [
+        {
+          "name": "Mean",
+          "expression": "x̄ = Σx / n (ungrouped); x̄ = Σfx / Σf (grouped)",
+          "meaning": "The arithmetic average.",
+          "example": "Values 10, 20, 30, 40 → mean 25."
+        },
+        {
+          "name": "Standard deviation",
+          "expression": "σ = √(Σ(x − x̄)² / n) for a population; √(Σf(x − x̄)²/Σf) for grouped data",
+          "meaning": "Uses all observations and is expressed in the same units as the data.",
+          "example": "Values 10, 20, 30, 40 → σ = 11.18."
+        },
+        {
+          "name": "Coefficient of variation",
+          "expression": "CV = (σ / x̄) × 100",
+          "meaning": "Compare variability across datasets with different units or means.",
+          "example": "σ 12 on mean 80 → CV 15%."
+        },
+        {
+          "name": "Combined mean",
+          "expression": "x̄c = (n1x̄1 + n2x̄2) / (n1 + n2)",
+          "meaning": "Used where two groups are merged.",
+          "example": "40 students averaging 60 and 60 averaging 70 → combined 66."
+        }
+      ],
+      "questions": [
+        {
+          "id": "p03-c05-q1",
+          "q": "Two machines have mean output 100 and 120 units with standard deviations 12 and 18. Which is more consistent?",
+          "type": "problem",
+          "marks": 4,
+          "difficulty": "easy",
+          "answer": "CV1 = 12/100 = 12%; CV2 = 18/120 = 15%. Machine 1 is more consistent because it has the lower coefficient of variation, even though its absolute standard deviation is smaller too — the CV is the correct comparison when means differ.",
+          "tags": [
+            "statistics",
+            "dispersion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p03-c06",
+      "paperId": "p03",
+      "status": "complete",
+      "summary": "Correlation measures the strength of association; regression estimates one variable from another. The coefficient of determination explains how much variation is captured.",
+      "keyTerms": [
+        {
+          "term": "Karl Pearson correlation coefficient",
+          "definition": "A measure between −1 and +1 of the linear relationship between two variables."
+        },
+        {
+          "term": "Regression equation",
+          "definition": "Y = a + bX, where b is the slope and a the intercept."
+        },
+        {
+          "term": "Coefficient of determination",
+          "definition": "r², the proportion of variation in Y explained by X."
+        }
+      ],
+      "formulas": [
+        {
+          "name": "Correlation coefficient",
+          "expression": "r = Σ(x − x̄)(y − ȳ) / √(Σ(x − x̄)² × Σ(y − ȳ)²)",
+          "meaning": "Sign indicates direction, magnitude indicates strength.",
+          "example": "r = 0.85 indicates a strong positive linear relationship."
+        },
+        {
+          "name": "Regression slope",
+          "expression": "b = Σ(x − x̄)(y − ȳ) / Σ(x − x̄)²",
+          "meaning": "Expected change in Y per unit change in X.",
+          "example": "b = 2.5 means each extra hour of machine time adds 2.5 units of output."
+        }
+      ]
+    },
+    {
+      "id": "p03-c07",
+      "paperId": "p03",
+      "status": "outline",
+      "summary": "Probability quantifies uncertainty; distributions model it. The binomial, Poisson and normal distributions are the ones that recur in cost and quality problems.",
+      "keyTerms": [
+        {
+          "term": "Mutually exclusive and independent events",
+          "definition": "Mutually exclusive events cannot occur together; independent events do not affect each other's probability."
+        },
+        {
+          "term": "Binomial distribution",
+          "definition": "Number of successes in n independent trials with constant probability p; mean np, variance np(1−p)."
+        },
+        {
+          "term": "Poisson distribution",
+          "definition": "Counts of rare events in a fixed interval; mean = variance = λ."
+        },
+        {
+          "term": "Normal distribution",
+          "definition": "Symmetric bell curve defined by mean and standard deviation; approximately 68% within 1σ and 95% within 2σ."
+        }
+      ]
+    },
+    {
+      "id": "p04-c01",
+      "paperId": "p04",
+      "status": "complete",
+      "summary": "Demand and supply determine price. Elasticity determines pricing power and therefore the revenue impact of a price change — the direct link to marginal costing.",
+      "keyTerms": [
+        {
+          "term": "Law of demand",
+          "definition": "Other things equal, quantity demanded falls as price rises."
+        },
+        {
+          "term": "Price elasticity of demand",
+          "definition": "Percentage change in quantity demanded divided by percentage change in price."
+        },
+        {
+          "term": "Elastic vs inelastic",
+          "definition": "Elastic demand (|e| > 1) means revenue falls when price rises; inelastic demand (|e| < 1) means revenue rises."
+        }
+      ],
+      "formulas": [
+        {
+          "name": "Price elasticity",
+          "expression": "Ed = (% change in quantity) / (% change in price)",
+          "meaning": "Use the midpoint formula for arc elasticity.",
+          "example": "Price up 10%, quantity down 25% → Ed = 2.5 (elastic)."
+        },
+        {
+          "name": "Total revenue test",
+          "expression": "MR = P(1 − 1/|Ed|)",
+          "meaning": "Marginal revenue is zero at unit elasticity, where total revenue is maximised.",
+          "example": "At P = ₹100 and Ed = 2, MR = ₹50."
+        }
+      ],
+      "questions": [
+        {
+          "id": "p04-c01-q1",
+          "q": "A firm raises price by 8% and demand falls by 12%. What happens to revenue and what does it imply for pricing?",
+          "type": "problem",
+          "marks": 4,
+          "difficulty": "medium",
+          "answer": "Ed = 12/8 = 1.5, so demand is elastic. Revenue falls because the proportionate fall in quantity exceeds the proportionate rise in price. The firm should consider a price reduction to grow revenue, provided contribution per unit remains positive. This connects directly to the P/V ratio and break-even analysis in cost accounting.",
+          "tags": [
+            "economics",
+            "elasticity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p04-c02",
+      "paperId": "p04",
+      "status": "outline",
+      "summary": "Production and cost theory explains the shape of cost curves that underlie marginal and absorption costing: fixed costs, variable costs, and the law of variable proportions.",
+      "keyTerms": [
+        {
+          "term": "Law of variable proportions",
+          "definition": "As more of a variable input is added to fixed inputs, marginal product first rises, then falls, and may become negative."
+        },
+        {
+          "term": "Economies of scale",
+          "definition": "Reduction in average cost as output rises, from specialisation, bulk buying and technical efficiency."
+        },
+        {
+          "term": "Relevant range",
+          "definition": "The activity band within which cost behaviour assumptions (fixed and variable) hold."
+        }
+      ]
+    },
+    {
+      "id": "p01-c01",
+      "status": "outline",
+      "summary": "Foundation-level introduction to how law is made and applied in India: sources, court hierarchy and the doctrine of precedent. It sets the vocabulary that every later law chapter assumes — statute, precedent, jurisdiction.",
+      "keyTerms": [
+        {
+          "term": "Doctrine of precedent",
+          "definition": "A decision of a higher court binds lower courts in the same hierarchy on the same question of law, subject to the facts being comparable."
+        },
+        {
+          "term": "Ratio decidendi",
+          "definition": "The legal principle on which a decision rests; it is the binding part of a judgment, as opposed to obiter dicta."
+        },
+        {
+          "term": "Substantive vs procedural law",
+          "definition": "Substantive law defines rights and duties; procedural law prescribes how those rights are enforced."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Learn the court hierarchy before any chapter on contracts or companies: jurisdiction shapes which forum decides a dispute.",
+        "For every legal rule, be able to name the source — statute, precedent, custom or subordinate legislation."
+      ],
+      "pitfalls": [
+        "Confusing a statute with a regulation: regulations are subordinate legislation and must be within the parent Act."
+      ],
+      "linkedConcepts": [
+        "c-tax-residential"
+      ]
+    },
+    {
+      "id": "p01-c02",
+      "status": "outline",
+      "summary": "The general law of contract: how an enforceable agreement is formed, what makes consent free, when a contract is void or voidable, and what remedies follow breach. This is the base for sale of goods, partnership and company law.",
+      "keyTerms": [
+        {
+          "term": "Offer and acceptance",
+          "definition": "A proposal becomes a promise when it is accepted unconditionally; acceptance must be communicated to the offeror."
+        },
+        {
+          "term": "Consideration",
+          "definition": "Something of value given in return for the promise; it must be real, lawful and not past consideration."
+        },
+        {
+          "term": "Free consent",
+          "definition": "Consent is free when not caused by coercion, undue influence, fraud, misrepresentation or mistake."
+        },
+        {
+          "term": "Void vs voidable",
+          "definition": "A void agreement has no legal effect from the start; a voidable contract remains valid until the aggrieved party rescinds it."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Practise the offer/acceptance sequence on facts: invitation to treat, counter-offer, communication and revocation.",
+        "Map each defect in consent to its remedy — rescission, damages, or no remedy at all."
+      ],
+      "pitfalls": [
+        "Treating an invitation to treat as an offer; the classic case is goods displayed with a price tag.",
+        "Assuming every breach allows termination; only a breach of condition or a repudiatory breach does."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p01-c03",
+      "status": "outline",
+      "summary": "The sale of goods framework: the difference between a sale and an agreement to sell, implied conditions and warranties, transfer of ownership and the unpaid seller's rights.",
+      "keyTerms": [
+        {
+          "term": "Sale vs agreement to sell",
+          "definition": "A sale transfers property in goods immediately; an agreement to sell transfers it in future or subject to a condition."
+        },
+        {
+          "term": "Condition vs warranty",
+          "definition": "A condition is essential to the main purpose of the contract; a warranty is collateral, and breach gives damages only."
+        },
+        {
+          "term": "Caveat emptor",
+          "definition": "Let the buyer beware — subject to exceptions such as implied conditions, misrepresentation and known defects disclosed on demand."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Link each implied condition to the remedy it gives: rejection of goods, damages or both.",
+        "Ownership matters for risk, insolvency and the unpaid seller's lien — separate it from delivery."
+      ],
+      "pitfalls": [
+        "Assuming risk always follows ownership without checking the express terms of the contract."
+      ],
+      "linkedConcepts": [
+        "c-inventory-valuation"
+      ]
+    },
+    {
+      "id": "p01-c04",
+      "status": "outline",
+      "summary": "Negotiable instruments — promissory notes, bills of exchange and cheques — and the rules on negotiation, holders, crossing, dishonour and noting. Highly definitional and therefore a reliable scoring chapter.",
+      "keyTerms": [
+        {
+          "term": "Holder in due course",
+          "definition": "A holder who took the instrument for value, in good faith, before maturity and without notice of a defect in title."
+        },
+        {
+          "term": "Crossing",
+          "definition": "A cheque crossed generally must be paid into a bank account; crossing is a direction to the paying banker, not a negotiation."
+        },
+        {
+          "term": "Noting and protest",
+          "definition": "The formal record of dishonour by a notary, which preserves the holder's rights against prior parties."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Draw the three instruments side by side: parties, certainty of sum, payment on demand vs at maturity.",
+        "Memorise the privileges of a holder in due course — they defeat several defences available against an ordinary holder."
+      ],
+      "pitfalls": [
+        "Confusing a cheque with a bill of exchange: a cheque is always drawn on a banker and payable on demand."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p01-c05",
+      "status": "outline",
+      "summary": "Partnership under the Indian Partnership Act, 1932: definition, types of partners, registration effects, mutual rights and duties, and dissolution.",
+      "keyTerms": [
+        {
+          "term": "Partnership",
+          "definition": "The relation between persons who have agreed to share the profits of a business carried on by all or any of them acting for all."
+        },
+        {
+          "term": "Implied authority",
+          "definition": "A partner's authority to bind the firm in the ordinary course of business, unless the act is outside the usual way of carrying on business."
+        },
+        {
+          "term": "Dissolution",
+          "definition": "The end of the partnership relation, distinct from retirement of a partner or dissolution of the firm's business."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Registration is optional but its consequences are examinable: an unregistered firm cannot enforce certain rights in court.",
+        "Separate dissolution of the firm, retirement, expulsion and insolvency — each triggers different accounts."
+      ],
+      "pitfalls": [
+        "Treating a partner's liability as limited; under the 1932 Act it is unlimited unless the entity is an LLP."
+      ],
+      "linkedConcepts": [
+        "c-partnership"
+      ]
+    },
+    {
+      "id": "p01-c06",
+      "status": "outline",
+      "summary": "Limited liability partnership: a body corporate with perpetual succession, limited liability for partners and the flexibility of a partnership agreement. Compare it directly with a general partnership and a company.",
+      "keyTerms": [
+        {
+          "term": "Designated partner",
+          "definition": "At least two partners are designated as responsible for statutory filings and compliance."
+        },
+        {
+          "term": "LLP agreement",
+          "definition": "The mutual rights and duties of partners and the LLP are governed by the agreement; the Act applies only where the agreement is silent."
+        },
+        {
+          "term": "Body corporate",
+          "definition": "An LLP is a legal person separate from its partners, with perpetual succession."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Keep a three-column comparison: general partnership, LLP, company — liability, separate personality, compliance load.",
+        "Conversion from a firm or company into an LLP does not by itself discharge existing liabilities."
+      ],
+      "pitfalls": [
+        "Assuming an LLP is taxed like a company; its partners are taxed on profit shares under the LLP provisions."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p01-c07",
+      "status": "outline",
+      "summary": "Company law fundamentals: what a company is, the types recognised by the Companies Act 2013, incorporation, constitutional documents, share capital, directors, meetings and winding up. The foundation for the much heavier corporate-law sections of Paper 5.",
+      "keyTerms": [
+        {
+          "term": "Separate legal entity",
+          "definition": "A company is a legal person distinct from its members, with perpetual succession and a common seal no longer mandatory."
+        },
+        {
+          "term": "Memorandum of association",
+          "definition": "The charter of the company that defines its name, objects, liability and capital; acts beyond it are ultra vires."
+        },
+        {
+          "term": "Articles of association",
+          "definition": "The internal regulations governing management and meetings, subordinate to the memorandum and the Act."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Learn the incorporation sequence and the documents filed; questions often ask what happens if a step is missed.",
+        "Distinguish private and public companies on member limits, minimum directors, and compliance obligations."
+      ],
+      "pitfalls": [
+        "Using 'company' and 'body corporate' as synonyms; every company is a body corporate but not the reverse."
+      ],
+      "linkedConcepts": [
+        "c-company-law"
+      ]
+    },
+    {
+      "id": "p01-c08",
+      "status": "outline",
+      "summary": "The Code on Wages, 2019 and the surrounding industrial-law framework: minimum wages, timely payment, bonus, equal remuneration for equal work, and the social-security and gratuity regime in outline.",
+      "keyTerms": [
+        {
+          "term": "Minimum wages",
+          "definition": "A statutory floor fixed by the appropriate government, below which wages cannot be paid."
+        },
+        {
+          "term": "Equal remuneration",
+          "definition": "Equal pay for equal work irrespective of gender, with limited permissible grounds for difference."
+        },
+        {
+          "term": "Wage period",
+          "definition": "The Code fixes maximum wage periods and payment timelines; delay is a statutory default, not an administrative choice."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Track which obligation sits with the employer and which with the appropriate government — examiners test roles.",
+        "Note the Code's consolidation of four earlier Acts; questions frequently ask what replaced what."
+      ],
+      "pitfalls": [
+        "Quoting pre-Code Act names as current law without noting the transition."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p01-c09",
+      "status": "outline",
+      "summary": "Business communication as a process: sender, message, channel, receiver, feedback and noise. Covers types of communication, the 7 Cs, barriers and the discipline of active listening.",
+      "keyTerms": [
+        {
+          "term": "Communication process",
+          "definition": "The transfer of meaning from sender to receiver through a chosen channel, confirmed by feedback."
+        },
+        {
+          "term": "The 7 Cs",
+          "definition": "Clear, concise, concrete, correct, coherent, complete and courteous — a checklist for professional writing."
+        },
+        {
+          "term": "Noise",
+          "definition": "Any factor that distorts the message: semantic, physical, psychological or organisational."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Answer communication questions with a situation, not a definition: name the barrier and the corrective action.",
+        "Use the 7 Cs as a marking checklist in every writing task in this system."
+      ],
+      "pitfalls": [
+        "Listing barriers without saying how each would be removed in the specific case."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p01-c10",
+      "status": "outline",
+      "summary": "Business correspondence: enquiries and replies, orders, complaints and adjustments, collection letters and email etiquette. The examinable skill is tone control under commercial pressure.",
+      "keyTerms": [
+        {
+          "term": "Adjustment letter",
+          "definition": "A reply to a complaint that concedes, explains and restores goodwill without admitting unnecessary liability."
+        },
+        {
+          "term": "Collection letter",
+          "definition": "A graded reminder that preserves the customer relationship while escalating the demand for payment."
+        },
+        {
+          "term": "You-attitude",
+          "definition": "Writing from the reader's perspective rather than the writer's — the core of courteous business writing."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Learn the four-part structure: reference, facts, action, courtesy close.",
+        "For complaint letters, separate the facts from the emotion; for adjustment letters, separate goodwill from liability."
+      ],
+      "pitfalls": [
+        "Writing an aggressive collection letter; it usually costs more in lost custom than it recovers."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p01-c11",
+      "status": "outline",
+      "summary": "Reports, presentations and interviews: structure, executive summaries, slide discipline, interview preparation and group discussion behaviour. This chapter connects directly to the communication academy's finance-specific drills.",
+      "keyTerms": [
+        {
+          "term": "Executive summary",
+          "definition": "A standalone condensation of purpose, findings and recommendation, written last and read first."
+        },
+        {
+          "term": "Group discussion",
+          "definition": "A assessed discussion where contribution quality, listening and structure matter more than airtime."
+        },
+        {
+          "term": "Report structure",
+          "definition": "Title, terms of reference, procedure, findings, conclusions and recommendations — each with a purpose."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Write the conclusion first, then build the evidence backwards; it prevents an unstructured report.",
+        "For presentations, one message per slide and a number to support it."
+      ],
+      "pitfalls": [
+        "Producing a report that describes activity without answering the question that was asked."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p01-c12",
+      "status": "outline",
+      "summary": "Communication in the digital workplace: memos and notices, collaboration tools, minutes and professional tone across channels. The examinable core is fitness for purpose and audience.",
+      "keyTerms": [
+        {
+          "term": "Minutes",
+          "definition": "The formal record of decisions and actions, not a transcript of the discussion."
+        },
+        {
+          "term": "Memorandum",
+          "definition": "An internal communication that records a decision, instruction or policy position."
+        },
+        {
+          "term": "Professional tone",
+          "definition": "Register, brevity and clarity appropriate to the channel and the reader's seniority."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Distinguish a notice (information), a memo (instruction or record) and minutes (decisions and owners).",
+        "Every set of minutes needs an action, an owner and a date."
+      ],
+      "pitfalls": [
+        "Recording opinions in minutes as if they were decisions."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p02-c02",
+      "status": "outline",
+      "summary": "The accounting process from source documents to trial balance: journal, ledger, subsidiary books and the role of the suspense account. Accuracy here determines whether every later chapter is computable.",
+      "keyTerms": [
+        {
+          "term": "Journal",
+          "definition": "The book of original entry recording transactions in debit and credit with a narration."
+        },
+        {
+          "term": "Ledger",
+          "definition": "The collection of accounts to which journal entries are posted; the source for the trial balance."
+        },
+        {
+          "term": "Suspense account",
+          "definition": "A temporary account used to balance a trial balance while an error is located; it must be cleared before final accounts."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Practise the full cycle on one month of transactions rather than reading about each stage separately.",
+        "Keep a control total: total debits must equal total credits at every stage."
+      ],
+      "pitfalls": [
+        "Posting to the wrong side and then 'balancing' with a suspense entry instead of finding the error."
+      ],
+      "linkedConcepts": [
+        "c-double-entry"
+      ]
+    },
+    {
+      "id": "p02-c03",
+      "status": "outline",
+      "summary": "Capital versus revenue expenditure and receipts, and the mechanics of depreciation under the straight-line and written-down-value methods, including the effect of a change in method.",
+      "keyTerms": [
+        {
+          "term": "Capital expenditure",
+          "definition": "Spend that creates or enhances a long-term asset or its earning capacity; it is capitalised, not expensed."
+        },
+        {
+          "term": "Straight-line method",
+          "definition": "Annual depreciation = (Cost − Residual value) ÷ Useful life; the charge is constant."
+        },
+        {
+          "term": "Written-down-value method",
+          "definition": "Depreciation = Opening book value × fixed rate; the charge falls over the asset's life."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Classify ten transactions by substance, not by the name of the account used.",
+        "State the method and the residual value explicitly in every depreciation answer; both change the numbers."
+      ],
+      "pitfalls": [
+        "Charging improvements to repairs, or repairs to the asset account, to manage profit."
+      ],
+      "linkedConcepts": [
+        "c-depreciation"
+      ]
+    },
+    {
+      "id": "p02-c04",
+      "status": "outline",
+      "summary": "Bank reconciliation: why the cash book and the bank statement differ, how to prepare a reconciliation, and how to adjust the cash book for items the firm has not yet recorded.",
+      "keyTerms": [
+        {
+          "term": "Bank reconciliation statement",
+          "definition": "A statement explaining the difference between the bank balance per the cash book and per the bank statement at a date."
+        },
+        {
+          "term": "Cheque deposited but not cleared",
+          "definition": "An item recorded in the cash book but not yet credited by the bank — a timing difference."
+        },
+        {
+          "term": "Adjusted cash book",
+          "definition": "The cash book updated for bank charges, interest and direct debits before reconciliation."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Start from one balance and reach the other; never mix opening and closing balances in one statement.",
+        "Separate timing differences from errors — only errors require correction in the books."
+      ],
+      "pitfalls": [
+        "Adding both sides of a difference instead of applying the direction of each item."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p02-c05",
+      "status": "outline",
+      "summary": "Rectification of errors: errors of omission, commission, principle and compensating errors, which affect the trial balance and which do not, and the use of a suspense account.",
+      "keyTerms": [
+        {
+          "term": "Error of principle",
+          "definition": "A transaction recorded in the wrong class of account, for example capital expenditure treated as revenue."
+        },
+        {
+          "term": "Compensating error",
+          "definition": "Two or more errors that cancel each other's effect, leaving the trial balance in agreement."
+        },
+        {
+          "term": "Error of omission",
+          "definition": "A transaction wholly or partly left out of the books; a complete omission does not disturb the trial balance."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Decide first whether the trial balance still agrees; that determines whether a suspense account is needed.",
+        "State the effect of each correction on profit, not just on the ledger."
+      ],
+      "pitfalls": [
+        "Assuming an agreeing trial balance means the books are correct — it only means debits equal credits."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p02-c06",
+      "status": "outline",
+      "summary": "Final accounts of a sole proprietor: trading account, profit and loss account and balance sheet, with adjusting entries for accruals, prepayments, depreciation, bad debts and closing stock.",
+      "keyTerms": [
+        {
+          "term": "Trading account",
+          "definition": "Computes gross profit as sales less cost of goods sold."
+        },
+        {
+          "term": "Balance sheet",
+          "definition": "A statement of assets, liabilities and capital at a date, not an account of profit."
+        },
+        {
+          "term": "Adjusting entry",
+          "definition": "An entry that applies the accrual concept so that revenue and expense are matched to the period."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Prepare the adjustments working note first; then post each one to both statements.",
+        "Check the balance sheet balances after adjustments, not before."
+      ],
+      "pitfalls": [
+        "Ignoring the double entry behind an adjustment — every adjustment affects two places."
+      ],
+      "linkedConcepts": [
+        "c-final-accounts",
+        "c-accrual-prudence"
+      ]
+    },
+    {
+      "id": "p02-c07",
+      "status": "outline",
+      "summary": "Bills of exchange, consignment and joint venture: three arrangements that shift goods or obligations between parties, each with its own accounting treatment and valuation issues.",
+      "keyTerms": [
+        {
+          "term": "Bill of exchange",
+          "definition": "A written order to pay a sum on a date, used to finance trade; it may be discounted or endorsed."
+        },
+        {
+          "term": "Consignment",
+          "definition": "Goods sent by the consignor to the consignee for sale on the consignor's account; risk remains with the consignor."
+        },
+        {
+          "term": "Joint venture",
+          "definition": "A temporary business arrangement between parties, often accounted for without a separate legal entity."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "For consignment, keep stock, expenses and commission in separate columns; valuation errors are the usual failure point.",
+        "Distinguish a bill receivable discounted with recourse from one discounted without recourse."
+      ],
+      "pitfalls": [
+        "Treating consignment goods as a sale at dispatch; no revenue arises until the consignee sells."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p02-c08",
+      "status": "outline",
+      "summary": "Accounts of not-for-profit organisations and incomplete records: receipts and payments, income and expenditure, statement of affairs and the statement of profit from single-entry records.",
+      "keyTerms": [
+        {
+          "term": "Receipts and payments account",
+          "definition": "A cash summary; it records money received and paid, not income and expenditure."
+        },
+        {
+          "term": "Income and expenditure account",
+          "definition": "An accrual-based statement of the surplus or deficit of a not-for-profit organisation."
+        },
+        {
+          "term": "Statement of affairs",
+          "definition": "A list of assets and liabilities used to derive opening or closing capital in incomplete records."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Convert cash to accrual before computing surplus; the two statements answer different questions.",
+        "For incomplete records, reconstruct missing figures from control accounts rather than guessing."
+      ],
+      "pitfalls": [
+        "Treating a donation for a specific purpose as unrestricted income."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p02-c09",
+      "status": "outline",
+      "summary": "Computerised accounting fundamentals: how accounting software represents the ledger, the design of the chart of accounts, access and data security, and report generation.",
+      "keyTerms": [
+        {
+          "term": "Chart of accounts",
+          "definition": "The structured list of ledger accounts and codes on which every posting and report depends."
+        },
+        {
+          "term": "Audit trail",
+          "definition": "The system record of who entered what and when; it must be tamper-evident."
+        },
+        {
+          "term": "Segregation of duties",
+          "definition": "No single user should be able to initiate, approve and record the same transaction."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Map each manual book to its software equivalent before learning any specific package.",
+        "Learn what the system will not prevent — coding errors and deliberate override are still human."
+      ],
+      "pitfalls": [
+        "Assuming the software's trial balance proves accuracy; it proves only arithmetic equality."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p02-c10",
+      "status": "outline",
+      "summary": "Introduction to cost accounting: how it differs from financial accounting, what a cost object and cost centre are, and how costs are classified for decision-making.",
+      "keyTerms": [
+        {
+          "term": "Cost object",
+          "definition": "Anything for which cost is separately ascertained — a product, service, department or customer."
+        },
+        {
+          "term": "Cost centre",
+          "definition": "A responsibility unit for which costs are collected and controlled."
+        },
+        {
+          "term": "Cost classification",
+          "definition": "Grouping costs by nature, behaviour, function or traceability, depending on the decision at hand."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Classify the same cost three ways — nature, behaviour and traceability — and say why the classification matters.",
+        "Distinguish cost accounting (ascertainment) from management accounting (decision support)."
+      ],
+      "pitfalls": [
+        "Treating cost accounting as an alternative to financial accounting rather than a parallel view."
+      ],
+      "linkedConcepts": [
+        "c-cost-sheet"
+      ]
+    },
+    {
+      "id": "p02-c11",
+      "status": "outline",
+      "summary": "The cost sheet and the elements of cost: material, labour and overheads, built into prime cost, works cost, cost of production and cost of sales.",
+      "keyTerms": [
+        {
+          "term": "Prime cost",
+          "definition": "Direct material consumed + direct wages + direct expenses."
+        },
+        {
+          "term": "Works cost",
+          "definition": "Prime cost plus factory overheads, adjusted for work-in-progress."
+        },
+        {
+          "term": "Cost of sales",
+          "definition": "Cost of production plus selling and distribution overheads, adjusted for finished goods."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Build the ladder in one order and never jump a step; examiners award method marks.",
+        "Show direct material consumed as opening stock + purchases − closing stock, not purchases alone."
+      ],
+      "pitfalls": [
+        "Adding administration overheads before works cost, which breaks the ladder."
+      ],
+      "linkedConcepts": [
+        "c-cost-sheet",
+        "c-overhead-absorption"
+      ]
+    },
+    {
+      "id": "p02-c12",
+      "status": "outline",
+      "summary": "Basic costing methods — job and contract costing, process costing fundamentals — and the reconciliation of cost and financial accounts.",
+      "keyTerms": [
+        {
+          "term": "Job costing",
+          "definition": "Costs collected against a specific job or order, typically in customised production."
+        },
+        {
+          "term": "Contract costing",
+          "definition": "Costs accumulated for a long-term contract, with revenue recognised by stage of completion."
+        },
+        {
+          "term": "Cost reconciliation",
+          "definition": "A statement explaining the difference between profit per cost accounts and profit per financial accounts."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Reconcile item by item: items only in financial accounts, only in cost accounts, and valuation differences.",
+        "For contract costing, learn the retention, work-certified and work-uncertified logic before computing profit."
+      ],
+      "pitfalls": [
+        "Reconciling by forcing a balancing figure instead of identifying each cause."
+      ],
+      "linkedConcepts": [
+        "c-product-costing"
+      ]
+    },
+    {
+      "id": "p03-c01",
+      "status": "outline",
+      "summary": "Algebra for business problems: indices and logarithms, ratio and proportion, variation, and solving simultaneous and quadratic equations. The examinable skill is setting up the equation from a word problem before solving it.",
+      "keyTerms": [
+        {
+          "term": "Proportion",
+          "definition": "An equality of two ratios; in direct proportion both quantities move together, in inverse proportion one rises as the other falls."
+        },
+        {
+          "term": "Quadratic equation",
+          "definition": "An equation of the form ax² + bx + c = 0, solved by factorisation or the formula x = (−b ± √(b² − 4ac)) / 2a."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Translate the word problem into variables first — most lost marks are set-up errors, not algebra errors.",
+        "Check the answer against the original wording; a mathematically valid root can be commercially impossible (negative quantity)."
+      ],
+      "pitfalls": [
+        "Dividing by a variable that could be zero, which loses a root."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p03-c02",
+      "status": "outline",
+      "summary": "Counting and series: permutations, combinations, arithmetic and geometric progressions, and annuities. These feed directly into time value of money in Paper 11 and capital budgeting later.",
+      "keyTerms": [
+        {
+          "term": "Permutation vs combination",
+          "definition": "A permutation counts arrangements where order matters; a combination counts selections where it does not."
+        },
+        {
+          "term": "Annuity",
+          "definition": "A series of equal payments at regular intervals; the present value of an annuity is used to value loans and leases."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Identify whether order matters before choosing nPr or nCr.",
+        "Learn the sum formulas for AP and GP, and the meaning of the common ratio in a growth problem."
+      ],
+      "pitfalls": [
+        "Applying the AP sum formula to a GP series, or counting with replacement when the question says without."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p03-c03",
+      "status": "outline",
+      "summary": "Calculus applied to business: limits, differentiation, maxima and minima, and basic integration, with marginal cost and revenue as the economic interpretation of a derivative.",
+      "keyTerms": [
+        {
+          "term": "Derivative",
+          "definition": "The instantaneous rate of change of a function; marginal cost is the derivative of total cost with respect to quantity."
+        },
+        {
+          "term": "Stationary point",
+          "definition": "A point where the first derivative is zero; the second derivative distinguishes a maximum from a minimum."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Always state the economic meaning of a derivative, not just its value.",
+        "Use the second-derivative test to justify that a stationary point is the profit maximum."
+      ],
+      "pitfalls": [
+        "Maximising revenue rather than profit when the question asks for profit."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p03-c04",
+      "status": "outline",
+      "summary": "Coordinate geometry and set theory, including the straight line, slope, set operations and the graphical reading of break-even.",
+      "keyTerms": [
+        {
+          "term": "Slope",
+          "definition": "The change in y per unit change in x; in a cost equation it is the variable cost per unit."
+        },
+        {
+          "term": "Break-even point on a graph",
+          "definition": "Where the total cost line and total revenue line intersect — fixed cost divided by contribution per unit."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Read a break-even chart as three regions: loss, break-even, profit.",
+        "Use set notation precisely; union and intersection answers are marked on notation as well as value."
+      ],
+      "pitfalls": [
+        "Confusing the intercept (fixed cost) with the slope (variable cost) of the cost line."
+      ],
+      "linkedConcepts": [
+        "c-break-even"
+      ]
+    },
+    {
+      "id": "p03-c08",
+      "status": "outline",
+      "summary": "Sampling and estimation: sampling methods, the sampling distribution, standard error and confidence intervals.",
+      "keyTerms": [
+        {
+          "term": "Standard error",
+          "definition": "The standard deviation of a sample statistic across repeated samples; it falls as sample size rises."
+        },
+        {
+          "term": "Confidence interval",
+          "definition": "A range around an estimate that would contain the true parameter in a stated proportion of repeated samples."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Distinguish standard deviation (of observations) from standard error (of an estimate).",
+        "Interpret a 95% confidence interval correctly: about the procedure, not the probability that this particular interval contains the truth."
+      ],
+      "pitfalls": [
+        "Saying 'there is a 95% probability that the true mean lies in this interval' — a common and incorrect interpretation."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p03-c09",
+      "status": "outline",
+      "summary": "Index numbers and time series: Laspeyres and Paasche indices, deflators, trend, seasonal variation and simple forecasting.",
+      "keyTerms": [
+        {
+          "term": "Laspeyres index",
+          "definition": "A price index using base-period quantities as weights; it tends to overstate price rises."
+        },
+        {
+          "term": "Seasonal variation",
+          "definition": "A recurring pattern within a year, separated from trend before forecasting."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Use the correct weights: base-year for Laspeyres, current-year for Paasche.",
+        "Decompose a series into trend, seasonal, cyclical and irregular components before forecasting."
+      ],
+      "pitfalls": [
+        "Forecasting from raw data without removing seasonality."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p04-c03",
+      "status": "outline",
+      "summary": "Market structures and pricing: perfect competition, monopoly, monopolistic competition and oligopoly, plus price discrimination.",
+      "keyTerms": [
+        {
+          "term": "Monopoly",
+          "definition": "A single seller with market power, facing the market demand curve; output is set where marginal revenue equals marginal cost."
+        },
+        {
+          "term": "Price discrimination",
+          "definition": "Charging different prices for the same good in different markets, possible only when resale can be prevented."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Compare structures on four axes: number of sellers, product differentiation, entry barriers, price control.",
+        "Use the MR = MC rule for profit maximisation in every structure."
+      ],
+      "pitfalls": [
+        "Assuming a monopolist charges the highest possible price; the profit-maximising price depends on elasticity."
+      ],
+      "linkedConcepts": [
+        "c-pricing"
+      ]
+    },
+    {
+      "id": "p04-c04",
+      "status": "outline",
+      "summary": "National income and business cycles: GDP, GNP, NNP, the three measurement methods, inflation and the phases of the business cycle.",
+      "keyTerms": [
+        {
+          "term": "GDP",
+          "definition": "The market value of final goods and services produced within a country in a period; it excludes intermediate goods to avoid double counting."
+        },
+        {
+          "term": "Business cycle",
+          "definition": "Recurring expansion and contraction in activity, with peak, recession, trough and recovery phases."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Know which items are excluded from national income and why (transfer payments, second-hand sales, intermediate goods).",
+        "Distinguish nominal from real GDP; only real GDP measures volume growth."
+      ],
+      "pitfalls": [
+        "Adding transfer payments to national income."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p04-c05",
+      "status": "outline",
+      "summary": "Money, banking and international trade: money supply, central banking functions, exchange rates and the balance of payments.",
+      "keyTerms": [
+        {
+          "term": "Money multiplier",
+          "definition": "The ratio of broad money to reserve money; it determines how far deposits expand from a given reserve base."
+        },
+        {
+          "term": "Balance of payments",
+          "definition": "A systematic record of all economic transactions between residents and the rest of the world, with current and capital accounts."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Learn the central bank's functions and which instrument addresses which objective.",
+        "Distinguish a depreciation of the currency from a deterioration in the terms of trade."
+      ],
+      "pitfalls": [
+        "Treating the trade balance as the whole balance of payments."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p04-c06",
+      "status": "outline",
+      "summary": "Management — nature and process: the functions of management, managerial roles and levels, and the business environment.",
+      "keyTerms": [
+        {
+          "term": "Management functions",
+          "definition": "Planning, organising, staffing, directing and controlling — a framework, not a sequence that runs once."
+        },
+        {
+          "term": "Span of control",
+          "definition": "The number of subordinates reporting to a manager; wider spans need more delegation and standardisation."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Map each function to a concrete decision in a finance function; examiners reward application.",
+        "Use the levels of management to explain who does what in a budgeting cycle."
+      ],
+      "pitfalls": [
+        "Listing functions without linking them to the case in the question."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p04-c07",
+      "status": "outline",
+      "summary": "Planning and organising: the planning process, management by objectives, delegation, span of control and organisation structures.",
+      "keyTerms": [
+        {
+          "term": "Management by objectives",
+          "definition": "A process of setting verifiable objectives jointly and appraising performance against them."
+        },
+        {
+          "term": "Delegation",
+          "definition": "The assignment of authority and responsibility while retaining accountability."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Distinguish authority, responsibility and accountability in delegation answers.",
+        "Compare functional, divisional and matrix structures on coordination cost and accountability."
+      ],
+      "pitfalls": [
+        "Assuming delegation transfers accountability; it never does."
+      ],
+      "linkedConcepts": []
+    },
+    {
+      "id": "p04-c08",
+      "status": "outline",
+      "summary": "Staffing, directing and controlling: recruitment and selection, motivation theories, leadership styles, communication and the control process.",
+      "keyTerms": [
+        {
+          "term": "Control process",
+          "definition": "Setting standards, measuring performance, comparing and taking corrective action."
+        },
+        {
+          "term": "Maslow's hierarchy",
+          "definition": "A motivation model in which lower-order needs are satisfied before higher-order needs become active."
+        }
+      ],
+      "formulas": [],
+      "examples": [],
+      "questions": [],
+      "revisionNotes": [
+        "Apply a motivation theory to a named employee situation rather than describing it abstractly.",
+        "Identify the control point in a process and who owns the corrective action."
+      ],
+      "pitfalls": [
+        "Describing leadership styles without assessing which fits the situation in the question."
+      ],
+      "linkedConcepts": []
+    }
+  ]
+}

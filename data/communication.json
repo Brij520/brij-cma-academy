@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "purpose": "Professional Communication Academy — communication built on finance situations, not generic English lessons.",
+    "lastReviewed": "2026-11-02",
+    "method": "Fifteen minutes of speaking and fifteen minutes of writing every day, both recorded or filed. Fluency comes from repetition under mild pressure, not from reading about fluency.",
+    "rule": "Every exercise must produce an artefact: an audio file, a written piece or a marked-up draft."
+  },
+  "levels": [
+    { "id": "comm-l1", "name": "Foundational", "outcome": "Speak in complete sentences for two minutes without long pauses; write a clear short email.", "areas": ["Spoken English", "Grammar", "Professional vocabulary"] },
+    { "id": "comm-l2", "name": "Professional", "outcome": "Explain a number and its cause in writing and in speech, with a clear recommendation.", "areas": ["Business English", "Email writing", "Report writing", "Explaining financial results"] },
+    { "id": "comm-l3", "name": "Influential", "outcome": "Present to management, handle challenge, and hold a position with evidence.", "areas": ["Presentation skills", "Financial presentations", "Management communication", "Group discussions"] },
+    { "id": "comm-l4", "name": "Career-ready", "outcome": "Perform under interview conditions and represent your own work credibly.", "areas": ["Interview communication"] }
+  ],
+  "areas": [
+    {
+      "id": "comm-spoken", "name": "Spoken English", "level": "comm-l1", "hours": 30,
+      "outcome": "Speak about finance topics in connected speech at a professional pace.",
+      "focus": ["Sentence stress and rhythm", "Filler control", "Structuring a spoken answer in three points", "Numbers spoken accurately", "Telephone and video-call speech", "Accent clarity rather than accent removal"],
+      "drills": [
+        "Speak for 90 seconds on 'the difference between profit and cash' without notes. Record and count filler words.",
+        "Read a paragraph of a financial newspaper aloud, then summarise it in 60 seconds.",
+        "Explain a ratio to a non-finance friend in under a minute, then check whether they understood.",
+        "Say five large numbers aloud correctly: ₹12,45,67,890; ₹4.72 crore; 18.5%; 2.75 times; ₹1.2 lakh per month."
+      ],
+      "successTest": "Two minutes of connected speech with fewer than five filler words and accurate number reading."
+    },
+    {
+      "id": "comm-business", "name": "Business English", "level": "comm-l2", "hours": 20,
+      "outcome": "Write and speak in concise, unambiguous professional register.",
+      "focus": ["Active voice", "Conciseness and word economy", "Hedging and certainty language", "Register: internal vs client vs regulator", "Formal vs informal tone", "Common Indian-English corrections"],
+      "drills": [
+        "Rewrite a 60-word email to 30 words without losing meaning.",
+        "Convert five passive sentences to active.",
+        "Rewrite three sentences that overstate certainty into appropriately hedged statements.",
+        "Identify and correct ten common usage errors in a provided paragraph."
+      ],
+      "successTest": "A 100-word professional note with no ambiguity, no redundancy and no overstatement."
+    },
+    {
+      "id": "comm-vocab", "name": "Professional and Finance Vocabulary", "level": "comm-l1", "hours": 20,
+      "outcome": "Use the technical vocabulary of accounting and finance precisely, in context.",
+      "focus": ["Accounting terms with exact meanings", "Costing terminology", "Finance and markets terms", "Tax terminology", "Audit language", "Verb collocations used in finance"],
+      "drills": [
+        "Learn ten terms a week; for each, write a definition in your own words and one sentence using it in a work situation.",
+        "Distinguish five commonly confused pairs: provision/provision for doubtful debts; expense/expenditure; income/receipt; profit/contribution; cost/price.",
+        "Explain five acronyms you use daily without expanding them on autopilot: EBITDA, WACC, DSO, ITC, TDS."
+      ],
+      "successTest": "Explain 20 core terms to a layperson without using the term itself in the definition."
+    },
+    {
+      "id": "comm-grammar", "name": "Grammar and Accuracy", "level": "comm-l1", "hours": 15,
+      "outcome": "Write without errors that undermine credibility.",
+      "focus": ["Tense consistency in reporting", "Subject-verb agreement with collective nouns", "Articles", "Prepositions in financial phrases", "Conditionals for scenarios", "Punctuation and number formatting"],
+      "drills": [
+        "Edit a 200-word draft and mark every correction with a reason.",
+        "Write five conditional sentences describing scenario outcomes (if volume falls 10%...).",
+        "Format numbers consistently in a table: units, decimals, thousands separators, currency.",
+        "Rewrite ten sentences with misplaced modifiers."
+      ],
+      "successTest": "A 200-word piece with zero grammatical or formatting errors on review."
+    },
+    {
+      "id": "comm-email", "name": "Email Writing", "level": "comm-l2", "hours": 15,
+      "outcome": "Write emails that get a decision or an action on the first attempt.",
+      "focus": ["Subject lines that state the ask", "BLUF: bottom line up front", "One email, one ask", "Escalation etiquette", "Bad news and delay communication", "Follow-up discipline"],
+      "drills": [
+        "Write an email asking a department head for an overdue explanation of a 22% cost overrun, without sounding accusatory.",
+        "Write a three-line email declining a supplier's price increase, with the reason and the next step.",
+        "Rewrite an email that buries the request in paragraph four.",
+        "Write an escalation email that states facts, impact and the specific decision required by a specific date."
+      ],
+      "successTest": "A recipient can state the ask and the deadline after reading only the subject line and first line."
+    },
+    {
+      "id": "comm-report", "name": "Report Writing", "level": "comm-l2", "hours": 20,
+      "outcome": "Produce a report that a busy reader can act on in five minutes.",
+      "focus": ["Executive summary discipline", "Findings versus recommendations", "Evidence and sourcing", "Structure and headings", "Tables and exhibits", "Stating limitations"],
+      "drills": [
+        "Write a one-page variance report: what happened, why, what to do, by when, and who owns it.",
+        "Convert a five-page descriptive report into a two-page decision document.",
+        "Write an executive summary last for a report you have already drafted, then check it stands alone.",
+        "Write a limitations section for an analysis you produced this week."
+      ],
+      "successTest": "A reader who reads only the summary and recommendations can make the decision."
+    },
+    {
+      "id": "comm-present", "name": "Presentation Skills", "level": "comm-l3", "hours": 20,
+      "outcome": "Present with structure and composure, and handle challenge.",
+      "focus": ["Message-first structuring", "Opening in 20 seconds", "Slide discipline", "Voice, pace and pause", "Handling hostile questions", "Presenting uncertainty"],
+      "drills": [
+        "Deliver a three-minute presentation with one message, three supports and one ask.",
+        "Present the same content in 60 seconds, then in 20 seconds.",
+        "Take three challenge questions and answer each in under 30 seconds with evidence.",
+        "Present a number you are not confident about, and state the uncertainty honestly."
+      ],
+      "successTest": "Audience can repeat your main message after the presentation."
+    },
+    {
+      "id": "comm-interview", "name": "Interview Communication", "level": "comm-l4", "hours": 15,
+      "outcome": "Present your experience credibly under interview conditions.",
+      "focus": ["STAR structure", "Answering behavioural questions with evidence", "Explaining technical work to a non-technical interviewer", "Discussing weaknesses honestly", "Salary and notice conversations", "Questions to ask"],
+      "drills": [
+        "Prepare six STAR stories covering a cost saving, a conflict, a failure, a deadline, an analysis that changed a decision, and a process improvement.",
+        "Answer 'tell me about yourself' in 90 seconds, ending with why this role.",
+        "Explain a model you built to someone with no finance background in two minutes.",
+        "Record answers to ten standard interview questions and review them against a rubric."
+      ],
+      "successTest": "Every claim is supported by a specific example with a measurable outcome."
+    },
+    {
+      "id": "comm-gd", "name": "Group Discussions", "level": "comm-l3", "hours": 10,
+      "outcome": "Contribute to a group discussion with structure, evidence and listening.",
+      "focus": ["Entering the discussion early with substance", "Building on others rather than repeating", "Disagreeing constructively", "Time and turn management", "Summarising and closing"],
+      "drills": [
+        "Run a 10-minute mock GD on 'should companies prioritise cost reduction or revenue growth in a downturn?' and record it.",
+        "Practise three ways to enter a discussion without interrupting.",
+        "Write a 60-second summary of a discussion you observed, capturing both sides."
+      ],
+      "successTest": "You made three substantive contributions, built on at least two others, and did not dominate."
+    },
+    {
+      "id": "comm-fin-present", "name": "Financial Presentations", "level": "comm-l3", "hours": 15,
+      "outcome": "Present numbers so the story is understood before the detail.",
+      "focus": ["Headline first", "Bridge and waterfall narration", "Explaining a bridge without losing the audience", "Chart narration", "Appendix discipline", "Presenting a miss"],
+      "drills": [
+        "Narrate a five-bar waterfall bridge in 60 seconds, naming each driver.",
+        "Present a 12% revenue miss to a management team in three minutes, ending with a recovery plan.",
+        "Present a KPI dashboard and stop at three insights, not fifteen."
+      ],
+      "successTest": "The audience can name the driver of the result without reading the slide."
+    },
+    {
+      "id": "comm-mgmt", "name": "Management Communication", "level": "comm-l3", "hours": 15,
+      "outcome": "Communicate with senior stakeholders in the register they expect.",
+      "focus": ["Answer first, evidence second", "Escalation with options not problems", "Saying no with alternatives", "Managing expectations on timelines", "Written updates that build trust", "Confidentiality"],
+      "drills": [
+        "Write a weekly update to a CFO in five bullets: performance, risk, decision needed, help needed, next week.",
+        "Convert a problem statement into a one-page options paper with a recommendation.",
+        "Write an email saying a deadline will slip, with the new date and the mitigation."
+      ],
+      "successTest": "A senior stakeholder gets the decision and the risk in the first ten seconds."
+    },
+    {
+      "id": "comm-explain", "name": "Explaining Financial Results", "level": "comm-l2", "hours": 15,
+      "outcome": "Explain a result to a non-finance audience without diluting accuracy.",
+      "focus": ["Translating accounting into cash and operations", "Using analogies carefully", "Avoiding jargon", "Explaining a variance in operational terms", "Answering 'why' three levels deep"],
+      "drills": [
+        "Explain why profit rose while cash fell, to an operations manager, in 90 seconds.",
+        "Explain contribution margin to a sales head using their own product mix.",
+        "Answer 'why did cost per unit go up?' three times in a row, each time going one level deeper.",
+        "Explain a provision to a non-accountant without implying it is a cash payment."
+      ],
+      "successTest": "The listener can explain the result to someone else correctly."
+    }
+  ],
+  "dailyPractice": {
+    "rotation": [
+      { "day": "Monday", "speaking": "Explain a concept: pick one term from this week's study and explain it aloud in 90 seconds.", "writing": "Write a 100-word email to a colleague summarising one thing you learned." },
+      { "day": "Tuesday", "speaking": "Number drill: read 10 figures aloud accurately, then use three in sentences.", "writing": "Write a 150-word paragraph explaining a variance with its cause." },
+      { "day": "Wednesday", "speaking": "Challenge drill: state a position on a finance question and defend it in 60 seconds.", "writing": "Rewrite a poorly written paragraph from a report or news article." },
+      { "day": "Thursday", "speaking": "Teach-back: explain a calculation you did this week to an imaginary non-finance colleague.", "writing": "Write a three-bullet update to a manager: progress, risk, ask." },
+      { "day": "Friday", "speaking": "Interview drill: answer one behavioural question in STAR format, recorded.", "writing": "Write a one-page summary of the week's learning in professional prose." },
+      { "day": "Saturday", "speaking": "Present a five-slide pack aloud in five minutes, recorded.", "writing": "Write a recommendation memo with options, analysis and a decision." },
+      { "day": "Sunday", "speaking": "Listen to a finance podcast or lecture and summarise it aloud in two minutes.", "writing": "Edit the week's writing and log recurring errors in your knowledge base." }
+    ],
+    "speakingPrompts": [
+      "Why does a profitable company run out of cash?",
+      "Explain break-even to a shop owner.",
+      "Should a company buy or lease its delivery vehicles?",
+      "What is the difference between a provision and a reserve?",
+      "Why is depreciation added back in a cash flow statement?",
+      "How would you explain a 5% cost overrun to the department that caused it?",
+      "What does a current ratio of 0.8 tell you?",
+      "Why do two companies with the same profit have different share prices?",
+      "Explain the difference between gross margin and contribution.",
+      "Why is inventory a cash risk?",
+      "What is input tax credit and why does it matter to pricing?",
+      "How would you explain an adverse variance you cannot yet explain?",
+      "What is the difference between cost control and cost reduction?",
+      "Why is a budget not a forecast?",
+      "Explain the time value of money using an example from everyday life.",
+      "What are the risks of automating a reconciliation?",
+      "How would you describe your role as a management accountant to a school student?",
+      "Why should a CMA care about ethics?",
+      "What does a rising DSO indicate?",
+      "Explain why the cost of capital matters in an investment decision."
+    ],
+    "writingPrompts": [
+      "Write a 120-word note explaining a 15% cost overrun to your manager, with a cause and a corrective action.",
+      "Draft an email requesting a missing invoice from a vendor, firm but courteous.",
+      "Write a 200-word executive summary of a variance analysis.",
+      "Write a one-paragraph recommendation on whether to discontinue a loss-making product.",
+      "Draft the body of a report section titled 'Basis of preparation and limitations'.",
+      "Write an email declining a request to book an expense in the wrong period, explaining the rule.",
+      "Write a 150-word explanation of the difference between absorption and marginal costing for a non-finance reader.",
+      "Draft a three-line update to a CFO on a delayed close.",
+      "Write a 250-word note explaining why profit and cash diverged this quarter.",
+      "Write a short memo proposing one cost optimisation with an estimated saving and a risk."
+    ]
+  },
+  "assessment": {
+    "rubric": [
+      { "criterion": "Clarity and structure", "weight": 25, "detail": "Message is identifiable within the first two lines or twenty seconds." },
+      { "criterion": "Accuracy and evidence", "weight": 25, "detail": "Every number and claim is correct and traceable." },
+      { "criterion": "Relevance to audience", "weight": 20, "detail": "Register, technical level and length match the audience." },
+      { "criterion": "Professionalism", "weight": 15, "detail": "Grammar, formatting, tone, punctuality." },
+      { "criterion": "Decision orientation", "weight": 15, "detail": "A clear ask, recommendation or next step." }
+    ],
+    "selfCheck": ["Could a busy reader act on this immediately?", "Have I overstated anything?", "Is every number sourced?", "Is this the shortest version that is still complete?", "Would I be comfortable if this were forwarded to a regulator?"]
+  }
+}

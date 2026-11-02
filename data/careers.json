@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "purpose": "Career development and job preparation — role-by-role requirements, assessment practice and progression.",
+    "lastReviewed": "2026-11-02",
+    "disclaimer": {
+      "headline": "Preparation, not a promise.",
+      "body": "Nothing here guarantees employment, interview selection or a particular salary. A qualification such as CMA is a recognised credential, not a guaranteed job qualification, and hiring decisions depend on the employer's requirements, your experience, your performance in the process and market conditions. Treat every salary or package reference as an indicative, dated market observation to verify independently, not a commitment."
+    }
+  },
+  "roles": [
+    {
+      "id": "role-management-accountant", "name": "Management Accountant", "family": "Accounting and Control", "entryLevel": "0–3 years", "typicalTitles": ["Management Accountant", "Cost Accountant (junior)", "Finance Executive — Costing"],
+      "qualifications": ["CMA Intermediate or Final (in progress acceptable for entry roles)", "B.Com or equivalent undergraduate degree", "Strong academic record in costing and financial accounting"],
+      "technicalKnowledge": ["Cost ascertainment and cost sheet", "Standard costing and variance analysis", "Budgeting and budgetary control", "Marginal costing and product decisions", "Inventory valuation", "Cost Accounting Standards", "GST basics for input credit correctness"],
+      "software": ["Excel at advanced level", "ERP: Tally Prime, SAP CO or Oracle", "Power BI for reporting", "Power Query for data preparation"],
+      "experienceExpectations": ["Prepared cost sheets or MIS for a real or simulated business", "Can explain a variance to a plant manager", "Has performed a physical stock verification or reconciliation", "Understands month-end close sequencing"],
+      "interviewQuestions": [
+        "Walk me through how you would compute the cost of a product with three processes and normal loss in each.",
+        "A material price variance is favourable but the usage variance is adverse. What would you investigate first?",
+        "Why can absorption costing and marginal costing show different profit?",
+        "How would you decide whether to accept an export order at a price below domestic price?",
+        "What would you do if the plant head disputed your standard cost?",
+        "Explain how you would reconcile cost and financial accounts."
+      ],
+      "technicalAssessments": ["Prepare a cost sheet from a raw data set and identify the three largest cost drivers.", "Compute material, labour and overhead variances from a standard cost card and actuals, and explain which to investigate."],
+      "caseStudies": ["A plant's cost per unit has risen 12% with stable input prices. Diagnose.", "An order is offered at 8% below full cost with spare capacity available. Recommend with numbers."],
+      "resumeRequirements": ["Quantified outcomes (savings, accuracy, turnaround)", "Named tools with proficiency level", "One costing or MIS project with scope", "CMA papers cleared with dates"],
+      "portfolioProjects": ["Costing workbook with three products and variance analysis", "Monthly MIS pack", "Cost optimisation proposal with savings estimate"],
+      "progression": ["Costing Executive → Management Accountant → Senior/Plant Finance Manager → Business Finance Head"],
+      "nextSkills": ["skill-advanced-excel", "skill-power-query", "skill-sap-fico"]
+    },
+    {
+      "id": "role-financial-analyst", "name": "Financial Analyst", "family": "Corporate Finance", "entryLevel": "1–4 years", "typicalTitles": ["Financial Analyst", "Finance Analyst", "Analyst — FP&A"],
+      "qualifications": ["CMA / CA / MBA Finance or equivalent", "Strong financial statement analysis capability"],
+      "technicalKnowledge": ["Three-statement analysis", "Ratio and DuPont analysis", "Valuation basics", "Working capital", "Capital budgeting", "Accounting standards awareness", "Business model understanding"],
+      "software": ["Excel modelling", "Power BI", "Power Query", "SQL basics", "ERP reporting"],
+      "experienceExpectations": ["Built a model that someone else used", "Written an analysis that led to a decision", "Can defend every assumption in own work"],
+      "interviewQuestions": [
+        "Walk me through how a ₹1 increase in depreciation flows through the three statements.",
+        "Two companies have the same ROE. How would you decide which is the better business?",
+        "How would you analyse whether a company can service its debt?",
+        "What would make you distrust a company's reported profit?",
+        "Value a business with negative free cash flow.",
+        "Which is more important, margin or asset turnover? Defend your answer."
+      ],
+      "technicalAssessments": ["Build a three-statement model from provided historicals in 90 minutes.", "Analyse three years of financials and present five insights with evidence."],
+      "caseStudies": ["A company's ROE is 18% but cash flow is negative. Explain how that is possible and whether it is sustainable.", "Recommend whether to fund a ₹50 crore expansion using debt or equity."],
+      "resumeRequirements": ["Modelling and analysis projects with outputs", "Demonstrated tool proficiency", "Any valuation work with methodology stated"],
+      "portfolioProjects": ["Three-statement model", "Company research note with valuation range", "Ratio and DuPont analysis pack"],
+      "progression": ["Financial Analyst → Senior Analyst → Finance Manager → FP&A Lead → Head of FP&A"],
+      "nextSkills": ["skill-financial-modelling", "skill-power-bi", "skill-sql"]
+    },
+    {
+      "id": "role-fpa-analyst", "name": "FP&A Analyst", "family": "FP&A", "entryLevel": "1–4 years", "typicalTitles": ["FP&A Analyst", "Planning Analyst", "Business Finance Analyst"],
+      "qualifications": ["CMA / CA / MBA Finance", "Evidence of budget or forecast ownership"],
+      "technicalKnowledge": ["Budgeting and forecasting", "Variance analysis", "Driver-based modelling", "Revenue and cost behaviour", "Cash forecasting", "KPI design", "Management reporting"],
+      "software": ["Advanced Excel", "Power BI / Tableau", "Power Query", "ERP (SAP/ Oracle) reporting", "Anaplan or similar planning tool (bonus)"],
+      "experienceExpectations": ["Ran at least one budget or forecast cycle", "Presented to a business head", "Challenged a number and changed an outcome"],
+      "interviewQuestions": [
+        "How would you build a budget for a business you have never worked in?",
+        "The sales head says the forecast is wrong because the market is bad. How do you respond?",
+        "How do you forecast revenue for a business with no history?",
+        "What would you do if your forecast was consistently 8% too optimistic?",
+        "How would you explain a 3% cost overrun to a department that believes it is underfunded?",
+        "Which KPIs would you put on a one-page dashboard for a CFO?"
+      ],
+      "technicalAssessments": ["Build a driver-based budget for a division from a business description in 90 minutes.", "Given actuals and budget, produce a variance analysis with commentary and a 90-day action plan."],
+      "caseStudies": ["Revenue is 5% ahead of budget but EBITDA is 4% behind. Diagnose and recommend.", "A department requests 20% more headcount. Evaluate the business case."],
+      "resumeRequirements": ["Budget/forecast scope in numbers (revenue, cost centres, headcount)", "Reporting cadence owned", "Systems named", "Outcome of an analysis you influenced"],
+      "portfolioProjects": ["Annual operating budget", "Rolling forecast with accuracy tracking", "Budget variance dashboard", "Management reporting presentation"],
+      "progression": ["FP&A Analyst → Senior FP&A → FP&A Manager → Head of FP&A → CFO track"],
+      "nextSkills": ["skill-power-bi", "skill-financial-modelling", "skill-ai-automation"]
+    },
+    {
+      "id": "role-cost-accountant", "name": "Cost Accountant", "family": "Accounting and Control", "entryLevel": "0–3 years", "typicalTitles": ["Cost Accountant", "Costing Officer", "Costing Executive"],
+      "qualifications": ["CMA Intermediate/Final", "Costing specialisation evidence"],
+      "technicalKnowledge": ["Cost Accounting Standards 1–24", "Methods of costing", "Overhead absorption", "Standard costing", "Process and joint product costing", "Cost audit framework", "Inventory valuation"],
+      "software": ["Excel", "ERP costing modules", "Tally", "Power BI for cost dashboards"],
+      "experienceExpectations": ["Prepared a cost statement per CAS format", "Handled a stock count and valuation", "Understood cost centre structures in an ERP"],
+      "interviewQuestions": [
+        "Which Cost Accounting Standards apply to a chemical manufacturer and why?",
+        "How would you cost a by-product?",
+        "Explain equivalent production with an example.",
+        "How do you avoid double counting overheads?",
+        "What is the difference between cost audit and financial audit?",
+        "How would you set up a cost centre structure from scratch?"
+      ],
+      "technicalAssessments": ["Cost a multi-process product with normal and abnormal loss and present the cost per unit.", "Prepare a cost statement in CAS format from a trial balance."],
+      "caseStudies": ["Overhead absorption rates have not been revised for two years. Assess the impact.", "Two products share a process; recommend a joint cost allocation method and defend it."],
+      "resumeRequirements": ["CAS and costing method exposure", "Systems used", "Any cost reduction outcome"],
+      "portfolioProjects": ["CAS-format cost statement", "Standard cost card and variance report", "ABC implementation proposal"],
+      "progression": ["Cost Accountant → Senior Cost Accountant → Costing Manager → Cost Audit Practice / Plant Finance Head"],
+      "nextSkills": ["skill-advanced-excel", "skill-power-bi", "skill-sap-fico"]
+    },
+    {
+      "id": "role-internal-auditor", "name": "Internal Auditor", "family": "Audit and Risk", "entryLevel": "1–4 years", "typicalTitles": ["Internal Auditor", "Audit Executive", "Risk and Controls Analyst"],
+      "qualifications": ["CMA / CA / CIA (in progress acceptable)", "Understanding of internal control frameworks"],
+      "technicalKnowledge": ["Audit planning and risk assessment", "Internal control frameworks (COSO)", "Process walkthroughs and control testing", "Sampling and full-population testing", "Fraud red flags", "Companies Act audit provisions", "Reporting findings"],
+      "software": ["Excel for testing", "SQL for full-population analytics", "Audit management tools", "ERP navigation", "Power BI for findings dashboards"],
+      "experienceExpectations": ["Executed a control test end to end", "Written a finding with root cause and recommendation", "Handled a difficult auditee conversation"],
+      "interviewQuestions": [
+        "Walk me through how you would audit the procure-to-pay cycle.",
+        "What is the difference between a control deficiency and a material weakness?",
+        "How would you test whether all invoices are recorded?",
+        "The auditee says the finding is a one-off. How do you respond?",
+        "What analytics would you run across a full journal population?",
+        "How do you prioritise when you have 20 findings and half the budget?"
+      ],
+      "technicalAssessments": ["Design a control test for revenue recognition and state the evidence required.", "Given a journal extract, identify five suspicious patterns and explain why each matters."],
+      "caseStudies": ["Duplicate payments were found in one business unit. Recommend a control remediation plan.", "The CFO asks you to soften a finding. What do you do?"],
+      "resumeRequirements": ["Audit engagements and scope", "Findings delivered and accepted", "Analytics used", "Certifications in progress"],
+      "portfolioProjects": ["Process audit report", "Control testing workpaper pack", "Audit analytics scripts"],
+      "progression": ["Internal Auditor → Senior Auditor → Audit Manager → Head of Internal Audit / Risk"],
+      "nextSkills": ["skill-sql", "skill-ai-automation", "skill-power-bi"]
+    },
+    {
+      "id": "role-financial-reporting", "name": "Financial Reporting Analyst", "family": "Accounting and Control", "entryLevel": "1–5 years", "typicalTitles": ["Financial Reporting Analyst", "GL Accountant", "R2R Analyst"],
+      "qualifications": ["CMA / CA / ACCA", "Strong standards knowledge"],
+      "technicalKnowledge": ["Ind AS and AS application", "Consolidation", "Schedule III and disclosures", "Close processes", "Deferred tax", "Financial instruments basics", "Audit support"],
+      "software": ["ERP (SAP FI / Oracle GL)", "Consolidation tools", "Excel", "Disclosure management tools"],
+      "experienceExpectations": ["Prepared statements for a legal entity", "Handled audit queries", "Worked a close under a deadline"],
+      "interviewQuestions": [
+        "Explain how you would account for a lease under Ind AS 116.",
+        "How do you compute deferred tax on a revaluation?",
+        "Walk me through the consolidation of a subsidiary acquired mid-year.",
+        "Revenue is recognised over time — how do you audit the percentage complete?",
+        "What are the disclosure requirements for related party transactions?",
+        "How would you shorten a 12-day close to 6 days?"
+      ],
+      "technicalAssessments": ["Prepare a consolidated balance sheet with one subsidiary and intra-group balances.", "Given a fact pattern, state the Ind AS treatment and disclosure."],
+      "caseStudies": ["The auditor proposes a ₹2 crore provision. Assess whether to accept and how to communicate it.", "A newly acquired entity uses a different revenue policy. Plan the alignment."],
+      "resumeRequirements": ["Reporting scope: entities, revenue, standards", "Close timeline owned", "Audit interface experience"],
+      "portfolioProjects": ["Consolidated financial statements", "Ind AS technical memo", "Close calendar and control log"],
+      "progression": ["Reporting Analyst → Senior → Reporting Manager → Controller → Group Controller"],
+      "nextSkills": ["skill-sap-fico", "skill-power-query", "skill-financial-modelling"]
+    },
+    {
+      "id": "role-tax-analyst", "name": "Tax Analyst", "family": "Tax", "entryLevel": "1–4 years", "typicalTitles": ["Tax Analyst", "Direct Tax Executive", "GST Analyst"],
+      "qualifications": ["CMA / CA / LLB (advantage)", "Tax specialisation evidence"],
+      "technicalKnowledge": ["Income tax computation and heads", "TDS obligations", "GST supply, ITC and returns", "Customs basics", "Transfer pricing awareness", "Assessment and appeal procedure", "Amendment tracking"],
+      "software": ["Excel", "GST portal and e-filing tools", "ERP tax modules", "Tax research databases"],
+      "experienceExpectations": ["Filed a return or reconciled a GST return", "Handled a notice response", "Maintained an amendment tracker"],
+      "interviewQuestions": [
+        "How would you determine whether a transaction is a supply of goods or services?",
+        "A vendor's GSTIN is invalid but the invoice is otherwise correct. Can you claim credit?",
+        "Explain the difference between exempt, nil-rated and zero-rated supplies.",
+        "How would you compute the arm's length price for a service transaction with a group company?",
+        "What is your process for tracking amendments?",
+        "A client wants to structure a transaction to avoid tax. How do you respond?"
+      ],
+      "technicalAssessments": ["Compute GST liability and eligible ITC for a month from transaction data.", "Compute total income and tax for an individual with five income sources."],
+      "caseStudies": ["A notice demands ₹80 lakh for an ITC mismatch. Build the response strategy.", "Advise on GST implications of a works contract versus a composite supply."],
+      "resumeRequirements": ["Return types and volumes handled", "Notices responded to", "Software and portals", "Amendment tracking discipline"],
+      "portfolioProjects": ["GST reconciliation pack", "Tax computation workbook with working notes", "Amendment tracker"],
+      "progression": ["Tax Analyst → Senior Tax Analyst → Tax Manager → Head of Tax / Indirect Tax Lead"],
+      "nextSkills": ["skill-ai-automation", "skill-power-query", "skill-sql"]
+    },
+    {
+      "id": "role-business-analyst", "name": "Business Analyst (Finance)", "family": "Business Partnering", "entryLevel": "1–5 years", "typicalTitles": ["Business Analyst", "Commercial Analyst", "Finance Business Partner"],
+      "qualifications": ["CMA / MBA Finance", "Commercial and analytical evidence"],
+      "technicalKnowledge": ["Business modelling", "Pricing and profitability", "Market and competitor analysis", "Process improvement", "Requirements gathering", "KPI frameworks"],
+      "software": ["Excel", "Power BI", "SQL", "Process mapping tools"],
+      "experienceExpectations": ["Influenced a decision with analysis", "Mapped and improved a process", "Worked with non-finance stakeholders"],
+      "interviewQuestions": [
+        "How would you evaluate whether a new product should be launched?",
+        "Sales wants a 10% discount to win a large customer. How do you assess it?",
+        "How do you gather requirements from a business head who does not know what they need?",
+        "Describe a process you improved and quantify the benefit.",
+        "How would you structure a business case for a new market entry?",
+        "What would you do if your analysis contradicted the CEO's view?"
+      ],
+      "technicalAssessments": ["Build a business case for a proposed product launch with a break-even and a recommendation.", "Map a broken process, identify three controls failures and recommend fixes."],
+      "caseStudies": ["A large customer demands a 12% price reduction or will leave. Evaluate.", "Two departments claim the same cost savings. Resolve and report."],
+      "resumeRequirements": ["Decisions influenced with quantified outcomes", "Stakeholder scope", "Tools and methods", "Process improvement evidence"],
+      "portfolioProjects": ["Business case with model", "Profitability analysis by customer", "Process improvement report"],
+      "progression": ["Business Analyst → Senior Business Partner → Commercial Finance Manager → Business Finance Director"],
+      "nextSkills": ["skill-power-bi", "skill-financial-modelling", "skill-communication"]
+    },
+    {
+      "id": "role-corporate-finance", "name": "Corporate Finance Analyst", "family": "Corporate Finance", "entryLevel": "2–5 years", "typicalTitles": ["Corporate Finance Analyst", "Treasury Analyst", "M&A Analyst"],
+      "qualifications": ["CMA / CA / MBA Finance / CFA (in progress)", "Valuation and modelling evidence"],
+      "technicalKnowledge": ["Valuation methods", "Capital structure", "Fundraising and debt", "M&A process", "Due diligence", "Treasury and risk", "Financial modelling"],
+      "software": ["Advanced Excel", "PowerPoint", "Financial databases", "Power BI"],
+      "experienceExpectations": ["Built a valuation model", "Prepared an investment committee document", "Participated in diligence"],
+      "interviewQuestions": [
+        "Walk me through a DCF and tell me which assumption matters most.",
+        "Why would two valuation methods give different answers?",
+        "How would you evaluate whether an acquisition creates value?",
+        "What is the difference between enterprise value and equity value?",
+        "How would you decide between debt and equity funding?",
+        "A target's working capital efficiency is worse than ours. What does that mean for price?"
+      ],
+      "technicalAssessments": ["Value a target using DCF and comparables in 2 hours and present a recommendation.", "Build an accretion/dilution analysis for a proposed acquisition."],
+      "caseStudies": ["Evaluate an acquisition at 9x EBITDA against a WACC of 12%.", "Recommend a funding structure for a ₹200 crore capex programme."],
+      "resumeRequirements": ["Deal or project exposure", "Valuation work with methodology", "Modelling capability", "Stakeholder level"],
+      "portfolioProjects": ["Valuation report", "Accretion/dilution model", "Investment committee memo"],
+      "progression": ["Analyst → Associate → Manager → VP / Head of Corporate Development"],
+      "nextSkills": ["skill-financial-modelling", "skill-powerpoint", "skill-python"]
+    },
+    {
+      "id": "role-transformation", "name": "Finance Transformation Analyst", "family": "Finance Systems", "entryLevel": "2–5 years", "typicalTitles": ["Finance Transformation Analyst", "Process Excellence Analyst", "RPA/Automation Analyst"],
+      "qualifications": ["CMA / CA / MBA with process or systems exposure", "Evidence of process redesign or automation"],
+      "technicalKnowledge": ["Process mapping and reengineering", "Shared services and GBS models", "ERP implementation lifecycle", "Controls in automated processes", "Change management", "Automation business cases"],
+      "software": ["Excel", "Power Query", "Power BI", "RPA tools", "Python for automation", "ERP"],
+      "experienceExpectations": ["Documented a process end to end", "Delivered an automation or improvement", "Managed stakeholder change"],
+      "interviewQuestions": [
+        "How would you decide which finance processes to automate first?",
+        "What controls must exist in an automated reconciliation?",
+        "A process is broken — how do you know whether to fix, automate or eliminate it?",
+        "How do you measure the benefit of an automation programme?",
+        "What are the risks of removing a manual review step?",
+        "How would you manage resistance from a team whose work is being automated?"
+      ],
+      "technicalAssessments": ["Produce an automation business case with quantified benefit and risk for one process.", "Design the target-state process and control matrix for a close process."],
+      "caseStudies": ["Close takes 12 days; target is 5. Build the roadmap.", "An RPA bot failed silently for a week. Design the controls to prevent recurrence."],
+      "resumeRequirements": ["Processes redesigned with metrics", "Automation delivered with benefit", "Stakeholders managed", "Tools named"],
+      "portfolioProjects": ["Automation business case", "Target operating model document", "Automated workflow with control matrix"],
+      "progression": ["Analyst → Process Lead → Transformation Manager → Head of Finance Systems / GPO"],
+      "nextSkills": ["skill-ai-automation", "skill-python", "skill-power-query"]
+    },
+    {
+      "id": "role-data-analyst", "name": "Financial Data Analyst", "family": "Analytics", "entryLevel": "1–4 years", "typicalTitles": ["Financial Data Analyst", "Analytics Analyst", "Reporting and Analytics Analyst"],
+      "qualifications": ["CMA / CA / B.Tech / B.Sc with analytics evidence", "Demonstrated SQL and visualisation capability"],
+      "technicalKnowledge": ["Data modelling", "SQL", "Statistics and distributions", "Visualisation principles", "Forecasting", "Data quality management", "Financial domain knowledge"],
+      "software": ["SQL", "Python (pandas)", "Power BI", "Excel", "Cloud data platforms"],
+      "experienceExpectations": ["Built a dashboard used by others", "Written SQL against a real schema", "Cleaned a messy dataset and documented the process"],
+      "interviewQuestions": [
+        "How would you find duplicate invoices across a million rows?",
+        "Explain the difference between a star schema and a flat table, and when to use each.",
+        "A dashboard shows revenue up 10% but finance reports 4%. How do you investigate?",
+        "How would you detect an anomaly in monthly cost data?",
+        "What would you do about missing values in a key financial field?",
+        "How do you prevent a dashboard from misleading its users?"
+      ],
+      "technicalAssessments": ["Write five SQL queries against a finance schema, including a window function.", "Build a dashboard from a provided dataset and defend every measure definition."],
+      "caseStudies": ["Two source systems report different revenue. Reconcile and recommend a single definition and governance.", "A forecast model has drifted for three months. Diagnose and fix."],
+      "resumeRequirements": ["Technical stack", "Data volumes handled", "Analyses that changed a decision", "Portfolio links"],
+      "portfolioProjects": ["SQL analysis pack", "Power BI dashboard with documentation", "Python analysis notebook"],
+      "progression": ["Data Analyst → Senior Analyst → Analytics Manager → Head of Finance Analytics"],
+      "nextSkills": ["skill-sql", "skill-python", "skill-dax"]
+    }
+  ],
+  "companyPreparation": [
+    {
+      "id": "co-big4", "name": "Big Four professional services", "whatTheyLookFor": ["Technical accuracy under time pressure", "Structured communication", "Client-readiness and professionalism", "Ability to work in a team on tight deadlines"],
+      "process": ["Online assessment (aptitude and sometimes technical)", "Group case discussion", "Technical interview", "Partner or director interview", "HR round"],
+      "preparation": ["Practise case interviews with a timer", "Prepare two technical stories per competency", "Know the firm's service lines and recent publications", "Be able to explain one standard in depth"],
+      "watchOuts": ["Long working hours during season — be honest about capacity", "Expectation of client-facing polish", "Travel requirements"]
+    },
+    {
+      "id": "co-consulting", "name": "Consulting firms", "whatTheyLookFor": ["Structured problem solving", "Commercial judgement", "Quantitative comfort", "Communication and presence"],
+      "process": ["Case interview (often multiple rounds)", "Fit interview", "Written case or presentation"],
+      "preparation": ["Practise 30 cases, focusing on profitability, market entry and cost reduction", "Master mental maths", "Prepare a 90-second personal narrative", "Read industry reports on the target sector"],
+      "watchOuts": ["Case interviews reward structure over the right answer", "Strong opinions must be evidence-backed"]
+    },
+    {
+      "id": "co-banks", "name": "Banks and financial institutions", "whatTheyLookFor": ["Credit and risk judgement", "Regulatory awareness", "Attention to detail", "Relationship and communication skills"],
+      "process": ["Aptitude test", "Technical interview on credit and financial analysis", "Case or credit memo exercise", "HR interview"],
+      "preparation": ["Practise credit memo writing", "Understand ratio covenants and their purpose", "Know RBI regulatory basics", "Be ready to assess a company's repayment capacity in ten minutes"],
+      "watchOuts": ["Compliance culture is strict — never imply flexibility on regulatory matters", "Sales-linked roles may be presented as analytical roles"]
+    },
+    {
+      "id": "co-corporate", "name": "Corporate finance departments", "whatTheyLookFor": ["Ownership and reliability", "Business partnering", "Systems and process fluency", "Continuous improvement mindset"],
+      "process": ["Technical and functional interview", "Case or budget exercise", "Stakeholder interview", "HR discussion"],
+      "preparation": ["Prepare examples of process improvement", "Know the company's business model and recent results", "Be ready to discuss a variance you explained", "Demonstrate ERP familiarity"],
+      "watchOuts": ["Roles can be narrow — ask about scope in the interview", "Month-end and year-end intensity is normal"]
+    }
+  ],
+  "portfolioGuidance": {
+    "principle": "Three excellent artefacts beat ten unfinished ones. Every artefact must state the business problem, the data, the method, the result, the limitations and the recommendation.",
+    "starterSet": ["One three-statement model", "One dashboard with documentation", "One cost or profitability analysis", "One written recommendation memo", "One automation project with evaluation"],
+    "presentation": "Host on GitHub with a README per project. Use synthetic data only. Include a limitations section and a 'what I would do differently' reflection — it signals judgement."
+  }
+}

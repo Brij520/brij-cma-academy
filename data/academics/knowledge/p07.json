@@ -1,0 +1,312 @@
+{
+  "paperId": "p07",
+  "syllabus": "ICMAI Syllabus 2022",
+  "lastReviewed": "2026-11-02",
+  "amendmentWatch": {
+    "severity": "high",
+    "headline": "Two income-tax statutes are now in play.",
+    "detail": "The Income-tax Act, 2025 (Act 30 of 2025) came into force on 1 April 2026 and applies to tax year 2026-27 onwards, repealing the Income-tax Act, 1961 for earlier years. Tax years up to FY 2025-26 continue under the 1961 Act. The section numbers in this knowledge base are the familiar 1961-Act numbers, because that is what the majority of published CMA study material and question banks still use; a mapping table for the new Act is provided below.",
+    "action": "Before your attempt, confirm from the ICMAI study material edition notified for that session which statute and which Finance Act amendments are examinable. If the paper moves to the 2025 Act, re-learn section numbers from the mapping, not the substance.",
+    "map": [
+      { "topic": "New tax regime and slab rates", "old": "115BAC", "new": "202" },
+      { "topic": "Rebate", "old": "87A", "new": "156" },
+      { "topic": "Standard deduction — salary", "old": "16(ia)", "new": "Schedule (salary head)" },
+      { "topic": "House property — 30% deduction and interest", "old": "24(a) / 24(b)", "new": "22(1)(a) / 22(1)(b)" },
+      { "topic": "STCG on listed equity", "old": "111A", "new": "196" },
+      { "topic": "LTCG on listed equity", "old": "112A", "new": "198" },
+      { "topic": "Deduction — investments (80C)", "old": "80C", "new": "123" },
+      { "topic": "NPS", "old": "80CCD", "new": "124" },
+      { "topic": "Health insurance", "old": "80D", "new": "126" },
+      { "topic": "Education loan interest", "old": "80E", "new": "129" },
+      { "topic": "Donations", "old": "80G", "new": "133" },
+      { "topic": "TDS", "old": "192–194 series", "new": "393" }
+    ],
+    "verified": "2026-11-02",
+    "sources": ["https://icmai.co.in", "https://www.incometax.gov.in"]
+  },
+  "chapters": [
+    {
+      "id": "p07-c01",
+      "status": "complete",
+      "summary": "Charge of tax depends on residential status, which is determined for each person every year. An individual is resident if present in India for 182 days or more in the previous year, or for 60 days plus 365 days over the preceding four years; residency then splits into ROR and RNOR. Only an ROR is taxed on global income.",
+      "keyTerms": [
+        { "term": "Previous year / tax year", "definition": "The financial year in which income is earned. Under the 1961 Act the following year is the assessment year; the 2025 Act uses a single 'tax year'." },
+        { "term": "Resident and ordinarily resident (ROR)", "definition": "Resident who is resident in at least 2 of the 10 preceding years and present in India for 729 days or more in the 7 preceding years. Taxed on global income." },
+        { "term": "Resident but not ordinarily resident (RNOR)", "definition": "Resident who fails the additional conditions. Taxed on Indian income plus foreign income from a business controlled in or a profession set up in India." },
+        { "term": "Non-resident", "definition": "Not resident under section 6. Taxed only on income received or accruing in India, and on certain deemed incomes." },
+        { "term": "Deemed resident", "definition": "An Indian citizen with Indian income above the prescribed threshold who is not liable to tax in any other country — treated as RNOR." },
+        { "term": "Basic exemption limit", "definition": "The threshold below which no tax is payable; the level differs between the old and new regimes and is amended by each Finance Act." }
+      ],
+      "formulas": [
+        { "name": "Basic residency test — individuals", "expression": "Resident if: stay ≥ 182 days in PY, OR (stay ≥ 60 days in PY AND stay ≥ 365 days in the 4 preceding PYs)", "meaning": "The 60-day limb is relaxed to 182 days for Indian citizens leaving India for employment or as crew, and for persons of Indian origin visiting India (unless covered by the deemed-resident rule).", "example": "Stay of 200 days in FY 2025-26 → resident, then test ROR/RNOR." },
+        { "name": "Additional conditions for ROR", "expression": "ROR if: resident in ≥ 2 of the 10 preceding PYs AND stay ≥ 729 days in the 7 preceding PYs", "meaning": "If either fails, the person is RNOR.", "example": "First-time resident with 200 days' stay and no prior residence → RNOR." },
+        { "name": "Scope of total income", "expression": "ROR: global income | RNOR: Indian income + foreign business/profession controlled from India | NR: Indian income only", "meaning": "Determine status first, then decide which incomes enter the computation.", "example": "An NR earning rent from a Mumbai flat is taxable on that rent but not on dividends from US shares." }
+      ],
+      "examples": [
+        {
+          "title": "Residential status decision",
+          "scenario": "An Indian citizen worked in Dubai for 5 years and visited India for 150 days in FY 2025-26, earning ₹20 lakh in India. He pays no tax in the UAE.",
+          "steps": ["Indian citizen with Indian income above the notified threshold and no tax liability elsewhere → deemed resident.", "A deemed resident is treated as RNOR.", "The 182-day relaxation for visiting PIOs applies, but the deemed-resident provision overrides."],
+          "result": "RNOR. Indian income is taxable; foreign income is outside the scope unless it is from a business controlled in India."
+        }
+      ],
+      "questions": [
+        { "id": "p07-c01-q1", "q": "Explain the tests for determining the residential status of an individual and the scope of total income for each status.", "type": "theory", "marks": 8, "difficulty": "medium", "answer": "Section 6: an individual is resident in India in a previous year if he is in India for 182 days or more, or for 60 days or more and 365 days or more during the four preceding previous years (the 60-day limb is relaxed to 182 days for citizens leaving for employment or as crew members and for PIOs visiting India). A resident is ROR if additionally resident in at least 2 of the 10 preceding previous years and present for 729 days or more in the 7 preceding previous years; otherwise RNOR. Scope: ROR — all income wherever received or accruing; RNOR — income received or accruing in India plus foreign income from a business controlled in India or a profession set up in India; non-resident — income received or accruing in India and specified deemed incomes.", "tags": ["direct tax", "residential status"] },
+        { "id": "p07-c01-q2", "q": "A person stays in India for 190 days in FY 2025-26 and was in India for 700 days in the preceding 7 years, having been resident in 1 of the 10 preceding years. Determine status.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "Resident under the 182-day test. For ROR, both additional conditions must be met: resident in at least 2 of the 10 preceding years (he was resident in only 1 — fails) and 729 days' stay in the preceding 7 years (700 — also fails). He is therefore RNOR.", "tags": ["direct tax", "residential status"] }
+      ],
+      "pitfalls": ["Applying the 60-day test to an Indian citizen leaving for employment — the 182-day threshold applies.", "Treating 'resident' and 'ordinarily resident' as the same thing."]
+    },
+    {
+      "id": "p07-c02",
+      "status": "complete",
+      "summary": "Salary is taxed on a due-or-received basis. The computation involves basic pay, allowances (some exempt, some taxable), perquisites valued under the Rules, retirement benefits, and deductions under section 16.",
+      "keyTerms": [
+        { "term": "Salary [Sec 15-17]", "definition": "Includes wages, annuity, pension, gratuity, fees, commission, perquisites and profits in lieu of salary, taxed on due or receipt basis, whichever is earlier." },
+        { "term": "House rent allowance exemption [Sec 10(13A)]", "definition": "Exempt to the least of actual HRA, rent paid minus 10% of salary, and 50% (metro) or 40% (non-metro) of salary; not available under the new regime." },
+        { "term": "Perquisite", "definition": "A benefit in addition to salary — rent-free accommodation, car, club membership, ESOPs — valued under the Income-tax Rules." },
+        { "term": "Gratuity exemption [Sec 10(10)]", "definition": "For government employees, fully exempt; for others, the least of ₹20 lakh (lifetime), actual gratuity and 15/26 × salary × completed years." },
+        { "term": "Standard deduction [Sec 16(ia)]", "definition": "A flat deduction from salary — amount depends on the regime applicable; verify the current figure." },
+        { "term": "Profits in lieu of salary [Sec 17(3)]", "definition": "Termination compensation, payments from unrecognised PF, and keyman insurance sums, taxable as salary." }
+      ],
+      "formulas": [
+        { "name": "HRA exemption", "expression": "Exempt = Least of (i) actual HRA received, (ii) rent paid − 10% of salary, (iii) 50% of salary (Delhi, Mumbai, Kolkata, Chennai) or 40% (other cities)", "meaning": "'Salary' for this purpose = basic + DA forming part of retirement benefits + commission as a fixed percentage of turnover.", "example": "Basic+DA ₹6,00,000; HRA ₹2,40,000; rent ₹3,00,000; non-metro → least of 2,40,000, 3,00,000−60,000=2,40,000, 40%×6,00,000=2,40,000 → exempt ₹2,40,000." },
+        { "name": "Gratuity exemption", "expression": "Exempt = Least of ₹20,00,000, actual gratuity, 15/26 × salary × completed years of service", "meaning": "The ₹20 lakh cap applies across all employers in a lifetime.", "example": "Salary ₹50,000/month, 20 years, gratuity ₹6,00,000 → 15/26 × 50,000 × 20 = ₹5,76,923 → exempt ₹5,76,923." },
+        { "name": "Leave encashment exemption", "expression": "Least of actual amount, ₹25,00,000, 10 months' average salary, cash equivalent of leave to credit (maximum 30 days per completed year)", "meaning": "For non-government employees on retirement; government employees are fully exempt.", "example": "Average salary ₹60,000, 300 days' leave credit → 10 months = ₹6,00,000; leave value 60,000 × 300/30 = ₹6,00,000 → exempt ₹6,00,000." },
+        { "name": "Pension", "expression": "Commuted pension: government — fully exempt; non-government — 1/3 exempt if gratuity received, else 1/2", "meaning": "Uncommuted pension is always fully taxable as salary.", "example": "Non-government employee receiving gratuity commutes ₹9,00,000 → exempt ₹3,00,000." }
+      ],
+      "questions": [
+        { "id": "p07-c02-q1", "q": "Compute the HRA exemption: basic salary ₹40,000 pm, DA forming part of retirement benefits ₹8,000 pm, HRA ₹15,000 pm, rent paid ₹18,000 pm, city: Pune.", "type": "problem", "marks": 5, "difficulty": "medium", "answer": "Salary = (40,000 + 8,000) × 12 = ₹5,76,000. Actual HRA = ₹1,80,000. Rent − 10% of salary = 2,16,000 − 57,600 = ₹1,58,400. 40% of salary (non-metro) = ₹2,30,400. Least = ₹1,58,400 exempt; taxable HRA ₹21,600.", "tags": ["direct tax", "salary", "hra"] },
+        { "id": "p07-c02-q2", "q": "Explain the tax treatment of a rent-free accommodation provided by an employer.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "It is a perquisite taxable in the hands of the employee, valued under the Income-tax Rules: for accommodation owned by the employer, a specified percentage of salary (which differs for populations above and below the notified threshold, and is reduced where the property is in a smaller city); for leased accommodation, the lower of the lease rent and the prescribed percentage of salary. Where the employee retains his own house, no adjustment is allowed under the new regime. Furniture provided is valued separately. Utility charges borne by the employer are also perquisites.", "tags": ["direct tax", "perquisites"] }
+      ],
+      "pitfalls": ["Including only basic pay as 'salary' for HRA while excluding DA that forms part of retirement benefits.", "Forgetting that HRA exemption is not available under the new tax regime."]
+    },
+    {
+      "id": "p07-c03",
+      "status": "complete",
+      "summary": "Income from house property is computed as net annual value minus standard deduction and interest. The statutory formula is mechanical: annual value, less municipal taxes paid by the owner, less 30%, less interest on borrowed capital.",
+      "keyTerms": [
+        { "term": "Annual value [Sec 23]", "definition": "For a let property, the higher of expected rent (municipal value or fair rent, subject to standard rent) and actual rent received, reduced by vacancy; for self-occupied, generally nil." },
+        { "term": "Standard deduction [Sec 24(a)]", "definition": "Flat 30% of net annual value, irrespective of actual expenditure." },
+        { "term": "Interest on borrowed capital [Sec 24(b)]", "definition": "Deductible on accrual; for a self-occupied house, limited to ₹2,00,000 (₹30,000 in specified cases) under the old regime." },
+        { "term": "Deemed owner [Sec 27]", "definition": "Includes a transferor who retains possession, a holder of an impartible estate, and a member of a co-operative society to whom a building is allotted." },
+        { "term": "Unrealised rent and vacancy", "definition": "Unrealised rent is deducted if the prescribed conditions are met; vacancy allowance applies where the property was vacant and the actual rent is lower than expected rent." }
+      ],
+      "formulas": [
+        { "name": "House property income", "expression": "Income = Annual value − Municipal taxes paid by owner − 30% of NAV − Interest on borrowed capital", "meaning": "Municipal taxes are deducted only if borne by the owner and actually paid.", "example": "NAV ₹4,80,000; municipal taxes ₹20,000; interest ₹1,50,000 → 4,80,000 − 20,000 = NAV 4,60,000; less 30% = 3,22,000; less interest = ₹1,72,000." },
+        { "name": "Expected rent", "expression": "Expected rent = Higher of municipal value and fair rent, but restricted to standard rent", "meaning": "Compare then apply the standard-rent cap.", "example": "MV ₹3,00,000; FR ₹3,40,000; SR ₹3,20,000 → expected rent ₹3,20,000." },
+        { "name": "Loss from house property set-off", "expression": "Loss set off against other heads up to ₹2,00,000 per year; balance carried forward for 8 years", "meaning": "The cap applies to the aggregate of house property losses under the old regime.", "example": "Interest ₹3,50,000 and NAV nil → loss ₹3,50,000; set off ₹2,00,000, carry forward ₹1,50,000." }
+      ],
+      "examples": [
+        {
+          "title": "Let-out property with vacancy",
+          "scenario": "Municipal value ₹3,60,000; fair rent ₹3,80,000; standard rent ₹3,70,000; actual rent ₹30,000 pm for 10 months; municipal taxes paid ₹24,000; interest ₹2,40,000.",
+          "steps": ["Expected rent = higher of MV ₹3,60,000 and FR ₹3,80,000 = ₹3,80,000, capped at standard rent ₹3,70,000.", "Actual rent = ₹3,00,000. Since the property was vacant for 2 months, compare actual and expected after vacancy adjustment.", "Take the higher of expected rent (₹3,70,000) and actual rent (₹3,00,000) → ₹3,70,000, then allow vacancy per the statutory proviso where applicable.", "NAV = ₹3,46,000 after municipal taxes; 30% deduction ₹1,03,800; interest ₹2,40,000 → income ₹2,200."],
+          "result": "A small positive figure. Always show the expected-rent computation separately — it carries marks."
+        }
+      ],
+      "questions": [
+        { "id": "p07-c03-q1", "q": "Compute income from house property: let-out at ₹25,000 pm for 12 months; municipal value ₹2,80,000; fair rent ₹3,00,000; standard rent ₹2,90,000; municipal taxes ₹18,000 paid by owner; interest on loan ₹3,20,000.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Expected rent = higher of MV 2,80,000 and FR 3,00,000 = 3,00,000, capped at standard rent 2,90,000. Actual rent = 3,00,000. Gross annual value = higher = 3,00,000. Less municipal taxes 18,000 = NAV 2,82,000. Less 30% = 1,97,400. Less interest 3,20,000 = loss ₹1,22,600. Interest is fully allowed for a let-out property; the ₹2 lakh cap applies only to self-occupied property.", "tags": ["direct tax", "house property"] },
+        { "id": "p07-c03-q2", "q": "When is a self-occupied house treated as nil annual value and what is the interest deduction limit?", "type": "theory", "marks": 4, "difficulty": "easy", "answer": "A house occupied for own residence (and not let out during any part of the year, with no other benefit derived) has nil annual value under section 23(2). Interest on borrowed capital is deductible up to ₹2,00,000 where the loan is for purchase or construction and is completed within the prescribed period, and up to ₹30,000 in other cases, under the old regime. The deduction is not available under the new regime for a self-occupied house.", "tags": ["direct tax", "house property"] }
+      ],
+      "pitfalls": ["Deducting municipal taxes that were not actually paid, or were borne by the tenant.", "Applying the ₹2 lakh interest cap to a let-out property."]
+    },
+    {
+      "id": "p07-c04",
+      "status": "complete",
+      "summary": "PGBP is the largest head for business assessees. The computation starts from net profit per the P&L, adds back inadmissible expenses, deducts allowable items and applies specific sections such as 40, 40A, 43B, depreciation under 32, and presumptive schemes 44AD, 44ADA and 44AE.",
+      "keyTerms": [
+        { "term": "Admissible deductions [Secs 30-37]", "definition": "Rent, repairs, insurance, depreciation, and any other expenditure laid out wholly and exclusively for the business, not capital, personal or prohibited." },
+        { "term": "Sec 40A(3)", "definition": "Cash payments exceeding ₹10,000 (₹35,000 for transporters) in a single day to a single person are disallowed, subject to exceptions." },
+        { "term": "Sec 43B", "definition": "Certain expenses are allowed only on actual payment — statutory dues, employer PF, bonus, interest to banks/NBFCs, and GST." },
+        { "term": "Depreciation [Sec 32]", "definition": "Allowed on the written-down value of a block of assets at prescribed rates; 50% depreciation where the asset is put to use for less than 180 days in the year of acquisition." },
+        { "term": "Presumptive taxation", "definition": "Income deemed at a prescribed percentage of turnover: 44AD for eligible business, 44ADA for professionals, 44AE for goods transport." },
+        { "term": "Speculative business", "definition": "A business of purchase and sale of securities or commodities settled otherwise than by actual delivery; losses are set off only against speculative income." }
+      ],
+      "formulas": [
+        { "name": "PGBP computation", "expression": "PGBP = Net profit as per P&L + Inadmissible expenses + Understated income − Admissible expenses − Depreciation − Allowable income", "meaning": "The classic add-back/deduct format; state reasons for each adjustment.", "example": "Net profit ₹10,00,000 + donation ₹50,000 + cash payment disallowed ₹30,000 − depreciation ₹2,00,000 = ₹8,80,000." },
+        { "name": "Sec 40A(3) disallowance", "expression": "Disallowance = 100% of the cash payment above the threshold", "meaning": "Both the expense and the corresponding payment are disallowed where payment is made otherwise than by prescribed banking/electronic modes.", "example": "₹45,000 paid in cash to a supplier → ₹45,000 disallowed and added back." },
+        { "name": "Presumptive income — 44AD", "expression": "Deemed income = 8% of turnover (6% for receipts through prescribed electronic modes)", "meaning": "No separate deduction for expenses; depreciation on assets is also not separately allowed.", "example": "Turnover ₹80,00,000, 70% digital → 6% on ₹56,00,000 + 8% on ₹24,00,000 = ₹5,28,000." },
+        { "name": "Presumptive income — 44ADA", "expression": "Deemed income = 50% of gross receipts", "meaning": "For specified professions; the assessee may declare a lower amount but must then maintain books and face scrutiny." , "example": "Gross receipts ₹40,00,000 → deemed income ₹20,00,000." },
+        { "name": "Presumptive income — 44AE", "expression": "Deemed income = ₹1,000 per tonne of gross vehicle weight per month (higher for heavy vehicles)", "meaning": "Per vehicle, whether or not the vehicle was actually used, for each month of ownership." , "example": "Two 10-tonne trucks owned for 12 months → 2 × 10 × 1,000 × 12 = ₹2,40,000." }
+      ],
+      "questions": [
+        { "id": "p07-c04-q1", "q": "Net profit ₹15,00,000 includes: donation to a political party ₹40,000, cash payment to a supplier ₹60,000, provision for bad debts ₹25,000, depreciation ₹1,80,000, and expenses on CSR ₹1,00,000. Compute PGBP.", "type": "problem", "marks": 8, "difficulty": "hard", "answer": "Add back: political donation ₹40,000 (not allowed), cash payment ₹60,000 (Sec 40A(3)), CSR expenditure ₹1,00,000 (not allowed under 37), and the provision for bad debts ₹25,000 (only actual bad debts written off are allowed). The depreciation figure already debited in the P&L is allowed, but if separate depreciation under section 32 is claimed you must deduct it and disallow the book depreciation. PGBP = 15,00,000 + 40,000 + 60,000 + 25,000 + 1,00,000 = ₹17,25,000 before depreciation adjustment; deduct section 32 depreciation ₹1,80,000 → ₹15,45,000.", "tags": ["direct tax", "pgbp"] },
+        { "id": "p07-c04-q2", "q": "Explain the rule for additional depreciation and the 180-day condition under section 32.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Depreciation on a block of assets is computed at the prescribed rate on the written-down value. Where an asset is acquired during the year and used for less than 180 days, only 50% of the normal depreciation rate applies. Additional depreciation (at 20%, or 10% for assets put to use for less than 180 days) is available to undertakings engaged in manufacture or production of articles, and the balance of additional depreciation is available in the immediately succeeding year. Additional depreciation is not available to assets merely transferred or revalued.", "tags": ["direct tax", "depreciation"] }
+      ],
+      "pitfalls": ["Allowing CSR expenditure as a business deduction.", "Forgetting that a cash payment disallowance is added back at 100%, not at 30%."]
+    },
+    {
+      "id": "p07-c05",
+      "status": "complete",
+      "summary": "Capital gains requires six determinations: whether a transfer occurred, whether the asset is capital, whether it is short-term or long-term, the cost of acquisition and improvement, the exemptions available, and the applicable rate.",
+      "keyTerms": [
+        { "term": "Transfer [Sec 2(47)]", "definition": "Sale, exchange, relinquishment, extinguishment of rights, or compulsory acquisition; includes conversion into stock-in-trade and transactions under gift or will (any transfer under a gift, will or irrevocable trust is not a transfer)." },
+        { "term": "Short-term capital asset", "definition": "An asset held for not more than the prescribed holding period — 12 months for listed securities and units of equity-oriented funds, 24 months for most other assets." },
+        { "term": "Cost of acquisition [Sec 55]", "definition": "The purchase price, or the fair market value as on 1 April 2001 where the asset was acquired before that date and the assessee elects." },
+        { "term": "Indexation", "definition": "Adjustment of cost for inflation using the Cost Inflation Index; withdrawn for most assets for transfers on or after 23 July 2024, with transitional relief for land and buildings acquired before that date." },
+        { "term": "Exemption under Sec 54 series", "definition": "Rollover exemptions: 54 (residential house), 54B (agricultural land), 54D, 54EC (bonds), 54F (any long-term asset into a house)." },
+        { "term": "Fair market value cap", "definition": "For LTCG on listed equity, gains accruing up to 31 January 2018 on specified assets are grandfathered." }
+      ],
+      "formulas": [
+        { "name": "Short-term capital gain", "expression": "STCG = Full value of consideration − Cost of acquisition − Cost of improvement − Expenses wholly and exclusively in connection with transfer", "meaning": "No indexation. Taxed at the applicable rate; listed equity STCG at a special rate.", "example": "Sale ₹12,00,000; cost ₹9,00,000; brokerage ₹12,000 → STCG ₹2,88,000." },
+        { "name": "Long-term capital gain", "expression": "LTCG = Sale consideration − Indexed cost of acquisition − Indexed cost of improvement − Transfer expenses", "meaning": "Indexation applies only where the transitional regime permits; otherwise the asset is taxed at the prescribed concessional rate without indexation.", "example": "Cost acquired in FY 2010-11 ₹5,00,000 with CII 167 and sale year CII 348 → indexed cost ₹10,41,916." },
+        { "name": "Indexed cost", "expression": "Indexed cost = Cost × CII of the year of transfer / CII of the year of acquisition", "meaning": "Uses notified CII values; keep the CII table in your revision sheet.", "example": "₹5,00,000 × 348/167 = ₹10,41,916." },
+        { "name": "Sec 54 exemption", "expression": "Exempt = LTCG × Amount invested in new residential house / Sale consideration (subject to the ₹10 crore cap on investment)", "meaning": "Conditions: purchase within 1 year before or 2 years after, or construct within 3 years; only one house.", "example": "LTCG ₹20,00,000; sale ₹80,00,000; invested ₹40,00,000 → exempt ₹10,00,000." }
+      ],
+      "questions": [
+        { "id": "p07-c05-q1", "q": "Discuss the conditions and computation of the exemption under section 54.", "type": "theory", "marks": 8, "difficulty": "medium", "answer": "Section 54 exempts LTCG arising on transfer of a long-term residential house where the gain is invested in purchasing one residential house in India within 1 year before or 2 years after the transfer, or in constructing a house within 3 years. The exemption is proportionate: LTCG × amount invested (capped at sale consideration) / sale consideration, and capital gains deposited in the CGAS scheme before the due date count as investment. Conditions include that the new house must not be transferred within 3 years and the assessee must not own more than one other residential house on the date of transfer. From the applicable recent amendment, the investment eligible for exemption is capped at ₹10 crore.", "tags": ["direct tax", "capital gains", "section 54"] },
+        { "id": "p07-c05-q2", "q": "An asset bought in FY 2014-15 for ₹8,00,000 (CII 240) was sold in FY 2025-26 for ₹30,00,000 (CII — refer to the notified table). Compute the nature of the gain and the tax treatment to state in your answer.", "type": "problem", "marks": 5, "difficulty": "hard", "answer": "Held for more than 24 months, so the asset is long-term. LTCG = 30,00,000 − indexed cost. Indexed cost = 8,00,000 × CII(transfer year)/240. If the CII for the transfer year is 376, indexed cost = ₹12,53,333 and LTCG = ₹17,46,667, taxable at the applicable long-term rate. Crucially: for transfers on or after 23 July 2024, indexation has been withdrawn for most assets and a lower rate without indexation applies, with a transitional option for land and buildings acquired before that date. State the alternative computations and the option, and cite the notified CII — do not invent it.", "tags": ["direct tax", "capital gains", "indexation"] }
+      ],
+      "pitfalls": ["Applying indexation to a short-term asset.", "Forgetting the 23 July 2024 cutoff when the question is set in the current year."]
+    },
+    {
+      "id": "p07-c06",
+      "status": "outline",
+      "summary": "Income from other sources covers residual incomes — interest, dividends, winnings, gifts, royalty, family pension — and is computed after specified deductions.",
+      "keyTerms": [
+        { "term": "Sec 56(2)(x)", "definition": "Money or property received without consideration or for inadequate consideration from a non-relative above prescribed thresholds is taxable as income from other sources." },
+        { "term": "Family pension deduction", "definition": "A standard deduction of one-third of family pension or ₹15,000, whichever is less." },
+        { "term": "Deduction for interest on compensation", "definition": "50% of interest on compensation or enhanced compensation is deductible." }
+      ],
+      "revisionNotes": [
+        "Gifts from relatives are fully exempt, regardless of value; relationship must be within the statutory definition.",
+        "Interest on savings bank accounts and fixed deposits is taxed under this head, not as business income.",
+        "Winnings from lotteries, crossword puzzles and online games are taxed at a flat special rate without the basic exemption or deductions."
+      ]
+    },
+    {
+      "id": "p07-c07",
+      "status": "complete",
+      "summary": "Total income is computed by aggregating the five heads, applying clubbing and set-off, and deducting Chapter VI-A items. The individual computation is the single most repeated question in the paper, together with choosing between the old and new regimes.",
+      "keyTerms": [
+        { "term": "Clubbing [Secs 60-64]", "definition": "Income of a spouse, minor child or son's wife is included in the assessee's income in specified circumstances, such as transfer of assets without adequate consideration or income from a business in which the assessee has substantial interest." },
+        { "term": "Set-off and carry forward [Secs 70-80]", "definition": "Inter-head set-off of current-year losses (except capital losses and speculation losses against specified heads); carry forward of unabsorbed depreciation indefinitely (business loss 8 years, speculation 4 years, house property 8 years)." },
+        { "term": "Chapter VI-A deductions", "definition": "Deductions from gross total income — 80C, 80CCD, 80D, 80E, 80G, 80TTA/80TTB, 80U — most of which are unavailable under the new regime." },
+        { "term": "New tax regime [Sec 115BAC]", "definition": "Concessional slab rates with a much narrower set of deductions; the assessee opts and, for business income, has limited ability to switch back." },
+        { "term": "Rebate [Sec 87A]", "definition": "A rebate for resident individuals whose total income is within the notified limit, making tax effectively nil in that band." },
+        { "term": "Alternate minimum tax", "definition": "AMT on adjusted total income for non-corporate assessees claiming specified deductions, credit for which is available in later years." }
+      ],
+      "formulas": [
+        { "name": "Total income", "expression": "Gross total income = Salary + House property + PGBP + Capital gains + Other sources", "meaning": "Then apply clubbing, set-off, Chapter VI-A, and compute tax at slab or special rates.", "example": "Salary 9,00,000 + HP 1,72,000 + Other sources 60,000 = GTI 11,32,000; less 80C 1,50,000 → TI 9,82,000." },
+        { "name": "80C ceiling", "expression": "Maximum ₹1,50,000 (80C + 80CCC + 80CCD(1)), plus 80CCD(1B) ₹50,000 for NPS", "meaning": "The aggregate cannot exceed the statutory cap; 80CCD(1) is also capped at 10% of salary.", "example": "86,000 + 40,000 + 40,000 + 50,000 NPS = 2,16,000 → allowed 1,50,000 + 50,000 = ₹2,00,000." },
+        { "name": "80D deduction", "expression": "Self and family: ₹25,000 (₹50,000 if senior); parents: ₹25,000 (₹50,000 if senior); preventive health check-up within the overall cap", "meaning": "Limits depend on age and whether parents are insured; verify current limits.", "example": "Self 40 years: ₹22,000 premium + parents 65 years: ₹45,000 premium → deduction ₹25,000 + ₹45,000 = ₹70,000." },
+        { "name": "Tax liability", "expression": "Tax = Slab tax on total income + Special-rate taxes (capital gains, winnings) − Rebate − Relief (89) + Surcharge + Health and education cess", "meaning": "Marginal relief applies at surcharge thresholds.", "example": "TI ₹12,00,000 under the new regime with slab rates → compute slab by slab, then apply cess." }
+      ],
+      "examples": [
+        {
+          "title": "Regime comparison — the decision that matters",
+          "scenario": "A salaried employee has gross salary ₹15,00,000 and eligible deductions of ₹3,50,000 (80C ₹1,50,000, 80D ₹50,000, home loan interest ₹1,50,000).",
+          "steps": ["Compute total income and tax under the old regime using the deductions.", "Compute total income and tax under the new regime using the concessional slabs but allowing only the narrow set of permitted deductions.", "Compare the final tax including cess and surcharge."],
+          "result": "The answer must show both computations side by side. Present the comparison as a table and state which regime is beneficial, because the marks are for the comparison, not just a figure."
+        }
+      ],
+      "questions": [
+        { "id": "p07-c07-q1", "q": "Explain clubbing of income under section 64 with three situations.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Section 64(1)(ii): remuneration from a concern in which the assessee has substantial interest, paid to the spouse, is clubbed unless the spouse has technical or professional qualifications. Section 64(1)(iv): income from an asset transferred to the spouse or son's wife without adequate consideration is clubbed with the transferor. Section 64(1A): income of a minor child is clubbed with the parent whose income (excluding the minor's) is higher, with an exemption of ₹1,500 per child; income of a minor with disability and income from manual work or the child's own skill is not clubbed. Cross-transfers and assets transferred before marriage are outside clubbing.", "tags": ["direct tax", "clubbing"] },
+        { "id": "p07-c07-q2", "q": "An individual has business income of ₹8,00,000, a house property loss of ₹3,40,000 and STCG on listed shares of ₹1,20,000. Compute total income.", "type": "problem", "marks": 5, "difficulty": "hard", "answer": "House property loss is set off against other income up to ₹2,00,000 in the year; the balance ₹1,40,000 is carried forward for 8 years (against house property income only). STCG is taxable at the special rate. Total income = business ₹8,00,000 + STCG ₹1,20,000 − house property loss limited to ₹2,00,000 = ₹7,20,000, with the balance loss carried forward. Note the restriction: capital gains cannot be reduced by house property loss.", "tags": ["direct tax", "set-off"] }
+      ],
+      "pitfalls": ["Setting off house property loss against capital gains — not permitted.", "Forgetting that Chapter VI-A deductions cannot exceed gross total income or create a loss."]
+    },
+    {
+      "id": "p07-c08",
+      "status": "outline",
+      "summary": "Indirect taxes are levied on consumption, not income. The pre-2017 regime of excise, VAT, service tax and CST was replaced by GST on 1 July 2017, which is a destination-based, value-added tax on supply with input tax credit to remove cascading.",
+      "keyTerms": [
+        { "term": "Taxable event", "definition": "The event that triggers the levy — under GST it is 'supply' of goods or services." },
+        { "term": "Cascading", "definition": "Tax on tax that arises when credit is not available; GST is designed to eliminate it through the credit chain." },
+        { "term": "Destination principle", "definition": "Tax accrues to the jurisdiction of consumption, achieved through place-of-supply rules and integrated GST." },
+        { "term": "GST Council [Art 279A]", "definition": "The constitutional body that recommends rates, exemptions and thresholds; its recommendations are not binding but are followed in practice." },
+        { "term": "Dual model", "definition": "CGST and SGST on intra-state supply; IGST on inter-state supply, collected by the Centre and apportioned." }
+      ],
+      "revisionNotes": [
+        "GST is levied under Article 246A; Parliament has exclusive power to levy IGST.",
+        "Petroleum crude, high-speed diesel, petrol, natural gas, ATF and alcohol for human consumption remain outside GST (alcohol) or are currently outside its levy (petroleum products).",
+        "GST is a supply-based tax: the taxable event is supply, not manufacture, sale or provision."
+      ],
+      "questions": [
+        { "id": "p07-c08-q1", "q": "Explain the concept of cascading and how GST removes it.", "type": "theory", "marks": 5, "difficulty": "easy", "answer": "Cascading occurs when tax is charged on a value that already includes tax, and no credit is available for the earlier tax. Under the earlier regime, excise paid by a manufacturer was not creditable to a service provider, and CST was not creditable, so tax entered the cost base repeatedly. Under GST, tax paid at each stage on inputs and input services is available as input tax credit, and tax is charged only on the value added at each stage. The final burden therefore approximates the tax on the retail value, regardless of the number of stages in the supply chain.", "tags": ["gst", "concepts"] }
+      ]
+    },
+    {
+      "id": "p07-c09",
+      "status": "complete",
+      "summary": "GST is the largest single block in the paper at 35%. You need the supply concept, place/time/value of supply, registration, input tax credit, documentation, returns and the demand/appeal machinery. Credit mechanics carry most of the practical marks.",
+      "keyTerms": [
+        { "term": "Supply [Sec 7]", "definition": "All forms of supply of goods or services for consideration in the course or furtherance of business, plus specified supplies without consideration, import of services, and notified activities treated as supply." },
+        { "term": "Composite vs mixed supply", "definition": "Composite: naturally bundled supplies in the ordinary course of business, taxed at the principal supply's rate. Mixed: two or more individual supplies bundled for one price, taxed at the highest rate." },
+        { "term": "Input tax credit [Sec 16]", "definition": "Credit of tax paid on inputs, input services and capital goods, available subject to possession of a tax invoice, receipt of the goods/services, tax paid by the supplier, filing of returns, and the goods not being used for blocked purposes." },
+        { "term": "Blocked credit [Sec 17(5)]", "definition": "Specified credits that are not available — motor vehicles for passenger transport (with exceptions), food and beverages, club membership, works contract for immovable property, and goods lost or destroyed, among others." },
+        { "term": "Reverse charge [Sec 9(3)/(4)]", "definition": "The recipient pays tax instead of the supplier for notified supplies and for unregistered supplier transactions notified under section 9(4)." },
+        { "term": "Place of supply", "definition": "Determines whether a supply is intra-state or inter-state and therefore CGST+SGST or IGST; separate rules for goods and services, including the location of the recipient for B2B services." },
+        { "term": "E-way bill", "definition": "Required for movement of goods of value above the notified threshold; generated on the portal with validity based on distance." },
+        { "term": "Composition scheme [Sec 10]", "definition": "A simplified scheme for small taxpayers at a flat rate on turnover, with no input tax credit and restrictions on inter-state outward supply." }
+      ],
+      "formulas": [
+        { "name": "Value of supply [Sec 15]", "expression": "Value = Transaction price + Taxes and duties other than GST + Amounts charged by the supplier + Incidental expenses + Subsidies (except government subsidies) + Interest/late fees", "meaning": "Discounts given before or at the time of supply and recorded on the invoice reduce value; post-supply discounts require a linkage in the agreement.", "example": "Price ₹1,00,000 + freight charged separately ₹5,000 + subsidy from a private body ₹2,000 = value ₹1,07,000." },
+        { "name": "GST payable", "expression": "Net GST = Output tax − Eligible input tax credit (CGST against CGST, SGST against SGST, IGST against any)", "meaning": "Credit utilisation follows the statutory order and cannot cross the CGST/SGST streams.", "example": "Output CGST ₹90,000, SGST ₹90,000; IGST credit ₹1,50,000 → use IGST against CGST then SGST." },
+        { "name": "Rule 42 — common credit", "expression": "ITC on common inputs = Total ITC × (Exempt/Non-business turnover ÷ Total turnover)", "meaning": "The balance alone is eligible; the reversal is computed monthly and annualised in the annual return.", "example": "ITC ₹2,00,000, exempt turnover ₹30,00,000 of ₹1,00,00,000 → reversal ₹60,000, eligible ₹1,40,000." },
+        { "name": "Registration threshold", "expression": "Goods ₹40,00,000; services ₹20,00,000 (lower thresholds for special category states); compulsory registration regardless of threshold for inter-state supply, casual taxable persons and reverse-charge liability", "meaning": "Confirm the current notified thresholds — they are amended by notification.", "example": "A service provider with turnover ₹18,00,000 in a normal state is below the threshold but may still register voluntarily." },
+        { "name": "Reverse charge", "expression": "Tax payable = Value of notified supply × Applicable rate, discharged in cash (no credit for the tax paid under RCM against the same supply until it is claimed as ITC)", "meaning": "The recipient self-invoices and reports in the applicable return.", "example": "Legal services from an advocate ₹1,00,000 at 18% → recipient pays ₹18,000 under RCM and can claim it as ITC if in business." }
+      ],
+      "examples": [
+        {
+          "title": "Classification and tax computation",
+          "scenario": "A trader in Maharashtra sells goods worth ₹1,00,000 to a buyer in Gujarat (IGST) and also supplies a bundled package of a printed book and a calendar for ₹5,000.",
+          "steps": ["Inter-state supply → IGST at the applicable rate.", "Book and calendar are naturally bundled? A book and a calendar sold together for one price is a mixed supply, not composite, unless the bundling is natural.", "Apply the highest rate in the bundle to the whole mixed supply value."],
+          "result": "IGST on ₹1,00,000 plus the highest applicable rate on the ₹5,000 mixed supply. State your classification reasoning — that is where the marks sit."
+        }
+      ],
+      "questions": [
+        { "id": "p07-c09-q1", "q": "Explain the conditions for availing input tax credit under section 16.", "type": "theory", "marks": 8, "difficulty": "medium", "answer": "Four cumulative conditions plus three procedural ones. Substantive: (i) possession of a tax invoice or debit note; (ii) receipt of the goods or services; (iii) the tax has been actually paid to the government by the supplier; (iv) the supplier has furnished the return and the credit is communicated in Form GSTR-2B. Additional: the recipient must have furnished his return, the credit must be claimed before the 30 November following the financial year or the annual return date, whichever is earlier, and the goods must not be used for blocked purposes under section 17(5). Where the recipient fails to pay the supplier within 180 days, the credit must be reversed with interest and can be re-availed on payment.", "tags": ["gst", "input tax credit"] },
+        { "id": "p07-c09-q2", "q": "Determine whether the following are composite or mixed supplies: (a) a hotel package with accommodation and meals; (b) a gift hamper of soap and a towel sold for one price.", "type": "case", "marks": 4, "difficulty": "medium", "answer": "(a) Composite supply — accommodation and food are naturally bundled, with accommodation as the principal supply, taxed at the accommodation rate. (b) Mixed supply — soap and towel are independent supplies bundled for a single price, so the highest rate among the items applies to the whole. The test is natural bundling in the ordinary course of business plus the principal supply.", "tags": ["gst", "composite supply"] },
+        { "id": "p07-c09-q3", "q": "A supplier has output CGST ₹1,20,000, output SGST ₹1,20,000, IGST credit ₹1,00,000, CGST credit ₹40,000 and SGST credit ₹40,000. Compute the net cash payable.", "type": "problem", "marks": 5, "difficulty": "medium", "answer": "Utilise IGST credit against CGST first: ₹1,00,000 against CGST ₹1,20,000 → CGST payable ₹20,000. Then utilise CGST credit: nil left. SGST: credit ₹40,000 against ₹1,20,000 → payable ₹80,000. Total cash = ₹20,000 + ₹80,000 = ₹1,00,000. State the utilisation order: IGST first, then CGST/SGST as applicable, with no cross-utilisation between CGST and SGST.", "tags": ["gst", "computation"] },
+        { "id": "p07-c09-q4", "q": "List any six items on which input tax credit is blocked under section 17(5).", "type": "theory", "marks": 6, "difficulty": "easy", "answer": "Motor vehicles for transportation of persons with seating capacity up to 13 (except when used for further supply, passenger transport or driving training); food and beverages, outdoor catering, beauty treatment, health services, cosmetic surgery; club, health and fitness membership; rent-a-cab (with exceptions); life and health insurance (except where statutory); works contract services for construction of immovable property (except plant and machinery); goods or services used for personal consumption; goods lost, stolen, destroyed, written off or given as gifts/free samples; tax paid under sections 74, 129 and 130.", "tags": ["gst", "blocked credit"] }
+      ],
+      "revisionNotes": [
+        "Supply is the taxable event — four tests: goods/services, consideration, course or furtherance of business, and the supply is in the taxable territory.",
+        "Time of supply for goods: generally earlier of invoice date or payment date; for services: earlier of invoice (if within 30 days) or payment.",
+        "Place of supply for B2B services = location of the recipient; for B2C services = location of the supplier unless a specific rule applies.",
+        "Returns: GSTR-1 (outward), GSTR-3B (summary and payment), GSTR-9/9C (annual), with QRMP options for small taxpayers.",
+        "Refund of unutilised ITC is available for zero-rated exports and inverted duty structure.",
+        "Interest at 18% applies on delayed payment; 24% where the credit was availed and utilised wrongly."
+      ],
+      "pitfalls": [
+        "Using 'invoice date' blindly for time of supply where payment was received earlier.",
+        "Claiming credit on a supplier invoice without checking GSTR-2B — the practical exam loves this trap.",
+        "Treating a mixed supply as composite and applying a lower rate."
+      ],
+      "linkedConcepts": ["c-itc", "c-place-of-supply"]
+    },
+    {
+      "id": "p07-c10",
+      "status": "complete",
+      "summary": "Customs duty is levied on import and export under the Customs Act, 1962, with the Customs Tariff Act fixing rates. The core computations are assessable value, basic customs duty, social welfare surcharge, IGST on imports, and duty drawback on exports.",
+      "keyTerms": [
+        { "term": "Assessable value [Sec 14]", "definition": "The transaction value of imported goods plus freight and insurance — the CIF value — subject to the valuation rules where the transaction value is not acceptable." },
+        { "term": "Basic customs duty", "definition": "Duty at the rate specified in the First Schedule to the Customs Tariff Act, subject to exemptions by notification." },
+        { "term": "Social welfare surcharge", "definition": "A surcharge on the aggregate of customs duties, levied at the notified rate (currently 10% of basic duty) — verify the rate." },
+        { "term": "IGST on imports", "definition": "Integrated GST is levied on the value of imported goods plus customs duty, and is available as input tax credit, unlike basic customs duty." },
+        { "term": "Warehousing", "definition": "Goods can be stored in a bonded warehouse without payment of duty; duty is payable at the rate prevailing on the date of removal." },
+        { "term": "Duty drawback [Sec 74/75]", "definition": "Refund of duty on imported inputs used in exported goods — 98% of duty where the goods are re-exported, and a specified rate where inputs are used in manufacture." }
+      ],
+      "formulas": [
+        { "name": "Assessable value", "expression": "AV = FOB value + freight + insurance (actual, or 1.125% of FOB if not ascertainable)", "meaning": "Use the transaction value where the parties are unrelated and there is no other reason to reject it.", "example": "FOB $10,000 at ₹83/$ = ₹8,30,000; freight ₹40,000; insurance 1.125% of FOB ₹9,338 → AV ₹8,79,338." },
+        { "name": "Total import duty", "expression": "BCD = AV × BCD rate; SWS = 10% × BCD; IGST = (AV + BCD + SWS) × IGST rate", "meaning": "IGST is charged on the value inclusive of customs duties; IGST is creditable but BCD and SWS are not.", "example": "AV ₹10,00,000 at BCD 10% → BCD ₹1,00,000; SWS ₹10,000; IGST 18% on ₹11,10,000 = ₹1,99,800." },
+        { "name": "Effective duty on imports", "expression": "Total landed duty = BCD + SWS + IGST (and compensation cess where applicable)", "meaning": "Compute each component separately and then add — this is where most candidates lose presentation marks.", "example": "Total ₹3,09,800 on an AV of ₹10,00,000 (30.98%)." },
+        { "name": "Duty drawback — re-export", "expression": "Drawback = 98% of the duty paid on imported goods re-exported as such", "meaning": "Section 74 allows 98% where the goods are identified; the balance is retained as cost of administration.", "example": "Duty ₹2,00,000 → drawback ₹1,96,000." }
+      ],
+      "examples": [
+        {
+          "title": "Import duty computation",
+          "scenario": "A manufacturer imports machinery with FOB value $20,000 at ₹83.5/$, freight $800, insurance $120, BCD 7.5%, SWS 10% of BCD, IGST 18%.",
+          "steps": ["FOB in INR = ₹16,70,000; freight ₹66,800; insurance ₹10,020 → AV ₹17,46,820.", "BCD = 7.5% = ₹1,31,012 (round to ₹1,31,012).", "SWS = 10% of BCD = ₹13,101.", "IGST = 18% of (17,46,820 + 1,31,012 + 13,101) = 18% of ₹18,90,933 = ₹3,40,368."],
+          "result": "Total duty ₹4,84,481. Only the IGST portion is available as input tax credit."
+        }
+      ],
+      "questions": [
+        { "id": "p07-c10-q1", "q": "Explain the determination of assessable value of imported goods under the Customs Act.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Under section 14, the value is the price at which goods are ordinarily sold or offered for sale in the course of international trade where the seller and buyer have no interest in each other and the price is the sole consideration. This is the transaction value, loaded with freight, insurance and certain other costs up to the place of importation. Where the transaction value cannot be accepted — related parties, restrictions on disposition, indeterminate conditions, or unreliable data — the Customs Valuation Rules apply sequentially: identical goods, similar goods, deductive value, computed value, and finally residual methods. Royalties, commissions and proceeds of resale may require addition to the value.", "tags": ["customs", "valuation"] },
+        { "id": "p07-c10-q2", "q": "Goods with an assessable value of ₹8,00,000 attract BCD at 10%, SWS at 10% of BCD and IGST at 18%. Compute the total duty.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "BCD = ₹80,000. SWS = ₹8,000. IGST = 18% × (8,00,000 + 80,000 + 8,000) = 18% × 8,88,000 = ₹1,59,840. Total = ₹2,47,840. IGST ₹1,59,840 is available as credit; BCD and SWS are not.", "tags": ["customs", "computation"] }
+      ],
+      "pitfalls": ["Charging IGST only on the assessable value and ignoring the loaded customs duty.", "Treating BCD as creditable input tax."]
+    }
+  ]
+}

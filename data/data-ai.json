@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "purpose": "Data Science and AI for Finance — a complete technical pathway plus eight buildable finance automation projects.",
+    "lastReviewed": "2026-11-02",
+    "principle": "Build the manual process first, by hand. Automate only what you can already do correctly, because an automated error scales faster than a manual one.",
+    "dataPolicy": "Use synthetic, anonymised or public data only. Never put client, employer or personal data into a third-party model or a public repository."
+  },
+  "pathway": [
+    {
+      "id": "ds-python", "name": "Python for Finance", "hours": 45, "level": "Beginner to Advanced",
+      "modules": [
+        { "name": "Python fundamentals", "topics": ["Variables, types and operators", "Strings and formatting", "Conditionals and loops", "Functions, arguments, return values", "Modules and imports", "Exceptions and validation"], "exercise": "Write a loan amortisation function and validate inputs against a manual computation." },
+        { "name": "Data structures", "topics": ["Lists and tuples", "Dictionaries for lookups", "Sets for deduplication", "Comprehensions", "Nested structures for financial records", "Choosing the right structure"], "exercise": "Represent a chart of accounts as a dictionary and traverse it to produce a trial balance." },
+        { "name": "pandas", "topics": ["Series and DataFrame", "Reading CSV, Excel and SQL", "Indexing with loc and iloc", "Filtering and sorting", "groupby and aggregation", "pivot_table", "merge and join", "Handling dates and missing values", "Rolling and resampling"], "exercise": "Rebuild a monthly management P&L from a journal-level DataFrame." },
+        { "name": "NumPy", "topics": ["Arrays and vectorised operations", "Broadcasting", "Statistical functions", "Matrix operations", "Random sampling for simulation", "Performance compared with loops"], "exercise": "Run a 10,000-path Monte Carlo on project cash flows and report the distribution of NPV." },
+        { "name": "Matplotlib and reporting", "topics": ["Line, bar and waterfall charts", "Formatting for management presentation", "Multiple axes and subplots", "Saving publication-quality output", "Chart integrity and honest scales"], "exercise": "Produce a variance waterfall chart from a DataFrame with clean labels and no misleading axes." },
+        { "name": "Data processing pipelines", "topics": ["Validation rules and assertions", "Logging", "Idempotent processing", "Error reports", "Scheduling", "Versioning outputs"], "exercise": "Build a validated monthly ingestion pipeline that rejects bad rows and logs every rejection with a reason." },
+        { "name": "Financial data analysis", "topics": ["Ratio computation at scale", "Cohort and ageing analysis", "Time-series decomposition", "Peer comparison", "Anomaly detection basics", "Reconciliation logic"], "exercise": "Compute a full ratio panel for 20 fictional companies and rank them on a composite score." }
+      ],
+      "projects": ["Automated MIS generator", "Financial statement analyser", "Automated reconciliation prototype"]
+    },
+    {
+      "id": "ds-sql", "name": "SQL for Financial Data", "hours": 35, "level": "Beginner to Advanced",
+      "modules": [
+        { "name": "Database fundamentals", "topics": ["Relational model", "Primary and foreign keys", "Normalisation", "Data types", "Schema design for finance", "Transactions and ACID"], "exercise": "Design a schema for journal entries, accounts, entities and periods with correct keys." },
+        { "name": "Queries", "topics": ["SELECT and filtering", "Sorting and limiting", "Expressions and aliases", "CASE statements", "NULL semantics", "Date arithmetic"], "exercise": "Produce a monthly trial balance from a journal table with debit and credit pivoted." },
+        { "name": "Joins", "topics": ["INNER and OUTER joins", "Self joins for hierarchies", "Anti-joins for exceptions", "Duplicate multiplication risk", "Join performance"], "exercise": "Find all invoices with no matching purchase order using an anti-join." },
+        { "name": "Aggregations", "topics": ["GROUP BY and HAVING", "Conditional aggregation", "Rollup and cube", "Window aggregates", "Counting distinct correctly"], "exercise": "Compute collection efficiency by customer segment and month." },
+        { "name": "Subqueries and CTEs", "topics": ["Scalar and correlated subqueries", "EXISTS and IN", "CTE chains for readable logic", "Recursive CTEs for hierarchies", "Materialisation considerations"], "exercise": "Build a receivables ageing report using a CTE chain with defined buckets." },
+        { "name": "Window functions", "topics": ["ROW_NUMBER, RANK, DENSE_RANK", "Running totals and moving averages", "LAG and LEAD for period comparison", "Partitioning", "Framing clauses"], "exercise": "Produce a month-on-month revenue growth report with rank and prior-period comparison in one query." },
+        { "name": "Financial database analysis", "topics": ["Reconciliation queries", "Duplicate payment detection", "Benford's law screening", "Segregation-of-duties conflicts", "Full-population audit testing", "Query documentation"], "exercise": "Run five audit analytics tests on a synthetic journal and write a findings memo." }
+      ],
+      "projects": ["Financial database analysis", "Audit analytics pack", "Automated reconciliation prototype"]
+    },
+    {
+      "id": "ds-ai", "name": "AI for Finance", "hours": 40, "level": "Beginner to Advanced",
+      "modules": [
+        { "name": "Generative AI foundations", "topics": ["What LLMs do and do not do", "Tokens, context and temperature", "Model families and trade-offs", "Hallucination mechanisms", "Cost and latency", "Choosing a model for a task"], "exercise": "Compare three models on the same finance task and document accuracy, consistency and cost." },
+        { "name": "Large language models in practice", "topics": ["Structured output and JSON schema", "Function calling", "System prompts and guardrails", "Context management", "Rate limits and retries", "Logging and audit"], "exercise": "Build a JSON-output extractor that converts an unstructured invoice description into validated fields." },
+        { "name": "Prompt engineering", "topics": ["Role, task, context and format", "Few-shot examples", "Chain-of-thought and self-checking", "Decomposition for complex tasks", "Refusal and uncertainty handling", "Evaluation of prompt versions"], "exercise": "Build and version a prompt library for variance commentary, with a scoring rubric and a regression test set." },
+        { "name": "Retrieval-augmented generation", "topics": ["Document ingestion and chunking", "Embeddings and similarity search", "Vector stores", "Grounded answering with citations", "Retrieval quality evaluation", "Handling conflicting sources"], "exercise": "Build a grounded assistant over a library of accounting standards and measure citation accuracy." },
+        { "name": "AI agents", "topics": ["Tool use and planning", "Multi-step task decomposition", "Guardrails and approval gates", "Loop and cost control", "Human-in-the-loop design", "Failure modes"], "exercise": "Design an agent that drafts a reconciliation exception report but cannot post entries without approval." },
+        { "name": "Model evaluation", "topics": ["Golden test sets", "Accuracy, precision and recall for extraction", "Consistency and drift", "Human review sampling", "Cost per task", "Acceptance thresholds"], "exercise": "Build a 50-item evaluation set for the invoice extractor and report field-level accuracy." },
+        { "name": "AI workflows", "topics": ["Workflow orchestration", "Trigger and schedule design", "Error handling and dead-letter queues", "Versioning models and prompts", "Change management", "Documentation"], "exercise": "Document an end-to-end AI-assisted month-end workflow with human checkpoints." },
+        { "name": "Responsible AI and governance", "topics": ["Data privacy and confidentiality", "Bias and fairness", "Explainability and auditability", "Regulatory expectations for financial reporting", "Vendor risk and data residency", "AI policy design"], "exercise": "Write a one-page AI use policy for a finance function covering permitted uses, prohibited uses, review and accountability." },
+        { "name": "Finance automation", "topics": ["Process selection and ROI", "Exception handling design", "Straight-through processing targets", "Controls in automated processes", "Benefits tracking", "Sustainability and maintenance"], "exercise": "Build a business case for automating one finance process with cost, benefit and risk." }
+      ],
+      "projects": ["Accounting Q&A assistant", "Tax research assistant", "Budget variance explanation tool"]
+    }
+  ],
+  "automationProjects": [
+    {
+      "id": "auto-01", "no": 1, "title": "Automated MIS Generator", "difficulty": "Intermediate", "hours": 18,
+      "problem": "A finance team spends three days each month copying extracts into a report pack, and the copy-paste introduces errors.",
+      "inputs": ["Monthly GL extract (CSV)", "Chart of accounts mapping", "Budget file", "Headcount file", "Prior-month pack for comparison"],
+      "approach": ["Validate the extract: required columns, control totals, period coverage", "Map accounts to reporting lines from a maintained mapping table", "Reconcile actuals to the trial balance", "Compute actual, budget, variance and variance %", "Generate the Excel pack with formatted sheets and charts", "Write a run log and an exception list"],
+      "tools": ["Python (pandas, openpyxl)", "Power Query alternative", "Excel"],
+      "deliverable": "Python package or workbook + generated sample pack + README + validation log",
+      "evaluation": ["Reconciles to the trial balance exactly", "Fails loudly on bad input rather than silently", "Runs unattended and idempotently", "Pack is presentation-ready", "Documented enough for another person to run"],
+      "guardrail": "Never overwrite the prior-month pack; archive every output with a timestamp."
+    },
+    {
+      "id": "auto-02", "no": 2, "title": "Invoice Extraction System", "difficulty": "Advanced", "hours": 22,
+      "problem": "Vendor invoices arrive as PDFs and are keyed manually into the ERP, causing errors and duplicate payments.",
+      "inputs": ["A set of synthetic invoice PDFs in varied layouts", "Vendor master", "Purchase order file", "Tax rules for validation"],
+      "approach": ["Extract text and tables from the PDFs", "Parse invoice number, date, vendor, GSTIN, line items, tax and total", "Validate arithmetic: line totals sum to invoice total, tax computed correctly, GSTIN format valid", "Match to purchase order and flag variances", "Detect duplicates on vendor, invoice number, amount and date", "Output a validated CSV plus an exception report"],
+      "tools": ["Python (pdfplumber, pandas)", "Optional LLM for messy layouts with structured output", "Excel for review"],
+      "deliverable": "Extraction pipeline + accuracy report + exception report + evaluation set",
+      "evaluation": ["Field-level accuracy measured on a labelled test set", "Arithmetic validation catches seeded errors", "Duplicates detected", "Low-confidence items routed to human review", "No silent failures"],
+      "guardrail": "A human must approve before any invoice is posted to the ledger. Extraction output is a draft, never a posting."
+    },
+    {
+      "id": "auto-03", "no": 3, "title": "Expense Classification Assistant", "difficulty": "Intermediate", "hours": 14,
+      "problem": "Employee expense claims are coded to the wrong GL accounts, distorting cost-centre reporting and GST credit.",
+      "inputs": ["Historical expense claims with descriptions, amounts, merchants and correct GL codes", "Chart of accounts", "Policy rules"],
+      "approach": ["Clean and explore the history to find class balance", "Establish a rule-based baseline using merchant and keyword mapping", "Add a model or LLM classifier for the residual cases", "Evaluate against a held-out set with per-class accuracy", "Route low-confidence predictions to review", "Report classification accuracy and cost per claim"],
+      "tools": ["Python (scikit-learn or LLM API)", "Excel"],
+      "deliverable": "Classifier + confusion matrix + review queue design + policy note",
+      "evaluation": ["Accuracy above a stated baseline", "Rare classes handled sensibly", "Confidence threshold justified", "Human review path clear", "Bias and error analysis included"],
+      "guardrail": "Never auto-approve an expense claim on model output alone."
+    },
+    {
+      "id": "auto-04", "no": 4, "title": "Financial Statement Analyser", "difficulty": "Intermediate", "hours": 16,
+      "problem": "Analysing each set of accounts takes hours of manual rekeying, and the arithmetic is easy to get wrong.",
+      "inputs": ["Synthetic or public annual reports (PDF)", "A reference ratio framework"],
+      "approach": ["Extract the primary statements", "Normalise line items to a common schema", "Verify that assets equal liabilities plus equity", "Compute 20 ratios and a DuPont decomposition", "Compare with prior years and peers", "Generate a one-page analytical summary with limitations stated"],
+      "tools": ["Python (pdfplumber, pandas)", "Excel", "Optional LLM for narrative with strict grounding"],
+      "deliverable": "Analyser + validated output for three companies + methodology note",
+      "evaluation": ["Balances are checked and reported", "Ratios reconcile to manual computation", "Comparatives handled correctly", "Narrative makes no claim the data does not support", "Limitations explicit"],
+      "guardrail": "Extraction must be reviewed against the source page before any number is relied on."
+    },
+    {
+      "id": "auto-05", "no": 5, "title": "Tax Research Assistant", "difficulty": "Advanced", "hours": 20,
+      "problem": "Finding the applicable provision and its amendments takes time, and generic chatbot answers cannot be trusted.",
+      "inputs": ["A curated library of public tax material: Act text, rules, circulars, your own notes", "A set of 30 research questions with verified answers"],
+      "approach": ["Curate and chunk the source library with metadata: act, section, date, amendment status", "Build retrieval over the library", "Force citations to the retrieved source", "Require the answer to state the date of the law relied on", "Evaluate answer accuracy and citation correctness on the test set", "Add an explicit 'verify before relying' instruction"],
+      "tools": ["Python", "Embeddings and vector store", "LLM API"],
+      "deliverable": "Assistant + evaluation report + usage policy",
+      "evaluation": ["Citation accuracy above threshold", "Answers state the applicable period", "Unanswerable questions are refused rather than guessed", "Evaluation set is independent of the prompt tuning", "No advice framing"],
+      "guardrail": "Output is research support only. It is not tax advice, and every answer must be verified against the bare provision before use."
+    },
+    {
+      "id": "auto-06", "no": 6, "title": "Budget Variance Explanation Tool", "difficulty": "Intermediate", "hours": 14,
+      "problem": "Variance commentary is written under time pressure, tends to describe rather than explain, and often misses the real driver.",
+      "inputs": ["Actual vs budget data by cost centre and account", "Volume and price drivers", "Prior-period commentary for style"],
+      "approach": ["Compute variances and rank by absolute and percentage significance", "Decompose into volume, price, mix and rate effects where drivers exist", "Draft commentary with the decomposition as evidence", "Flag variances requiring investigation", "Produce a review-ready draft with the numbers cited inline"],
+      "tools": ["Python or Excel", "LLM for drafting with grounding in the computed numbers"],
+      "deliverable": "Tool + sample commentary pack + quality rubric",
+      "evaluation": ["Every statement is traceable to a computed figure", "Root cause stated, not just the amount", "No invented context", "Tone is factual", "Reviewer edits are minimal in a blind test"],
+      "guardrail": "The model drafts; the FP&A analyst owns and signs the commentary."
+    },
+    {
+      "id": "auto-07", "no": 7, "title": "Accounting Question-Answering Assistant", "difficulty": "Intermediate", "hours": 16,
+      "problem": "Students and staff repeatedly ask the same conceptual questions, and generic answers are inconsistent with the applicable framework.",
+      "inputs": ["Your own curated notes, standards summaries and worked examples", "A test set of 50 questions with reference answers"],
+      "approach": ["Structure the knowledge base with chapter and source metadata", "Retrieve the most relevant chunks", "Answer with a citation to the note and the standard", "Distinguish AS from Ind AS where treatment differs", "Evaluate on the test set with a rubric for accuracy and citation", "Log unanswered questions to extend the library"],
+      "tools": ["Python", "Vector store", "LLM API or a local model"],
+      "deliverable": "Assistant + test results + content gap log",
+      "evaluation": ["Framework-appropriate answers", "Correct citation", "Admits uncertainty", "No fabricated section numbers", "Gap log drives content improvement"],
+      "guardrail": "Never present an answer as examinable authority without naming the source and its edition."
+    },
+    {
+      "id": "auto-08", "no": 8, "title": "Automated Reconciliation Prototype", "difficulty": "Advanced", "hours": 20,
+      "problem": "Bank, intercompany and vendor reconciliations consume days and still miss items.",
+      "inputs": ["Two synthetic data sets to reconcile, each with seeded exceptions: timing differences, duplicates, transposition errors, missing entries"],
+      "approach": ["Normalise both sides: dates, amounts, references", "Apply exact matching on amount and reference", "Apply fuzzy matching on amount and date proximity", "Classify unmatched items by probable cause", "Produce a reconciliation statement and an ageing of unmatched items", "Measure match rate and false-match rate"],
+      "tools": ["Python (pandas, rapidfuzz)", "SQL", "Excel"],
+      "deliverable": "Reconciler + reconciliation statement + exception analysis + accuracy metrics",
+      "evaluation": ["Separates true matches from false matches", "All seeded exceptions found", "Unmatched items classified and aged", "Audit trail of every match decision", "Runs reproducibly"],
+      "guardrail": "Automated matches above a value threshold require human confirmation before adjustment."
+    }
+  ],
+  "capstone": {
+    "name": "Finance Automation Capstone",
+    "brief": "Combine at least three of the eight projects into one governed workflow: ingest, validate, analyse, draft, human review, publish, log.",
+    "deliverable": "Working system + architecture diagram + control matrix + evaluation report + AI use policy",
+    "evaluation": "Technical accuracy (30%), control design (25%), evaluation evidence (20%), documentation (15%), professional judgement (10%)"
+  }
+}

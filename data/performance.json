@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "purpose": "Performance and discipline system — a measurable dashboard of learning and performance, not activity.",
+    "lastReviewed": "2026-11-02",
+    "corePrinciple": "Never reward activity alone. An hour of passive reading is not an hour of learning. The score rewards demonstrated recall, solved problems, corrected errors and completed artefacts."
+  },
+  "dailyLog": {
+    "fields": [
+      { "id": "date", "label": "Date", "type": "date", "required": true },
+      { "id": "studyHours", "label": "Active study hours", "type": "number", "unit": "hours", "help": "Time with the book closed or a problem actually attempted. Excludes passive video watching." },
+      { "id": "paperId", "label": "Primary paper", "type": "select", "help": "The paper that received most of the time." },
+      { "id": "questionsAttempted", "label": "Questions attempted", "type": "number", "help": "Full attempts, not skimmed solutions." },
+      { "id": "questionsCorrect", "label": "Questions fully correct", "type": "number", "help": "No help from the answer key." },
+      { "id": "revisionMinutes", "label": "Revision minutes", "type": "number", "help": "Retrieval practice on previously studied material." },
+      { "id": "professionalHours", "label": "Professional skill hours", "type": "number" },
+      { "id": "communicationMinutes", "label": "Communication practice minutes", "type": "number", "help": "Speaking or writing practice with an artefact produced." },
+      { "id": "projectWork", "label": "Project progressed", "type": "text", "help": "Name the project and what specifically moved." },
+      { "id": "errorLogged", "label": "Error logged and rule written", "type": "boolean" },
+      { "id": "notes", "label": "Notes", "type": "text" }
+    ],
+    "targets": { "studyHours": 3.5, "questionsAttempted": 20, "accuracy": 70, "revisionMinutes": 30, "professionalHours": 1, "communicationMinutes": 15 }
+  },
+  "metrics": [
+    { "id": "m-study-hours", "name": "Study hours", "definition": "Sum of active study hours", "weight": 10, "note": "Volume only — capped contribution so that hours alone cannot carry the score." },
+    { "id": "m-accuracy", "name": "Accuracy", "definition": "Questions fully correct / questions attempted × 100 over a rolling 7 days", "weight": 25, "note": "Requires at least 20 attempts in the window, otherwise marked insufficient evidence." },
+    { "id": "m-mock", "name": "Mock performance", "definition": "Average of the last three full-length or sectional mocks, expressed as a percentage", "weight": 25, "note": "The strongest signal of exam readiness." },
+    { "id": "m-revision", "name": "Revision consistency", "definition": "Days with at least 20 minutes of retrieval practice / days elapsed × 100", "weight": 15, "note": "Protects against decay; more important than new-topic hours late in the cycle." },
+    { "id": "m-weakness", "name": "Weakness improvement", "definition": "Number of chapters moved above 70% accuracy that were below 60% four weeks earlier", "weight": 15, "note": "Measures actual learning, not effort." },
+    { "id": "m-artefacts", "name": "Artefacts completed", "definition": "Portfolio projects moved to complete with documentation", "weight": 10, "note": "Evidence of applied capability." }
+  ],
+  "learningScore": {
+    "formula": "Score = 0.10 × studyHoursScore + 0.25 × accuracyScore + 0.25 × mockScore + 0.15 × revisionScore + 0.15 × weaknessScore + 0.10 × artefactScore",
+    "componentScores": [
+      { "id": "studyHoursScore", "formula": "min(100, weeklyHours / targetHours × 100)", "targetHours": 24.5 },
+      { "id": "accuracyScore", "formula": "rolling 7-day accuracy, capped at 100; 0 if fewer than 20 attempts" },
+      { "id": "mockScore", "formula": "average of last three mocks", "fallback": "If no mock exists, component scores 0 — absence of evidence is not evidence of competence." },
+      { "id": "revisionScore", "formula": "revision consistency percentage" },
+      { "id": "weaknessScore", "formula": "min(100, chaptersImproved / max(1, chaptersWeakFourWeeksAgo) × 100)" },
+      { "id": "artefactScore", "formula": "min(100, artefactsCompletedQuarter / plannedArtefactsQuarter × 100)" }
+    ],
+    "bands": [
+      { "band": "On track", "min": 75, "meaning": "Sustain and protect the routine." },
+      { "band": "At risk", "min": 55, "meaning": "Diagnose which component is lowest and cut activity elsewhere." },
+      { "band": "Intervention", "min": 0, "meaning": "Stop, review the plan honestly, and rebuild the basics. Do not add new topics." }
+    ]
+  },
+  "weeklyReview": {
+    "when": "Same time every week. 30 minutes, written, no exceptions.",
+    "questions": [
+      { "no": 1, "id": "wq1", "question": "What was completed?", "guidance": "List only what can be evidenced: chapters studied with a self-test, questions solved, mocks attempted, artefacts finished. No credit for 'read through'.", "required": true },
+      { "no": 2, "id": "wq2", "question": "What remains incomplete, and why?", "guidance": "State the reason precisely — underestimation, distraction, a concept that did not yield, or avoidance. 'Lack of time' is not an answer unless the hours were genuinely unavailable.", "required": true },
+      { "no": 3, "id": "wq3", "question": "Which concepts are weak?", "guidance": "Name specific chapters or concepts with your accuracy figure. Vague discomfort does not count.", "required": true },
+      { "no": 4, "id": "wq4", "question": "What mistakes were repeated?", "guidance": "Check the error log. A mistake repeated three times needs a written rule and a drill, not another re-read.", "required": true },
+      { "no": 5, "id": "wq5", "question": "What needs more practice?", "guidance": "Convert weakness into a practice plan with a number of questions and a date.", "required": true },
+      { "no": 6, "id": "wq6", "question": "What is next week's priority?", "guidance": "One priority, with the hours allocated to it. Everything else is secondary. If everything is a priority, nothing is.", "required": true }
+    ],
+    "lookBack": ["Compare this week's learning score with the last four weeks.", "Count how many planned hours actually happened.", "Check whether any chapter has had no attempts for 14 days."],
+    "lookForward": ["Set one priority with hours and a completion test.", "Schedule at least one mock or timed drill.", "Decide what you will deliberately not do this week."]
+  },
+  "monthlyReview": {
+    "questions": ["Which paper has the lowest mock score and what is the cause?", "Which chapters have never been tested?", "Has the plan changed for the right reason or because it was uncomfortable?", "What will be dropped next month?"],
+    "metricsToCompare": ["Mock score by paper", "Accuracy by chapter", "Hours by paper", "Artefacts completed", "Error types repeated"]
+  },
+  "guardrails": [
+    "Do not log passive video watching as study hours.",
+    "Do not mark a chapter complete until you have attempted questions from it.",
+    "Do not count a project complete until its documentation is written.",
+    "Do not compare your hours with anyone else's — compare your accuracy and your mock scores.",
+    "If the learning score is high but the mock score is low, the score is wrong, not the mock.",
+    "Take one rest day a week. Sustained study without recovery produces diminishing accuracy and then resentment."
+  ]
+}

@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "purpose": "FP&A and CFO Skills Academy — the planning, reporting and influence cycle that turns accounting into decision support.",
+    "lastReviewed": "2026-11-02",
+    "standard": "Every deliverable must answer three questions: what happened, why did it happen, and what should we do."
+  },
+  "cycle": {
+    "annual": [
+      "Strategy refresh and long-range plan",
+      "Top-down targets and bottom-up builds",
+      "Functional budget submissions",
+      "Challenge and consolidation",
+      "Board approval",
+      "Communication to cost centre owners"
+    ],
+    "monthly": [
+      "Close and data validation",
+      "Actual vs budget vs forecast",
+      "Variance analysis and driver attribution",
+      "Business review meetings",
+      "Forecast update",
+      "Action tracking"
+    ],
+    "rolling": [
+      "Re-forecast the next 4–6 quarters each month",
+      "Refresh key drivers only, not the full build",
+      "Flag assumption changes explicitly",
+      "Maintain a single forecast version of truth"
+    ]
+  },
+  "topics": [
+    {
+      "id": "fpa-01",
+      "name": "Annual Budgeting",
+      "hours": 10,
+      "outcome": "Run a budget cycle that produces a plan people actually use.",
+      "topics": [
+        "Budget calendar and governance",
+        "Top-down vs bottom-up",
+        "Driver-based builds",
+        "Assumption register",
+        "Challenge sessions",
+        "Version control and approvals"
+      ],
+      "practice": "Build the budget calendar and assumption register for a ₹500 crore company, then challenge three department submissions and document the changes.",
+      "deliverable": "Budget pack + assumption register + challenge log"
+    },
+    {
+      "id": "fpa-02",
+      "name": "Rolling Forecasts",
+      "hours": 8,
+      "outcome": "Keep a live view of the year instead of a stale January budget.",
+      "topics": [
+        "Rolling 12-month mechanics",
+        "Forecast vs budget reconciliation",
+        "Driver refresh",
+        "Bias and accuracy tracking",
+        "Version discipline"
+      ],
+      "practice": "Convert an annual budget into a rolling forecast and re-forecast three times with new information, tracking forecast bias.",
+      "deliverable": "Rolling forecast model + accuracy tracker"
+    },
+    {
+      "id": "fpa-03",
+      "name": "Financial Planning",
+      "hours": 8,
+      "outcome": "Link strategy, capacity and capital to a financial plan.",
+      "topics": [
+        "Long-range planning",
+        "Capacity and headcount planning",
+        "Capex planning",
+        "Funding plan",
+        "Plan-to-actual feedback"
+      ],
+      "practice": "Produce a three-year plan with an explicit capacity constraint and show the funding requirement.",
+      "deliverable": "Three-year plan + capacity model"
+    },
+    {
+      "id": "fpa-04",
+      "name": "Management Reporting",
+      "hours": 10,
+      "outcome": "Report so that a decision can be taken in the meeting.",
+      "topics": [
+        "Report architecture",
+        "Executive summary design",
+        "KPI definitions",
+        "Commentary standards",
+        "Segment and cost centre views",
+        "Distribution and cadence"
+      ],
+      "practice": "Design a monthly pack template with a one-page executive summary, a variance page and a driver appendix.",
+      "deliverable": "Reporting template + style guide"
+    },
+    {
+      "id": "fpa-05",
+      "name": "Budget versus Actual Analysis",
+      "hours": 8,
+      "outcome": "Explain a variance in one page with the right root cause.",
+      "topics": [
+        "Volume, price, mix, rate and efficiency",
+        "Timing vs permanent",
+        "Controllable vs non-controllable",
+        "Waterfall presentation",
+        "Commentary without excuses"
+      ],
+      "practice": "For a month with an 8% revenue miss and a 3% cost overrun, decompose the variance and write the commentary a CFO would accept.",
+      "deliverable": "Variance bridge + commentary"
+    },
+    {
+      "id": "fpa-06",
+      "name": "Variance Analysis (Cost and Revenue)",
+      "hours": 8,
+      "outcome": "Apply standard costing logic to commercial performance.",
+      "topics": [
+        "Revenue price-volume-mix",
+        "Gross margin decomposition",
+        "Cost rate and quantity",
+        "Fixed cost absorption",
+        "One-off vs run-rate"
+      ],
+      "practice": "Decompose gross margin change for a three-product business into price, volume, mix and cost effects.",
+      "deliverable": "Margin bridge model + note"
+    },
+    {
+      "id": "fpa-07",
+      "name": "Revenue Forecasting",
+      "hours": 8,
+      "outcome": "Forecast revenue from drivers with a stated confidence range.",
+      "topics": [
+        "Pipeline and conversion",
+        "Recurring vs transactional",
+        "Seasonality",
+        "Pricing and discount effects",
+        "Churn and retention",
+        "Scenario ranges"
+      ],
+      "practice": "Build a revenue forecast for a subscription plus services business, with a probability-weighted range.",
+      "deliverable": "Revenue model + confidence range note"
+    },
+    {
+      "id": "fpa-08",
+      "name": "Expense Forecasting",
+      "hours": 6,
+      "outcome": "Forecast cost by behaviour, not by last year plus inflation.",
+      "topics": [
+        "Fixed, variable and step costs",
+        "Headcount and salary inflation",
+        "Vendor contract ladders",
+        "Discretionary spend controls",
+        "Cost per unit vs total cost"
+      ],
+      "practice": "Forecast operating expenses for a 200-person company with headcount growth and three contract renewals.",
+      "deliverable": "Expense forecast model"
+    },
+    {
+      "id": "fpa-09",
+      "name": "Cash Flow Forecasting",
+      "hours": 10,
+      "outcome": "Give the business 13 weeks of visibility on cash.",
+      "topics": [
+        "Direct vs indirect method",
+        "13-week cash flow",
+        "Collections and payment behaviour",
+        "Capex and debt service",
+        "Cash levers",
+        "Liquidity risk triggers"
+      ],
+      "practice": "Build a 13-week cash flow forecast and identify the week the business breaches its minimum cash covenant, with three levers to avoid it.",
+      "deliverable": "13-week cash model + lever plan"
+    },
+    {
+      "id": "fpa-10",
+      "name": "Scenario Planning",
+      "hours": 8,
+      "outcome": "Give management options instead of a single number.",
+      "topics": [
+        "Base, upside and downside",
+        "Driver-level scenarios",
+        "Probability weighting",
+        "Trigger points",
+        "Contingent actions",
+        "Scenario governance"
+      ],
+      "practice": "Build three scenarios for a demand shock of −20%, −10% and +5%, with the management action for each.",
+      "deliverable": "Scenario model + action matrix"
+    },
+    {
+      "id": "fpa-11",
+      "name": "Sensitivity Analysis",
+      "hours": 6,
+      "outcome": "Identify which assumption actually determines the outcome.",
+      "topics": [
+        "One-way and two-way tables",
+        "Tornado charts",
+        "Break-even assumptions",
+        "Elasticity of profit to drivers",
+        "Presenting uncertainty"
+      ],
+      "practice": "Produce a tornado chart for a plan and identify the three assumptions that must be monitored monthly.",
+      "deliverable": "Sensitivity pack + monitoring list"
+    },
+    {
+      "id": "fpa-12",
+      "name": "KPI Development",
+      "hours": 8,
+      "outcome": "Define measures precisely enough that two people compute the same number.",
+      "topics": [
+        "KPI hierarchy",
+        "Precise definitions and formulas",
+        "Data sources and ownership",
+        "Targets and thresholds",
+        "Leading indicators",
+        "KPI governance"
+      ],
+      "practice": "Write a KPI dictionary for 15 measures, including formula, source, owner, frequency and known distortions.",
+      "deliverable": "KPI dictionary + dashboard spec"
+    },
+    {
+      "id": "fpa-13",
+      "name": "Business Partnering",
+      "hours": 8,
+      "outcome": "Be the person operations calls before making a decision, not after.",
+      "topics": [
+        "Stakeholder mapping",
+        "Questioning and listening",
+        "Commercial literacy",
+        "Challenge without conflict",
+        "Influencing without authority",
+        "Trust and credibility"
+      ],
+      "practice": "Prepare for a business partner meeting with a sales head who missed target, including the questions to ask and the data to bring.",
+      "deliverable": "Meeting plan + role-play recording or notes"
+    },
+    {
+      "id": "fpa-14",
+      "name": "Financial Presentations",
+      "hours": 6,
+      "outcome": "Present numbers so the audience remembers the message.",
+      "topics": [
+        "Message-first structure",
+        "Chart selection and integrity",
+        "One number per slide",
+        "Handling questions",
+        "Presenting bad news"
+      ],
+      "practice": "Present a five-slide performance review to a simulated management team and take three challenge questions.",
+      "deliverable": "Deck + delivery notes"
+    },
+    {
+      "id": "fpa-15",
+      "name": "Executive and Board Reporting",
+      "hours": 8,
+      "outcome": "Produce governance-grade reporting with appropriate disclosure.",
+      "topics": [
+        "Board pack structure",
+        "Strategic vs operational reporting",
+        "Risk and covenant disclosure",
+        "Forward-looking statements",
+        "Audit committee interface"
+      ],
+      "practice": "Draft a board finance section covering performance, liquidity, covenants and outlook in four pages.",
+      "deliverable": "Board finance section + disclosure checklist"
+    }
+  ],
+  "projects": [
+    {
+      "id": "fpap-01",
+      "no": 1,
+      "title": "Annual Operating Budget",
+      "hours": 20,
+      "brief": "Build the full annual operating budget for a fictional manufacturer from drivers, with department P&Ls and a board summary.",
+      "dataset": "Synthetic prior-year actuals, headcount list, price list, supplier contracts, capex plan.",
+      "steps": [
+        "Build the driver assumptions register",
+        "Revenue build by product and channel",
+        "Cost build: material, labour, overheads, SG&A",
+        "Department P&L and cost centre allocation",
+        "Consolidated budgeted P&L and balance sheet",
+        "Board summary with three key messages"
+      ],
+      "deliverables": [
+        "Budget model",
+        "Assumption register",
+        "Board summary (2 pages)"
+      ],
+      "rubric": [
+        {
+          "criterion": "Driver logic is defensible",
+          "weight": 25
+        },
+        {
+          "criterion": "Arithmetic integrity and cross-checks",
+          "weight": 25
+        },
+        {
+          "criterion": "Presentation and insight",
+          "weight": 25
+        },
+        {
+          "criterion": "Documentation and assumptions",
+          "weight": 25
+        }
+      ],
+      "skills": [
+        "skill-financial-modelling",
+        "skill-advanced-excel",
+        "skill-powerpoint"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "fpap-02",
+      "no": 2,
+      "title": "Three-Statement Financial Model",
+      "hours": 24,
+      "brief": "A five-year integrated model with scenario switching, a debt schedule and a dashboard.",
+      "dataset": "Three years of synthetic historical financials, debt terms, capex plan, working capital history.",
+      "steps": [
+        "Historical analysis and ratio calibration",
+        "Revenue and cost drivers",
+        "Working capital schedule",
+        "Capex and depreciation schedule",
+        "Debt and interest schedule",
+        "Tax schedule",
+        "Cash flow and balance sheet integration",
+        "Balance check",
+        "Scenario switch and dashboard"
+      ],
+      "deliverables": [
+        "Integrated model",
+        "Scenario summary",
+        "One-page model guide"
+      ],
+      "rubric": [
+        {
+          "criterion": "Model balances in all scenarios",
+          "weight": 30
+        },
+        {
+          "criterion": "Driver quality and calibration",
+          "weight": 25
+        },
+        {
+          "criterion": "Structure, naming and auditability",
+          "weight": 25
+        },
+        {
+          "criterion": "Insight from scenarios",
+          "weight": 20
+        }
+      ],
+      "skills": [
+        "skill-financial-modelling",
+        "skill-advanced-excel"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "fpap-03",
+      "no": 3,
+      "title": "Monthly MIS Report",
+      "hours": 12,
+      "brief": "Produce a complete monthly management information pack from raw extracts.",
+      "dataset": "GL extract, cost centre master, budget, headcount, sales register.",
+      "steps": [
+        "Validate and reconcile the data",
+        "Build actual vs budget vs prior month",
+        "Variance analysis with drivers",
+        "KPI dashboard page",
+        "Commentary and action list",
+        "Executive summary"
+      ],
+      "deliverables": [
+        "MIS pack (PDF)",
+        "Underlying workbook",
+        "Data validation log"
+      ],
+      "rubric": [
+        {
+          "criterion": "Data integrity and reconciliation",
+          "weight": 30
+        },
+        {
+          "criterion": "Variance explanation quality",
+          "weight": 30
+        },
+        {
+          "criterion": "Visual clarity",
+          "weight": 20
+        },
+        {
+          "criterion": "Actions are specific and owned",
+          "weight": 20
+        }
+      ],
+      "skills": [
+        "skill-power-query",
+        "skill-power-bi",
+        "skill-powerpoint"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "fpap-04",
+      "no": 4,
+      "title": "Department-wise Profitability",
+      "hours": 14,
+      "brief": "Allocate costs to departments and identify which ones create or destroy value.",
+      "dataset": "Department revenue and direct costs, overhead pool, floor area, headcount, transactions.",
+      "steps": [
+        "Define allocation bases and justify them",
+        "Allocate overheads",
+        "Compute department contribution and margin",
+        "Compare with prior year",
+        "Identify underperformance and its cause",
+        "Recommend action"
+      ],
+      "deliverables": [
+        "Allocation model",
+        "Department profitability report",
+        "Recommendation memo"
+      ],
+      "rubric": [
+        {
+          "criterion": "Allocation logic justified",
+          "weight": 30
+        },
+        {
+          "criterion": "Accuracy of computation",
+          "weight": 25
+        },
+        {
+          "criterion": "Quality of diagnosis",
+          "weight": 25
+        },
+        {
+          "criterion": "Actionability of recommendations",
+          "weight": 20
+        }
+      ],
+      "skills": [
+        "skill-advanced-excel",
+        "skill-power-bi"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "fpap-05",
+      "no": 5,
+      "title": "Cash Flow Forecasting",
+      "hours": 14,
+      "brief": "A 13-week rolling cash forecast with covenant monitoring and levers.",
+      "dataset": "Opening cash, receivables ageing, payables schedule, payroll, debt service, capex commitments.",
+      "steps": [
+        "Collections model by ageing bucket",
+        "Payment model by supplier terms",
+        "Fixed outflows",
+        "Debt service and covenant test",
+        "Identify the tight week",
+        "Model three levers"
+      ],
+      "deliverables": [
+        "13-week cash model",
+        "Covenant dashboard",
+        "Lever memo"
+      ],
+      "rubric": [
+        {
+          "criterion": "Collection and payment assumptions",
+          "weight": 30
+        },
+        {
+          "criterion": "Accuracy and internal consistency",
+          "weight": 25
+        },
+        {
+          "criterion": "Covenant analysis",
+          "weight": 25
+        },
+        {
+          "criterion": "Practicality of levers",
+          "weight": 20
+        }
+      ],
+      "skills": [
+        "skill-financial-modelling",
+        "skill-advanced-excel"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "fpap-06",
+      "no": 6,
+      "title": "Budget Variance Dashboard",
+      "hours": 12,
+      "brief": "An interactive dashboard showing variance by department, driver and period with exception flags.",
+      "dataset": "Budget and actual by cost centre and month, headcount, volume drivers.",
+      "steps": [
+        "Shape the data model",
+        "Build measures for variance and variance %",
+        "Design the executive page",
+        "Add drill-through to cost centre",
+        "Add conditional exception flags",
+        "Write the usage guide"
+      ],
+      "deliverables": [
+        "Power BI dashboard",
+        "Model documentation",
+        "User guide"
+      ],
+      "rubric": [
+        {
+          "criterion": "Correct measures and totals",
+          "weight": 30
+        },
+        {
+          "criterion": "Usability and visual design",
+          "weight": 25
+        },
+        {
+          "criterion": "Drill and interactivity",
+          "weight": 20
+        },
+        {
+          "criterion": "Documentation",
+          "weight": 25
+        }
+      ],
+      "skills": [
+        "skill-power-bi",
+        "skill-dax",
+        "skill-power-query"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "fpap-07",
+      "no": 7,
+      "title": "Business Performance Review",
+      "hours": 12,
+      "brief": "A quarterly performance review document with diagnosis, not description.",
+      "dataset": "Three years of financials, KPI history, competitive context notes.",
+      "steps": [
+        "Analyse performance across the balanced scorecard perspectives",
+        "Decompose the key margin and cash movements",
+        "Benchmark against two peers",
+        "Identify the three root causes",
+        "Propose a 90-day action plan with owners"
+      ],
+      "deliverables": [
+        "Performance review document",
+        "Action plan",
+        "One-page executive summary"
+      ],
+      "rubric": [
+        {
+          "criterion": "Analytical depth",
+          "weight": 30
+        },
+        {
+          "criterion": "Root cause identification",
+          "weight": 30
+        },
+        {
+          "criterion": "Action plan specificity",
+          "weight": 25
+        },
+        {
+          "criterion": "Communication quality",
+          "weight": 15
+        }
+      ],
+      "skills": [
+        "skill-powerpoint",
+        "skill-word",
+        "skill-financial-modelling"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "fpap-08",
+      "no": 8,
+      "title": "Management Reporting Presentation",
+      "hours": 10,
+      "brief": "Deliver a 10-slide management pack and present it live.",
+      "dataset": "The MIS pack produced in project 3.",
+      "steps": [
+        "Define the single message for the period",
+        "Structure the narrative",
+        "Build the bridge and driver slides",
+        "Add the outlook and the ask",
+        "Rehearse and present",
+        "Record and self-review"
+      ],
+      "deliverables": [
+        "Deck",
+        "Speaker notes",
+        "Recording or presentation notes"
+      ],
+      "rubric": [
+        {
+          "criterion": "Clarity of message",
+          "weight": 30
+        },
+        {
+          "criterion": "Analytical support",
+          "weight": 25
+        },
+        {
+          "criterion": "Delivery and handling of questions",
+          "weight": 25
+        },
+        {
+          "criterion": "Recommendation quality",
+          "weight": 20
+        }
+      ],
+      "skills": [
+        "skill-powerpoint"
+      ],
+      "portfolio": true
+    }
+  ],
+  "simulations": [
+    {
+      "id": "sim-fpa-01",
+      "name": "The margin squeeze",
+      "scenario": "A ₹300 crore consumer goods company has seen gross margin fall 380 bps over four quarters while revenue grew 9%. Sales attributes it to discounting; operations blames input costs; procurement says volumes fell. You are the new FP&A lead.",
+      "decisions": [
+        "Decompose the margin change into price, discount, mix, input cost and volume effects",
+        "Quantify each driver",
+        "Identify which function's explanation is supported by the data",
+        "Recommend three interventions with expected impact",
+        "Design the monthly report that would have caught this earlier"
+      ],
+      "deliverable": "Analysis + recommendation + redesigned report",
+      "hours": 8
+    },
+    {
+      "id": "sim-fpa-02",
+      "name": "The covenant test",
+      "scenario": "A leveraged manufacturer has a net debt/EBITDA covenant of 3.5x tested quarterly. Forecasts show 3.8x at the next test date. The bank must be informed, and the board needs options.",
+      "decisions": [
+        "Rebuild the forecast and stress it",
+        "Test each available lever: working capital, capex deferral, cost action, equity injection",
+        "Quantify the effect of each on the covenant",
+        "Recommend a sequenced plan",
+        "Draft the bank communication"
+      ],
+      "deliverable": "Covenant model + option paper + bank letter",
+      "hours": 6
+    }
+  ]
+}

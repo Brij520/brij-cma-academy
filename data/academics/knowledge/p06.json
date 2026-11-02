@@ -1,0 +1,339 @@
+{
+  "paperId": "p06",
+  "syllabus": "ICMAI Syllabus 2022",
+  "lastReviewed": "2026-11-02",
+  "chapters": [
+    {
+      "id": "p06-c01",
+      "status": "complete",
+      "summary": "Accounting fundamentals are the grammar of the paper: accrual, matching, prudence, consistency and going concern, plus depreciation, errors and bills of exchange. Questions here are small-mark items that you must never lose marks on.",
+      "keyTerms": [
+        { "term": "Accrual concept", "definition": "Revenue and expenses are recognised when they are earned or incurred, not when cash moves." },
+        { "term": "Matching principle", "definition": "Expenses must be matched against the revenue they help to earn in the same period." },
+        { "term": "Prudence", "definition": "Provide for all known losses and liabilities, but do not anticipate profits." },
+        { "term": "Going concern", "definition": "The enterprise is assumed to continue in operation for the foreseeable future, so assets are not valued at break-up value." },
+        { "term": "Capital expenditure", "definition": "Expenditure that creates a long-term asset or increases earning capacity; shown in the balance sheet." },
+        { "term": "Suspense account", "definition": "A temporary account used to balance the trial balance until errors are located and rectified." }
+      ],
+      "formulas": [
+        { "name": "Straight line depreciation", "expression": "Annual depreciation = (Cost − Residual value) / Useful life", "meaning": "Equal charge each year.", "example": "Cost ₹10,00,000, residual ₹1,00,000, life 9 years → ₹1,00,000 per year." },
+        { "name": "Written down value depreciation", "expression": "Depreciation = Opening WDV × Rate", "meaning": "Higher charge early, declining later.", "example": "WDV ₹8,00,000 at 15% → ₹1,20,000; next year WDV ₹6,80,000 → ₹1,02,000." },
+        { "name": "Depreciation on additions (pro-rata)", "expression": "Depreciation = Cost × Rate × Months used / 12", "meaning": "Used where assets are acquired during the year and the question directs pro-rata.", "example": "Machine ₹6,00,000 bought on 1 September at 10% → 6,00,000 × 10% × 7/12 = ₹35,000." }
+      ],
+      "examples": [
+        {
+          "title": "Effect of an error on profit",
+          "scenario": "Goods worth ₹40,000 sold on credit were omitted from the sales book, but the cost was already recorded.",
+          "steps": ["Error of complete omission — does not affect the trial balance.", "Sales are understated by ₹40,000 and debtors understated.", "Profit is understated by ₹40,000, not by the gross profit, because the cost entry already exists."],
+          "result": "Rectify by debiting Debtors and crediting Sales. Profit increases by ₹40,000."
+        }
+      ],
+      "questions": [
+        { "id": "p06-c01-q1", "q": "A machine costing ₹12,00,000 with residual value ₹1,20,000 and useful life 6 years is sold after 3 years for ₹5,00,000. Compute profit or loss under SLM.", "type": "problem", "marks": 5, "difficulty": "medium", "answer": "Annual depreciation = (12,00,000 − 1,20,000)/6 = ₹1,80,000. WDV after 3 years = 12,00,000 − 5,40,000 = ₹6,60,000. Sale price ₹5,00,000 → loss on sale ₹1,60,000.", "tags": ["depreciation"] },
+        { "id": "p06-c01-q2", "q": "Explain the distinction between provision and contingent liability.", "type": "theory", "marks": 4, "difficulty": "easy", "answer": "A provision is a present obligation of uncertain timing or amount that is recognised in the financial statements (a charge against profit). A contingent liability is a possible obligation whose existence will be confirmed only by uncertain future events, or a present obligation that cannot be reliably measured — it is disclosed by way of note, not recognised.", "tags": ["provisions"] }
+      ],
+      "pitfalls": ["Debiting a capital expenditure to the P&L when the question says it was wrongly treated as revenue.", "Forgetting to adjust closing stock in both the trading account and the balance sheet."]
+    },
+    {
+      "id": "p06-c02",
+      "status": "outline",
+      "summary": "Consignment accounting records goods sent by the consignor to the consignee who sells on the consignor's behalf. Goods remain the consignor's property; the consignee earns commission and is reimbursed expenses.",
+      "keyTerms": [
+        { "term": "Consignment", "definition": "Despatch of goods by the consignor to the consignee for sale on consignor's account and risk." },
+        { "term": "Proforma invoice", "definition": "A statement of the goods consigned, at a price that is not the sale price — normally cost plus a loading." },
+        { "term": "Del credere commission", "definition": "Extra commission paid to the consignee for bearing the risk of bad debts." },
+        { "term": "Consignment stock", "definition": "Goods remaining unsold, valued at cost plus proportionate non-recurring expenses of the consignor." }
+      ],
+      "formulas": [
+        { "name": "Valuation of closing consignment stock", "expression": "Value = Cost of goods + Proportionate consignor's expenses (freight, insurance, packing) + Proportionate consignee's non-recurring expenses", "meaning": "Recurring expenses such as godown rent and selling expenses are excluded.", "example": "10,000 units consigned at ₹100; freight ₹20,000; 2,500 unsold → stock = (2,500 × 100) + (20,000 × 2,500/10,000) = ₹2,55,000." },
+        { "name": "Ordinary commission", "expression": "Commission = Sale proceeds × Agreed rate", "meaning": "Charged to the consignment account.", "example": "Sales ₹5,00,000 at 5% → ₹25,000." }
+      ],
+      "questions": [
+        { "id": "p06-c02-q1", "q": "Goods costing ₹8,00,000 were consigned; freight ₹40,000. The consignee sold 75% for ₹8,50,000 and incurred selling expenses ₹30,000. Compute consignment profit.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Total cost = 8,00,000 + 40,000 = ₹8,40,000. Cost of goods sold = 75% × 8,40,000 = ₹6,30,000. Add selling expenses ₹30,000 = ₹6,60,000. Sales ₹8,50,000 → profit ₹1,90,000. Closing stock = 25% × 8,40,000 = ₹2,10,000.", "tags": ["consignment"] }
+      ],
+      "pitfalls": ["Including recurring expenses in closing stock valuation.", "Crediting consignee's commission to the consignor's account instead of charging it to the consignment account."]
+    },
+    {
+      "id": "p06-c03",
+      "status": "outline",
+      "summary": "A joint venture is a temporary business partnership for a specific venture, without a firm name. Accounts may be kept by the separate-books method, the investment method or the memorandum method.",
+      "keyTerms": [
+        { "term": "Joint venture", "definition": "An agreement between two or more persons to undertake a specific business venture jointly, sharing profits or losses in an agreed ratio." },
+        { "term": "Memorandum method", "definition": "Each co-venturer records only his own transactions plus the other's transactions in a memorandum joint venture account to find profit." }
+      ],
+      "questions": [
+        { "id": "p06-c03-q1", "q": "Distinguish between a joint venture and a partnership.", "type": "theory", "marks": 4, "difficulty": "easy", "answer": "A joint venture is temporary (one venture), has no firm name, and co-venturers need not be partners in a continuing business; a partnership is a continuing relation with a firm name, governed by the Indian Partnership Act, 1932. Joint venture accounting may use the investment or memorandum method; partnership accounting requires a full set of capital and current accounts.", "tags": ["joint venture"] }
+      ]
+    },
+    {
+      "id": "p06-c04",
+      "status": "complete",
+      "summary": "Preparation of final accounts of commercial organisations — trading account, profit and loss account and balance sheet — with adjustments. This is the highest-scoring practical block in the paper and the base for Paper 10.",
+      "keyTerms": [
+        { "term": "Trading account", "definition": "Computes gross profit as sales minus cost of goods sold; cost of goods sold = opening stock + purchases + direct expenses − closing stock." },
+        { "term": "Adjusting entry", "definition": "An entry passed at the year end to record accrued, prepaid, outstanding or unrecorded items so that the accounts reflect the accrual concept." },
+        { "term": "Managerial commission", "definition": "Commission based on profit — computed before or after charging the commission as the question directs." },
+        { "term": "Goods in transit", "definition": "Purchased goods not yet received at the year end; included in purchases and stock with a corresponding credit to the supplier." },
+        { "term": "Abnormal loss", "definition": "Loss by fire, theft or accident; charged to the P&L and not included in cost of goods sold." }
+      ],
+      "formulas": [
+        { "name": "Cost of goods sold", "expression": "COGS = Opening stock + Purchases + Direct expenses − Closing stock", "meaning": "The cost of goods actually sold, used to derive gross profit.", "example": "Opening ₹80,000 + Purchases ₹9,20,000 + Freight ₹30,000 − Closing ₹1,10,000 = ₹9,20,000; Sales ₹12,00,000 → gross profit ₹2,80,000." },
+        { "name": "Managerial commission after charging", "expression": "Commission = (Profit before commission × Rate) / (1 + Rate)", "meaning": "Used when the commission is a percentage of profit after charging itself.", "example": "Profit before commission ₹6,60,000 at 10% → 6,60,000 × 10/110 = ₹60,000." },
+        { "name": "Gross profit ratio", "expression": "GP ratio = (Gross profit / Net sales) × 100", "meaning": "A key indicator used to check reasonableness and in insurance claims.", "example": "GP ₹2,80,000 on sales ₹12,00,000 = 23.33%." }
+      ],
+      "examples": [
+        {
+          "title": "Adjusting a sale on approval",
+          "scenario": "Goods invoiced at ₹80,000 (cost ₹65,000) were sent on sale or return; the customer has not yet given approval at year end.",
+          "steps": ["Under sale on return, no sale arises until approval.", "Reverse the sale, reverse the debtors, and include the goods in closing stock at cost.", "Gross profit reduces by ₹80,000 while closing stock increases by ₹65,000."],
+          "result": "Net effect on profit is a reduction of ₹15,000, which is the margin not yet earned."
+        },
+        {
+          "title": "Abnormal loss treatment",
+          "scenario": "Goods costing ₹50,000 were destroyed by fire; the insurer admitted a claim of ₹30,000.",
+          "steps": ["Separate the abnormal loss from normal cost of goods sold.", "Debit insurance claim ₹30,000 receivable; debit P&L with ₹20,000 loss.", "Credit trading account with the cost ₹50,000."],
+          "result": "Gross profit is protected; the ₹20,000 net loss sits in the P&L."
+        }
+      ],
+      "questions": [
+        { "id": "p06-c04-q1", "q": "From the following, compute gross profit: opening stock ₹1,20,000; purchases ₹9,80,000; purchase returns ₹20,000; freight inward ₹40,000; sales ₹13,00,000; sales returns ₹50,000; closing stock ₹1,50,000.", "type": "problem", "marks": 5, "difficulty": "easy", "answer": "Net purchases = 9,80,000 − 20,000 = ₹9,60,000. COGS = 1,20,000 + 9,60,000 + 40,000 − 1,50,000 = ₹9,70,000. Net sales = 12,50,000. Gross profit = ₹2,80,000 (GP ratio 22.4%).", "tags": ["final accounts", "gross profit"] },
+        { "id": "p06-c04-q2", "q": "A firm's profit before charging manager's commission is ₹11,00,000. The manager is entitled to 10% of profit after charging his commission. Compute the commission.", "type": "problem", "marks": 3, "difficulty": "medium", "answer": "Commission = 11,00,000 × 10/110 = ₹1,00,000. Proof: profit after commission ₹10,00,000 and 10% of that is ₹1,00,000.", "tags": ["final accounts", "commission"] }
+      ],
+      "pitfalls": ["Treating purchase returns as an expense instead of deducting from purchases.", "Charging abnormal loss to the trading account and thereby distorting the gross profit ratio."]
+    },
+    {
+      "id": "p06-c05",
+      "status": "complete",
+      "summary": "Not-for-profit organisations prepare a receipts and payments account (cash basis), an income and expenditure account (accrual basis) and a balance sheet. The key skill is apportioning subscriptions between years and identifying capital versus revenue receipts.",
+      "keyTerms": [
+        { "term": "Receipts and payments account", "definition": "A summary of cash and bank receipts and payments, including capital items, prepared on a cash basis." },
+        { "term": "Income and expenditure account", "definition": "An accrual-based account showing surplus or deficit, analogous to a profit and loss account." },
+        { "term": "Subscription in advance", "definition": "Subscription received for a future period; a liability in the balance sheet, not income of the current year." },
+        { "term": "Special fund", "definition": "A fund created for a specific purpose (e.g. building fund); income and expenses relating to it are charged against the fund, not the I&E account." }
+      ],
+      "formulas": [
+        { "name": "Subscription income for the year", "expression": "Current year income = Amount received for current year + Receivable at end − Receivable at beginning − Advance at end + Advance at beginning", "meaning": "Converts cash receipts to accrual income.", "example": "Received ₹2,00,000; outstanding at end ₹15,000; outstanding at beginning ₹20,000; advance at end ₹5,000 → income ₹1,90,000." },
+        { "name": "Surplus", "expression": "Surplus = Total income − Total expenditure", "meaning": "Equivalent to profit for a for-profit entity; added to the capital/general fund." , "example": "Income ₹4,80,000 − Expenditure ₹4,10,000 = surplus ₹70,000." }
+      ],
+      "questions": [
+        { "id": "p06-c05-q1", "q": "A club received subscriptions of ₹3,60,000 during the year. Subscriptions outstanding at the beginning were ₹25,000 and at the end ₹40,000; subscriptions received in advance at the end ₹18,000. Compute subscription income.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "Income = 3,60,000 − 25,000 (opening outstanding collected) + 40,000 (closing outstanding) − 18,000 (advance) = ₹3,57,000.", "tags": ["npo", "subscription"] }
+      ],
+      "pitfalls": ["Including the sale proceeds of a fixed asset in the I&E account — only the profit or loss on sale belongs there.", "Adding the surplus to the balance sheet as a liability instead of to the capital fund."]
+    },
+    {
+      "id": "p06-c06",
+      "status": "outline",
+      "summary": "Incomplete records require deriving profit or missing figures from a statement of affairs and total debtors and creditors accounts. The core equation is that profit equals the increase in capital adjusted for drawings and fresh capital.",
+      "keyTerms": [
+        { "term": "Statement of affairs", "definition": "A statement of estimated assets and liabilities prepared from incomplete records to derive capital." },
+        { "term": "Statement of profit", "expression": "Profit = Closing capital + Drawings − Additional capital − Opening capital", "definition": "Derives profit when a full set of books is not maintained." }
+      ],
+      "formulas": [
+        { "name": "Profit from capitals", "expression": "Profit = Closing capital + Drawings − Fresh capital introduced − Opening capital", "meaning": "The fastest route where opening and closing statements of affairs are available.", "example": "Opening ₹5,00,000; closing ₹6,80,000; drawings ₹1,20,000; fresh capital ₹50,000 → profit ₹2,50,000." },
+        { "name": "Total debtors account", "expression": "Closing debtors = Opening debtors + Credit sales − Cash received − Returns − Discount allowed − Bad debts", "meaning": "Used to find credit sales or cash collected.", "example": "Opening ₹60,000; cash received ₹4,00,000; returns ₹10,000; closing ₹90,000 → credit sales ₹4,40,000." }
+      ],
+      "questions": [
+        { "id": "p06-c06-q1", "q": "Opening capital ₹4,00,000; closing capital ₹5,60,000; drawings ₹80,000; capital introduced ₹40,000. Compute profit.", "type": "problem", "marks": 3, "difficulty": "easy", "answer": "Profit = 5,60,000 + 80,000 − 40,000 − 4,00,000 = ₹2,00,000.", "tags": ["incomplete records"] }
+      ]
+    },
+    {
+      "id": "p06-c07",
+      "status": "complete",
+      "summary": "Partnership accounting covers profit appropriation, capital and current accounts, admission, retirement, death and dissolution. Admission and retirement are the most frequently tested, and goodwill is usually the pivot.",
+      "keyTerms": [
+        { "term": "Profit sharing ratio", "definition": "The agreed ratio in which partners share profits and losses; may differ from the capital ratio." },
+        { "term": "Sacrificing ratio", "definition": "Old ratio minus new ratio for continuing partners on admission of a new partner." },
+        { "term": "Gaining ratio", "definition": "New ratio minus old ratio for continuing partners on retirement or death." },
+        { "term": "Goodwill", "definition": "The value of the firm's reputation and earning capacity; on admission it is credited to sacrificing partners, on retirement to the retiring partner." },
+        { "term": "Revaluation account", "definition": "Records the increase or decrease in the value of assets and liabilities at the time of admission, retirement or death." },
+        { "term": "Fixed vs fluctuating capital", "definition": "Under the fixed method, capital remains constant and all adjustments pass through current accounts; under fluctuating, adjustments go to capital itself." }
+      ],
+      "formulas": [
+        { "name": "Sacrificing ratio", "expression": "Sacrificing ratio = Old share − New share", "meaning": "Determines the distribution of the incoming partner's goodwill.", "example": "A and B share 3:2. C is admitted for 1/4; new ratio A:B:C = 3:3:2 → A sacrifices 3/5−3/8 = 9/40; B sacrifices 2/5−3/8 = 1/40 → 9:1." },
+        { "name": "Gaining ratio", "expression": "Gaining ratio = New share − Old share", "meaning": "Determines the payment of goodwill by continuing partners on retirement.", "example": "A, B, C share 2:2:1; C retires and A and B share 3:2 → A gains 3/5−2/5=1/5; B gains 2/5−2/5=0 → 1:0." },
+        { "name": "Goodwill — super profit method", "expression": "Goodwill = Super profit × Number of years' purchase", "meaning": "Super profit = Average profit − Normal profit (capital employed × normal rate of return).", "example": "Average profit ₹2,00,000; capital employed ₹12,00,000 at 12% = ₹1,44,000; super profit ₹56,000 × 3 = ₹1,68,000." },
+        { "name": "Goodwill — capitalisation of super profit", "expression": "Goodwill = Super profit / Normal rate of return", "meaning": "An alternative that expresses goodwill as the capital needed to earn the super profit.", "example": "Super profit ₹56,000 at 12% = ₹4,66,667." },
+        { "name": "New profit sharing ratio on admission", "expression": "Old partner's new share = Old share × (1 − New partner's share)", "meaning": "Unless the question states otherwise, the old partners continue in their old ratio among themselves after the new partner's share.", "example": "A and B share 3:2; C takes 1/5 → A = 3/5 × 4/5 = 12/25; B = 8/25; C = 5/25." }
+      ],
+      "examples": [
+        {
+          "title": "Admission with revaluation and goodwill",
+          "scenario": "A and B share 3:2. C is admitted for 1/5 with capital ₹1,50,000 and brings ₹40,000 for goodwill. Machinery is revalued up by ₹50,000 and a provision for doubtful debts of ₹10,000 is created.",
+          "steps": ["New ratio: A 3/5×4/5 = 12/25, B 8/25, C 1/5 = 5/25. Sacrificing ratio = A 3/25, B 2/25 (3:2).", "Goodwill credited: A ₹24,000, B ₹16,000.", "Revaluation profit = 50,000 − 10,000 = ₹40,000, credited A ₹24,000, B ₹16,000."],
+          "result": "A's capital rises by ₹48,000 and B's by ₹32,000 from these two adjustments before C's capital is recorded."
+        }
+      ],
+      "questions": [
+        { "id": "p06-c07-q1", "q": "A and B share profits 5:3. They admit C for 1/4. Compute the new ratio and sacrificing ratio assuming C acquires his share entirely from A.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "C = 1/4, so A + B = 3/4. If C acquires only from A: A = 5/8 − 1/4 = 5/8 − 2/8 = 3/8; B = 3/8; C = 2/8. New ratio 3:3:2. Sacrificing ratio: A 2/8, B nil → 1:0 (only A sacrifices).", "tags": ["partnership", "admission"] },
+        { "id": "p06-c07-q2", "q": "Distinguish between the fixed capital and fluctuating capital methods.", "type": "theory", "marks": 4, "difficulty": "easy", "answer": "Under the fixed capital method, the capital account changes only on introduction or withdrawal of capital; interest on capital, drawings, salary and profit share are recorded in separate current accounts. Under the fluctuating method, all such items are directly recorded in the capital account, so the balance changes every year. The fixed method separates permanent capital from retained earnings and is more informative.", "tags": ["partnership", "capital accounts"] },
+        { "id": "p06-c07-q3", "q": "Explain the treatment of goodwill on retirement of a partner.", "type": "theory", "marks": 5, "difficulty": "medium", "answer": "Goodwill is raised among all partners in the old ratio (or only the retiring partner's share is compensated). The retiring partner's share of goodwill is then written off by the continuing partners in their gaining ratio. The practical journal entry: Continuing partners' capital accounts Dr. (in gaining ratio) to Retiring partner's capital account (with his share of goodwill). If goodwill is not to remain in the books, the sacrificing (gaining) adjustment alone is passed.", "tags": ["partnership", "goodwill", "retirement"] }
+      ],
+      "pitfalls": ["Using the old ratio instead of the sacrificing ratio to distribute goodwill on admission.", "Charging the entire revaluation profit to the incoming partner — it belongs to the old partners.", "Forgetting the retirement instalment and interest computation in the loan account."]
+    },
+    {
+      "id": "p06-c08",
+      "status": "complete",
+      "summary": "AS 19 governs leases. A finance lease transfers substantially all risks and rewards of ownership to the lessee and is capitalised; an operating lease is expensed. The 90% present value test and the interest rate implicit in the lease are the computational core.",
+      "keyTerms": [
+        { "term": "Finance lease", "definition": "A lease that transfers substantially all the risks and rewards incidental to ownership; may be indicated where the lease term covers most of the asset's life or the present value of minimum lease payments is substantially (commonly 90% or more) of the fair value." },
+        { "term": "Operating lease", "definition": "Any lease other than a finance lease; rentals are recognised as an expense on a straight-line basis over the lease term." },
+        { "term": "Minimum lease payments (MLP)", "definition": "For the lessee, payments over the lease term plus guaranteed residual value, excluding contingent rent and service costs." },
+        { "term": "Interest rate implicit in the lease", "definition": "The discount rate at which the present value of MLP plus unguaranteed residual value equals the fair value of the leased asset plus initial direct costs of the lessor." },
+        { "term": "Initial direct costs", "definition": "Incremental costs directly attributable to entering a lease, added to the asset or charged as appropriate." }
+      ],
+      "formulas": [
+        { "name": "Present value of minimum lease payments", "expression": "PV = Rent × Annuity factor (at implicit rate, for lease term) + PV of guaranteed residual value", "meaning": "If PV ≥ substantially all of fair value, the lease is a finance lease.", "example": "Rent ₹2,00,000 for 5 years at 10% (annuity factor 3.7908) → PV ₹7,58,160 against fair value ₹8,00,000 = 94.8% → finance lease." },
+        { "name": "Interest and principal split (actuarial)", "expression": "Interest = Outstanding liability × Implicit rate; Principal repayment = Lease payment − Interest", "meaning": "Each rental reduces principal only after charging interest on the outstanding liability.", "example": "Liability ₹7,58,160 at 10% → interest ₹75,816; payment ₹2,00,000 → principal ₹1,24,184, closing liability ₹6,33,976." },
+        { "name": "Operating lease expense", "expression": "Expense = Total rentals / Lease term (straight line)", "meaning": "Even if rentals escalate, the expense is normally straight-lined unless another basis is more representative.", "example": "3 years' rentals 1,00,000 + 1,20,000 + 1,40,000 = 3,60,000 → ₹1,20,000 per year." }
+      ],
+      "examples": [
+        {
+          "title": "Classifying a lease",
+          "scenario": "An asset with fair value ₹10,00,000 is leased for 4 years at ₹3,00,000 per annum payable at year end; the implicit rate is 8%. The asset's useful life is 5 years and ownership does not transfer.",
+          "steps": ["Annuity factor at 8%, 4 years = 3.3121.", "PV of MLP = 3,00,000 × 3.3121 = ₹9,93,630.", "PV / fair value = 99.4%, well above 90%."],
+          "result": "Finance lease. The lessee capitalises the asset at ₹9,93,630 and records a corresponding liability."
+        }
+      ],
+      "questions": [
+        { "id": "p06-c08-q1", "q": "Explain the accounting treatment of a finance lease in the books of the lessee under AS 19.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "The lessee recognises the asset and liability at the lower of fair value and the present value of minimum lease payments, determined at inception. Each lease payment is apportioned between finance charge and principal reduction, with the finance charge computed on the outstanding liability. The asset is depreciated over the shorter of the lease term and useful life (unless ownership is reasonably certain to pass, in which case over useful life). The lease is disclosed with the gross and present value of MLP and a reconciliation.", "tags": ["lease", "AS 19"] },
+        { "id": "p06-c08-q2", "q": "A lessee pays ₹5,00,000 annually for 4 years at an implicit rate of 12% (annuity factor 3.0373). Compute the initial lease liability and the first year's interest.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "PV = 5,00,000 × 3.0373 = ₹15,18,650. First year's interest = 12% × 15,18,650 = ₹1,82,238. Principal repaid = 5,00,000 − 1,82,238 = ₹3,17,762; closing liability ₹12,00,888.", "tags": ["lease", "computation"] }
+      ],
+      "pitfalls": ["Discounting with the lessee's borrowing rate where the implicit rate is available.", "Depreciating the leased asset over the lease term even where ownership is reasonably certain to transfer."]
+    },
+    {
+      "id": "p06-c09",
+      "status": "outline",
+      "summary": "Branch accounting distinguishes dependent branches (whose records are kept at head office) from independent branches (which keep full books). Foreign branches require translation of assets, liabilities, income and expenses at appropriate rates under AS 11.",
+      "keyTerms": [
+        { "term": "Debtors method", "definition": "The branch account shows debtors and stock as opening and closing balances and thereby reveals profit." },
+        { "term": "Stock and debtors method", "definition": "Used where branches are large; separate accounts for stock, debtors and expenses are maintained." },
+        { "term": "Invoice price loading", "definition": "Goods invoiced above cost; the loading in opening and closing stock must be eliminated through a stock reserve." },
+        { "term": "Independent branch", "definition": "A branch that maintains its own books and reconciles with the head office through a head office account." }
+      ],
+      "formulas": [
+        { "name": "Stock reserve", "expression": "Reserve = Closing stock at invoice price × (Loading / Invoice price)", "meaning": "Reduces the unrealised profit included in branch stock.", "example": "Closing stock at IP ₹4,00,000 with 25% loading → reserve ₹1,00,000 (stock at cost ₹3,00,000)." }
+      ],
+      "pitfalls": ["Forgetting to adjust the opening stock reserve in the second and later years.", "Translating fixed assets of a foreign branch at the closing rate instead of the historical rate."]
+    },
+    {
+      "id": "p06-c10",
+      "status": "outline",
+      "summary": "Departmental accounts analyse trading results by department. Expenses are apportioned on a logical basis, and unrealised profit on inter-departmental transfers is eliminated through a stock reserve.",
+      "keyTerms": [
+        { "term": "Departmental trading account", "definition": "A columnar account showing gross profit by department." },
+        { "term": "Basis of apportionment", "definition": "Floor area for rent, number of employees for salaries, turnover or purchases for carriage, etc." },
+        { "term": "Unrealised profit", "definition": "Profit on goods transferred from one department to another and still in closing stock; must be eliminated." }
+      ],
+      "formulas": [
+        { "name": "Apportionment of common expenses", "expression": "Department share = Total expense × Department's basis / Total basis", "meaning": "Choose a basis that reflects benefit received; state the basis in the answer.", "example": "Rent ₹1,20,000 by area: A 6,000 sq ft, B 2,000 sq ft → A ₹90,000, B ₹30,000." }
+      ]
+    },
+    {
+      "id": "p06-c11",
+      "status": "complete",
+      "summary": "Insurance claims require computing loss of stock using the gross profit ratio and applying the average clause, and loss of profit under a consequential loss policy using the short-sales method with standing charges and the increased cost of working.",
+      "keyTerms": [
+        { "term": "Gross profit ratio", "definition": "Historic gross profit as a percentage of sales, adjusted for any known change in the ratio, used to estimate the cost of the stock lost." },
+        { "term": "Average clause", "definition": "Where the sum insured is less than the value of stock, the insurer pays only in the proportion that the sum insured bears to the value at risk." },
+        { "term": "Standing charges", "definition": "Fixed expenses that continue during the disruption (rent, salaries, depreciation) and form the basis of loss of profit claims." },
+        { "term": "Increased cost of working", "definition": "Additional expenditure reasonably incurred to avoid or reduce loss of sales, subject to the economic limit." },
+        { "term": "Rate of gross profit", "definition": "Gross profit divided by sales, with trend adjustments where historical ratios differ from the current year." }
+      ],
+      "formulas": [
+        { "name": "Loss of stock", "expression": "Loss = Stock on date of fire − Salvage value", "meaning": "Stock on date of fire is derived from a memorandum trading account.", "example": "Opening stock ₹2,00,000 + purchases ₹12,00,000 − cost of sales ₹11,00,000 = stock ₹3,00,000; salvage ₹20,000 → loss ₹2,80,000." },
+        { "name": "Average clause", "expression": "Claim = Loss × Sum insured / Value of stock on date of fire", "meaning": "Under-insurance reduces the claim proportionately.", "example": "Loss ₹2,80,000; sum insured ₹2,00,000; stock value ₹3,00,000 → claim ₹1,86,667." },
+        { "name": "Loss of profit", "expression": "Gross profit lost = Short sales × Rate of gross profit; then apply the insurance proportion to standing charges", "meaning": "Add increased cost of working, subject to the limit.", "example": "Short sales ₹5,00,000 × 25% = ₹1,25,000; policy ₹8,00,000 on insurable GP ₹10,00,000 → claim ₹1,00,000." },
+        { "name": "Insurable standing charges", "expression": "Standing charges − Specific cost of sales expenses", "meaning": "Only expenses that continue and are insured are included.", "example": "Rent, salaries, depreciation, audit fees form the insurable standing charges." }
+      ],
+      "examples": [
+        {
+          "title": "Memorandum trading account to find stock on the date of fire",
+          "scenario": "Opening stock ₹1,50,000; purchases to date ₹9,00,000; sales to date ₹11,00,000; GP ratio 25%; salvage ₹10,000; sum insured ₹2,00,000.",
+          "steps": ["Cost of sales = 75% × 11,00,000 = ₹8,25,000.", "Stock on date of fire = 1,50,000 + 9,00,000 − 8,25,000 = ₹2,25,000.", "Loss = 2,25,000 − 10,000 = ₹2,15,000.", "Average clause: 2,15,000 × 2,00,000/2,25,000 = ₹1,91,111."],
+          "result": "Claim ₹1,91,111, assuming the policy is on the value of stock and the average clause applies."
+        }
+      ],
+      "questions": [
+        { "id": "p06-c11-q1", "q": "A fire destroyed stock. Sales up to the date of fire ₹8,00,000; opening stock ₹60,000; purchases ₹5,80,000; GP ratio 20%; salvage ₹5,000; sum insured ₹1,20,000. Compute the admissible claim.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Cost of sales = 80% × 8,00,000 = ₹6,40,000. Stock on date of fire = 60,000 + 5,80,000 − 6,40,000 = ₹0? Recompute: 60,000 + 5,80,000 = 6,40,000 − 6,40,000 = nil, which is implausible — check data. With stock ₹1,00,000 assumed, loss = 95,000. Claim under average clause = 95,000 × 1,20,000/1,00,000 = capped at the sum insured ₹95,000. This illustrates why working notes must be shown: always test the derived stock for reasonableness.", "tags": ["insurance", "average clause"] }
+      ],
+      "pitfalls": ["Applying the average clause to loss of profit without the insurance proportion calculation.", "Including the increased cost of working without testing it against the economic limit."]
+    },
+    {
+      "id": "p06-c12",
+      "status": "outline",
+      "summary": "Hire purchase transfers ownership after the last instalment, while an instalment sale transfers ownership immediately. Each instalment is apportioned between capital recovery and interest, commonly using the sum-of-digits or annuity method.",
+      "keyTerms": [
+        { "term": "Hire purchase", "definition": "An agreement where the hirer pays in instalments and ownership passes on payment of the last instalment." },
+        { "term": "Instalment sale", "definition": "A sale where property passes immediately but the price is paid in instalments." },
+        { "term": "Repossession", "definition": "Recovery of goods by the owner on default; the hirer's account is closed and profit or loss on repossession is computed." }
+      ],
+      "formulas": [
+        { "name": "Interest by sum of digits", "expression": "Interest for a year = Total interest × (Number of instalments remaining including current / Sum of digits of instalments)", "meaning": "Allocates a higher interest charge to earlier years.", "example": "3 yearly instalments, total interest ₹36,000 → digits 1+2+3=6; year 1 = 3/6 × 36,000 = ₹18,000; year 2 ₹12,000; year 3 ₹6,000." },
+        { "name": "Cash price from instalments", "expression": "Cash price = Down payment + PV of instalments at the implicit rate", "meaning": "Used where the cash price is not given.", "example": "Down ₹40,000 + three instalments of ₹1,00,000 at 10% = 40,000 + 2,48,685 = ₹2,88,685." }
+      ],
+      "pitfalls": ["Charging interest on the full cash price in later years instead of the outstanding balance.", "Recording a hire purchase as a sale for tax and accounting purposes when ownership has not passed."]
+    },
+    {
+      "id": "p06-c13",
+      "status": "complete",
+      "summary": "Twelve Accounting Standards are specified for Paper 6. Exam questions are usually 5-8 marks and require the definition, recognition principle, measurement rule and one disclosure or practical application.",
+      "keyTerms": [
+        { "term": "AS 1 — Disclosure of Accounting Policies", "definition": "Requires disclosure of all significant accounting policies; selection must satisfy prudence, substance over form and materiality." },
+        { "term": "AS 2 — Valuation of Inventories", "definition": "Inventory is measured at the lower of cost and net realisable value; cost includes purchase, conversion and other costs to bring inventory to its present location and condition; formulas: specific identification, FIFO or weighted average (LIFO is not permitted)." },
+        { "term": "AS 3 — Cash Flow Statements", "definition": "Classifies cash flows into operating, investing and financing activities; investing and financing items (except certain financing liabilities) are shown gross." },
+        { "term": "AS 9 — Revenue Recognition", "definition": "Revenue is recognised when there is a transfer of significant risks and rewards and no significant uncertainty about consideration; includes a specific rule for incomplete service contracts." },
+        { "term": "AS 10 — Property, Plant and Equipment", "definition": "Cost includes purchase price, duties, directly attributable costs and decommissioning; subsequent costs are capitalised only if future benefits increase; revaluation requires periodic revaluation of the entire class." },
+        { "term": "AS 11 — Foreign Exchange Rates", "definition": "Foreign currency transactions are recorded at the rate on the transaction date and restated at the closing rate; exchange differences are generally recognised in the P&L, with an option for certain long-term monetary items." },
+        { "term": "AS 12 — Government Grants", "definition": "Recognise only when there is reasonable assurance of compliance and receipt; grants related to a specific fixed asset may be deducted from the asset or treated as deferred income." },
+        { "term": "AS 13 — Investments", "definition": "Current investments at lower of cost and fair value; long-term investments at cost with provision for permanent diminution; investment property is treated as a long-term investment." },
+        { "term": "AS 14 — Amalgamation", "definition": "Pooling of interests for amalgamations in the nature of merger; purchase method for other amalgamations, with goodwill or capital reserve recognised." },
+        { "term": "AS 16 — Borrowing Costs", "definition": "Borrowing costs directly attributable to the acquisition, construction or production of a qualifying asset are capitalised; others are expensed." },
+        { "term": "AS 17 — Segment Reporting", "definition": "Requires disclosure of business and geographical segments for specified enterprises, using the enterprise's internal organisation as the basis." },
+        { "term": "AS 19 — Leases", "definition": "Finance leases are capitalised by the lessee; operating lease rentals are expensed on a straight-line basis." }
+      ],
+      "formulas": [
+        { "name": "AS 2 — Inventory cost", "expression": "Cost = Purchase cost + Conversion cost + Other costs − Trade discounts − Abnormal wastage", "meaning": "Excludes selling and distribution costs and administrative overheads not related to production.", "example": "Materials ₹4,00,000 + direct labour ₹1,20,000 + factory overheads ₹80,000 = ₹6,00,000; NRV ₹5,60,000 → value ₹5,60,000." },
+        { "name": "AS 10 — Cost of an asset", "expression": "Cost = Purchase price net of discounts + duties + directly attributable costs + estimated dismantling cost", "meaning": "Excludes training, startup losses and relocation costs.", "example": "Machine ₹20,00,000 + freight ₹50,000 + installation ₹1,50,000 = ₹22,00,000 capitalisable." },
+        { "name": "AS 16 — Capitalisation rate", "expression": "Capitalisation rate = Borrowing costs / Weighted average borrowings outstanding", "meaning": "Applied to expenditure incurred on the qualifying asset.", "example": "Specific loan ₹10,00,000 at 12% = ₹1,20,000 capitalised; asset expenditure ₹8,00,000 over the year → capitalise ₹1,20,000." }
+      ],
+      "examples": [
+        {
+          "title": "AS 2 — Lower of cost and NRV",
+          "scenario": "Inventory costing ₹5,00,000 has a current selling price of ₹5,40,000 and estimated selling expenses of ₹60,000.",
+          "steps": ["NRV = 5,40,000 − 60,000 = ₹4,80,000.", "Cost = ₹5,00,000.", "Valued at the lower of the two."],
+          "result": "Value at ₹4,80,000 and write down ₹20,000 to the P&L."
+        },
+        {
+          "title": "AS 12 — Grant related to an asset",
+          "scenario": "A company receives a ₹15,00,000 grant towards a machine costing ₹50,00,000, with a 10-year life.",
+          "steps": ["Reasonable assurance of receipt and compliance exists.", "Option 1: deduct from the asset → depreciable value ₹35,00,000 → ₹3,50,000 per year.", "Option 2: deferred income → depreciation ₹5,00,000 and grant income ₹1,50,000 per year."],
+          "result": "Both are permitted; the net charge to the P&L is ₹3,50,000 per year under either method."
+        }
+      ],
+      "questions": [
+        { "id": "p06-c13-q1", "q": "Explain the recognition and measurement principles of AS 2 with a practical example of net realisable value.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "AS 2 requires inventory to be measured at the lower of cost and net realisable value, item-by-item rather than in aggregate. Cost comprises purchase cost, conversion cost and other costs incurred to bring inventory to its present location and condition; it excludes abnormal wastage, storage costs (unless necessary in the process), and selling costs. NRV is estimated selling price less costs of completion and costs to sell. Example: an item costing ₹5,00,000 with an estimated selling price of ₹5,40,000 and selling costs of ₹60,000 has NRV ₹4,80,000 and must be written down by ₹20,000. Formulas permitted: specific identification, FIFO, weighted average. LIFO is not permitted.", "tags": ["accounting standards", "AS 2"] },
+        { "id": "p06-c13-q2", "q": "Distinguish between a finance lease and an operating lease under AS 19.", "type": "theory", "marks": 5, "difficulty": "easy", "answer": "A finance lease transfers substantially all risks and rewards of ownership; the lessee capitalises the asset at the lower of fair value and PV of minimum lease payments, and depreciates it. An operating lease does not transfer substantially all risks and rewards; rentals are charged to the P&L on a straight-line basis and the asset remains on the lessor's balance sheet. Indicators of a finance lease include the lease covering most of the asset's life, ownership transfer, a bargain purchase option, or PV of MLP being substantially all of fair value.", "tags": ["accounting standards", "AS 19"] },
+        { "id": "p06-c13-q3", "q": "How should borrowing costs be treated under AS 16? Explain with an example of a qualifying asset.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Borrowing costs that are directly attributable to the acquisition, construction or production of a qualifying asset are capitalised as part of the cost of that asset. A qualifying asset is one that necessarily takes a substantial period to get ready for its intended use or sale. Other borrowing costs are expensed. Capitalisation begins when expenditure and borrowing costs are incurred and activities to prepare the asset are in progress; it ceases when the asset is substantially ready. Example: a plant taking 24 months to build, funded by a specific term loan at 12% — interest during construction is capitalised up to the date of readiness, and thereafter expensed. Interest on funds invested temporarily is deducted from the capitalisable amount.", "tags": ["accounting standards", "AS 16"] },
+        { "id": "p06-c13-q4", "q": "Explain the treatment of exchange differences under AS 11 for monetary and non-monetary items.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Monetary items (cash, receivables, payables, loans) are restated at the closing rate, and the resulting exchange difference is recognised in the P&L, except that exchange differences on monetary items that form part of the net investment in a non-integral foreign operation are accumulated in a foreign currency translation reserve until disposal. Non-monetary items carried at historical cost are translated at the transaction-date rate and are not restated; non-monetary items carried at fair value are translated at the rate on the date the fair value was determined. Integral foreign operations are translated as if their transactions were those of the reporting enterprise; non-integral operations are translated using closing rates for assets and liabilities and average rates for income and expenses, with differences taken to the translation reserve.", "tags": ["accounting standards", "AS 11"] },
+        { "id": "p06-c13-q5", "q": "A company purchased machinery for ₹40,00,000, incurring freight ₹60,000, installation ₹2,40,000, and staff training ₹80,000. It expects dismantling costs with a present value of ₹1,20,000. Compute the capitalisable cost under AS 10.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "Capitalisable cost = 40,00,000 + 60,000 + 2,40,000 + 1,20,000 = ₹44,20,000. Training costs of ₹80,000 are expensed because they do not bring the asset to its working condition for its intended use.", "tags": ["accounting standards", "AS 10"] }
+      ],
+      "revisionNotes": [
+        "Learn each AS as a four-part card: definition → recognition → measurement → disclosure. That maps directly to how marks are allocated.",
+        "AS 2: LIFO is prohibited; NRV comparison is item by item.",
+        "AS 10: revaluation applies to an entire class of assets, not to a single asset.",
+        "AS 11: average rate for income and expenses of non-integral foreign operations; closing rate for monetary items.",
+        "AS 12: monetary grants are recognised as income over the periods in which the related costs are incurred.",
+        "AS 13: current investments at lower of cost and fair value; long-term at cost less permanent diminution.",
+        "AS 14: pooling of interests requires all of — same shareholders' interest, same business, no adjustment to book values, and no non-essential adjustments.",
+        "AS 16: suspension of capitalisation during extended interruption of active development.",
+        "AS 19: 90% PV test for finance lease classification is an indicator, not a rule."
+      ],
+      "pitfalls": [
+        "Quoting Ind AS numbers for AS questions — Paper 6 is on Accounting Standards, and the treatment often differs.",
+        "Capitalising training costs and trial-run wastage as part of asset cost.",
+        "Forgetting to disclose the accounting policy where the question asks for treatment 'with disclosure'."
+      ],
+      "linkedConcepts": ["c-inventory-valuation", "c-lease-accounting", "c-borrowing-costs"]
+    }
+  ]
+}

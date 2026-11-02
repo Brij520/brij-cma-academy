@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "purpose": "Master priority hierarchy. When two things compete for the same hour, the higher priority wins. No exceptions.",
+    "lastReviewed": "2026-11-02",
+    "governingRule": "Professional development must complement academic learning, never interfere with examination preparation. During the 12 weeks before an exam window, professional skills pause except communication practice, which continues because it is cheap and compounds."
+  },
+  "priorities": [
+    {
+      "rank": 1,
+      "id": "pri-1",
+      "name": "CMA Intermediate Group I — December 2026",
+      "papers": ["p05", "p06", "p07", "p08"],
+      "target": "2026-12-10",
+      "endDate": "2026-12-17",
+      "why": "The immediate gate. Everything else is subordinate until this is cleared.",
+      "successMeasure": "All four papers attempted with a mock average at or above 60% and no paper below 50%.",
+      "weeklyHours": 25,
+      "allocationShare": 0.62,
+      "gates": [
+        { "gate": "Syllabus first pass complete", "by": "2026-06-30" },
+        { "gate": "Full-length mocks started", "by": "2026-08-31" },
+        { "gate": "Mock average ≥ 60%", "by": "2026-10-31" },
+        { "gate": "Revision-only phase", "from": "2026-11-19", "to": "2026-12-09" }
+      ],
+      "nonNegotiable": ["Minimum 3 hours of active study on a working day", "One full-length paper every week from September", "Every error logged within 24 hours"]
+    },
+    {
+      "rank": 2,
+      "id": "pri-2",
+      "name": "CMA Intermediate Group II — June 2027",
+      "papers": ["p09", "p10", "p11", "p12"],
+      "target": "2027-06-01",
+      "why": "Completing both groups unlocks Final and the professional tier.",
+      "successMeasure": "Mock average ≥ 60% across all four papers before the exam form deadline.",
+      "weeklyHours": 25,
+      "allocationShare": 0.20,
+      "gates": [
+        { "gate": "Syllabus first pass begins", "from": "2027-01-15" },
+        { "gate": "First full mock", "by": "2027-03-31" },
+        { "gate": "Exam form submitted", "by": "2027-04-10" }
+      ],
+      "nonNegotiable": ["Start Group II within four weeks of the December result", "Do not start Final before Group II mocks reach 60%"]
+    },
+    {
+      "rank": 3,
+      "id": "pri-3",
+      "name": "CMA Final — after Intermediate and eligibility",
+      "papers": ["p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"],
+      "target": null,
+      "why": "The professional qualification itself. Cannot start before both Intermediate groups are cleared and the practical training requirements are met.",
+      "successMeasure": "Registration completed only after eligibility is confirmed with ICMAI.",
+      "weeklyHours": 0,
+      "allocationShare": 0.0,
+      "gates": [
+        { "gate": "Both Intermediate groups cleared", "by": null },
+        { "gate": "Practical training requirement confirmed with ICMAI", "by": null },
+        { "gate": "Final registration", "by": null }
+      ],
+      "nonNegotiable": ["Do not buy Final study material before eligibility is confirmed", "Do not let Final planning distract from Group II"]
+    },
+    {
+      "rank": 4,
+      "id": "pri-4",
+      "name": "Professional Accounting and Finance Skills",
+      "papers": [],
+      "target": null,
+      "why": "The practical layer that converts exam knowledge into employability — but it sits below the exams.",
+      "successMeasure": "At least five documented portfolio artefacts with full documentation.",
+      "weeklyHours": 6,
+      "allocationShare": 0.10,
+      "gates": [
+        { "gate": "Two portfolio projects complete", "by": "2027-03-31" },
+        { "gate": "One project presented aloud and recorded", "by": "2027-06-30" }
+      ],
+      "nonNegotiable": ["Skills practice never displaces a scheduled mock", "Every skill hour must produce an artefact"]
+    },
+    {
+      "rank": 5,
+      "id": "pri-5",
+      "name": "AI, Data Analytics, Automation and Technology",
+      "papers": [],
+      "target": null,
+      "why": "The differentiator over the next five years, pursued in short cycles between exam phases.",
+      "successMeasure": "One working automation with a measured evaluation and a governance note.",
+      "weeklyHours": 4,
+      "allocationShare": 0.05,
+      "gates": [
+        { "gate": "SQL and Python fundamentals complete", "by": "2027-06-30" },
+        { "gate": "One automation deployed and evaluated", "by": "2027-12-31" }
+      ],
+      "nonNegotiable": ["Build the manual process before automating it", "Never use real or client data in a model"]
+    },
+    {
+      "rank": 6,
+      "id": "pri-6",
+      "name": "Career Development, Certifications and Portfolio",
+      "papers": [],
+      "target": null,
+      "why": "Crystallises the rest into opportunity, but only once there is something real to show.",
+      "successMeasure": "A resume with five quantified achievements and a portfolio that a stranger can navigate.",
+      "weeklyHours": 3,
+      "allocationShare": 0.03,
+      "gates": [
+        { "gate": "Resume and portfolio site ready", "by": "2027-01-31" },
+        { "gate": "Ten STAR stories prepared", "by": "2027-03-31" },
+        { "gate": "First five applications submitted", "by": "2027-06-30" }
+      ],
+      "nonNegotiable": ["No certification purchased without checking whether a target role requires it", "No claim on a resume that cannot be evidenced"]
+    }
+  ],
+  "examWindows": [
+    { "session": "December 2026", "papers": "Intermediate Group I", "from": "2026-12-10", "to": "2026-12-17", "verified": "2026-11-02" },
+    { "session": "June 2027", "papers": "Intermediate Group II", "from": null, "to": null, "verified": null, "note": "Confirm dates from the ICMAI timetable when published." }
+  ],
+  "timeBudget": {
+    "weeklyAvailableHours": 40,
+    "split": [
+      { "activity": "Academic study and problems", "hours": 22 },
+      { "activity": "Revision and retrieval practice", "hours": 6 },
+      { "activity": "Mocks and review", "hours": 6 },
+      { "activity": "Professional skills and projects", "hours": 4 },
+      { "activity": "Technology and automation", "hours": 1.5 },
+      { "activity": "Communication practice", "hours": 0.5 }
+    ],
+    "note": "The split shifts by phase. In the 12 weeks before an exam window, skills and technology hours move to mocks and revision."
+  },
+  "escalationTriggers": [
+    { "trigger": "Mock average below 50% for two consecutive weeks", "action": "Suspend all priority 4–6 activity for 14 days and rebuild fundamentals." },
+    { "trigger": "More than 20% of planned study hours missed for two weeks", "action": "Reduce the plan, not the standards — cut an activity rather than pretending to do everything." },
+    { "trigger": "Same error type repeated three times", "action": "Write the rule in the mistake log and drill it before any new topic." },
+    { "trigger": "No artefact produced in four weeks of skills work", "action": "Stop the course and finish one project." }
+  ]
+}

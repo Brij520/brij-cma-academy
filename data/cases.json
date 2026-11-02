@@ -1,0 +1,1137 @@
+{
+  "meta": {
+    "purpose": "Business Case Study Laboratory — six fictional companies with real problems, real numbers and an expected analytical approach.",
+    "lastReviewed": "2026-11-02",
+    "howToUse": "Read the scenario, analyse the exhibits yourself, write a professional recommendation, and only then open the model approach. Answer keys are withheld behind a reveal so that you do the work first.",
+    "dataNote": "All companies, figures and people are fictional. All amounts are in ₹ crore unless stated otherwise.",
+    "evaluationPhilosophy": "Technical accuracy earns half the marks. Business judgement — identifying what matters, what the data cannot tell you, and what to do next — earns the other half."
+  },
+  "rubric": {
+    "criteria": [
+      {
+        "criterion": "Technical accuracy",
+        "weight": 30,
+        "detail": "Computations are correct, units consistent, and the arithmetic is shown."
+      },
+      {
+        "criterion": "Diagnosis",
+        "weight": 25,
+        "detail": "Identifies the root cause, not just the symptom, and separates volume, price, mix and cost effects."
+      },
+      {
+        "criterion": "Business judgement",
+        "weight": 25,
+        "detail": "Considers non-financial factors, risk, implementation feasibility and unintended consequences."
+      },
+      {
+        "criterion": "Recommendation quality",
+        "weight": 15,
+        "detail": "Specific, sequenced, owned and measurable."
+      },
+      {
+        "criterion": "Professional presentation",
+        "weight": 5,
+        "detail": "Structured, concise, assumptions and limitations stated."
+      }
+    ],
+    "gradeBands": [
+      {
+        "band": "Distinction",
+        "description": "Correct numbers, correct diagnosis, quantified options, credible risks and a defensible recommendation."
+      },
+      {
+        "band": "Merit",
+        "description": "Correct numbers and diagnosis, but recommendations are generic or risks are thin."
+      },
+      {
+        "band": "Pass",
+        "description": "Numbers broadly correct but the diagnosis is descriptive and the recommendation is not quantified."
+      },
+      {
+        "band": "Not yet",
+        "description": "Arithmetic errors, or the answer describes the data without explaining it."
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "case-01",
+      "no": 1,
+      "sector": "Manufacturing",
+      "company": "Sundar Precision Components Ltd",
+      "difficulty": "Intermediate",
+      "hours": 3,
+      "problem": "Why is profitability declining despite double-digit revenue growth?",
+      "scenario": "Sundar makes three precision components for automotive customers. Volume grew 10% last year and the sales head is celebrating. The CFO is not: EBITDA margin has fallen from 24.0% to 16.9% and EBIT from ₹19.8 crore to ₹12.7 crore. The plant head blames steel prices. The sales head blames product mix. Nobody has quantified anything.",
+      "exhibits": [
+        {
+          "title": "Income statement summary (₹ crore)",
+          "columns": [
+            "Line",
+            "FY24",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Revenue",
+              "120.0",
+              "132.0"
+            ],
+            [
+              "Raw material",
+              "54.0",
+              "66.0"
+            ],
+            [
+              "Employee cost",
+              "18.0",
+              "20.5"
+            ],
+            [
+              "Power and fuel",
+              "7.2",
+              "9.2"
+            ],
+            [
+              "Repairs and maintenance",
+              "3.6",
+              "4.4"
+            ],
+            [
+              "Other overheads",
+              "8.4",
+              "9.6"
+            ],
+            [
+              "EBITDA",
+              "28.8",
+              "22.3"
+            ],
+            [
+              "Depreciation",
+              "9.0",
+              "9.6"
+            ],
+            [
+              "EBIT",
+              "19.8",
+              "12.7"
+            ]
+          ]
+        },
+        {
+          "title": "Product-wise data — FY25",
+          "columns": [
+            "Product",
+            "Units",
+            "Price/unit (₹)",
+            "Variable cost/unit (₹)",
+            "Contribution/unit (₹)",
+            "Total contribution (₹ crore)"
+          ],
+          "rows": [
+            [
+              "A",
+              "60,000",
+              "12,000",
+              "8,400",
+              "3,600",
+              "21.60"
+            ],
+            [
+              "B",
+              "30,000",
+              "14,000",
+              "11,200",
+              "2,800",
+              "8.40"
+            ],
+            [
+              "C",
+              "20,000",
+              "9,000",
+              "7,650",
+              "1,350",
+              "2.70"
+            ],
+            [
+              "Total",
+              "1,10,000",
+              "",
+              "",
+              "",
+              "32.70"
+            ]
+          ]
+        },
+        {
+          "title": "Product-wise data — FY24",
+          "columns": [
+            "Product",
+            "Units",
+            "Price/unit (₹)",
+            "Variable cost/unit (₹)",
+            "Contribution/unit (₹)",
+            "Total contribution (₹ crore)"
+          ],
+          "rows": [
+            [
+              "A",
+              "60,000",
+              "12,000",
+              "8,000",
+              "4,000",
+              "24.00"
+            ],
+            [
+              "B",
+              "25,000",
+              "14,000",
+              "10,500",
+              "3,500",
+              "8.75"
+            ],
+            [
+              "C",
+              "15,000",
+              "9,000",
+              "7,000",
+              "2,000",
+              "3.00"
+            ],
+            [
+              "Total",
+              "1,00,000",
+              "",
+              "",
+              "",
+              "35.75"
+            ]
+          ]
+        },
+        {
+          "title": "Operations",
+          "columns": [
+            "Metric",
+            "FY24",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Normal capacity (units)",
+              "1,20,000",
+              "1,20,000"
+            ],
+            [
+              "Actual production (units)",
+              "1,00,000",
+              "1,10,000"
+            ],
+            [
+              "Capacity utilisation",
+              "83.3%",
+              "91.7%"
+            ],
+            [
+              "Rejection rate",
+              "2.1%",
+              "4.3%"
+            ],
+            [
+              "Overtime hours",
+              "4,200",
+              "11,600"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "Decompose the ₹7.1 crore EBIT decline into volume, price, variable cost, mix and fixed cost effects. Which single driver is largest?",
+          "marks": 10
+        },
+        {
+          "q": "Product C has the lowest contribution per unit. Should it be discontinued? Answer with numbers.",
+          "marks": 6
+        },
+        {
+          "q": "Write a 200-word recommendation to the board with three specific actions and the expected financial impact of each.",
+          "marks": 8
+        }
+      ],
+      "modelApproach": [
+        "EBIT fell from ₹19.8 crore to ₹12.7 crore — a decline of ₹7.1 crore. That splits into EBITDA down ₹6.5 crore (₹28.8 crore to ₹22.3 crore) and depreciation up ₹0.6 crore (₹9.0 crore to ₹9.6 crore). The EBITDA decline splits again: contribution fell ₹3.05 crore (₹35.75 crore to ₹32.70 crore) and fixed cost rose ₹3.45 crore (₹6.95 crore to ₹10.40 crore, the residual). Margins fell despite 10% volume growth because cost inflation outpaced the volume gain.",
+        "Volume effect at the FY24 mix: a 10% increase on ₹35.75 crore adds ₹3.575 crore of contribution. At FY25 volumes but FY24 unit contributions, contribution would be ₹38.50 crore, so the mix effect is 38.50 − 39.325 = −₹0.825 crore. Prices were unchanged, so the price effect is zero. Variable cost inflation, applying FY25 volumes at the FY24-to-FY25 unit cost increase, is A 60,000 × ₹400 = ₹2.40 crore + B 30,000 × ₹700 = ₹2.10 crore + C 20,000 × ₹650 = ₹1.30 crore, a total of ₹5.80 crore. Check: 3.575 − 0.825 + 0 − 5.80 = −₹3.05 crore, which is the observed contribution decline.",
+        "Variable cost per unit rose across every product: A from ₹8,000 to ₹8,400 (+5.0%), B from ₹10,500 to ₹11,200 (+6.7%) and C from ₹7,000 to ₹7,650 (+9.3%). With prices unchanged, the company absorbed the entire increase. This is the largest single driver by a wide margin — ₹5.80 crore against a volume gain of ₹3.575 crore.",
+        "Mix is not the explanation the sales head thinks it is. C's share of units rose from 15% to 18.2%, and C has the lowest contribution per unit at ₹1,350, but the quantified mix effect is only −₹0.825 crore. The plant head's explanation — input and conversion cost inflation — is the dominant driver. The sales head is directionally right and materially wrong on scale.",
+        "Fixed cost rose ₹3.45 crore, and the operating data explains how: overtime rose from 4,200 to 11,600 hours (+176%) and rejection from 2.1% to 4.3%. Both are symptoms of pushing volume through a process that was not capable of it. Overtime and rework behave like variable costs even when they sit in overhead lines, which is why the fixed/variable split in the accounts misleads.",
+        "Product C still earns positive contribution of ₹2.70 crore and nothing in the data says its capacity has an alternative use. Discontinuing C on the current information would destroy ₹2.70 crore of contribution and worsen profit. The correct test is whether the released capacity can earn more than ₹2.70 crore, and whether C is the entry product for customers who also buy A and B. Answer: do not discontinue; re-price or re-engineer C.",
+        "Recommendation: (i) recover cost inflation through a price increase or an indexed price clause — a 4.4% price rise across products restores ₹5.80 crore; (ii) attack overtime and rejection through a quality and scheduling programme, targeting rejection back to 2.5% (worth roughly ₹1.5–2 crore); (iii) re-engineer C's variable cost by 8% to lift its contribution; (iv) institute a monthly contribution-per-machine-hour report so mix and pricing decisions are made with data rather than assertion."
+      ],
+      "judgementPoints": [
+        "Do not cut the lowest-contribution product without testing capacity alternatives and customer relationships.",
+        "Separate genuine fixed cost growth from variable costs misclassified as overhead.",
+        "The sales narrative and the plant narrative are both partly right; the job is to say which dominates and by how much."
+      ],
+      "links": {
+        "papers": [
+          "p08",
+          "p12"
+        ],
+        "concepts": [
+          "c-contribution",
+          "c-variance-analysis",
+          "c-short-term-decisions"
+        ],
+        "skills": [
+          "skill-advanced-excel",
+          "skill-power-bi"
+        ]
+      }
+    },
+    {
+      "id": "case-02",
+      "no": 2,
+      "sector": "Retail",
+      "company": "Naya Bazaar Retail Ltd",
+      "difficulty": "Intermediate",
+      "hours": 3,
+      "problem": "Why is working capital increasing faster than sales?",
+      "scenario": "Naya Bazaar operates 64 grocery stores and has grown revenue 15% by adding 12 stores and entering modern-trade distribution. Cash has moved from a ₹45 crore surplus to a ₹12 crore overdraft. The CFO suspects the growth is being funded by suppliers, and the suppliers have started to complain.",
+      "exhibits": [
+        {
+          "title": "Working capital metrics",
+          "columns": [
+            "Metric",
+            "FY24",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Revenue (₹ crore)",
+              "850",
+              "980"
+            ],
+            [
+              "Gross margin",
+              "26.0%",
+              "24.5%"
+            ],
+            [
+              "Inventory days",
+              "62",
+              "84"
+            ],
+            [
+              "Receivable days",
+              "8",
+              "14"
+            ],
+            [
+              "Payable days",
+              "45",
+              "38"
+            ],
+            [
+              "Cash conversion cycle",
+              "25",
+              "60"
+            ],
+            [
+              "Inventory (₹ crore)",
+              "145",
+              "226"
+            ],
+            [
+              "Trade receivables (₹ crore)",
+              "19",
+              "38"
+            ],
+            [
+              "Trade payables (₹ crore)",
+              "105",
+              "127"
+            ],
+            [
+              "Net working capital (₹ crore)",
+              "96",
+              "205"
+            ],
+            [
+              "Cash and bank (₹ crore)",
+              "45",
+              "−12"
+            ]
+          ]
+        },
+        {
+          "title": "Store and category data",
+          "columns": [
+            "Item",
+            "FY24",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Stores",
+              "52",
+              "64"
+            ],
+            [
+              "Average revenue per store (₹ crore)",
+              "16.3",
+              "15.3"
+            ],
+            [
+              "Slow-moving SKUs (% of inventory)",
+              "11%",
+              "23%"
+            ],
+            [
+              "Modern-trade share of revenue",
+              "6%",
+              "18%"
+            ],
+            [
+              "Supplier credit terms (days)",
+              "45",
+              "45"
+            ],
+            [
+              "Actual payment days to suppliers",
+              "45",
+              "38"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "Quantify the increase in net working capital and decompose it into inventory, receivable and payable effects. How much cash is trapped per day of cycle?",
+          "marks": 10
+        },
+        {
+          "q": "Is the company growing profitably? Reconcile revenue growth, gross margin change and working capital growth.",
+          "marks": 6
+        },
+        {
+          "q": "Recommend a 90-day cash release plan with quantified impact and the risks of each action.",
+          "marks": 8
+        }
+      ],
+      "modelApproach": [
+        "Cash conversion cycle worsened by 35 days (25 to 60). At FY25 revenue of ₹980 crore, daily revenue is ₹2.685 crore, so 35 days equals approximately ₹94 crore of cash absorbed. Using cost of goods instead would give a slightly lower figure; state which basis you use.",
+        "Decomposition: inventory days +22 (worth about ₹59 crore of additional inventory at the FY25 cost base); receivable days +6 (modern trade credit — worth about ₹16 crore); payable days −7 (faster payment to suppliers — worth about ₹19 crore). The three effects sum to the change.",
+        "Growth quality: revenue grew 15% but gross margin fell 150 bps from 26.0% to 24.5%. Gross profit grew from ₹221 crore to ₹240 crore (+8.6%), slower than revenue. Average revenue per store fell from ₹16.3 crore to ₹15.3 crore — the new stores are diluting, not adding to, productivity. This is growth bought with price and space, not earned with productivity.",
+        "Inventory: slow-moving SKUs doubled from 11% to 23% of inventory. That is roughly ₹52 crore of stock at risk of markdown. The inventory increase is not simply a function of new stores; it is a function of assortment breadth and buying discipline.",
+        "Receivables: modern trade rose from 6% to 18% of revenue, which explains the receivable days increase. This is a structural consequence of the channel strategy, not a collections failure — but it must be priced into the customer margin.",
+        "Payables: paying in 38 days against 45-day terms means the company is voluntarily financing suppliers, likely to protect supply. That is a ₹19 crore decision taken without a formal policy.",
+        "90-day plan: (i) cut slow-moving SKUs and return or mark down ₹30–40 crore of stock — immediate cash but margin hit, so phase it; (ii) restore 45-day supplier terms and negotiate 60 days for the top 20 vendors — worth up to ₹40 crore, but risks supply disruption; (iii) tighten modern-trade credit limits and introduce early-payment discounts — worth ₹10–15 crore; (iv) freeze new store openings for two quarters until the cycle returns below 35 days; (v) introduce a weekly CCC dashboard with a cash release target owned by the CFO.",
+        "Judgement: the fastest lever (pay suppliers slower) is also the most dangerous and the least sustainable. The structural answer is assortment discipline and store productivity, which take longer."
+      ],
+      "judgementPoints": [
+        "Do not present the cycle release as free cash — the inventory markdown cost must be netted.",
+        "Distinguish structural channel effects from operational failures.",
+        "New store productivity is the real long-term issue; working capital is the symptom."
+      ],
+      "links": {
+        "papers": [
+          "p11"
+        ],
+        "concepts": [
+          "c-working-capital",
+          "c-credit-analysis",
+          "c-cash-forecasting"
+        ],
+        "skills": [
+          "skill-financial-modelling",
+          "skill-power-bi"
+        ]
+      }
+    },
+    {
+      "id": "case-03",
+      "no": 3,
+      "sector": "Banking",
+      "company": "Sahayak Bank Ltd",
+      "difficulty": "Advanced",
+      "hours": 4,
+      "problem": "Why has return on assets halved in one year, and what should the board do?",
+      "scenario": "Sahayak is a mid-sized private bank with ₹46,000 crore of advances. It grew its unsecured retail book aggressively for two years. Gross NPAs have more than doubled, provisioning has risen sharply and the board wants to know whether this is a cycle or a control failure.",
+      "exhibits": [
+        {
+          "title": "Key ratios",
+          "columns": [
+            "Metric",
+            "FY24",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Advances (₹ crore)",
+              "42,000",
+              "46,000"
+            ],
+            [
+              "Gross NPA",
+              "2.1%",
+              "4.6%"
+            ],
+            [
+              "Net NPA",
+              "0.9%",
+              "2.4%"
+            ],
+            [
+              "Provision coverage ratio",
+              "68%",
+              "58%"
+            ],
+            [
+              "Net interest margin",
+              "3.4%",
+              "2.9%"
+            ],
+            [
+              "Cost-to-income ratio",
+              "48%",
+              "56%"
+            ],
+            [
+              "Return on assets",
+              "1.1%",
+              "0.6%"
+            ],
+            [
+              "Return on equity",
+              "13.2%",
+              "7.4%"
+            ],
+            [
+              "Capital adequacy ratio",
+              "16.8%",
+              "15.1%"
+            ]
+          ]
+        },
+        {
+          "title": "Provisions and book composition",
+          "columns": [
+            "Item",
+            "FY24",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Provisions (₹ crore)",
+              "620",
+              "1,650"
+            ],
+            [
+              "Average advances (₹ crore)",
+              "36,000",
+              "40,000"
+            ],
+            [
+              "Unsecured retail share",
+              "14%",
+              "29%"
+            ],
+            [
+              "Secured mortgage share",
+              "41%",
+              "33%"
+            ],
+            [
+              "Corporate share",
+              "31%",
+              "24%"
+            ],
+            [
+              "Fresh slippages (₹ crore)",
+              "780",
+              "2,480"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "Compute the credit cost for both years and reconcile it with the movement in NPA ratios. Explain why ROA halved.",
+          "marks": 10
+        },
+        {
+          "q": "Is the provision coverage ratio of 58% adequate? What are the implications for capital?",
+          "marks": 6
+        },
+        {
+          "q": "As a management accountant advising the board, recommend three actions and state the trade-off each involves.",
+          "marks": 8
+        }
+      ],
+      "modelApproach": [
+        "Credit cost = provisions / average advances: FY24 = 620/36,000 = 1.72%; FY25 = 1,650/40,000 = 4.13%. A 241 bps increase in credit cost on a 2.9% NIM is larger than the entire margin — this, not the margin compression, is the primary driver of the ROA fall.",
+        "Slippages of ₹2,480 crore against average advances of ₹40,000 crore are 6.2% of the book. Gross NPA rose from 2.1% to 4.6% because slippages exceeded recoveries and write-offs. Net NPA rose faster (0.9% to 2.4%) because PCR fell from 68% to 58% — provisioning did not keep pace with the deterioration. This is the most serious finding: the bank is under-providing relative to its own prior standard.",
+        "ROA bridge: NIM compression of 50 bps costs about ₹200 crore of pre-provision profit; cost-to-income deterioration of 8 points costs a further roughly ₹180 crore. Provisions rose ₹1,030 crore. Together they explain the fall from 1.1% to 0.6%.",
+        "PCR adequacy: RBI's regulatory minimum is a floor, not a target. A 58% PCR against a book whose unsecured share doubled means the effective loss-given-default assumption has worsened. Restoring PCR to 68% would require roughly ₹1,100 crore of additional provisioning on the current gross NPA, reducing capital adequacy by about 2.4 percentage points — plausible but tight against a 15.1% CAR.",
+        "Root cause: unsecured retail rose from 14% to 29% while mortgage fell from 41% to 33% within 12 months. Unsecured retail typically carries higher yield and much higher loss rates. Growth was sourced by shifting the risk profile, and the underwriting and collections infrastructure evidently did not scale with it. This is a control failure as much as a cycle.",
+        "Actions: (i) restore PCR to at least 68% over two quarters while slowing unsecured growth — the trade-off is lower ROA in the short term for credibility and capital resilience; (ii) rebuild the collections and early-warning infrastructure, with monthly vintage-level loss analysis — the trade-off is cost and management attention; (iii) rebalance the book towards secured assets and re-price unsecured lending for risk — the trade-off is slower growth and possible market share loss; (iv) hold the dividend and preserve capital until coverage and slippages stabilise.",
+        "Judgement: the board should not accept a 'cycle' explanation without vintage data by origination cohort. If losses are concentrated in recent cohorts, underwriting is the problem, not the economy."
+      ],
+      "judgementPoints": [
+        "Distinguish margin, cost and provision drivers — do not attribute everything to NPA.",
+        "A falling PCR alongside rising NPAs is a red flag for provisioning discipline.",
+        "Regulatory minimum is not the same as prudential adequacy."
+      ],
+      "links": {
+        "papers": [
+          "p10",
+          "p13"
+        ],
+        "concepts": [
+          "c-ratio-analysis",
+          "c-risk-management",
+          "c-provisions"
+        ],
+        "skills": [
+          "skill-power-bi",
+          "skill-sql"
+        ]
+      }
+    },
+    {
+      "id": "case-04",
+      "no": 4,
+      "sector": "Services",
+      "company": "Meridian Facility Services Pvt Ltd",
+      "difficulty": "Intermediate",
+      "hours": 3,
+      "problem": "Why are operating costs exceeding budget, and which contract is underperforming?",
+      "scenario": "Meridian provides housekeeping, security and technical maintenance under annual contracts at client sites. Revenue grew 18% but EBITDA margin fell from 12% to 8%. The operations director says wage inflation is unavoidable. The finance team has been reporting at a company level only.",
+      "exhibits": [
+        {
+          "title": "Contract profitability — FY25 (₹ lakh)",
+          "columns": [
+            "Contract",
+            "Revenue",
+            "Direct cost",
+            "Gross margin",
+            "Allocated overhead",
+            "Operating margin"
+          ],
+          "rows": [
+            [
+              "A — Corporate HQ",
+              "1,420",
+              "1,136",
+              "20.0%",
+              "180",
+              "7.3%"
+            ],
+            [
+              "B — Hospital",
+              "2,100",
+              "1,764",
+              "16.0%",
+              "250",
+              "4.1%"
+            ],
+            [
+              "C — Shopping mall",
+              "1,650",
+              "1,617",
+              "2.0%",
+              "210",
+              "−10.7%"
+            ],
+            [
+              "D — IT campus",
+              "1,200",
+              "984",
+              "18.0%",
+              "150",
+              "5.5%"
+            ],
+            [
+              "E — Residential",
+              "780",
+              "663",
+              "15.0%",
+              "95",
+              "2.8%"
+            ],
+            [
+              "Total",
+              "7,150",
+              "6,164",
+              "13.8%",
+              "885",
+              "1.4%"
+            ]
+          ]
+        },
+        {
+          "title": "Site operating data — FY25",
+          "columns": [
+            "Contract",
+            "Headcount",
+            "Absenteeism",
+            "Overtime (₹ lakh)",
+            "Wage revision passed on?",
+            "Client satisfaction"
+          ],
+          "rows": [
+            [
+              "A",
+              "96",
+              "6.2%",
+              "18",
+              "Yes",
+              "4.2/5"
+            ],
+            [
+              "B",
+              "148",
+              "9.8%",
+              "46",
+              "Yes",
+              "3.9/5"
+            ],
+            [
+              "C",
+              "132",
+              "14.6%",
+              "72",
+              "No",
+              "3.1/5"
+            ],
+            [
+              "D",
+              "78",
+              "5.1%",
+              "12",
+              "Yes",
+              "4.4/5"
+            ],
+            [
+              "E",
+              "62",
+              "11.3%",
+              "22",
+              "Partially",
+              "3.6/5"
+            ]
+          ]
+        },
+        {
+          "title": "Budget vs actual — company level",
+          "columns": [
+            "Line",
+            "Budget",
+            "Actual",
+            "Variance"
+          ],
+          "rows": [
+            [
+              "Revenue",
+              "6,800",
+              "7,150",
+              "+350 F"
+            ],
+            [
+              "Direct cost",
+              "5,712",
+              "6,164",
+              "+452 A"
+            ],
+            [
+              "Overhead",
+              "780",
+              "885",
+              "+105 A"
+            ],
+            [
+              "EBITDA",
+              "308",
+              "101",
+              "−207 A"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "Analyse contract-wise profitability. Which contract is destroying value and why? Challenge the operations director's explanation.",
+          "marks": 10
+        },
+        {
+          "q": "Was the revenue growth good news? Use contribution logic.",
+          "marks": 6
+        },
+        {
+          "q": "Recommend a contract-level reporting and pricing framework, plus the immediate action on the worst contract.",
+          "marks": 8
+        }
+      ],
+      "modelApproach": [
+        "At company level the margin fell because direct cost grew faster than revenue. Total operating profit is ₹101 lakh on revenue of ₹7,150 lakh — a 1.4% operating margin. The aggregate hides the real problem: Contract C earns a 2% gross margin and a −10.7% operating margin. C alone destroys ₹177 lakh of operating profit (revenue 1,650 − direct cost 1,617 − overhead 210). Excluding C, operating profit would be ₹278 lakh on ₹5,500 lakh of revenue (7,150 − 1,650 revenue; 6,164 − 1,617 direct; 885 − 210 overhead), a 5.1% margin. The company is carrying a loss-making contract that consumes both profit and management attention.",
+        "Contract C is loss-making for two identifiable reasons: (i) the wage revision was not passed on to the client, while 132 staff were affected — with absenteeism at 14.6% and overtime at ₹72 lakh, the site is running on overtime to cover absence; (ii) client satisfaction of 3.1/5 suggests service issues that will make a price increase harder to negotiate. This is not 'wage inflation' generally; it is a specific unpriced contract variation.",
+        "The operations director is partly right — wage inflation affects all sites — but every other contract passed the revision on. The differentiator is contract governance, not the market.",
+        "Growth quality: revenue grew ₹350 lakh above budget, but direct cost grew ₹452 lakh. The incremental contribution was negative. Growth that adds revenue without contribution destroys value. Contribution logic: incremental revenue 350, incremental direct cost 452 → incremental contribution −102 lakh. The company grew into a loss.",
+        "Immediate action on C: serve notice or renegotiate within the contractual mechanism, with a quantified cost case presented to the client; if the client refuses, plan an orderly exit and redeploy staff. Do not renew at the current terms. The trade-off is revenue loss of ₹1,650 lakh against profit improvement of about ₹177 lakh and management time released.",
+        "Framework: monthly contract-level P&L with direct cost, site overhead, allocated central overhead and a defined contribution margin; wage-revision clauses linked to a published index; overtime and absenteeism as tracked KPIs with escalation triggers; a bid-approval gate that rejects contracts below a contribution floor.",
+        "Judgement: exiting a contract requires notice-period, penalty and redeployment analysis. The answer should state what information is missing before a final decision — notice terms, client relationship across other sites, and whether C is a gateway to larger contracts."
+      ],
+      "judgementPoints": [
+        "Company-level reporting hides the problem — segment reporting is the intervention.",
+        "Negative incremental contribution means growth destroyed value.",
+        "Separate market-wide wage inflation from unpriced contract variation."
+      ],
+      "links": {
+        "papers": [
+          "p12",
+          "p16"
+        ],
+        "concepts": [
+          "c-contribution",
+          "c-customer-profitability",
+          "c-short-term-decisions"
+        ],
+        "skills": [
+          "skill-power-bi",
+          "skill-advanced-excel"
+        ]
+      }
+    },
+    {
+      "id": "case-05",
+      "no": 5,
+      "sector": "Infrastructure",
+      "company": "Ganga Expressway Infrastructure Ltd",
+      "difficulty": "Advanced",
+      "hours": 4,
+      "problem": "Should the company purchase or lease its construction equipment?",
+      "scenario": "Ganga Expressway has won a six-year road contract and needs a paving plant. The plant can be purchased for ₹8.00 crore or leased for ₹2.55 crore per year on a six-year operating lease that includes maintenance. The finance director prefers leasing because 'it keeps debt off the balance sheet'. The tax rate is 25% and the cost of capital is 11%.",
+      "exhibits": [
+        {
+          "title": "Purchase option",
+          "columns": [
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "Capital cost",
+              "₹8.00 crore"
+            ],
+            [
+              "Useful life",
+              "8 years"
+            ],
+            [
+              "Salvage value after 8 years",
+              "₹0.80 crore"
+            ],
+            [
+              "Depreciation",
+              "Straight line to salvage value"
+            ],
+            [
+              "Annual maintenance and insurance",
+              "₹0.80 crore"
+            ],
+            [
+              "Expected resale value at end of year 6",
+              "₹2.40 crore"
+            ]
+          ]
+        },
+        {
+          "title": "Lease option",
+          "columns": [
+            "Item",
+            "Amount"
+          ],
+          "rows": [
+            [
+              "Annual lease rental",
+              "₹2.55 crore"
+            ],
+            [
+              "Lease term",
+              "6 years"
+            ],
+            [
+              "Maintenance and insurance",
+              "Included in rental"
+            ],
+            [
+              "Ownership at end",
+              "Remains with lessor"
+            ]
+          ]
+        },
+        {
+          "title": "Assumptions",
+          "columns": [
+            "Assumption",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Tax rate",
+              "25%"
+            ],
+            [
+              "Discount rate (WACC)",
+              "11%"
+            ],
+            [
+              "Annuity factor, 6 years at 11%",
+              "4.2305"
+            ],
+            [
+              "PV factor, year 6 at 11%",
+              "0.5346"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "Compute the present value of the cost of purchasing and of leasing. Which is cheaper?",
+          "marks": 12
+        },
+        {
+          "q": "At what resale value does the decision reverse? Comment on the sensitivity.",
+          "marks": 6
+        },
+        {
+          "q": "Evaluate the finance director's claim that leasing keeps debt off the balance sheet.",
+          "marks": 7
+        }
+      ],
+      "modelApproach": [
+        "Purchase: initial outflow ₹8.00 crore. Depreciation = (8.00 − 0.80)/8 = ₹0.90 crore per year; tax shield 25% = ₹0.225 crore per year. After-tax maintenance and insurance = 0.80 × 0.75 = ₹0.60 crore per year. Terminal: resale ₹2.40 crore against book value at end of year 6 of 8.00 − 5.40 = ₹2.60 crore, giving a loss of ₹0.20 crore and a tax shield of ₹0.05 crore; net terminal inflow ₹2.45 crore.",
+        "PV of purchase cost = 8.00 + (0.60 × 4.2305) − (0.225 × 4.2305) − (2.45 × 0.5346) = 8.00 + 2.538 − 0.952 − 1.310 = ₹8.276 crore.",
+        "Lease: after-tax rental = 2.55 × 0.75 = ₹1.9125 crore per year. PV = 1.9125 × 4.2305 = ₹8.091 crore.",
+        "Lease is cheaper by ₹0.185 crore — a margin of only 2.2%. On a decision of this size, that is not a robust conclusion, and the sensitivity matters more than the point estimate.",
+        "Break-even resale value: setting the PV of purchase equal to ₹8.091 crore, the required terminal PV is 8.00 + 2.538 − 0.952 − 8.091 = ₹1.495 crore. Dividing by the year-6 PV factor of 0.5346 gives a net terminal inflow of ₹2.797 crore, which implies a resale price of roughly ₹3.05 crore after adjusting for the tax effect. So if the plant can be sold for more than about ₹3.05 crore, purchase wins. The current assumption of ₹2.40 crore is the decisive input.",
+        "The finance director's claim is wrong in substance. Under Ind AS 116, a lease of this length for a specialised asset is likely to be a finance lease or a right-of-use asset, so both the asset and the liability appear on the balance sheet. Even under a pure operating lease, the commitment is disclosed and lenders include it in adjusted leverage. The real question is who bears residual value risk, not accounting presentation.",
+        "Judgement: the analysis should state that a 2% difference is within model error; that the residual value assumption drives the answer; that maintenance risk transfers to the lessor under the lease and has value if the company cannot manage the plant; and that the lease preserves ₹8 crore of debt capacity, which has an opportunity value not captured in this comparison."
+      ],
+      "judgementPoints": [
+        "A decision margin under 5% must be presented as finely balanced, not decisive.",
+        "Accounting presentation is not a reason to choose a financing structure.",
+        "Residual value risk and maintenance capability are the real differentiators."
+      ],
+      "links": {
+        "papers": [
+          "p11",
+          "p14",
+          "p18"
+        ],
+        "concepts": [
+          "c-lease-vs-buy",
+          "c-capital-budgeting",
+          "c-lease-accounting"
+        ],
+        "skills": [
+          "skill-financial-modelling"
+        ]
+      }
+    },
+    {
+      "id": "case-06",
+      "no": 6,
+      "sector": "Technology",
+      "company": "KloudKart Technologies Pvt Ltd",
+      "difficulty": "Advanced",
+      "hours": 4,
+      "problem": "Which product line should be discontinued, and why is a profitable company running out of cash?",
+      "scenario": "KloudKart sells a subscription platform, implementation services and resold hardware. Revenue grew 34% to ₹96 crore, but the cash balance fell from ₹18 crore to ₹4 crore and the company has drawn ₹15 crore of its ₹20 crore working capital facility. The founder wants to discontinue hardware because it shows a loss under the current cost allocation.",
+      "exhibits": [
+        {
+          "title": "Product line P&L — FY25 (₹ crore)",
+          "columns": [
+            "Line",
+            "Subscription",
+            "Services",
+            "Hardware",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Revenue",
+              "52.0",
+              "28.0",
+              "16.0",
+              "96.0"
+            ],
+            [
+              "Direct cost",
+              "12.0",
+              "20.0",
+              "14.4",
+              "46.4"
+            ],
+            [
+              "Contribution",
+              "40.0",
+              "8.0",
+              "1.6",
+              "49.6"
+            ],
+            [
+              "Allocated fixed cost",
+              "18.0",
+              "11.0",
+              "6.0",
+              "35.0"
+            ],
+            [
+              "Operating profit",
+              "22.0",
+              "−3.0",
+              "−4.4",
+              "14.6"
+            ]
+          ]
+        },
+        {
+          "title": "Operating metrics",
+          "columns": [
+            "Metric",
+            "FY24",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Subscription customers",
+              "310",
+              "402"
+            ],
+            [
+              "Annual churn",
+              "9%",
+              "14%"
+            ],
+            [
+              "Customer acquisition cost (₹ lakh)",
+              "4.2",
+              "5.8"
+            ],
+            [
+              "Hardware attach rate on new subscriptions",
+              "68%",
+              "61%"
+            ],
+            [
+              "Top customer share of revenue",
+              "18%",
+              "32%"
+            ],
+            [
+              "Debtor days",
+              "52",
+              "78"
+            ],
+            [
+              "Deferred revenue (₹ crore)",
+              "9.0",
+              "7.2"
+            ],
+            [
+              "Capitalised development cost (₹ crore)",
+              "3.1",
+              "5.8"
+            ]
+          ]
+        },
+        {
+          "title": "Cash reconciliation (₹ crore)",
+          "columns": [
+            "Item",
+            "FY25"
+          ],
+          "rows": [
+            [
+              "Operating profit",
+              "14.6"
+            ],
+            [
+              "Add: depreciation and amortisation",
+              "6.2"
+            ],
+            [
+              "Increase in receivables",
+              "−11.4"
+            ],
+            [
+              "Decrease in deferred revenue",
+              "−1.8"
+            ],
+            [
+              "Capitalised development spend",
+              "−5.8"
+            ],
+            [
+              "Other working capital",
+              "−2.3"
+            ],
+            [
+              "Net cash used",
+              "−0.5"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "Should hardware be discontinued on the basis of the table? Analyse using relevant costing and strategic dependency.",
+          "marks": 10
+        },
+        {
+          "q": "Explain why operating profit of ₹14.6 crore produced negative cash. Identify the three largest causes.",
+          "marks": 8
+        },
+        {
+          "q": "What should the founder fix first, and what would you measure monthly?",
+          "marks": 7
+        }
+      ],
+      "modelApproach": [
+        "Hardware shows an operating loss of ₹4.4 crore, but that is after allocating ₹6.0 crore of fixed cost that does not disappear if hardware is discontinued. Contribution is positive at ₹1.6 crore. On the numbers given, discontinuing hardware reduces group profit by ₹1.6 crore unless the ₹6.0 crore of allocated cost is genuinely avoidable. The founder's conclusion is an artefact of full-cost allocation.",
+        "Strategic dependency changes the answer. Hardware has a 61% attach rate on new subscriptions — hardware is often the entry product that makes the platform usable. Removing it may reduce subscription acquisition and increase churn. Before taking a decision, the required analysis is the subscription revenue that would not exist without hardware. If even 8% of subscription revenue depends on hardware, that is ₹4.2 crore of contribution — far more than the apparent ₹4.4 crore loss.",
+        "The real problem is not hardware but services: contribution of ₹8.0 crore on ₹28.0 crore of revenue is a 28.6% contribution margin, which is thin for implementation work, and services shows a ₹3.0 crore operating loss. Services may be a loss leader for subscriptions — but that must be proven, not assumed. The likely correct action is to re-price or productise implementation, not to kill hardware.",
+        "Cash: operating profit ₹14.6 crore plus depreciation ₹6.2 crore should give about ₹20.8 crore of operating cash before working capital. It produced negative cash because receivables absorbed ₹11.4 crore (debtor days 52 to 78), deferred revenue fell ₹1.8 crore (billing moved from annual-in-advance to monthly-in-arrears, or customers are being billed later), and capitalised development of ₹5.8 crore was spent in cash and excluded from operating profit.",
+        "Quality signals: churn rose from 9% to 14% and CAC rose from ₹4.2 lakh to ₹5.8 lakh. Rising acquisition cost with rising churn means the growth is getting more expensive to buy and less durable. Top-customer concentration rose from 18% to 32% — a single customer now represents a third of revenue, which is a going-concern risk and a pricing risk.",
+        "Fix first: billing and collections. Moving customers to annual advance billing and collecting overdue receivables is the fastest, least risky cash lever: reducing debtor days from 78 to 55 releases roughly ₹6 crore. Second, stop capitalising development costs that do not meet the recognition criteria, or at least fund them from operating cash rather than the working capital facility.",
+        "Monthly measures: net revenue retention, gross churn by cohort, CAC payback months, services gross margin, hardware contribution after avoidable costs, debtor days and deferred revenue movement, and concentration by top five customers.",
+        "Judgement: the answer must resist the accounting-driven discontinuation decision. Segment profitability calculated after arbitrary allocations is one of the most common causes of value-destroying decisions."
+      ],
+      "judgementPoints": [
+        "Allocated fixed costs are not avoidable — full-cost segment losses mislead.",
+        "Strategic interdependency between products must be tested before exiting.",
+        "Cash and profit diverge through receivables, deferred revenue and capitalisation policy."
+      ],
+      "links": {
+        "papers": [
+          "p12",
+          "p16",
+          "p18"
+        ],
+        "concepts": [
+          "c-relevant-costing",
+          "c-cash-flow",
+          "c-customer-profitability"
+        ],
+        "skills": [
+          "skill-sql",
+          "skill-power-bi",
+          "skill-financial-modelling"
+        ]
+      }
+    }
+  ]
+}

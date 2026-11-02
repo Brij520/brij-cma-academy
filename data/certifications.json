@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "purpose": "Certification and continuous learning tracker — eligibility, prerequisites, cost band, duration, curriculum, practical value and the official registration page for each opportunity.",
+    "lastReviewed": "2026-11-02",
+    "verification": {
+      "rule": "Fees, dates, eligibility and syllabus change without notice. Every entry carries verifyBeforeUse: true. Confirm on the official page before you pay, register or plan around a course.",
+      "costBands": { "free": "No fee", "free-audit": "Free to study or audit; certificate or assessment may be paid", "low": "Under about ₹10,000 equivalent", "moderate": "About ₹10,000–₹50,000", "high": "Above about ₹50,000", "variable": "Depends on pathway, region or partner" },
+      "disclaimer": "No certification here is a guaranteed job qualification. Value depends on the employer, the role and what you can actually demonstrate."
+    }
+  },
+  "entries": [
+    {
+      "id": "cert-icmai-final", "name": "CMA Final (ICMAI)", "provider": "ICMAI", "category": "Professional qualification", "priority": 1,
+      "eligibility": "After clearing CMA Intermediate, with the prescribed practical training and subject to ICMAI registration rules.",
+      "prerequisites": ["CMA Intermediate cleared", "ICMAI registration valid and renewed", "Practical training as prescribed"],
+      "costBand": "moderate", "costNote": "Registration, exam and training fees are set by ICMAI and revised periodically — check the current fee notification.",
+      "duration": "Typically 12–24 months while working",
+      "curriculum": ["Corporate and Economic Laws", "Strategic Financial Management", "Direct Tax Laws and International Taxation", "Strategic Cost Management", "Cost and Management Audit", "Corporate Financial Reporting", "Indirect Tax Laws and Practice", "Elective paper"],
+      "practicalValue": "The core credential for the management accounting career path in India and the mandatory next step after Intermediate.",
+      "officialPage": "https://icmai.in/students/", "freeOrLowCost": false, "verifyBeforeUse": true, "status": "not-started", "plan": "After Intermediate Group II (target June 2027)"
+    },
+    {
+      "id": "cert-icmai-training", "name": "ICMAI practical training and programmes", "provider": "ICMAI", "category": "Professional qualification", "priority": 1,
+      "eligibility": "Registered ICMAI students, subject to the stage-specific requirements.",
+      "prerequisites": ["ICMAI student registration"],
+      "costBand": "low", "costNote": "Varies by programme; some student programmes are free or nominally priced. Verify on the ICMAI student portal.",
+      "duration": "Varies — modular programmes and prescribed training periods",
+      "curriculum": ["Practical training", "Communication and soft skills modules", "Industry-oriented programmes", "Student seminars and conferences"],
+      "practicalValue": "Satisfies the practical training requirement and provides the earliest exposure to professional practice.",
+      "officialPage": "https://icmai.in/students/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Check eligibility during Intermediate Group II"
+    },
+    {
+      "id": "cert-ms-learn", "name": "Microsoft Learn pathways (Excel, Power BI, Azure AI)", "provider": "Microsoft", "category": "Technology", "priority": 2,
+      "eligibility": "Open to anyone with a free Microsoft account.",
+      "prerequisites": ["None for learning paths"],
+      "costBand": "free", "costNote": "Learning paths, modules and documentation are free. Certification exams are paid separately.",
+      "duration": "20–60 hours per pathway, self-paced",
+      "curriculum": ["Power BI data analyst path", "Excel and data analysis modules", "Azure AI fundamentals", "Copilot and AI productivity modules"],
+      "practicalValue": "Free, structured and directly aligned with the software academy. Best used as the theory spine while you build your own projects.",
+      "officialPage": "https://learn.microsoft.com/training/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "in-progress", "plan": "Use alongside skill-excel and skill-power-bi"
+    },
+    {
+      "id": "cert-pl300", "name": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)", "provider": "Microsoft", "category": "Technology", "priority": 3,
+      "eligibility": "No formal prerequisite; recommended experience building reports and models.",
+      "prerequisites": ["Power BI Desktop proficiency", "DAX basics", "Data modelling fundamentals"],
+      "costBand": "low", "costNote": "Exam fee is region-specific and changes; verify the current price on the Microsoft certification page. Student discounts are sometimes available.",
+      "duration": "Preparation typically 40–80 hours",
+      "curriculum": ["Prepare data", "Model data", "Visualise data", "Analyse data", "Deploy and maintain assets"],
+      "practicalValue": "Recognised by employers who run Microsoft analytics stacks. Worth taking only after you can already build a dashboard unaided.",
+      "officialPage": "https://learn.microsoft.com/credentials/certifications/power-bi-data-analyst-associate/", "freeOrLowCost": false, "verifyBeforeUse": true, "status": "not-started", "plan": "After skill-power-bi and two portfolio dashboards"
+    },
+    {
+      "id": "cert-sap-learning", "name": "SAP Learning Journeys (FI/CO)", "provider": "SAP", "category": "Technology", "priority": 3,
+      "eligibility": "Open registration on SAP Learning.",
+      "prerequisites": ["None for learning journeys"],
+      "costBand": "free", "costNote": "Learning journeys are free. System access and certification exams usually involve cost or an employer environment.",
+      "duration": "30–80 hours per journey",
+      "curriculum": ["Financial accounting essentials", "Management accounting in SAP", "Procure to pay and order to cash", "Reporting and period-end"],
+      "practicalValue": "Functional ERP literacy that most Indian cost accounting roles expect. Certification is optional until an employer requires it.",
+      "officialPage": "https://learning.sap.com/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "After Intermediate, if targeting an ERP-heavy role"
+    },
+    {
+      "id": "cert-oracle-university", "name": "Oracle University financials learning", "provider": "Oracle", "category": "Technology", "priority": 4,
+      "eligibility": "Open registration.",
+      "prerequisites": ["None for free learning content"],
+      "costBand": "variable", "costNote": "Some content is free; certification and training subscriptions are paid. Verify current offerings.",
+      "duration": "20–60 hours",
+      "curriculum": ["Financials cloud essentials", "General ledger and sub-ledgers", "Fixed assets", "Reporting"],
+      "practicalValue": "Useful if you target a group that runs Oracle. Lower priority than gaining actual ERP exposure.",
+      "officialPage": "https://education.oracle.com/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Opportunistic only"
+    },
+    {
+      "id": "cert-google-data", "name": "Google data analytics and AI courses", "provider": "Google", "category": "Technology", "priority": 3,
+      "eligibility": "Open to anyone.",
+      "prerequisites": ["None"],
+      "costBand": "free-audit", "costNote": "Many Google courses are free to audit; the professional certificate involves a subscription. Verify on the provider page.",
+      "duration": "3–6 months part-time",
+      "curriculum": ["Data foundations", "Spreadsheet and SQL analysis", "Visualisation", "R and Python basics", "Generative AI fundamentals"],
+      "practicalValue": "Good structured introduction with a recognised name. Supplement with finance-specific projects, since these courses are not finance-oriented.",
+      "officialPage": "https://grow.google/certificates/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Optional, after SQL fundamentals"
+    },
+    {
+      "id": "cert-ibm-skillsbuild", "name": "IBM SkillsBuild (AI, data, professional skills)", "provider": "IBM", "category": "Technology", "priority": 3,
+      "eligibility": "Open registration.",
+      "prerequisites": ["None"],
+      "costBand": "free", "costNote": "Free digital credentials through SkillsBuild.",
+      "duration": "10–40 hours per credential",
+      "curriculum": ["AI fundamentals", "Data science foundations", "Professional skills", "Cybersecurity awareness"],
+      "practicalValue": "Genuinely free credentials with a credible name for AI literacy. Useful as structured evidence of self-directed learning.",
+      "officialPage": "https://skillsbuild.org/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "During the AI foundations phase"
+    },
+    {
+      "id": "cert-coursera", "name": "Coursera specialisations (finance, analytics)", "provider": "Coursera", "category": "Online learning", "priority": 3,
+      "eligibility": "Open registration; financial aid available in many regions.",
+      "prerequisites": ["Varies by course"],
+      "costBand": "free-audit", "costNote": "Most courses can be audited free. Certificates need a subscription or one-off fee. Financial aid application is worth attempting.",
+      "duration": "1–6 months per specialisation",
+      "curriculum": ["Financial modelling", "Business analytics", "Accounting fundamentals", "AI for business"],
+      "practicalValue": "Wide choice, uneven quality. Choose courses from universities or firms with a strong finance reputation and finish one before starting another.",
+      "officialPage": "https://www.coursera.org/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "One specialisation per quarter during professional development phase"
+    },
+    {
+      "id": "cert-edx", "name": "edX courses and MicroMasters", "provider": "edX", "category": "Online learning", "priority": 3,
+      "eligibility": "Open registration; verification fees apply for certificates.",
+      "prerequisites": ["Varies"],
+      "costBand": "free-audit", "costNote": "Audit free on most courses; verified certificates and MicroMasters are paid. Financial assistance is available.",
+      "duration": "4–12 weeks per course; longer for programmes",
+      "curriculum": ["Finance", "Statistics", "Data science", "Accounting"],
+      "practicalValue": "Stronger academic depth than many alternatives. Useful where you want a rigorous treatment of a technical topic.",
+      "officialPage": "https://www.edx.org/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "For depth on statistics or finance theory"
+    },
+    {
+      "id": "cert-infosys-springboard", "name": "Infosys Springboard", "provider": "Infosys", "category": "Online learning", "priority": 2,
+      "eligibility": "Open registration for learners; some programmes target students and institutions.",
+      "prerequisites": ["None"],
+      "costBand": "free", "costNote": "Free learning content and certifications on the platform.",
+      "duration": "10–60 hours per course",
+      "curriculum": ["Programming and data science", "AI and machine learning basics", "Business and professional skills", "Emerging technology"],
+      "practicalValue": "Underused free resource in India with structured certification. Good for building technical foundations without cost.",
+      "officialPage": "https://infyspringboard.onwingspan.com/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Use for Python and AI foundations"
+    },
+    {
+      "id": "cert-fm-providers", "name": "Financial modelling certificates (various providers)", "provider": "Multiple — verify independently", "category": "Financial modelling", "priority": 3,
+      "eligibility": "Usually open; some require finance experience for advanced tracks.",
+      "prerequisites": ["Advanced Excel", "Accounting fundamentals"],
+      "costBand": "moderate", "costNote": "Fees vary widely and are frequently discounted. Compare syllabus and sample outputs before paying — a portfolio model may serve you better than a certificate.",
+      "duration": "30–120 hours",
+      "curriculum": ["Three-statement modelling", "Valuation", "Project finance", "Model audit"],
+      "practicalValue": "Useful structure and templates, but employers assess the model you can build, not the certificate. Complete the FP&A projects in this repository first.",
+      "officialPage": "https://icmai.in", "freeOrLowCost": false, "verifyBeforeUse": true, "status": "not-started", "plan": "Only after three portfolio models are complete"
+    },
+    {
+      "id": "cert-cfa", "name": "CFA Program", "provider": "CFA Institute", "category": "Professional qualification", "priority": 5,
+      "eligibility": "Degree or equivalent work experience; enrolment windows and fees apply.",
+      "prerequisites": ["Strong finance and quantitative base", "Significant study time (hundreds of hours per level)"],
+      "costBand": "high", "costNote": "Enrolment and exam fees are substantial and region-dependent; scholarships exist. Verify current fees.",
+      "duration": "2–4 years across three levels",
+      "curriculum": ["Ethics", "Quantitative methods", "Economics", "Financial reporting", "Equity, fixed income, derivatives, alternatives", "Portfolio management"],
+      "practicalValue": "Strong for investment and portfolio roles. Not necessary for cost accounting or FP&A paths; do not let it compete with the CMA exam.",
+      "officialPage": "https://www.cfainstitute.org/programs/cfa-program", "freeOrLowCost": false, "verifyBeforeUse": true, "status": "not-started", "plan": "Consider only after CMA Final, if pursuing markets"
+    },
+    {
+      "id": "cert-cima", "name": "CIMA (Chartered Institute of Management Accountants)", "provider": "CIMA / AICPA & CIMA", "category": "Professional qualification", "priority": 5,
+      "eligibility": "Open entry with exemptions based on prior qualifications; ICMAI holders may get subject exemptions — verify with CIMA.",
+      "prerequisites": ["Registration and case study exams"],
+      "costBand": "high", "costNote": "Subscription, exam and exemption fees; regional pricing applies. Verify.",
+      "duration": "2–4 years",
+      "curriculum": ["Management accounting", "Financial reporting", "Business strategy", "Case study examinations"],
+      "practicalValue": "Internationally portable management accounting credential. Useful only if you intend to work outside India; high overlap with CMA content.",
+      "officialPage": "https://www.cimaglobal.com/", "freeOrLowCost": false, "verifyBeforeUse": true, "status": "not-started", "plan": "Not recommended before CMA Final"
+    },
+    {
+      "id": "cert-acca", "name": "ACCA", "provider": "ACCA", "category": "Professional qualification", "priority": 5,
+      "eligibility": "Open entry with exemptions for recognised qualifications.",
+      "prerequisites": ["Registration", "Exam fees per paper"],
+      "costBand": "high", "costNote": "Per-exam and annual fees; exemption fees apply. Verify current pricing.",
+      "duration": "2–4 years",
+      "curriculum": ["Financial reporting", "Audit and assurance", "Taxation", "Strategic business reporting", "Strategic business leader"],
+      "practicalValue": "Strong for reporting and audit careers, especially internationally. Substantial overlap with CMA at the fundamentals level.",
+      "officialPage": "https://www.accaglobal.com/", "freeOrLowCost": false, "verifyBeforeUse": true, "status": "not-started", "plan": "Not recommended in parallel with CMA"
+    },
+    {
+      "id": "cert-cia", "name": "Certified Internal Auditor (CIA)", "provider": "The Institute of Internal Auditors", "category": "Professional qualification", "priority": 4,
+      "eligibility": "Degree plus relevant experience; three-part exam.",
+      "prerequisites": ["Internal audit or accounting experience recommended"],
+      "costBand": "moderate", "costNote": "Application, exam part and membership fees; verify current pricing.",
+      "duration": "6–18 months",
+      "curriculum": ["Internal audit fundamentals", "Practice of internal auditing", "Business knowledge for internal auditing"],
+      "practicalValue": "The recognised credential for internal audit roles. High value if you target audit rather than core FP&A.",
+      "officialPage": "https://www.theiia.org/", "freeOrLowCost": false, "verifyBeforeUse": true, "status": "not-started", "plan": "Optional after CMA Final, if targeting audit"
+    },
+    {
+      "id": "cert-iias", "name": "IIA India training and certification support", "provider": "IIA India", "category": "Professional institution", "priority": 4,
+      "eligibility": "Members and students; varies by programme.",
+      "prerequisites": ["Membership usually required for member pricing"],
+      "costBand": "low", "costNote": "Membership and event fees vary — verify with IIA India.",
+      "duration": "Workshops and short programmes",
+      "curriculum": ["Internal audit practices", "Risk management", "Governance", "Forensic audit"],
+      "practicalValue": "Local training and networking at low cost, useful if you are building an audit specialisation.",
+      "officialPage": "https://www.iia-india.org/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Opportunistic"
+    },
+    {
+      "id": "cert-nism", "name": "NISM certifications (securities markets)", "provider": "National Institute of Securities Markets (SEBI)", "category": "Markets", "priority": 4,
+      "eligibility": "Open registration; some certifications require sponsorship by a registered intermediary.",
+      "prerequisites": ["Varies by certification series"],
+      "costBand": "low", "costNote": "Modest examination fees set by NISM. Verify on the NISM portal.",
+      "duration": "2–6 weeks preparation per certification",
+      "curriculum": ["Securities operations", "Mutual funds", "Research analysis", "Risk management", "Investment adviser level 1"],
+      "practicalValue": "The regulated, India-specific route for markets knowledge. Relevant only if you are pursuing a markets or advisory role.",
+      "officialPage": "https://www.nism.ac.in/certification/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Only if pursuing the markets module seriously"
+    },
+    {
+      "id": "cert-pcep", "name": "Python Institute PCEP / PCAP", "provider": "OpenEDG Python Institute", "category": "Technology", "priority": 3,
+      "eligibility": "Open registration.",
+      "prerequisites": ["None for PCEP"],
+      "costBand": "low", "costNote": "Exam vouchers are modestly priced; free study resources exist. Verify.",
+      "duration": "4–8 weeks preparation",
+      "curriculum": ["Syntax and semantics", "Data structures", "Functions", "Modules", "File handling", "OOP (PCAP)"],
+      "practicalValue": "A cheap, vendor-neutral proof of Python fundamentals. Optional — your projects demonstrate more than the certificate.",
+      "officialPage": "https://pythoninstitute.org/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Optional, after the Python beginner level"
+    },
+    {
+      "id": "cert-aws-cloud", "name": "AWS Cloud Practitioner / AI Practitioner", "provider": "Amazon Web Services", "category": "Technology", "priority": 4,
+      "eligibility": "Open registration.",
+      "prerequisites": ["None for foundational level"],
+      "costBand": "low", "costNote": "Foundational exam fees are modest; free digital training available. Verify.",
+      "duration": "20–40 hours",
+      "curriculum": ["Cloud concepts", "Security and compliance", "Core services", "AI and generative AI foundations"],
+      "practicalValue": "Useful only if your finance role touches cloud platforms or analytics infrastructure. Lower priority than Power BI and SQL.",
+      "officialPage": "https://aws.amazon.com/certification/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Deferred"
+    },
+    {
+      "id": "cert-icai-courses", "name": "ICAI certificate courses (GST, Ind AS, forensic)", "provider": "ICAI", "category": "Professional institution", "priority": 4,
+      "eligibility": "Members and students of ICAI; some courses open to others.",
+      "prerequisites": ["Membership or student registration for member rates"],
+      "costBand": "low", "costNote": "Certificate course fees are usually modest; verify on ICAI.",
+      "duration": "A few days to a few weeks",
+      "curriculum": ["GST", "Ind AS", "Forensic accounting", "Valuation", "Public finance"],
+      "practicalValue": "Focused, inexpensive, and taught by practitioners. Strong option for GST and Ind AS depth alongside CMA.",
+      "officialPage": "https://www.icai.org/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "GST and Ind AS courses during Final preparation"
+    },
+    {
+      "id": "cert-nptel", "name": "NPTEL / SWAYAM courses", "provider": "IITs and IISc via NPTEL", "category": "Online learning", "priority": 2,
+      "eligibility": "Open registration; exam centres for proctored certification.",
+      "prerequisites": ["None for most courses"],
+      "costBand": "free", "costNote": "Learning is free; the optional proctored exam carries a modest fee. Verify.",
+      "duration": "8–12 weeks",
+      "curriculum": ["Financial management", "Statistics", "Data analytics", "Operations research", "Machine learning"],
+      "practicalValue": "Excellent value for quantitative depth with an Indian academic credential. Strong for Paper 9 and Paper 16 quantitative topics.",
+      "officialPage": "https://nptel.ac.in/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Use for operations research and statistics depth"
+    },
+    {
+      "id": "cert-swayam-finance", "name": "SWAYAM finance and accounting courses", "provider": "SWAYAM (Government of India)", "category": "Online learning", "priority": 2,
+      "eligibility": "Open registration.",
+      "prerequisites": ["None"],
+      "costBand": "free", "costNote": "Free to learn; optional certification exam fee applies.",
+      "duration": "6–12 weeks",
+      "curriculum": ["Financial accounting", "Cost accounting", "Corporate finance", "Taxation"],
+      "practicalValue": "Free, government-backed and aligned to Indian syllabi. Useful supplementary revision at zero cost.",
+      "officialPage": "https://swayam.gov.in/", "freeOrLowCost": true, "verifyBeforeUse": true, "status": "not-started", "plan": "Supplementary revision"
+    }
+  ],
+  "priorityOrder": [
+    { "rank": 1, "items": ["cert-icmai-final", "cert-icmai-training"], "reason": "Directly required for the qualification and the career path." },
+    { "rank": 2, "items": ["cert-ms-learn", "cert-infosys-springboard", "cert-nptel", "cert-swayam-finance"], "reason": "Free, structured, and immediately useful for the software and quantitative skills." },
+    { "rank": 3, "items": ["cert-icai-courses", "cert-nism", "cert-pcep"], "reason": "Low cost, targeted depth once the foundation is built." },
+    { "rank": 4, "items": ["cert-pl300", "cert-cia", "cert-sap-learning"], "reason": "Employer-recognised, but only worth paying for when a target role requires it." },
+    { "rank": 5, "items": ["cert-cfa", "cert-cima", "cert-acca", "cert-aws-cloud"], "reason": "High cost or low marginal value for the current plan. Defer until the CMA qualification is complete and the career direction is clear." }
+  ]
+}

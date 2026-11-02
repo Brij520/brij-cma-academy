@@ -1,0 +1,429 @@
+{
+  "paperId": "p05",
+  "syllabus": "ICMAI Syllabus 2022",
+  "lastReviewed": "2026-11-02",
+  "chapters": [
+    {
+      "id": "p05-c01",
+      "status": "complete",
+      "summary": "Law in India is a hierarchy of sources — the Constitution, statutes, subordinate legislation, judicial precedent and custom. Commercial disputes flow through district courts and commercial courts, up through High Courts to the Supreme Court; tribunals such as NCLT and Appellate Authorities handle specialised corporate and tax matters.",
+      "keyTerms": [
+        { "term": "Substantive law", "definition": "Law that defines rights, duties and liabilities (for example the Indian Contract Act, 1872)." },
+        { "term": "Procedural law", "definition": "Law that prescribes the machinery for enforcing rights (for example the Code of Civil Procedure, 1908)." },
+        { "term": "Stare decisis", "definition": "The doctrine that courts follow previously decided cases of superior courts where facts are materially similar." },
+        { "term": "Ratio decidendi", "definition": "The legal principle or reasoning on which a decision is based; only this part is binding precedent." },
+        { "term": "Obiter dicta", "definition": "Observations made by the court which are not essential to the decision; persuasive but not binding." },
+        { "term": "Delegated legislation", "definition": "Rules, regulations and notifications framed by the executive under authority conferred by a statute." }
+      ],
+      "formulas": [
+        { "name": "Doctrine of precedent", "expression": "Superior court ratio decidendi → binding on subordinate courts", "meaning": "Ensures consistency and predictability in commercial law.", "example": "A Supreme Court ruling on the definition of 'supply' binds all GST adjudicating authorities." }
+      ],
+      "examples": [
+        {
+          "title": "Identifying the binding part of a judgment",
+          "scenario": "The Supreme Court holds that a particular clause in a contract is in restraint of trade and therefore void, and adds in passing that such clauses are usually found in employment contracts.",
+          "steps": ["Separate the legal rule applied to the facts: restraint of trade clauses are void.", "That rule is the ratio decidendi and binds lower courts.", "The comment about employment contracts is obiter dicta and only persuasive."],
+          "result": "Only the restraint-of-trade rule is binding precedent."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c01-q1", "q": "Distinguish between substantive law and procedural law with one example of each.", "type": "theory", "marks": 4, "difficulty": "easy", "answer": "Substantive law creates and defines rights, duties and liabilities — e.g. the Indian Contract Act, 1872. Procedural law lays down the mechanism for enforcing those rights — e.g. the Code of Civil Procedure, 1908. Substantive law determines the 'what', procedural law the 'how'.", "tags": ["legal system"] },
+        { "id": "p05-c01-q2", "q": "Explain the doctrine of precedent. Why is obiter dicta not binding?", "type": "theory", "marks": 5, "difficulty": "medium", "answer": "Under stare decisis, decisions of superior courts are binding on subordinate courts in materially similar cases. Only the ratio decidendi — the legal reasoning necessary for the decision — is binding. Obiter dicta are passing observations not necessary to the decision; they carry persuasive value but no binding force because they were not tested against the facts in issue.", "tags": ["legal system", "precedent"] }
+      ],
+      "revisionNotes": [
+        "Order of sources: Constitution → statute → delegated legislation → precedent → custom.",
+        "Only ratio decidendi binds; obiter dicta persuades.",
+        "Commercial courts deal with specified commercial disputes above the notified value."
+      ],
+      "pitfalls": ["Writing 'obiter dicta is binding' — a very common error.", "Confusing NCLT (company law tribunal) with civil courts."]
+    },
+    {
+      "id": "p05-c02",
+      "status": "complete",
+      "summary": "The Indian Contract Act, 1872 governs agreements that are enforceable by law. Section 10 requires free consent, competence of parties, lawful consideration, lawful object and no express bar. The Act then regulates performance, discharge, breach and remedies, with special chapters on indemnity, guarantee, bailment, pledge and agency.",
+      "keyTerms": [
+        { "term": "Contract [Sec 2(h)]", "definition": "An agreement enforceable by law. Agreement [2(e)] = every promise or set of promises forming consideration for each other." },
+        { "term": "Consideration [Sec 2(d)]", "definition": "Something done or abstained from, at the desire of the promisor, by the promisee or any other person. It may be past, present or future, but must be real and lawful." },
+        { "term": "Free consent [Sec 14]", "definition": "Consent not caused by coercion (15), undue influence (16), fraud (17), misrepresentation (18) or mistake (20-22)." },
+        { "term": "Void agreement [Sec 2(g)]", "definition": "An agreement not enforceable by law, void ab initio. A void contract (2(j)) was valid when made but later became unenforceable." },
+        { "term": "Contingent contract [Sec 31]", "definition": "A contract to do or not to do something if some event, collateral to the contract, does or does not happen." },
+        { "term": "Quasi contract [Secs 68-72]", "definition": "Obligations imposed by law in the absence of a contract, to prevent unjust enrichment (necessaries, payment by interested person, non-gratuitous act, finder of goods, money paid by mistake)." },
+        { "term": "Anticipatory breach [Sec 39]", "definition": "Repudiation of a contract before the time of performance is due; the aggrieved party may sue immediately or wait for performance." },
+        { "term": "Liquidated damages [Sec 74]", "definition": "A sum named in the contract as payable on breach; the court awards reasonable compensation not exceeding that sum." }
+      ],
+      "formulas": [
+        { "name": "Essentials of a valid contract (Sec 10)", "expression": "Offer + Acceptance + Consideration + Capacity + Free consent + Lawful object + Legal formalities", "meaning": "If any element is missing the agreement is void, voidable or unenforceable.", "example": "An agreement with a minor lacks capacity and is void ab initio (Mohori Bibee v Dharmodas Ghose)." },
+        { "name": "Damages rule (Sec 73)", "expression": "Compensation = Loss naturally arising in usual course + Loss from special circumstances known to both parties − Mitigation", "meaning": "Remote and indirect losses are not recoverable unless within the contemplation of the parties (Hadley v Baxendale).", "example": "A printer who knew the mill shaft was the only one available is liable for lost profits during delay." },
+        { "name": "Quantum meruit", "expression": "Reasonable value of work done where the contract is discharged by the other party's default or is divisible", "meaning": "Prevents unjust enrichment where a lump-sum contract cannot be performed.", "example": "Builder completes 40% of a divisible contract before the owner's wrongful termination — he claims for the work done." }
+      ],
+      "examples": [
+        {
+          "title": "Consideration moving from a third party",
+          "scenario": "A owes B ₹10,000. C, at B's desire, promises to pay B ₹10,000 and A agrees. C later refuses, arguing C received nothing from B.",
+          "steps": ["Under Sec 2(d) consideration may move from 'the promisee or any other person'.", "The desire of the promisor (A) is present.", "Indian law, unlike English law, does not require consideration to move from the promisee."],
+          "result": "This is a valid contract; C is liable. Note that the privity rule still limits who can sue in other situations."
+        },
+        {
+          "title": "Agreement without consideration",
+          "scenario": "X promises to gift Y ₹1,00,000 out of natural love and affection, in writing and registered.",
+          "steps": ["General rule (Sec 25): agreement without consideration is void.", "Exception 1: written, registered, made out of natural love and affection between parties standing in near relation.", "All conditions are satisfied."],
+          "result": "The promise is valid and enforceable. If not registered, it fails as a gift of a movable in future."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c02-q1", "q": "Define 'consideration'. State any five exceptions to the rule that an agreement without consideration is void.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Sec 2(d): when at the desire of the promisor, the promisee or any other person has done or abstained from doing, or does or abstains, or promises to do or abstain, such act or abstinence is consideration. Exceptions under Sec 25 and elsewhere: (i) written and registered agreement out of natural love and affection between near relations; (ii) promise to compensate for a past voluntary act; (iii) promise to pay a time-barred debt (written and signed); (iv) completed gifts; (v) agency (no consideration needed to create agency); (vi) bailment under Sec 148; (vii) remission of performance under Sec 63.", "tags": ["contracts", "consideration"] },
+        { "id": "p05-c02-q2", "q": "A contracts to supply 100 machines to B at ₹50,000 each. Before delivery, B repudiates. A waits and resells at ₹40,000 each after two months. Discuss A's remedies.", "type": "case", "marks": 8, "difficulty": "hard", "answer": "B has committed an anticipatory breach under Sec 39. A may (a) treat the contract as subsisting and sue for damages when performance falls due, or (b) treat it as rescinded and sue immediately. A chose to wait, so he remains bound to mitigate under Sec 73 — he must resell within a reasonable time. He can recover ₹10,00,000 (100 × ₹10,000) as the difference between contract price and market/resale price, provided the resale was at the market rate and he took reasonable steps to mitigate. Any avoidable loss caused by A's delay is excluded.", "tags": ["contracts", "breach", "damages"] },
+        { "id": "p05-c02-q3", "q": "State whether a contract with a minor is void or voidable, and discuss the minor's liability for necessaries.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Void ab initio per Mohori Bibee v Dharmodas Ghose. A minor cannot ratify on attaining majority. Under Sec 68, a person supplying necessaries to a minor can recover from the minor's estate, not from the minor personally. A minor may be admitted to the benefits of a partnership (Sec 30 Partnership Act) and can enforce contracts where he is the promisee but cannot be made personally liable.", "tags": ["contracts", "capacity"] },
+        { "id": "p05-c02-q4", "q": "Distinguish between coercion and undue influence.", "type": "theory", "marks": 5, "difficulty": "easy", "answer": "Coercion (Sec 15) is committing or threatening any act forbidden by the IPC, or unlawful detaining of property, to cause a party to enter the contract; it is a physical/monetary pressure and the burden is on the party alleging it. Undue influence (Sec 16) is where one party is in a position to dominate the will of another and uses that position to obtain an unfair advantage; domination arises from real or apparent authority, fiduciary relation, or mental distress. Effect: coercion makes the contract voidable under Sec 19 and the burden lies on the party who used it; undue influence is voidable under Sec 19A with the burden on the dominant party to prove fairness.", "tags": ["contracts", "free consent"] }
+      ],
+      "revisionNotes": [
+        "Offer + unqualified acceptance = promise; promise supported by consideration = agreement; enforceable agreement = contract.",
+        "Void ab initio vs voidable vs illegal — the exam loves this distinction.",
+        "Sec 56 frustration: doctrine of supervening impossibility (destruction, death, change of law, non-occurrence of event). Commercial hardship does not count.",
+        "Sec 74 caps damages at the sum named but the court awards only reasonable compensation; a penalty is not enforced as such.",
+        "Contract of guarantee: three parties, principal debt must exist, no consideration needed to the surety (Sec 127)."
+      ],
+      "pitfalls": [
+        "Treating consideration as needing to be adequate — it only needs to be real, not adequate.",
+        "Writing that silence always amounts to acceptance; it does not, unless the offer says so or conduct implies it.",
+        "Forgetting that Sec 74 uses the word 'reasonable compensation', not 'liquidated damages'."
+      ],
+      "linkedConcepts": ["c-offer-acceptance", "c-contract-voidable"]
+    },
+    {
+      "id": "p05-c03",
+      "status": "complete",
+      "summary": "The Sale of Goods Act, 1930 governs contracts for the sale of movable goods. The key distinction is sale (property passes immediately) versus agreement to sell (property passes in future or subject to condition). It implies conditions and warranties, regulates transfer of property and title, and protects the unpaid seller.",
+      "keyTerms": [
+        { "term": "Sale [Sec 4(3)]", "definition": "A contract whereby the seller transfers or agrees to transfer the property in goods to the buyer for a price." },
+        { "term": "Condition [Sec 12(2)]", "definition": "A stipulation essential to the main purpose of the contract; breach gives a right to repudiate and claim damages." },
+        { "term": "Warranty [Sec 12(3)]", "definition": "A stipulation collateral to the main purpose; breach gives a right to damages only, not repudiation." },
+        { "term": "Caveat emptor", "definition": "Let the buyer beware — no implied condition as to quality or fitness, subject to exceptions (Sec 16)." },
+        { "term": "Unpaid seller [Sec 45]", "definition": "A seller to whom the whole price has not been paid and who has not been paid for goods sold on credit within the credit period." },
+        { "term": "Nemo dat quod non habet", "definition": "No one can give what he does not have — a seller without title cannot transfer title, subject to exceptions in Secs 27-30." }
+      ],
+      "formulas": [
+        { "name": "Implied conditions as to quality", "expression": "Fitness for buyer's purpose (if purpose made known and reliance reasonable) + Merchantable quality + Sale by description + Sale by sample", "meaning": "These are the principal statutory exceptions to caveat emptor.", "example": "Buyer asks for a pump 'suitable for lifting diesel from a 40-ft well' and relies on seller's expertise — fitness is implied." }
+      ],
+      "examples": [
+        {
+          "title": "Sale or agreement to sell",
+          "scenario": "A agrees to sell his car to B for ₹6,00,000, with delivery and registration transfer next month.",
+          "steps": ["Goods are identified and agreed upon.", "Property is intended to pass at a future date.", "Therefore it is an agreement to sell, not a sale."],
+          "result": "It is an agreement to sell. A bears the risk of loss before property passes. If A becomes insolvent, B only has a claim in damages, not a proprietary claim."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c03-q1", "q": "Distinguish between a condition and a warranty. Can a breach of condition be treated as a breach of warranty?", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Condition: essential to the main purpose, breach allows repudiation plus damages. Warranty: collateral, breach allows damages only. Under Sec 13, where a contract is not severable and the buyer has accepted the goods, breach of a condition must be treated as breach of warranty, entitling him only to damages. Sec 11 also lets the buyer waive the condition or elect to treat it as a breach of warranty.", "tags": ["sale of goods"] },
+        { "id": "p05-c03-q2", "q": "Explain the rights of an unpaid seller against the goods and against the buyer personally.", "type": "theory", "marks": 8, "difficulty": "medium", "answer": "Against goods (Secs 46-54): (i) lien where possession retained; (ii) stoppage in transit where buyer becomes insolvent; (iii) resale in limited circumstances (perishable goods, notice given, or after exercising lien/stoppage) with right to recover loss. Against the buyer personally (Sec 55): suit for price where property has passed or on a day certain irrespective of delivery; suit for damages for non-acceptance; repudiation. Lien is lost where goods are delivered to carrier without reserving right of disposal, buyer lawfully obtains possession, or seller waives.", "tags": ["sale of goods", "unpaid seller"] }
+      ],
+      "revisionNotes": [
+        "Sale = property passes; agreement to sell = property does not pass. Risk normally follows property (res perit domino).",
+        "Exceptions to caveat emptor: fitness for purpose, merchantable quality, usage of trade, fraud, sale by sample/description.",
+        "Unpaid seller's lien is a possessory right — once possession is lost, only stoppage in transit remains."
+      ],
+      "pitfalls": ["Writing that risk always passes with delivery — risk follows property unless agreed otherwise.", "Confusing Sec 13 (elect to treat condition as warranty) with Sec 11 (waiver of condition)."]
+    },
+    {
+      "id": "p05-c04",
+      "status": "complete",
+      "summary": "The Negotiable Instruments Act, 1881 governs promissory notes, bills of exchange and cheques. Its commercial purpose is free transferability — a holder in due course takes free of defects in title. Sections 138-142 create criminal liability for dishonour of cheques given for a legally enforceable debt.",
+      "keyTerms": [
+        { "term": "Negotiable instrument [Sec 13]", "definition": "A promissory note, bill of exchange or cheque payable either to order or to bearer." },
+        { "term": "Cheque [Sec 6]", "definition": "A bill of exchange drawn on a specified banker and not expressed to be payable otherwise than on demand, including electronic and truncated cheques." },
+        { "term": "Holder in due course [Sec 9]", "definition": "A holder who obtains the instrument for consideration, before maturity, and in good faith without notice of any defect in the transferor's title." },
+        { "term": "Crossing [Secs 123-131A]", "definition": "Two parallel transverse lines indicating the cheque must be collected through a bank account; affords protection to the collecting/drawee banker." },
+        { "term": "Noting", "definition": "The recording of the fact of dishonour by a notary public — a step towards protest and notice of dishonour." },
+        { "term": "Section 138", "definition": "Where a cheque drawn for discharge of a legally enforceable debt is returned unpaid for insufficient funds or exceeding arrangement, the drawer commits an offence punishable with imprisonment up to 2 years and/or fine up to twice the cheque amount." }
+      ],
+      "formulas": [
+        { "name": "Section 138 timeline", "expression": "Dishonour memo → notice within 30 days → drawer's 15 days to pay → complaint within 1 month from cause of action", "meaning": "Each limb is mandatory; failure to give the notice within 30 days defeats the complaint.", "example": "Cheque dishonoured 1 March; notice served 25 March; drawer silent 15 days (to 9 April); complaint by 9 May." }
+      ],
+      "examples": [
+        {
+          "title": "Holder in due course vs holder",
+          "scenario": "A steals a cheque payable to B, endorses it to C for value. C, unaware of the theft, receives it before the due date.",
+          "steps": ["Check consideration: yes.", "Good faith and absence of notice: yes.", "Before maturity: yes."],
+          "result": "C is a holder in due course and takes a good title free of A's defect, provided the instrument was negotiable and transfer valid. A is separately liable for theft."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c04-q1", "q": "State the circumstances under which the protections available to a holder in due course do not apply.", "type": "theory", "marks": 5, "difficulty": "medium", "answer": "Protection is lost where the instrument is obtained by fraud, theft, forgery or unlawful means and the holder has notice; where consideration is absent; where the holder acquires it after maturity; where the defect arises from material alteration (Sec 87); where title is void because the instrument itself is void (e.g. forged signature of drawer).", "tags": ["negotiable instruments"] },
+        { "id": "p05-c04-q2", "q": "Explain the procedure and consequences of dishonour of a cheque under Sec 138.", "type": "theory", "marks": 8, "difficulty": "medium", "answer": "Conditions: cheque presented within validity (3 months), returned unpaid for insufficiency of funds or exceeding arrangement, drawn for discharge of a legally enforceable debt, presented within 6 months and within banking hours. Procedure: payee gives written demand notice within 30 days of the dishonour memo; drawer has 15 days from receipt to pay; if unpaid, complaint within one month from the day the cause of action arises, before a Magistrate. Consequences: imprisonment up to 2 years and/or fine up to twice the cheque amount, with interim compensation up to 20% (Sec 143A). Company officers are liable under Sec 141 subject to due diligence defence.", "tags": ["negotiable instruments", "section 138"] }
+      ],
+      "revisionNotes": [
+        "Cheque is always payable on demand and drawn on a banker.",
+        "Endorsement types: blank, full, restrictive, conditional, sans recourse, facultative.",
+        "Sec 139 presumption in favour of the holder; Sec 118 presumptions as to consideration.",
+        "Electronic and truncated cheques are within the Act."
+      ],
+      "pitfalls": ["Mixing up the 30-day notice period with the 15-day payment period.", "Assuming every dishonour is an offence — a closed account or stop payment also attracts Sec 138, but an invalid cheque (e.g. signature mismatch) generally does not."]
+    },
+    {
+      "id": "p05-c05",
+      "status": "complete",
+      "summary": "The Indian Partnership Act, 1932 defines a partnership as a relation between persons who have agreed to share the profits of a business carried on by all or any of them acting for all. Registration is optional but non-registration disables the firm from enforcing rights in court against third parties.",
+      "keyTerms": [
+        { "term": "Partnership [Sec 4]", "definition": "Relation between persons who have agreed to share the profits of a business carried on by all or any of them acting for all." },
+        { "term": "Partner by estoppel [Sec 28]", "definition": "A person who by words or conduct represents himself as a partner is liable to third parties who relied on that representation, even if not a partner." },
+        { "term": "Particular partnership [Sec 7]", "definition": "A partnership for a particular adventure or undertaking, which ends when the venture ends." },
+        { "term": "Mutual agency", "definition": "The defining test: every partner is both principal and agent of the others in the ordinary course of business." },
+        { "term": "Dissolution [Sec 39]", "definition": "Dissolution of partnership between all the partners of a firm; distinguishes dissolution of the firm from mere reconstitution." }
+      ],
+      "formulas": [
+        { "name": "Goodwill on admission", "expression": "Sacrificing ratio = Old ratio − New ratio; incoming partner's share of goodwill credited to sacrificing partners' capital accounts", "meaning": "The new partner pays for the share of past efforts he acquires.", "example": "A and B share 3:2; C admitted for 1/5 with new ratio 3:3:2 → A sacrifices 3/8−3/10? (compute in working note); amount = 1/5 × firm goodwill." }
+      ],
+      "examples": [
+        {
+          "title": "Effect of non-registration",
+          "scenario": "An unregistered firm sues a customer for ₹5,00,000 of unpaid invoices.",
+          "steps": ["Sec 69 bars an unregistered firm from enforcing a right arising from contract in any suit.", "The bar applies to suits by the firm and by partners inter se.", "Exceptions: suits for dissolution, accounts, or realisation of a partner's share in an unregistered firm."],
+          "result": "The suit is not maintainable. The firm may register and then sue, but limitation may have run."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c05-q1", "q": "Explain the effects of non-registration of a partnership firm.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Under Sec 69: (i) no suit by a partner against the firm or other partners to enforce a right arising from contract; (ii) no suit by the firm against third parties to enforce a contractual right; (iii) no claim of set-off or other proceeding to enforce such rights. Exceptions: suit for dissolution, for accounts, or for realisation of a partner's share; and rights arising otherwise than from contract. Registration may be effected later, but limitation continues to run.", "tags": ["partnership", "registration"] },
+        { "id": "p05-c05-q2", "q": "Discuss the liability of a minor admitted to the benefits of partnership.", "type": "theory", "marks": 5, "difficulty": "medium", "answer": "Sec 30 permits a minor to be admitted to the benefits of partnership with the consent of all partners. The minor has a right to his agreed share of property and profits and may inspect accounts, but his liability is limited to his share in the firm; he is not personally liable. On attaining majority he must, within 6 months (or knowledge of becoming partner), elect to become or not to become a partner by public notice; failure makes him a partner with personal liability from the date of admission.", "tags": ["partnership", "minor"] }
+      ],
+      "revisionNotes": [
+        "Three tests of partnership: agreement, sharing of profits, mutual agency.",
+        "Registration is optional; consequences of non-registration are procedural, not structural.",
+        "Reconstitution (admission, retirement, death, insolvency) is not dissolution of the firm.",
+        "Dissolution by notice requires a partnership at will; otherwise by agreement, mutual consent, operation of law or court."
+      ],
+      "pitfalls": ["Saying registration is compulsory — it is not, but consequences attach.", "Confusing 'dissolution of partnership' with 'dissolution of the firm'."]
+    },
+    {
+      "id": "p05-c06",
+      "status": "complete",
+      "summary": "The LLP Act, 2008 creates a hybrid entity with the flexibility of a partnership and the limited liability of a company. It is a body corporate with perpetual succession, requires a minimum of two partners and two designated partners (one resident in India), and is governed by the LLP agreement.",
+      "keyTerms": [
+        { "term": "LLP [Sec 2(1)(n)]", "definition": "A partnership formed and registered under this Act, being a body corporate with perpetual succession." },
+        { "term": "Designated partner [Sec 2(1)(j)]", "definition": "A partner designated as such under the LLP agreement; at least two, of whom one must be a resident of India." },
+        { "term": "Extent of liability [Sec 26-28]", "definition": "Partners are agents of the LLP but an LLP is not bound by a partner's act done without authority; partners' liability is limited to their agreed contribution." },
+        { "term": "LLP agreement [Sec 23]", "definition": "An agreement in writing between partners governing mutual rights and duties; in the absence of one, Schedule I applies." },
+        { "term": "Conversion [Chapter X]", "definition": "A firm, private company or unlisted public company may convert into an LLP; the LLP assumes the obligations of the predecessor." }
+      ],
+      "formulas": [
+        { "name": "Minimum formation requirements", "expression": "Partners ≥ 2 + Designated partners ≥ 2 (1 resident) + Registered office + LLPIN", "meaning": "If the number of partners falls below 2 and the LLP carries on business for more than 6 months, the sole partner becomes personally liable.", "example": "A sole surviving partner continues trading for 8 months — personal liability arises for that period." }
+      ],
+      "examples": [
+        {
+          "title": "LLP vs company liability",
+          "scenario": "An LLP with two partners incurs ₹40,00,000 in trade debts; partners' capital is ₹10,00,000.",
+          "steps": ["The LLP is a body corporate and a separate legal person.", "Partners' liability is limited to their contribution, except for their own wrongful acts.", "Creditors recover from LLP assets only (absent fraud)."],
+          "result": "Partners lose their contribution but are not personally liable for the excess."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c06-q1", "q": "List the salient features of an LLP and distinguish it from a partnership firm.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Features: separate legal entity, perpetual succession, limited liability of partners, minimum 2 partners and 2 designated partners (one resident), LLP agreement governs, no limit on number of partners, disclosure requirements, Schedule I defaults. Distinctions from a firm: a firm is not a separate legal person; partners have unlimited joint and several liability; a firm is regulated by the Partnership Act and registration is optional; an LLP must be registered and files annual returns with the Registrar; an LLP has a common seal and can own property in its name.", "tags": ["LLP"] },
+        { "id": "p05-c06-q2", "q": "When does a partner's act bind an LLP?", "type": "theory", "marks": 5, "difficulty": "medium", "answer": "Under Sec 27, an LLP is bound by the act of a partner done to carry on the business in the usual way, unless the partner had no authority and the third party knew of that or did not believe him to be a partner. Sec 28 restricts the LLP from being bound where the act is outside the ordinary course and the third party knows the partner is acting without authority. Every partner is the agent of the LLP for business purposes, which is the source of vicarious liability.", "tags": ["LLP", "agency"] }
+      ],
+      "revisionNotes": [
+        "LLP is a body corporate with perpetual succession — not a partnership in law.",
+        "Designated partners are personally responsible for statutory compliance (Secs 7, 85).",
+        "Schedule I applies only where the LLP agreement is silent."
+      ],
+      "pitfalls": ["Saying an LLP has no minimum partners — it needs two, and below that for 6 months the sole partner is personally liable.", "Forgetting the resident-in-India requirement for designated partners."]
+    },
+    {
+      "id": "p05-c07",
+      "status": "outline",
+      "summary": "The Factories Act, 1948 protects workers' health, safety, welfare and working conditions in factories. It defines a factory as premises with 10 or more workers with power, or 20 or more without power. The 'occupier' carries statutory responsibility.",
+      "keyTerms": [
+        { "term": "Factory [Sec 2(m)]", "definition": "Premises where 10 or more workers work with the aid of power, or 20 or more without power, on a manufacturing process, on any day of the preceding 12 months." },
+        { "term": "Worker [Sec 2(l)]", "definition": "A person employed directly or through an agency with or without knowledge of the principal employer, in a manufacturing process or incidental work, excluding a person in a managerial or supervisory role." },
+        { "term": "Occupier [Sec 2(n)]", "definition": "The person who has ultimate control over the affairs of the factory; for a company, a director nominated by the Board." }
+      ],
+      "revisionNotes": [
+        "Health: Sections 11-20 (cleanliness, ventilation, dust and fume, artificial humidification, overcrowding, lighting, drinking water, latrines, spittoons).",
+        "Safety: Sections 21-41 (fencing machinery, hoists, pressure vessels, fire precautions, dangerous operations).",
+        "Welfare: Sections 42-50A (washing, canteen for 250+, restrooms, first aid, creche for 30+ women).",
+        "Hours: maximum 48 per week, 9 per day, weekly holiday, interval 30 minutes after 5 hours, spread-over 10.5 hours, overtime at twice ordinary rate."
+      ],
+      "pitfalls": ["Confusing worker thresholds with and without power.", "Forgetting that the canteen threshold is 250 workers and the creche threshold is 30 women."]
+    },
+    {
+      "id": "p05-c08",
+      "status": "complete",
+      "summary": "The Payment of Gratuity Act, 1972 requires establishments with 10 or more employees to pay gratuity on termination after continuous service of 5 years, at 15 days' wages per completed year of service, subject to the statutory ceiling.",
+      "keyTerms": [
+        { "term": "Continuous service [Sec 2A]", "definition": "Uninterrupted service including absences such as leave, sickness, accident, lock-out or lay-off; for a year, 240 days of actual service in the preceding 12 months (190 for seasonal establishments)." },
+        { "term": "Wages [Sec 2(s)]", "definition": "Basic plus dearness allowance, and such other allowances as notified; excludes bonus, commission and house rent allowance." },
+        { "term": "Forfeiture [Sec 4(6)]", "definition": "Gratuity may be withheld wholly or partly where service is terminated for wilful omission or negligence causing damage, or for misconduct, riot or violence." },
+        { "term": "Ceiling", "definition": "The statutorily prescribed maximum gratuity payable (₹20 lakh as notified). Verify the current ceiling." }
+      ],
+      "formulas": [
+        { "name": "Gratuity amount", "expression": "Gratuity = (15 / 26) × Last drawn monthly wages × Number of completed years of service", "meaning": "15 days per year, using 26 working days in a month; part years over 6 months round up.", "example": "Last drawn wages ₹30,000; 12 years 8 months → 13 years × (15/26) × 30,000 = ₹2,25,000." },
+        { "name": "Seasonal establishment", "expression": "Gratuity = (7 / 26) × Last drawn monthly wages × Number of years of service", "meaning": "Seven days' wages per year for seasonal establishments.", "example": "7 years, wages ₹15,000 → 7/26 × 15,000 × 7 = ₹28,269." }
+      ],
+      "examples": [
+        {
+          "title": "Rounding of service and the 5-year rule",
+          "scenario": "An employee resigns after 4 years 8 months of continuous service.",
+          "steps": ["Sec 4 requires continuous service of not less than 5 years.", "4 years 8 months is less than 5 years.", "The 6-month rounding rule applies to additional years after the 5-year threshold, not to create the threshold."],
+          "result": "No gratuity. He is not eligible. Eligibility is relaxed only for death or disablement."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c08-q1", "q": "Compute gratuity for an employee with last drawn wages of ₹45,000 and 18 years 7 months of service.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "Completed years = 18, plus 7 months rounds up to 9? Apply the rule: part of a year in excess of 6 months counts as one full year, so 18 years 7 months → 19 years. Gratuity = 15/26 × 45,000 × 19 = ₹4,93,269 (approx). Subject to the statutory ceiling.", "tags": ["gratuity", "computation"] },
+        { "id": "p05-c08-q2", "q": "When can gratuity be forfeited?", "type": "theory", "marks": 4, "difficulty": "easy", "answer": "Sec 4(6)(a): where the employee's service has been terminated for any act, wilful omission or negligence causing damage or loss to the employer's property, to the extent of the damage. Sec 4(6)(b): where the service is terminated for riotous or violent conduct or for an offence involving moral turpitude during employment.", "tags": ["gratuity", "forfeiture"] }
+      ],
+      "pitfalls": ["Using 30 days instead of 26 as the denominator.", "Applying the 6-month rounding to an employee below 5 years."]
+    },
+    {
+      "id": "p05-c09",
+      "status": "complete",
+      "summary": "The EPF Act, 1952 provides for compulsory provident fund, pension and insurance for employees in covered establishments. The employer deducts the employee's share and contributes its own share, with statutory ceilings governing the pension component.",
+      "keyTerms": [
+        { "term": "Covered establishment", "definition": "A factory or establishment employing the prescribed number of persons (generally 20 or more), or notified by the Central Government regardless of size." },
+        { "term": "Excluded employee", "definition": "An employee whose pay exceeds the prescribed ceiling at the time of joining and who has not been a member earlier, subject to the conditions in the scheme." },
+        { "term": "EPS", "definition": "Employees' Pension Scheme — a defined-benefit portion funded from the employer's 8.33% contribution, subject to the pensionable wage ceiling." },
+        { "term": "EDLI", "definition": "Employees' Deposit Linked Insurance — an insurance-linked benefit funded by employer contribution." }
+      ],
+      "formulas": [
+        { "name": "Monthly EPF contribution", "expression": "Employee = 12% of PF wages; Employer = 12% of PF wages split as 8.33% EPS (capped) + balance to EPF", "meaning": "The EPS component is capped at the pensionable wage ceiling; the remaining employer share plus the full employee share goes to the EPF account.", "example": "PF wages ₹20,000: employee ₹2,400. Employer: EPS 8.33% × 15,000 = ₹1,250; EPF balance = 2,400 − 1,250 = ₹1,150." }
+      ],
+      "questions": [
+        { "id": "p05-c09-q1", "q": "Compute the monthly EPF contribution for an employee with basic and DA of ₹25,000.", "type": "problem", "marks": 4, "difficulty": "medium", "answer": "PF wages = ₹25,000. Employee contribution = 12% = ₹3,000. Employer contribution = 12% = ₹3,000, of which EPS = 8.33% of the pensionable ceiling (assume ₹15,000) = ₹1,249.50 and the balance ₹1,750.50 goes to EPF. EDLI and administrative charges apply as notified. Verify current rates on epfindia.gov.in.", "tags": ["epf", "computation"] }
+      ],
+      "pitfalls": ["Applying 12% to gross salary instead of PF wages.", "Forgetting the EPS ceiling cap when wages exceed the ceiling."]
+    },
+    {
+      "id": "p05-c10",
+      "status": "outline",
+      "summary": "The ESI Act, 1948 provides medical, sickness, maternity, disablement and dependent benefits through a contributory fund. Coverage extends to employees earning wages up to the notified threshold in covered establishments.",
+      "keyTerms": [
+        { "term": "Covered establishment", "definition": "Factories and establishments employing 10 or more persons (or the notified threshold in some states)." },
+        { "term": "Wage ceiling", "definition": "The monthly wage limit below which the employee comes within ESI coverage (₹21,000 generally, ₹25,000 for persons with disability — verify current notification)." },
+        { "term": "Contribution", "definition": "Employer contributes a higher proportion than the employee; the combined contribution funds the ESI Corporation." }
+      ],
+      "revisionNotes": [
+        "Employee contribution is deducted from wages; employer contribution is a separate statutory cost.",
+        "Benefits: sickness benefit, maternity benefit, disablement benefit, dependants' benefit, medical benefit, funeral expenses.",
+        "Employees with wages above the ceiling at the start of a contribution period generally remain covered until the period ends."
+      ],
+      "pitfalls": ["Mixing up the ESI wage ceiling with the EPF ceiling.", "Treating ESI contributions as a deductible employee cost only — the employer's share is an additional statutory cost."]
+    },
+    {
+      "id": "p05-c11",
+      "status": "outline",
+      "summary": "The Code on Wages, 2019 consolidates four earlier wage laws — minimum wages, payment of wages, payment of bonus and equal remuneration — into one framework. It removes the scheduled employment concept and introduces a national floor wage.",
+      "keyTerms": [
+        { "term": "Wages [Sec 2(y)]", "definition": "All remuneration including basic, DA and retaining allowance, excluding bonus, employer PF, gratuity and other notified exclusions, with the condition that excluded items must not exceed 50% of total remuneration." },
+        { "term": "Floor wage", "definition": "A minimum wage floor fixed by the Central Government on the basis of the minimum living standard; State wages cannot fall below it." },
+        { "term": "Wage period", "definition": "The period for which wages are payable — not more than one month." }
+      ],
+      "revisionNotes": [
+        "Payment timeline: generally within 7 days of the wage period; within 2 days of termination for establishments with fewer than 15 workers.",
+        "Overtime at twice the normal rate.",
+        "Bonus: 8.33% to 20% of wages, subject to eligibility thresholds.",
+        "Equal remuneration for men and women for the same work is expressly provided.",
+        "Implementation is by notification in states — confirm which provisions have been brought into force in your state before claiming it as operative law."
+      ],
+      "pitfalls": ["Assuming the Code is fully in force across India — commencement depends on state notifications.", "Ignoring the 50% wage-composition rule when structuring CTC."]
+    },
+    {
+      "id": "p05-c12",
+      "status": "complete",
+      "summary": "The Companies Act, 2013 is the largest block in Paper 5 at 40%. It covers incorporation, constitutional documents, share capital, directors and KMP, board and general meetings, charges, dividends, restructuring, winding up and accounts/audit. You must know the section numbers for the frequently asked provisions.",
+      "keyTerms": [
+        { "term": "Company [Sec 2(20)]", "definition": "A company incorporated under this Act or under any previous company law." },
+        { "term": "Private company [Sec 2(68)]", "definition": "A company with a minimum paid-up capital as prescribed, which restricts the right to transfer shares, limits members to 200 (excluding employees) and prohibits public invitation for securities." },
+        { "term": "Public company [Sec 2(71)]", "definition": "A company which is not a private company and has a minimum paid-up capital as prescribed." },
+        { "term": "Small company [Sec 2(85)]", "definition": "A company (not a public company) with paid-up capital up to the prescribed limit and turnover up to the prescribed limit. Limits are revised by notification — verify current thresholds." },
+        { "term": "One person company [Sec 2(62)]", "definition": "A company with only one person as a member, which must have a nominee." },
+        { "term": "KMP [Sec 2(51)]", "definition": "Key managerial personnel: MD/CEO/manager, company secretary, whole-time director, CFO and such other officer as may be prescribed, within one level below the Board." },
+        { "term": "Charge [Sec 2(16)]", "definition": "An interest or lien created on the property or assets of a company as security; must be registered with the Registrar within 30 days of creation (Sec 77)." },
+        { "term": "Corporate veil", "definition": "The separate legal personality of a company; lifted where it is used as a sham, for fraud, or where a statute so requires." }
+      ],
+      "formulas": [
+        { "name": "Quorum for general meeting [Sec 103]", "expression": "Private company: 2 members; Public company: 5 (up to 1,000 members), 15 (1,000–5,000), 30 (above 5,000)", "meaning": "No business may be transacted without quorum.", "example": "A public company with 1,200 members needs 15 members present for a valid general meeting." },
+        { "name": "CSR obligation [Sec 135]", "expression": "CSR spend = 2% of average net profits of the immediately preceding 3 financial years", "meaning": "Applies to companies with net worth ≥ ₹500 crore, turnover ≥ ₹1,000 crore or net profit ≥ ₹5 crore.", "example": "Average net profit ₹40 crore → CSR obligation ₹80 lakh." },
+        { "name": "Additional director tenure [Sec 161]", "expression": "Additional director holds office until the date of the next annual general meeting", "meaning": "He is appointed by the Board, not by members.", "example": "Appointed in August 2026 → vacates at the AGM in 2027 unless regularised." },
+        { "name": "Auditor rotation [Sec 139(2)]", "expression": "Individual auditor: one term of 5 years; firm: two terms of 5 years (with cooling-off of 5 years)", "meaning": "Applies to listed companies and prescribed classes of companies.", "example": "A firm's second term ends in FY2030 — it cannot be reappointed until FY2036." }
+      ],
+      "examples": [
+        {
+          "title": "Lifting the corporate veil",
+          "scenario": "A promoter forms a company with negligible capital solely to take deposits from the public and divert them to his own business.",
+          "steps": ["Separate legal personality is the default rule (Salomon v Salomon).", "Exceptions include fraud, sham transactions, trading with the enemy and tax evasion.", "The company was used as a device to defeat the law and creditors."],
+          "result": "The court may lift the veil and hold the promoter personally liable."
+        },
+        {
+          "title": "Section 185 vs Section 186",
+          "scenario": "A company proposes to give a loan to a director who is not a managing or whole-time director.",
+          "steps": ["Sec 185 prohibits loans to directors and persons in whom a director is interested.", "Exceptions require prior approval by special resolution and disclosure, and are limited to specified cases.", "Sec 186 governs loans and investments generally, with a 60% ceiling on paid-up capital plus free reserves and securities premium."],
+          "result": "The loan is prohibited unless it falls within an express exception with the prescribed approval. The safer route is to test Sec 185 first, then Sec 186 limits."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c12-q1", "q": "Explain the doctrine of lifting the corporate veil and state any five circumstances in which it is lifted.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "A company is a separate legal person distinct from its members (Salomon v Salomon). Courts will disregard this personality where it is used as a device to conceal fraud, evade law or defeat creditors. Circumstances: (i) fraud or improper conduct; (ii) trading with an enemy; (iii) evasion of taxes; (iv) use of the company as a sham or agent; (v) misrepresentation to creditors; (vi) statutory lifting under specific provisions such as Sec 339 (fraudulent conduct of business) or Sec 464 (unlimited liability).", "tags": ["companies act", "corporate personality"] },
+        { "id": "p05-c12-q2", "q": "Discuss the appointment and disqualification of directors under the Companies Act, 2013.", "type": "theory", "marks": 8, "difficulty": "medium", "answer": "Appointment: first directors are named in the articles; subsequent directors appointed by members at general meeting under Sec 152, with a DIN required. Minimum 3 directors for a public company, 2 for private and 1 for OPC; at least one resident director who has stayed in India for 182 days in the previous calendar year. Sec 149 requires at least one woman director for prescribed classes and independent directors for listed companies. Disqualifications under Sec 164 include unsound mind, undischarged insolvency, conviction for an offence with imprisonment of 6 months or more within 5 years, non-payment of calls, default in filing financial statements or annual returns for 3 consecutive years, failure to obtain DIN, and disqualification under Sec 167. A disqualified director vacates office under Sec 167.", "tags": ["companies act", "directors"] },
+        { "id": "p05-c12-q3", "q": "What is a charge? Explain the procedure and consequences of failure to register a charge.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "A charge is a security interest in the property or assets of a company. Under Sec 77, the company must file particulars within 30 days of creation (with condonation on payment of additional fees, or under the Condonation of Delay Scheme and the Sec 87 power to extend). The Registrar issues a certificate of registration which is conclusive evidence. Under Sec 85, failure to register makes the charge void against the liquidator and creditors, so the lender becomes an unsecured creditor. The company and every defaulting officer are liable to penalties, and the charge-holder may register on the company's default under Sec 78.", "tags": ["companies act", "charges"] },
+        { "id": "p05-c12-q4", "q": "Compute the CSR obligation of a company with average net profits of ₹6,40,00,000 over the preceding three years.", "type": "problem", "marks": 3, "difficulty": "easy", "answer": "CSR = 2% of ₹6,40,00,000 = ₹12,80,000. Unspent amounts must be transferred to a specified fund within six months of the financial year end and reported, with disclosure of the reasons.", "tags": ["companies act", "csr"] },
+        { "id": "p05-c12-q5", "q": "Distinguish between a private company and a public company under the Companies Act, 2013.", "type": "theory", "marks": 6, "difficulty": "easy", "answer": "Members: private maximum 200 excluding employees; public minimum 7 with no maximum. Transferability: restricted in a private company; free in a public company. Invitation to public: prohibited for private, permitted for public through prospectus. Directors: minimum 2 for private, 3 for public. Quorum: 2 vs 5/15/30. Capital: private companies may have prescribed minimum paid-up capital; public companies likewise. Compliance: private companies enjoy several exemptions (Sec 43, 47, 62, 67, 73, 101-107, 141, 160, 162, 180, 185, 188) which public companies do not.", "tags": ["companies act", "types"] }
+      ],
+      "revisionNotes": [
+        "Memorandum = charter of the company (name, registered office, objects, liability, capital). Articles = internal regulations. Doctrine of ultra vires applies to acts beyond the memorandum.",
+        "Doctrine of indoor management (Turquand rule) protects outsiders dealing in good faith, subject to exceptions such as knowledge of irregularity or forgery.",
+        "Share capital terms: authorised, issued, subscribed, paid-up; calls, forfeiture, demat requirements.",
+        "Board meetings: at least 4 per year with a maximum gap of 120 days; notice of 7 days; quorum 1/3 of total strength or 2 directors, whichever is higher.",
+        "AGM: within 6 months of the financial year end and within 15 months of the previous AGM; first AGM within 9 months of the first financial year end.",
+        "Sec 188 related party transactions require Audit Committee approval and, beyond thresholds, member approval by ordinary resolution.",
+        "Dividend: declare only out of profits or accumulated reserves; transfer to reserves as per Sec 123; unpaid dividend to IEPF after 7 years.",
+        "Sec 248 allows strike-off; Secs 270-271 deal with winding up, with NCLT jurisdiction."
+      ],
+      "pitfalls": [
+        "Quoting the Companies Act 1956 section numbers — the 2013 numbering is different.",
+        "Assuming a private company can have more than 200 members by counting employees — employees are excluded only for the purpose of the count, which is itself the exception.",
+        "Forgetting the resident director requirement is based on stay in India, not nationality."
+      ],
+      "linkedConcepts": ["c-charge", "c-csr", "c-corporate-governance"]
+    },
+    {
+      "id": "p05-c13",
+      "status": "complete",
+      "summary": "Business ethics is 15% of Paper 5 and is the most scoring section because it rewards structured reasoning. Emotional intelligence — self-awareness, self-regulation, motivation, empathy and social skill — is examined as the personal foundation of ethical professional conduct.",
+      "keyTerms": [
+        { "term": "Business ethics", "definition": "The application of ethical values and standards to commercial conduct, including fairness, transparency, integrity and accountability." },
+        { "term": "Utilitarianism", "definition": "An action is right if it produces the greatest good for the greatest number; criticised for ignoring individual rights." },
+        { "term": "Deontology (Kant)", "definition": "Duty-based ethics — act only on maxims you could will to be universal laws; intentions matter more than outcomes." },
+        { "term": "Virtue ethics", "definition": "Focuses on the character traits of the decision-maker (honesty, courage, prudence) rather than on rules or outcomes." },
+        { "term": "Conflict of interest", "definition": "A situation where a professional's personal interest could improperly influence the discharge of duties; must be disclosed and managed." },
+        { "term": "Whistle-blowing", "definition": "Disclosure of wrongdoing within an organisation to an internal or external authority; ethically justifiable where the wrong is serious, internal channels fail and harm is imminent." },
+        { "term": "Emotional intelligence", "definition": "The ability to perceive, understand, regulate and use emotions in oneself and others; Goleman's five components are self-awareness, self-regulation, motivation, empathy and social skills." }
+      ],
+      "formulas": [
+        { "name": "Ethical decision test", "expression": "Is it legal? Is it fair to all stakeholders? Would I be comfortable if it were published? Does it respect rights?", "meaning": "A quick screen before deciding; also useful for structuring a case answer.", "example": "A supplier offers a personal holiday to a procurement manager to win a tender — fails legality, fairness and disclosure tests." },
+        { "name": "Tucker's five questions", "expression": "Profitable? Legal? Fair? Right? Sustainable/eco-friendly?", "meaning": "A framework for balancing commercial and ethical dimensions.", "example": "Dumping substandard goods in a rural market may be profitable but fails the remaining four tests." }
+      ],
+      "examples": [
+        {
+          "title": "Structuring a 5-mark ethics answer",
+          "scenario": "A cost accountant is asked to overstate closing inventory to help the company meet a bank covenant.",
+          "steps": ["Identify the ethical issue: pressure to misstate financial information.", "Identify stakeholders: bank, shareholders, employees, the professional body.", "Apply the IESBA/ICMAI code concepts: integrity, objectivity, professional competence, confidentiality, professional behaviour.", "State the action: decline, document the request, escalate to the audit committee, and consider the whistle-blower policy.", "State the consequence: disciplinary action under the Cost Accountants Act if he complies."],
+          "result": "A structured answer covering issue, stakeholders, principles, action and consequence typically earns full marks."
+        }
+      ],
+      "questions": [
+        { "id": "p05-c13-q1", "q": "Explain Goleman's five components of emotional intelligence and their relevance to a cost accountant.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Self-awareness — recognising one's emotions and their effect; helps a professional separate data from pressure. Self-regulation — controlling impulses; critical when facing aggressive reporting deadlines. Motivation — intrinsic drive to pursue standards of accuracy. Empathy — understanding others' positions; enables effective business partnering with operations. Social skills — building networks and managing conflict; essential when challenging a production head's cost claims. Together they support objectivity and ethical judgement under pressure.", "tags": ["ethics", "emotional intelligence"] },
+        { "id": "p05-c13-q2", "q": "A junior accountant discovers that the CFO has capitalised revenue expenses to improve reported profit. Advise him using an ethical decision framework.", "type": "case", "marks": 8, "difficulty": "hard", "answer": "Issue: improper capitalisation violates the matching principle and applicable accounting standards, and may mislead users. Stakeholders: shareholders, lenders, auditors, employees, the CFO. Analysis: the act is illegal and unfair; silence makes the junior complicit. Framework (utilitarian/deontological): long-term harm of misstatement outweighs short-term reporting benefit; the duty of integrity is categorical. Action: (i) raise the matter factually and in writing with the CFO; (ii) if unresolved, escalate to the audit committee or statutory auditor; (iii) use the whistle-blower mechanism; (iv) retain documentation. Consequence to state: professional misconduct exposure under the Cost Accountants Act and the Companies Act Sec 447 for fraudulent reporting. Recommendation should be proportionate, documented and confidential.", "tags": ["ethics", "case", "whistle-blowing"] },
+        { "id": "p05-c13-q3", "q": "Distinguish between a conflict of interest and a conflict of duties, with an example of each.", "type": "theory", "marks": 5, "difficulty": "medium", "answer": "Conflict of interest arises where a personal interest (financial or non-financial) may improperly influence professional judgement — e.g. an auditor holding shares in the audit client. Conflict of duties arises where two professional obligations pull in different directions — e.g. a cost accountant who must report accurate costs to the board while the plant head expects favourable numbers for an incentive scheme. Both are managed by disclosure, recusal, independent review and, where necessary, resignation.", "tags": ["ethics", "conflict of interest"] }
+      ],
+      "revisionNotes": [
+        "Answer structure for ethics case studies: issue → stakeholders → principles → options → evaluation → recommendation.",
+        "ICMAI Code of Ethics core principles mirror IESBA: integrity, objectivity, professional competence and due care, confidentiality, professional behaviour.",
+        "Ethical theories: utilitarianism (outcomes), deontology (duty), virtue ethics (character), justice theory (fairness).",
+        "Corporate governance mechanisms: board independence, audit committee, whistle-blower policy, related party disclosure, CSR.",
+        "Emotional intelligence is not 'being nice' — it is regulated, purposeful emotional competence."
+      ],
+      "pitfalls": [
+        "Writing only theory without applying the facts of the case — application carries most of the marks.",
+        "Confusing ethics with law: conduct can be legal but unethical.",
+        "Preaching morality without identifying the professional code and the specific action to be taken."
+      ],
+      "linkedConcepts": ["c-corporate-governance", "c-ethics-code"]
+    }
+  ]
+}

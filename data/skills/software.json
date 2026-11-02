@@ -1,0 +1,479 @@
+{
+  "meta": {
+    "purpose": "Advanced Professional Software Academy — 16 individual learning paths, each with beginner, intermediate and advanced levels, practical exercises, industry use cases, projects, assessments and portfolio deliverables.",
+    "rule": "No skill counts as complete on video-watching alone. Each level closes only when the exercise is submitted and the assessment is cleared at 70% or above, with the artefact filed in the portfolio.",
+    "lastReviewed": "2026-11-02",
+    "costNote": "All tools listed are learnable free or at low cost. Verify current pricing and student eligibility on the official provider page before paying for anything."
+  },
+  "tracks": [
+    { "id": "trk-office", "name": "Office and Productivity", "skills": ["skill-excel", "skill-advanced-excel", "skill-powerpoint", "skill-word", "skill-google-workspace"] },
+    { "id": "trk-analytics", "name": "Data and Analytics", "skills": ["skill-power-query", "skill-power-pivot", "skill-power-bi", "skill-dax", "skill-sql"] },
+    { "id": "trk-finance-tech", "name": "Finance Systems and Modelling", "skills": ["skill-tally", "skill-sap-fico", "skill-oracle-financials", "skill-financial-modelling"] },
+    { "id": "trk-automation", "name": "Programming and Automation", "skills": ["skill-python", "skill-ai-automation"] }
+  ],
+  "skills": [
+    {
+      "id": "skill-excel", "name": "Microsoft Excel", "track": "trk-office", "order": 1, "priority": 1,
+      "totalHours": 45, "freeTool": "Excel for the web / LibreOffice Calc if you have no licence",
+      "why": "The base instrument of every finance role. Everything downstream — modelling, dashboards, audit testing — assumes fluency here.",
+      "prerequisites": [],
+      "levels": [
+        { "level": "Beginner", "hours": 15, "outcomes": ["Navigate and format a workbook professionally", "Write reliable arithmetic and reference formulas", "Build a clean printable report"],
+          "modules": [
+            { "name": "Workbook mechanics", "topics": ["Cells, ranges, named ranges", "Absolute and relative references", "Sheet structure and grouping", "Freeze panes and print setup"] },
+            { "name": "Core functions", "topics": ["SUM, AVERAGE, MIN, MAX, COUNT family", "IF, AND, OR, NESTED IF", "ROUND and rounding discipline", "Text functions: LEFT, RIGHT, MID, TRIM, TEXTJOIN"] },
+            { "name": "Professional presentation", "topics": ["Number formats and custom formats", "Conditional formatting rules", "Cell styles and colour discipline", "Print areas and headers"] }
+          ],
+          "exercise": "Build a 12-month personal budget workbook with formatted inputs, a calculation sheet, and a summary sheet that never uses a hard-coded total.",
+          "assessment": { "type": "practical", "duration": "45 minutes", "pass": 70, "items": ["Recreate a given formatted cost sheet from a blank workbook", "Write 10 formulas from a requirement list without copying", "Fix 5 broken references"] }
+        },
+        { "level": "Intermediate", "hours": 15, "outcomes": ["Use lookup and aggregation functions fluently", "Build dynamic summaries", "Audit a workbook for errors"],
+          "modules": [
+            { "name": "Lookups", "topics": ["VLOOKUP and its limits", "INDEX-MATCH and two-way lookups", "XLOOKUP where available", "Handling #N/A properly"] },
+            { "name": "Aggregation", "topics": ["SUMIFS, COUNTIFS, AVERAGEIFS", "SUMPRODUCT", "SUBTOTAL and visible-row logic", "Wildcards and criteria syntax"] },
+            { "name": "Integrity and audit", "topics": ["Trace precedents and dependents", "Evaluate formula", "Error checking and circular references", "Protecting structure vs cells"] }
+          ],
+          "exercise": "Take a 500-row transaction extract and produce a department-wise, month-wise summary with exception flags, using no manual entry in the summary sheet.",
+          "assessment": { "type": "practical + short answer", "duration": "60 minutes", "pass": 70, "items": ["Build a two-way lookup with error handling", "Explain the difference between SUMIF and SUMPRODUCT criteria", "Diagnose a broken workbook"] }
+        },
+        { "level": "Advanced", "hours": 15, "outcomes": ["Design reusable workbook structures", "Automate repetitive analysis", "Build a defensible financial schedule"],
+          "modules": [
+            { "name": "Advanced formulas", "topics": ["Dynamic arrays and spill ranges", "LAMBDA and LET", "Array logic without helper columns", "OFFSET vs INDEX for dynamic ranges"] },
+            { "name": "Financial schedules", "topics": ["Depreciation and asset roll-forward", "Debt schedule with circularity control", "Working capital schedule", "Scenario switches and toggles"] },
+            { "name": "Automation and quality", "topics": ["Data validation with dependent lists", "What-if analysis and Goal Seek", "Macro recording and when to avoid it", "Model review checklist"] }
+          ],
+          "exercise": "Build a three-year asset and debt schedule that recalculates cleanly when the opening date, capex and interest rate are changed.",
+          "assessment": { "type": "model review", "duration": "90 minutes", "pass": 70, "items": ["Deliver a working model with an assumptions sheet", "Pass a peer audit using a 15-point checklist", "Explain every hard-coded number"] }
+        }
+      ],
+      "industryUseCases": ["Month-end cost sheet preparation", "Budget vs actual consolidation across cost centres", "Fixed asset roll-forward and depreciation", "Audit sampling and exception listing"],
+      "projects": [
+        { "title": "Cost centre expense dashboard", "brief": "Build a workbook that consolidates 20 cost centres, computes variances and flags overruns above a threshold.", "deliverable": "Excel workbook + one-page note", "hours": 8 },
+        { "title": "Depreciation and asset register", "brief": "Build a fully formula-driven asset register with additions, disposals, SLM and WDV methods.", "deliverable": "Excel workbook + reconciliation to GL", "hours": 6 }
+      ],
+      "portfolioDeliverables": ["Cost centre dashboard", "Asset register", "Cleaned transaction analysis"],
+      "certification": { "name": "Microsoft Office Specialist — Excel", "provider": "Microsoft", "cost": "Paid exam; free learning path on Microsoft Learn", "link": "https://learn.microsoft.com/credentials/" }
+    },
+    {
+      "id": "skill-advanced-excel", "name": "Advanced Excel for Finance", "track": "trk-office", "order": 2, "priority": 1,
+      "totalHours": 35, "freeTool": "Same as Excel",
+      "why": "The step from 'can use Excel' to 'can build something another accountant can rely on'. This is where cost sheets become models.",
+      "prerequisites": ["skill-excel"],
+      "levels": [
+        { "level": "Beginner", "hours": 10, "outcomes": ["Structure a model with inputs, calculations and outputs separated"],
+          "modules": [{ "name": "Model architecture", "topics": ["Input–calculation–output separation", "Colour conventions", "Time-series layout", "Named ranges for readability"] }, { "name": "Control totals", "topics": ["Balance checks", "Sign conventions", "Error traps with IFERROR at the output layer only"] }],
+          "exercise": "Rebuild a messy provided workbook into a three-layer structure with a single control panel.",
+          "assessment": { "type": "practical", "duration": "45 minutes", "pass": 70, "items": ["Restructure the workbook", "Add a balance check that turns red on error"] }
+        },
+        { "level": "Intermediate", "hours": 12, "outcomes": ["Model cost behaviour and decisions", "Use data tables for sensitivity"],
+          "modules": [{ "name": "Costing models", "topics": ["Absorption vs marginal switch", "Variance analysis automation", "Break-even and CVP blocks", "Product mix optimisation set-up"] }, { "name": "Sensitivity", "topics": ["One- and two-way data tables", "Scenario Manager", "Goal Seek for target profit", "Tornado chart inputs"] }],
+          "exercise": "Build a product-mix model with a limiting factor and show the profit under three capacity scenarios using a two-way data table.",
+          "assessment": { "type": "practical", "duration": "60 minutes", "pass": 70, "items": ["Produce a sensitivity table that recalculates", "Explain which constraint binds"] }
+        },
+        { "level": "Advanced", "hours": 13, "outcomes": ["Build an auditable financial model", "Automate consolidation", "Present decision output"],
+          "modules": [{ "name": "Three-statement mechanics", "topics": ["P&L to balance sheet linkage", "Cash flow reconciliation", "Revolver and circularity handling", "Balancing plugs and why to avoid them"] }, { "name": "Consolidation", "topics": ["Multi-entity trial balance mapping", "Intercompany elimination", "Minority interest computation", "Mapping tables"] }],
+          "exercise": "Consolidate three entity trial balances with one intercompany pair and produce consolidated P&L and balance sheet with a working elimination sheet.",
+          "assessment": { "type": "model review + defence", "duration": "120 minutes", "pass": 70, "items": ["Consolidated statements balance to the penny", "Walk through every elimination", "State three limitations of your model"] }
+        }
+      ],
+      "industryUseCases": ["Management reporting packs", "Consolidation for group reporting", "Pricing and product-mix analysis", "Budget model build"],
+      "projects": [
+        { "title": "Variance analysis engine", "brief": "Automate material, labour and overhead variance computation from a standard-cost input sheet.", "deliverable": "Excel model + reconciliation statement", "hours": 8 },
+        { "title": "Multi-entity consolidation", "brief": "Consolidate three fictional entities with intercompany sales and a minority holding.", "deliverable": "Workbook + elimination schedule", "hours": 10 }
+      ],
+      "portfolioDeliverables": ["Variance engine", "Consolidation workbook", "Sensitivity analysis pack"]
+    },
+    {
+      "id": "skill-power-query", "name": "Power Query", "track": "trk-analytics", "order": 3, "priority": 1,
+      "totalHours": 25, "freeTool": "Excel (built in) or Power BI Desktop",
+      "why": "Removes the single biggest time sink in finance: manually cleaning and reshaping the same extract every month.",
+      "prerequisites": ["skill-excel"],
+      "levels": [
+        { "level": "Beginner", "hours": 8, "outcomes": ["Connect to files and folders", "Clean and shape data reproducibly"],
+          "modules": [{ "name": "Getting data", "topics": ["CSV, Excel, folder and web sources", "Promoting headers", "Changing types safely", "Applied steps"] }, { "name": "Transformation basics", "topics": ["Remove and split columns", "Filter rows", "Unpivot for tidy data", "Replace errors"] }],
+          "exercise": "Import a 12-file folder of monthly CSVs and append them into a single clean table with a consistent schema.",
+          "assessment": { "type": "practical", "duration": "40 minutes", "pass": 70, "items": ["Build an append query", "Handle a schema change in one file"] }
+        },
+        { "level": "Intermediate", "hours": 9, "outcomes": ["Merge and shape relational data", "Build reusable transformation logic"],
+          "modules": [{ "name": "Joins and relationships", "topics": ["Merge types and join keys", "Fuzzy matching", "Expand and rename", "Referencing vs duplicating queries"] }, { "name": "Business logic", "topics": ["Conditional columns", "Custom functions", "Grouping and aggregation", "Parameters for file paths and periods"] }],
+          "exercise": "Build a query that joins a GL extract to a chart of accounts and produces a cost-centre summary chart-ready table.",
+          "assessment": { "type": "practical", "duration": "50 minutes", "pass": 70, "items": ["Join two tables with a multi-key match", "Parameterise the source path"] }
+        },
+        { "level": "Advanced", "hours": 8, "outcomes": ["Engineer a refresh-safe pipeline", "Optimise performance"],
+          "modules": [{ "name": "Pipeline design", "topics": ["Staging, reference and presentation layers", "Query folding", "Incremental refresh", "Error logging"] }, { "name": "Governance", "topics": ["Naming and documentation", "Version control of queries", "Data source credentials and privacy levels"] }],
+          "exercise": "Document a refreshable monthly MIS pipeline end to end, with a data dictionary and a failure-recovery note.",
+          "assessment": { "type": "pipeline review", "duration": "60 minutes", "pass": 70, "items": ["Pipeline refreshes without manual steps", "Document the data lineage", "Explain query folding"] }
+        }
+      ],
+      "industryUseCases": ["Monthly GL and sub-ledger consolidation", "Cleaning bank statements for reconciliation", "Combining branch reports", "Preparing data for Power BI"],
+      "projects": [
+        { "title": "Automated MIS pipeline", "brief": "Twelve monthly extracts consolidated, validated and shaped into a reporting table with a quality log.", "deliverable": "Workbook + documentation", "hours": 8 },
+        { "title": "Bank reconciliation data prep", "brief": "Standardise two bank feeds and a GL extract for automated matching.", "deliverable": "Queries + matching logic notes", "hours": 5 }
+      ],
+      "portfolioDeliverables": ["Refreshable MIS pipeline", "Data dictionary", "Quality log"]
+    },
+    {
+      "id": "skill-power-pivot", "name": "Power Pivot and Data Modelling", "track": "trk-analytics", "order": 4, "priority": 2,
+      "totalHours": 20, "freeTool": "Excel (built in)",
+      "why": "Turns many flat tables into one governed model, so a single figure is defined once rather than in 40 workbooks.",
+      "prerequisites": ["skill-power-query"],
+      "levels": [
+        { "level": "Beginner", "hours": 6, "outcomes": ["Build a star schema", "Write basic measures"],
+          "modules": [{ "name": "Data model", "topics": ["Fact and dimension tables", "Relationships and cardinality", "Date table", "Hiding technical columns"] }, { "name": "Measures", "topics": ["Implicit vs explicit measures", "SUM and CALCULATE basics", "Filter context introduction"] }],
+          "exercise": "Model a sales fact table with product, customer and date dimensions and produce a year-over-year pivot.",
+          "assessment": { "type": "practical", "duration": "40 minutes", "pass": 70, "items": ["Build relationships correctly", "Create a YoY measure"] }
+        },
+        { "level": "Intermediate", "hours": 7, "outcomes": ["Use time intelligence", "Handle multiple fact tables"],
+          "modules": [{ "name": "Time intelligence", "topics": ["TOTALYTD, SAMEPERIODLASTYEAR", "Fiscal year handling", "Date table requirements"] }, { "name": "Multiple facts", "topics": ["Conformed dimensions", "Snapshot tables", "Granularity mismatches"] }],
+          "exercise": "Build a budget-vs-actual model with two fact tables and conformed dimensions.",
+          "assessment": { "type": "practical", "duration": "50 minutes", "pass": 70, "items": ["Reconcile budget and actual at the right grain", "Explain row vs filter context"] }
+        },
+        { "level": "Advanced", "hours": 7, "outcomes": ["Design a governed enterprise model"],
+          "modules": [{ "name": "Model design", "topics": ["Snowflake vs star trade-offs", "Aggregations", "Calculation groups concept", "Perspectives"] }, { "name": "Governance", "topics": ["Measure naming standards", "Format strings and display folders", "Documentation and lineage"] }],
+          "exercise": "Document a governed model standard for a finance team, including naming, relationships and measure catalogue.",
+          "assessment": { "type": "design review", "duration": "60 minutes", "pass": 70, "items": ["Justify schema choices", "Present a measure catalogue", "Identify two scalability risks"] }
+        }
+      ],
+      "industryUseCases": ["Single source of truth for MIS", "Budget and forecast consolidation", "Product profitability cubes", "Cost centre reporting"],
+      "projects": [{ "title": "Finance data model", "brief": "Build a star-schema model for a fictional manufacturer with actuals and budget, and 15 defined measures.", "deliverable": "Model + measure catalogue", "hours": 8 }],
+      "portfolioDeliverables": ["Star-schema model", "Measure catalogue"]
+    },
+    {
+      "id": "skill-power-bi", "name": "Power BI", "track": "trk-analytics", "order": 5, "priority": 1,
+      "totalHours": 40, "freeTool": "Power BI Desktop is free",
+      "why": "The most common way finance presents performance. A dashboard that refreshes itself replaces hours of monthly formatting.",
+      "prerequisites": ["skill-power-query", "skill-power-pivot"],
+      "levels": [
+        { "level": "Beginner", "hours": 12, "outcomes": ["Build a clean single-page dashboard", "Publish and refresh"],
+          "modules": [{ "name": "Report canvas", "topics": ["Pages and navigation", "Visual selection by question type", "Formatting and theme", "Tooltips"] }, { "name": "Basic visuals", "topics": ["Bar, column, line, KPI card", "Matrix and table", "Slicers and sync slicers", "Drill-down vs drill-through"] }],
+          "exercise": "Build a one-page P&L performance dashboard from a provided dataset with three slicers and a KPI strip.",
+          "assessment": { "type": "practical", "duration": "50 minutes", "pass": 70, "items": ["Dashboard answers five stated business questions", "No chart type is misused"] }
+        },
+        { "level": "Intermediate", "hours": 14, "outcomes": ["Design multi-page management reporting", "Use bookmarks and row-level logic"],
+          "modules": [{ "name": "Report design", "topics": ["Executive summary vs detail pages", "Bookmarks and buttons", "Conditional formatting by measure", "Small multiples"] }, { "name": "Data security", "topics": ["Row-level security roles", "Workspaces and apps", "Gateway and refresh scheduling"] }],
+          "exercise": "Build a two-page MIS pack with an executive view and a cost-centre drill-through, plus a row-level security role for a department head.",
+          "assessment": { "type": "practical", "duration": "70 minutes", "pass": 70, "items": ["Drill-through works", "RLS restricts data correctly", "Page is readable at 1366×768"] }
+        },
+        { "level": "Advanced", "hours": 14, "outcomes": ["Build a governed reporting product", "Optimise performance"],
+          "modules": [{ "name": "Performance", "topics": ["Performance analyser", "Reducing visual count", "Aggregation tables", "Star schema impact"] }, { "name": "Productisation", "topics": ["Deployment pipelines concept", "Certified datasets", "Usage metrics", "Documentation and handover"] }],
+          "exercise": "Take an existing slow dashboard, diagnose bottlenecks, and deliver an optimised version with a before-and-after performance note.",
+          "assessment": { "type": "optimisation review", "duration": "90 minutes", "pass": 70, "items": ["Reduce visual load time measurably", "Document the model", "Present a handover pack"] }
+        }
+      ],
+      "industryUseCases": ["Monthly MIS dashboard", "Budget variance dashboard", "Working capital monitoring", "Sales and margin analysis by customer"],
+      "projects": [
+        { "title": "Budget variance dashboard", "brief": "Department-wise actual vs budget with variance drivers, top-10 exceptions and commentary panel.", "deliverable": "PBIX file + screenshots + user guide", "hours": 10 },
+        { "title": "Working capital monitor", "brief": "Track DSO, DIO, DPO and the cash conversion cycle by business unit with trend and alerts.", "deliverable": "PBIX file + methodology note", "hours": 8 }
+      ],
+      "portfolioDeliverables": ["Budget variance dashboard", "Working capital monitor", "Dashboard user guide"],
+      "certification": { "name": "Microsoft Certified: Power BI Data Analyst Associate (PL-300)", "provider": "Microsoft", "cost": "Paid exam; free learning paths", "link": "https://learn.microsoft.com/credentials/certifications/power-bi-data-analyst-associate/" }
+    },
+    {
+      "id": "skill-dax", "name": "DAX", "track": "trk-analytics", "order": 6, "priority": 2,
+      "totalHours": 25, "freeTool": "Power BI Desktop / Excel Power Pivot",
+      "why": "DAX is where finance logic becomes reusable and auditable. Without it, dashboards are fragile.",
+      "prerequisites": ["skill-power-pivot"],
+      "levels": [
+        { "level": "Beginner", "hours": 8, "outcomes": ["Understand filter and row context"],
+          "modules": [{ "name": "Evaluation context", "topics": ["Row context", "Filter context", "Context transition", "Why CALCULATE matters"] }, { "name": "Core measures", "topics": ["SUM, DIVIDE", "CALCULATE with simple filters", "ALL and REMOVEFILTERS", "Variables with VAR"] }],
+          "exercise": "Write 10 finance measures including gross margin %, variance and contribution using DIVIDE and variables.",
+          "assessment": { "type": "practical", "duration": "45 minutes", "pass": 70, "items": ["Explain filter context in your own words", "Avoid divide-by-zero errors"] }
+        },
+        { "level": "Intermediate", "hours": 9, "outcomes": ["Do time intelligence and ranking"],
+          "modules": [{ "name": "Time patterns", "topics": ["YTD, MTD, QTD", "Prior year and growth", "Moving averages", "Fiscal calendars"] }, { "name": "Comparative analytics", "topics": ["RANKX and TOPN", "Share of total", "Budget vs actual structures", "Semi-additive balance measures"] }],
+          "exercise": "Build a measure set for a P&L: revenue, gross margin, EBITDA, variance to budget, prior-year growth and 3-month moving average.",
+          "assessment": { "type": "practical", "duration": "60 minutes", "pass": 70, "items": ["Time intelligence works across year boundaries", "Balances do not sum incorrectly"] }
+        },
+        { "level": "Advanced", "hours": 8, "outcomes": ["Write performant, maintainable DAX"],
+          "modules": [{ "name": "Advanced patterns", "topics": ["Iterators: SUMX and AVERAGEX", "FILTER vs KEEPFILTERS", "Calculation groups concept", "Field parameters"] }, { "name": "Performance", "topics": ["DAX Studio basics", "Avoiding unnecessary materialisation", "Measure vs calculated column decisions"] }],
+          "exercise": "Optimise a set of slow measures and document the before-and-after timings and the reasoning.",
+          "assessment": { "type": "code review", "duration": "60 minutes", "pass": 70, "items": ["Rewrite three slow measures", "Justify each change"] }
+        }
+      ],
+      "industryUseCases": ["Contribution and margin analytics", "Variance decomposition", "Customer ranking and concentration", "Balance-sheet measures that must not sum"],
+      "projects": [{ "title": "Finance measure library", "brief": "A documented DAX measure library for a fictional group with 25 measures and test cases.", "deliverable": "PBIX + documentation + test results", "hours": 8 }],
+      "portfolioDeliverables": ["Measure library", "Performance comparison note"]
+    },
+    {
+      "id": "skill-tally", "name": "Tally Prime", "track": "trk-finance-tech", "order": 7, "priority": 1,
+      "totalHours": 30, "freeTool": "Tally Prime learning edition / student version where available",
+      "why": "The accounting system you will actually operate in most Indian SMEs. Interviewers expect entries, GST and reconciliation competence.",
+      "prerequisites": ["skill-excel"],
+      "levels": [
+        { "level": "Beginner", "hours": 10, "outcomes": ["Create a company and record a full set of entries"],
+          "modules": [{ "name": "Company setup", "topics": ["Company creation and features", "Chart of accounts and groups", "Ledger creation", "Voucher types"] }, { "name": "Transaction cycle", "topics": ["Purchase and sales vouchers", "Receipts and payments", "Journal and contra", "Credit notes and debit notes"] }],
+          "exercise": "Record one full month of transactions for a trading firm and produce a trial balance that tallies.",
+          "assessment": { "type": "practical", "duration": "60 minutes", "pass": 70, "items": ["Trial balance tallies", "Correct voucher type for each transaction"] }
+        },
+        { "level": "Intermediate", "hours": 10, "outcomes": ["Handle GST and inventory", "Produce statements"],
+          "modules": [{ "name": "GST in Tally", "topics": ["GST registration details", "Tax ledgers and rates", "GSTR-1 and GSTR-3B support", "Reverse charge entries"] }, { "name": "Inventory and statements", "topics": ["Stock groups and units", "Godowns and transfers", "Cost centres and cost categories", "Final accounts and ratio analysis"] }],
+          "exercise": "Complete a GST-compliant purchase-sales cycle with inventory and produce the GST summary and P&L.",
+          "assessment": { "type": "practical", "duration": "70 minutes", "pass": 70, "items": ["GST output matches the transactions", "Stock valuation is correct"] }
+        },
+        { "level": "Advanced", "hours": 10, "outcomes": ["Control and audit a Tally environment", "Migrate data"],
+          "modules": [{ "name": "Controls", "topics": ["Security control and user roles", "Audit trail and edit log", "Backup and restore", "Period locking"] }, { "name": "Data and reporting", "topics": ["Banking and reconciliation", "Multi-currency", "Data export and Excel integration", "Closing and opening balances"] }],
+          "exercise": "Set up a controlled company with user roles, complete a bank reconciliation, and export a data set for analysis.",
+          "assessment": { "type": "practical + viva", "duration": "60 minutes", "pass": 70, "items": ["Audit trail enabled and demonstrated", "Reconciliation statement prepared", "Explain month-end close steps"] }
+        }
+      ],
+      "industryUseCases": ["Bookkeeping for SMEs", "GST return preparation support", "Inventory and cost centre tracking", "Bank reconciliation"],
+      "projects": [
+        { "title": "Full-cycle bookkeeping", "brief": "One quarter of transactions for a fictional trading company, from vouchers to final accounts.", "deliverable": "Tally data + final accounts + reconciliation", "hours": 8 },
+        { "title": "GST compliance pack", "brief": "Reconcile books with GST returns and document exceptions.", "deliverable": "Reconciliation note + exception list", "hours": 5 }
+      ],
+      "portfolioDeliverables": ["Bookkeeping cycle", "GST reconciliation pack"]
+    },
+    {
+      "id": "skill-sap-fico", "name": "SAP FICO", "track": "trk-finance-tech", "order": 8, "priority": 2,
+      "totalHours": 50, "freeTool": "SAP Learning Journeys (theory) + openSAP; full system access usually requires a course or an employer environment",
+      "why": "Large Indian corporates and Big Four delivery centres run SAP. Functional understanding of FI/CO is a hiring differentiator even without certification.",
+      "prerequisites": ["skill-excel"],
+      "note": "Do not pay for expensive SAP certification early. Learn the process logic and terminology first; certification only matters when a job requires it.",
+      "levels": [
+        { "level": "Beginner", "hours": 15, "outcomes": ["Explain FI and CO structures", "Map a business process to SAP transactions"],
+          "modules": [{ "name": "SAP basics", "topics": ["ERP concept and landscape", "Organisational units", "Master data concept", "Navigation and document flow"] }, { "name": "FI structure", "topics": ["Chart of accounts", "Company code and fiscal year", "GL, AP, AR", "Document principle and posting keys"] }],
+          "exercise": "Draw the organisational structure for a fictional three-company group and map each entity to company code, chart of accounts and controlling area.",
+          "assessment": { "type": "written", "duration": "45 minutes", "pass": 70, "items": ["Correctly map organisational units", "Identify the correct module for ten transactions"] }
+        },
+        { "level": "Intermediate", "hours": 20, "outcomes": ["Understand the FI process cycle", "Read CO reports"],
+          "modules": [{ "name": "Procure to pay and order to cash", "topics": ["Purchase order to vendor invoice", "Three-way match", "Customer invoice and dunning", "Payment run"] }, { "name": "CO fundamentals", "topics": ["Cost centres and profit centres", "Internal orders", "Allocation cycles", "Cost element accounting"] }],
+          "exercise": "Document an end-to-end procure-to-pay cycle with the accounting entries at each step and the controls at each handoff.",
+          "assessment": { "type": "process documentation", "duration": "60 minutes", "pass": 70, "items": ["Entries are correct for each step", "Controls identified at three points"] }
+        },
+        { "level": "Advanced", "hours": 15, "outcomes": ["Handle period-end and reporting in SAP", "Support a finance transformation"],
+          "modules": [{ "name": "Period end", "topics": ["Month-end closing cockpit", "Accruals and provisions", "Foreign currency valuation", "Intercompany reconciliation"] }, { "name": "Reporting and controls", "topics": ["Financial statement versions", "Profit centre reporting", "Internal controls and SoD", "Migration and data cutover concepts"] }],
+          "exercise": "Write a month-end close checklist for an SAP environment with owners, dependencies and controls.",
+          "assessment": { "type": "scenario", "duration": "60 minutes", "pass": 70, "items": ["Close checklist is complete and sequenced", "Identify two segregation-of-duties conflicts"] }
+        }
+      ],
+      "industryUseCases": ["GL accounting in a shared service centre", "Cost centre controlling", "Record-to-report transformation", "Intercompany reconciliation"],
+      "projects": [{ "title": "SAP process blueprint", "brief": "Document chart of accounts design, cost centre hierarchy and close calendar for a fictional manufacturer.", "deliverable": "Blueprint PDF + process maps", "hours": 10 }],
+      "portfolioDeliverables": ["FI/CO blueprint", "Month-end close checklist"],
+      "certification": { "name": "SAP Certified Application Associate — Financial Accounting", "provider": "SAP", "cost": "Paid; verify partner pricing. Free learning journeys available", "link": "https://learning.sap.com/" }
+    },
+    {
+      "id": "skill-oracle-financials", "name": "Oracle Financials (Fusion / EBS)", "track": "trk-finance-tech", "order": 9, "priority": 3,
+      "totalHours": 30, "freeTool": "Oracle documentation and Oracle University free learning; sandbox access is usually employer-provided",
+      "why": "Common in large Indian groups and GCCs. The logic mirrors SAP but the terminology differs — learnable quickly once one ERP is understood.",
+      "prerequisites": ["skill-sap-fico"],
+      "levels": [
+        { "level": "Beginner", "hours": 10, "outcomes": ["Understand Oracle financial modules and structures"],
+          "modules": [{ "name": "Architecture", "topics": ["Ledger and legal entity", "Chart of accounts structure", "Accounting calendar", "Sub-ledgers vs GL"] }, { "name": "Core modules", "topics": ["Payables", "Receivables", "General Ledger", "Fixed Assets"] }],
+          "exercise": "Map a fictional entity's accounting structure to Oracle ledger, legal entity and cost centre segments.",
+          "assessment": { "type": "written", "duration": "40 minutes", "pass": 70, "items": ["Correctly assign segment values", "Explain sub-ledger to GL flow"] }
+        },
+        { "level": "Intermediate", "hours": 10, "outcomes": ["Understand the accounting cycle in Oracle"],
+          "modules": [{ "name": "Transactions", "topics": ["Invoice to payment", "Receipt and credit memo", "Asset addition and depreciation", "Journal import"] }, { "name": "Period close", "topics": ["Sub-ledger accounting", "Reconciliation", "Open and close periods", "Consolidation"] }],
+          "exercise": "Prepare a period-close runbook for Payables, Receivables and Fixed Assets.",
+          "assessment": { "type": "runbook review", "duration": "50 minutes", "pass": 70, "items": ["Sequence is correct", "Reconciliation steps included"] }
+        },
+        { "level": "Advanced", "hours": 10, "outcomes": ["Report and control an Oracle environment"],
+          "modules": [{ "name": "Reporting", "topics": ["FSG reports", "Smart View", "OTBI concept", "Analytical reporting"] }, { "name": "Controls and transformation", "topics": ["Journal approval workflow", "Access controls", "Chart of accounts redesign", "Migration cutover"] }],
+          "exercise": "Design a chart of accounts for a multi-business group and justify each segment.",
+          "assessment": { "type": "design defence", "duration": "60 minutes", "pass": 70, "items": ["Segment design supports reporting needs", "Identify two transition risks"] }
+        }
+      ],
+      "industryUseCases": ["Shared-service GL accounting", "Fixed asset accounting", "Group consolidation support", "ERP migration testing"],
+      "projects": [{ "title": "Oracle close runbook", "brief": "Document the full period-close process, controls and reconciliation points.", "deliverable": "Runbook + process map", "hours": 8 }],
+      "portfolioDeliverables": ["Close runbook", "Chart of accounts design"]
+    },
+    {
+      "id": "skill-sql", "name": "SQL for Finance", "track": "trk-analytics", "order": 10, "priority": 1,
+      "totalHours": 35, "freeTool": "SQLite, PostgreSQL, DuckDB, or free tiers of cloud data platforms",
+      "why": "Once data sits in an ERP or warehouse, SQL is how you get the numbers out without asking IT. It is the highest-leverage technical skill after Excel.",
+      "prerequisites": [],
+      "levels": [
+        { "level": "Beginner", "hours": 10, "outcomes": ["Write SELECT queries", "Filter, sort and aggregate"],
+          "modules": [{ "name": "Query basics", "topics": ["SELECT, FROM, WHERE", "ORDER BY and LIMIT", "DISTINCT", "NULL handling"] }, { "name": "Aggregation", "topics": ["COUNT, SUM, AVG, MIN, MAX", "GROUP BY", "HAVING", "Date functions"] }],
+          "exercise": "From a sales table, produce monthly revenue by region, excluding returns and nulls.",
+          "assessment": { "type": "practical", "duration": "45 minutes", "pass": 70, "items": ["10 queries from a requirement list", "Correct use of HAVING vs WHERE"] }
+        },
+        { "level": "Intermediate", "hours": 12, "outcomes": ["Join tables correctly", "Use subqueries"],
+          "modules": [{ "name": "Joins", "topics": ["INNER, LEFT, RIGHT, FULL", "Join keys and duplicates", "Anti-joins for exceptions", "Cardinality pitfalls"] }, { "name": "Subqueries and CTEs", "topics": ["Scalar and correlated subqueries", "IN and EXISTS", "Common table expressions", "Window functions: ROW_NUMBER, RANK, running totals"] }],
+          "exercise": "Build a trial balance from a journal-entries table joined to a chart of accounts, with a debit-credit pivot.",
+          "assessment": { "type": "practical", "duration": "60 minutes", "pass": 70, "items": ["Trial balance balances", "Explain why a LEFT JOIN can duplicate rows"] }
+        },
+        { "level": "Advanced", "hours": 13, "outcomes": ["Analyse financial data at scale", "Build auditable analytics queries"],
+          "modules": [{ "name": "Analytical SQL", "topics": ["Window frames and moving averages", "Cohort and ageing analysis", "Gaps and islands", "Recursive CTEs"] }, { "name": "Data quality and performance", "topics": ["Duplicate detection", "Reconciliation queries", "Indexes and explain plans", "Views and materialised views"] }],
+          "exercise": "Produce a receivables ageing report with buckets, plus a duplicate-invoice exception query.",
+          "assessment": { "type": "project review", "duration": "75 minutes", "pass": 70, "items": ["Ageing is correct at period end", "Exception query finds seeded duplicates", "Query is readable and commented"] }
+        }
+      ],
+      "industryUseCases": ["ERP reporting", "Audit analytics and full-population testing", "Receivables ageing and collections", "Reconciliation automation"],
+      "projects": [
+        { "title": "Financial database analysis", "brief": "Build a small schema with journal entries, accounts and entities; write 12 analysis queries and a reconciliation.", "deliverable": "SQL scripts + results + notes", "hours": 10 },
+        { "title": "Audit analytics pack", "brief": "Full-population tests for duplicate payments, weekend postings and unusual journal entries.", "deliverable": "SQL scripts + findings memo", "hours": 8 }
+      ],
+      "portfolioDeliverables": ["SQL analysis pack", "Audit analytics findings memo"]
+    },
+    {
+      "id": "skill-python", "name": "Python for Finance", "track": "trk-automation", "order": 11, "priority": 1,
+      "totalHours": 50, "freeTool": "Python, VS Code, Jupyter — all free",
+      "why": "Python removes the ceiling from Excel: repeatable analysis, PDF and invoice parsing, and models that run on data too big for a spreadsheet.",
+      "prerequisites": ["skill-excel"],
+      "levels": [
+        { "level": "Beginner", "hours": 15, "outcomes": ["Write clean scripts", "Handle core data structures"],
+          "modules": [{ "name": "Language basics", "topics": ["Variables and types", "Conditionals and loops", "Functions and arguments", "Error handling"] }, { "name": "Data structures", "topics": ["Lists and tuples", "Dictionaries", "Sets", "Comprehensions"] }, { "name": "Files and environments", "topics": ["Reading and writing CSV", "Virtual environments and pip", "Jupyter notebooks", "Project folder discipline"] }],
+          "exercise": "Write a script that reads a CSV of invoices, validates the totals, and writes an exceptions file with reasons.",
+          "assessment": { "type": "practical", "duration": "60 minutes", "pass": 70, "items": ["Script runs end to end", "Errors handled without crashing", "Output is auditable"] }
+        },
+        { "level": "Intermediate", "hours": 18, "outcomes": ["Analyse data with pandas", "Produce charts and reports"],
+          "modules": [{ "name": "pandas", "topics": ["Series and DataFrame", "Indexing and filtering", "groupby and pivot_table", "merge and join", "Missing data"] }, { "name": "NumPy and visualisation", "topics": ["Arrays and vectorised operations", "Statistical functions", "Matplotlib charts", "Formatting a report-ready figure"] }, { "name": "Financial analysis", "topics": ["Ratio computation from statements", "Time-series resampling", "Rolling metrics", "Excel output with openpyxl"] }],
+          "exercise": "Load three years of financial statements, compute 12 ratios, and produce a formatted Excel output with a chart.",
+          "assessment": { "type": "practical", "duration": "75 minutes", "pass": 70, "items": ["Ratios reconcile to manual computation", "Output opens correctly in Excel", "Code is commented"] }
+        },
+        { "level": "Advanced", "hours": 17, "outcomes": ["Automate an end-to-end finance workflow", "Handle unstructured files"],
+          "modules": [{ "name": "Automation", "topics": ["Scheduled scripts", "Logging and audit trails", "Working with APIs", "Email and file delivery"] }, { "name": "Unstructured data", "topics": ["PDF extraction (pypdf, pdfplumber)", "OCR concepts", "Regex for amounts and dates", "Validation of extracted values"] }, { "name": "Modelling", "topics": ["Monte Carlo simulation", "Scenario engines", "Optimisation with scipy", "Testing with pytest"] }],
+          "exercise": "Build a monthly MIS generator that ingests raw files, validates them, computes KPIs, writes a formatted pack and emails a summary.",
+          "assessment": { "type": "project review", "duration": "90 minutes", "pass": 70, "items": ["Pipeline runs unattended", "Validation catches seeded errors", "Code has tests", "A README explains operation"] }
+        }
+      ],
+      "industryUseCases": ["MIS automation", "Invoice and statement extraction", "Portfolio and scenario analysis", "Audit testing at full population"],
+      "projects": [
+        { "title": "Automated MIS generator", "brief": "End-to-end pipeline from raw extracts to a formatted management pack.", "deliverable": "Python package + sample output + README", "hours": 12 },
+        { "title": "Financial statement analyser", "brief": "Ingest a PDF annual report, extract key figures and compute ratios with a quality check.", "deliverable": "Script + verification report", "hours": 10 }
+      ],
+      "portfolioDeliverables": ["MIS generator", "Statement analyser", "Test suite"],
+      "certification": { "name": "Python Institute PCEP / PCAP", "provider": "OpenEDG", "cost": "Paid exam; free learning resources available", "link": "https://pythoninstitute.org/" }
+    },
+    {
+      "id": "skill-financial-modelling", "name": "Financial Modelling", "track": "trk-finance-tech", "order": 12, "priority": 1,
+      "totalHours": 60, "freeTool": "Excel or LibreOffice; free modelling templates and guidance from reputable providers",
+      "why": "The single most transferable artefact in a finance portfolio: a model that links statements, handles scenarios and can be defended line by line.",
+      "prerequisites": ["skill-advanced-excel", "skill-power-query"],
+      "levels": [
+        { "level": "Beginner", "hours": 18, "outcomes": ["Build a one-year operating budget model", "Apply modelling standards"],
+          "modules": [{ "name": "Standards", "topics": ["Structure and colour conventions", "Inputs vs formulas", "Time-series consistency", "Documentation and version control"] }, { "name": "Revenue and cost build", "topics": ["Driver-based revenue", "Volume-price-mix", "Fixed and variable cost build", "Headcount planning"] }, { "name": "Budget outputs", "topics": ["Budgeted P&L", "Department summaries", "KPI definitions", "Presentation layout"] }],
+          "exercise": "Build a driver-based annual operating budget with headcount, revenue by product and cost by department.",
+          "assessment": { "type": "model review", "duration": "90 minutes", "pass": 70, "items": ["Every output traces to an input", "No hard-codes in calculations", "Assumptions documented"] }
+        },
+        { "level": "Intermediate", "hours": 20, "outcomes": ["Build a three-statement model", "Handle working capital and debt"],
+          "modules": [{ "name": "Three statements", "topics": ["P&L build", "Balance sheet roll-forward", "Cash flow linkage", "Circularity and revolver"] }, { "name": "Working capital and capex", "topics": ["DSO, DIO, DPO drivers", "Capex and depreciation schedules", "Debt schedule and interest", "Tax schedule"] }, { "name": "Checks and scenarios", "topics": ["Balance checks", "Scenario switch", "Sensitivity tables", "Error-proofing"] }],
+          "exercise": "Build a three-year, three-statement model for a fictional manufacturer, balancing to the penny with a scenario switch.",
+          "assessment": { "type": "model review + defence", "duration": "120 minutes", "pass": 70, "items": ["Balance sheet balances in all scenarios", "Debt schedule correct", "Cash flow reconciles to bank movement", "Defend every driver"] }
+        },
+        { "level": "Advanced", "hours": 22, "outcomes": ["Value a business", "Model transactions"],
+          "modules": [{ "name": "Valuation", "topics": ["FCFF and FCFE", "WACC build", "Terminal value approaches", "Comparable multiples", "Football field summary"] }, { "name": "Transaction models", "topics": ["M&A accretion-dilution", "LBO mechanics concept", "Project finance and DSCR", "Returns: IRR and MOIC"] }, { "name": "Presentation", "topics": ["Model to board pack", "Chart selection", "Executive summary", "Limitations and risk disclosure"] }],
+          "exercise": "Value a fictional company using DCF and comparables, then present a two-page investment summary with the range of outcomes.",
+          "assessment": { "type": "valuation defence", "duration": "120 minutes", "pass": 70, "items": ["DCF and multiples reconcile within a stated range", "Assumptions are market-referenced", "Limitations stated plainly"] }
+        }
+      ],
+      "industryUseCases": ["Annual budgeting", "Fundraising and lender packs", "Business valuation", "Project appraisal"],
+      "projects": [
+        { "title": "Three-statement financial model", "brief": "Five-year integrated model with scenarios, debt schedule and dashboard.", "deliverable": "Excel model + assumption book + dashboard", "hours": 20 },
+        { "title": "Business valuation report", "brief": "DCF and comparables valuation with a sensitivity analysis and recommendation.", "deliverable": "Model + 2-page memo", "hours": 14 },
+        { "title": "Annual operating budget", "brief": "Driver-based budget with department P&Ls and a board summary.", "deliverable": "Model + budget pack", "hours": 12 }
+      ],
+      "portfolioDeliverables": ["Three-statement model", "Valuation report", "Operating budget"],
+      "certification": { "name": "Financial modelling certifications from recognised providers", "provider": "Various (verify independently)", "cost": "Wide range — verify before paying; free templates and curricula exist", "link": "https://icmai.co.in" }
+    },
+    {
+      "id": "skill-powerpoint", "name": "Microsoft PowerPoint", "track": "trk-office", "order": 13, "priority": 2,
+      "totalHours": 20, "freeTool": "PowerPoint for the web / LibreOffice Impress",
+      "why": "Finance work only lands if it can be presented. A clear one-page message beats a dense deck.",
+      "prerequisites": [],
+      "levels": [
+        { "level": "Beginner", "hours": 7, "outcomes": ["Build clean slides with a consistent layout"],
+          "modules": [{ "name": "Slide craft", "topics": ["Slide master and layouts", "Alignment and spacing", "Typography limits", "Colour and contrast"] }, { "name": "Content types", "topics": ["Action titles", "Tables vs charts", "Icons and simple diagrams", "Speaker notes"] }],
+          "exercise": "Convert a dense three-page memo into five slides with action titles and one clear message per slide.",
+          "assessment": { "type": "practical", "duration": "45 minutes", "pass": 70, "items": ["Every title states a conclusion", "No slide has more than one core idea"] }
+        },
+        { "level": "Intermediate", "hours": 7, "outcomes": ["Build a management reporting deck"],
+          "modules": [{ "name": "Financial storytelling", "topics": ["Performance narrative", "Variance explanation layouts", "Waterfall and bridge charts", "Appendix discipline"] }, { "name": "Reuse", "topics": ["Templates", "Chart linked to Excel", "Consistent formatting", "Accessibility"] }],
+          "exercise": "Build a monthly performance review deck: headline, drivers, bridge, outlook and actions.",
+          "assessment": { "type": "deck review", "duration": "60 minutes", "pass": 70, "items": ["Narrative is coherent top to bottom", "Bridge chart reconciles to the variance"] }
+        },
+        { "level": "Advanced", "hours": 6, "outcomes": ["Present to an executive audience", "Handle challenge"],
+          "modules": [{ "name": "Executive communication", "topics": ["Pyramid principle", "Answer-first structure", "Handling questions", "Presenting uncertainty honestly"] }, { "name": "Board packs", "topics": ["Governance reporting", "KPI consistency", "Risk disclosure", "Pre-read design"] }],
+          "exercise": "Deliver a five-minute board-style presentation on a fictional variance, then answer three challenge questions.",
+          "assessment": { "type": "live presentation", "duration": "15 minutes", "pass": 70, "items": ["Message understood without the slides", "Questions answered with evidence", "No overclaiming"] }
+        }
+      ],
+      "industryUseCases": ["Monthly business review", "Board and audit committee packs", "Budget presentations", "Interview case presentations"],
+      "projects": [{ "title": "Management reporting presentation", "brief": "A ten-slide business performance review for a fictional company with a variance bridge and actions.", "deliverable": "PPTX + speaker notes", "hours": 8 }],
+      "portfolioDeliverables": ["Performance review deck", "Board pack sample"]
+    },
+    {
+      "id": "skill-word", "name": "Microsoft Word", "track": "trk-office", "order": 14, "priority": 3,
+      "totalHours": 15, "freeTool": "Word for the web / LibreOffice Writer",
+      "why": "Reports, memoranda and policies are still the formal record. Structure and referencing are assessed in professional work.",
+      "prerequisites": [],
+      "levels": [
+        { "level": "Beginner", "hours": 5, "outcomes": ["Produce a professionally formatted report"],
+          "modules": [{ "name": "Document structure", "topics": ["Styles and headings", "Table of contents", "Page numbering and sections", "Headers and footers"] }, { "name": "Clarity", "topics": ["Tables and captions", "Lists and emphasis", "Proofing", "Accessibility basics"] }],
+          "exercise": "Format a 10-page financial analysis report with automatic contents, numbered sections and captioned tables.",
+          "assessment": { "type": "practical", "duration": "40 minutes", "pass": 70, "items": ["TOC updates automatically", "All tables captioned and referenced"] }
+        },
+        { "level": "Intermediate", "hours": 5, "outcomes": ["Collaborate and control versions"],
+          "modules": [{ "name": "Collaboration", "topics": ["Track changes and comments", "Compare documents", "Review workflow", "Version naming"] }, { "name": "Templates", "topics": ["Style sets", "Reusable cover pages", "Content controls", "Field codes"] }],
+          "exercise": "Create a report template with defined styles, and run a tracked-change review cycle on a colleague's draft.",
+          "assessment": { "type": "practical", "duration": "40 minutes", "pass": 70, "items": ["Template reusable", "Tracked changes resolved cleanly"] }
+        },
+        { "level": "Advanced", "hours": 5, "outcomes": ["Produce formal policy and audit documents"],
+          "modules": [{ "name": "Formal documents", "topics": ["Policy and SOP structure", "Cross-references and footnotes", "Appendices", "Mail merge for reporting"] }, { "name": "Quality control", "topics": ["Document review checklist", "Consistency audit", "PDF finalisation and security"] }],
+          "exercise": "Write a formal accounting policy document with scope, definitions, treatment, examples and review cycle.",
+          "assessment": { "type": "document review", "duration": "45 minutes", "pass": 70, "items": ["Policy is unambiguous", "Treatment matches the applicable standard", "Review cycle defined"] }
+        }
+      ],
+      "industryUseCases": ["Financial analysis reports", "Accounting policy manuals", "Audit and internal control documentation", "Client deliverables"],
+      "projects": [{ "title": "Financial analysis report", "brief": "A formal report on a fictional company's performance with exhibits and recommendations.", "deliverable": "DOCX + PDF", "hours": 6 }],
+      "portfolioDeliverables": ["Financial analysis report", "Policy document"]
+    },
+    {
+      "id": "skill-google-workspace", "name": "Google Workspace", "track": "trk-office", "order": 15, "priority": 3,
+      "totalHours": 12, "freeTool": "Free personal Google account",
+      "why": "Many startups and GCCs run on Workspace. Sheets and Apps Script also give a free automation route.",
+      "prerequisites": [],
+      "levels": [
+        { "level": "Beginner", "hours": 4, "outcomes": ["Work fluently in Sheets and Docs"],
+          "modules": [{ "name": "Sheets", "topics": ["Core functions", "Query and importrange", "Formatting", "Sharing and permissions"] }, { "name": "Docs and Drive", "topics": ["Collaboration modes", "Comments and suggestions", "Drive structure", "Version history"] }],
+          "exercise": "Build a shared budget tracker in Sheets with a query-driven summary and comment-based review.",
+          "assessment": { "type": "practical", "duration": "35 minutes", "pass": 70, "items": ["QUERY summary works", "Permissions set correctly"] }
+        },
+        { "level": "Intermediate", "hours": 4, "outcomes": ["Automate light workflows"],
+          "modules": [{ "name": "Forms and Sheets", "topics": ["Form to sheet capture", "Validation", "Response summaries", "Notifications"] }, { "name": "Apps Script basics", "topics": ["Triggers", "Simple automation", "Sending emails", "Logging"] }],
+          "exercise": "Automate weekly expense collection with a form, sheet and scheduled summary email.",
+          "assessment": { "type": "practical", "duration": "45 minutes", "pass": 70, "items": ["Automation runs on trigger", "Summary email is accurate"] }
+        },
+        { "level": "Advanced", "hours": 4, "outcomes": ["Build a governed collaborative reporting space"],
+          "modules": [{ "name": "Governance", "topics": ["Shared drives and access", "Data loss prevention", "Audit log", "Template governance"] }, { "name": "Integration", "topics": ["Looker Studio basics", "BigQuery connection concept", "Cross-tool linking"] }],
+          "exercise": "Design a collaborative reporting workspace with access rules and a Looker Studio dashboard.",
+          "assessment": { "type": "design review", "duration": "45 minutes", "pass": 70, "items": ["Access model justified", "Dashboard refreshes from source"] }
+        }
+      ],
+      "industryUseCases": ["Startup finance operations", "Collaborative budgeting", "Expense collection", "Lightweight dashboards"],
+      "projects": [{ "title": "Collaborative budget tracker", "brief": "Department budget collection with automated consolidation and variance summary.", "deliverable": "Workspace files + guide", "hours": 5 }],
+      "portfolioDeliverables": ["Budget tracker", "Looker Studio dashboard"],
+      "certification": { "name": "Google Workspace user learning", "provider": "Google", "cost": "Free learning content", "link": "https://workspace.google.com/learning-center/" }
+    },
+    {
+      "id": "skill-ai-automation", "name": "AI Automation for Finance", "track": "trk-automation", "order": 16, "priority": 1,
+      "totalHours": 40, "freeTool": "Free tiers of LLM providers, open-source models, n8n/Make free tiers, Python",
+      "why": "The differentiator for the next five years: designing reliable AI-assisted finance workflows rather than using a chatbot ad hoc.",
+      "prerequisites": ["skill-python", "skill-power-query"],
+      "levels": [
+        { "level": "Beginner", "hours": 12, "outcomes": ["Write reliable prompts for finance tasks", "Know the limits"],
+          "modules": [{ "name": "Prompt engineering", "topics": ["Role, task, context, format", "Few-shot examples", "Chain-of-thought and verification", "Structured output (JSON)"] }, { "name": "Model awareness", "topics": ["LLM capabilities and limits", "Hallucination and grounding", "Context windows", "Cost and latency"] }],
+          "exercise": "Build a prompt library for five finance tasks: variance commentary, journal narration, policy summary, tax research, and email drafting — each with a verification step.",
+          "assessment": { "type": "practical", "duration": "50 minutes", "pass": 70, "items": ["Prompts produce consistent structured output", "Each prompt includes a verification instruction", "Known failure modes documented"] }
+        },
+        { "level": "Intermediate", "hours": 14, "outcomes": ["Build retrieval-grounded assistants", "Automate a document workflow"],
+          "modules": [{ "name": "RAG", "topics": ["Chunking documents", "Embeddings and vector search", "Grounding and citations", "Evaluation of answers"] }, { "name": "Workflow automation", "topics": ["Trigger-action design", "API calls and webhooks", "Human-in-the-loop approval", "Error handling and logs"] }],
+          "exercise": "Build a retrieval assistant over a set of accounting standards and measure answer accuracy against 20 test questions.",
+          "assessment": { "type": "project review", "duration": "75 minutes", "pass": 70, "items": ["Answers cite the source document", "Accuracy measured and reported", "Failure cases identified"] }
+        },
+        { "level": "Advanced", "hours": 14, "outcomes": ["Design governed AI systems", "Evaluate and monitor"],
+          "modules": [{ "name": "Agents", "topics": ["Tool use and function calling", "Planning and decomposition", "Guardrails", "Cost and loop control"] }, { "name": "Governance", "topics": ["Data privacy and residency", "Model evaluation and drift", "Audit trail and explainability", "Responsible AI policy", "Regulatory expectations"] }],
+          "exercise": "Write an AI governance policy for a finance function and an evaluation scorecard for a proposed automation.",
+          "assessment": { "type": "policy + defence", "duration": "90 minutes", "pass": 70, "items": ["Policy covers data, access, review and accountability", "Evaluation includes accuracy, risk and cost", "Human oversight point is explicit"] }
+        }
+      ],
+      "industryUseCases": ["Variance commentary drafting", "Invoice data extraction", "Policy and standard Q&A", "Reconciliation triage", "Management report generation"],
+      "projects": [
+        { "title": "Invoice extraction system", "brief": "Extract invoice fields from PDFs, validate against a purchase order and flag exceptions.", "deliverable": "Pipeline + accuracy report", "hours": 12 },
+        { "title": "Accounting Q&A assistant", "brief": "Grounded assistant over a curated standards library with citations.", "deliverable": "Assistant + test set + evaluation", "hours": 10 }
+      ],
+      "portfolioDeliverables": ["Invoice extraction system", "Grounded Q&A assistant", "AI governance policy"]
+    }
+  ]
+}

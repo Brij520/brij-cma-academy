@@ -1,0 +1,17 @@
+{
+  "name": "project-cma",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PROJECT CMA \u2014 integrated CMA learning, professional development and performance system. Static site, no build step.",
+  "scripts": {
+    "start": "python3 serve.py",
+    "validate": "node tools/validate.mjs",
+    "smoke": "node tools/smoke.mjs",
+    "test": "node tools/validate.mjs && node tools/smoke.mjs && node tools/browser-test.mjs",
+    "test:e2e": "node tools/browser-test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^30.1.3"
+  }
+}

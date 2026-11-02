@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "purpose": "Advanced Examination Intelligence — chapter heatmaps, marks distribution, repeated-concept analysis, weakness diagnosis and mock recommendations across every CMA paper.",
+    "lastReviewed": "2026-11-02",
+    "integrity": {
+      "headline": "Confirmed information and predictions are kept in separate sections and never mixed.",
+      "confirmed": "Only the exam calendar and published section weights, each with a source and a verification date.",
+      "derived": "Chapter-level marks are derived arithmetically from published section weights and are labelled indicative.",
+      "prediction": "Themes and likely emphasis are professional estimates, clearly labelled, never presented as known fact.",
+      "copyright": "ICMAI question papers and suggested answers are the Institute's intellectual property. This repository does not reproduce them. Record questions in your own words for personal study, or cite the source and page you are studying from."
+    }
+  },
+  "examCalendar": {
+    "session": "December 2026",
+    "status": "confirmed — verify against the official ICMAI timetable before relying on any date",
+    "verifiedOn": "2026-11-02",
+    "source": "https://icmai.in/",
+    "window": { "from": "2026-12-10", "to": "2026-12-17" },
+    "intermediateSchedule": [
+      { "date": "2026-12-10", "time": "14:00–17:00", "paperId": "p05", "paper": "Business Laws and Ethics" },
+      { "date": "2026-12-11", "time": "14:00–17:00", "paperId": "p09", "paper": "Operations Management and Strategic Management" },
+      { "date": "2026-12-12", "time": "14:00–17:00", "paperId": "p06", "paper": "Financial Accounting" },
+      { "date": "2026-12-13", "time": "14:00–17:00", "paperId": "p10", "paper": "Corporate Accounting and Auditing" },
+      { "date": "2026-12-14", "time": "14:00–17:00", "paperId": "p07", "paper": "Direct and Indirect Taxation" },
+      { "date": "2026-12-15", "time": "14:00–17:00", "paperId": "p11", "paper": "Financial Management and Business Data Analytics" },
+      { "date": "2026-12-16", "time": "14:00–17:00", "paperId": "p08", "paper": "Cost Accounting" },
+      { "date": "2026-12-17", "time": "14:00–17:00", "paperId": "p12", "paper": "Management Accounting" }
+    ],
+    "notes": ["Group I papers fall on 10, 12, 14 and 16 December 2026; Group II papers on 11, 13, 15 and 17 December.", "Results are normally declared within about eight weeks; do not plan anything that depends on the result date.", "Admit card, centre and reporting time come from the ICMAI admit card, not from this file."]
+  },
+  "paperBlueprints": [
+    { "paperId": "p05", "duration": "3 hours", "structureNote": "Confirm the question pattern for your session from the ICMAI model question papers before your first mock.", "writingTime": "Allow 15 minutes for planning and 8–9 minutes per 5-mark question.", "strategy": "Companies Act first (40%), then contracts. Industrial law revised in the final three weeks." },
+    { "paperId": "p06", "duration": "3 hours", "structureNote": "Practical paper — working notes carry the marks.", "writingTime": "Budget 20 minutes per 10-mark problem, and leave 10 minutes to check balancing.", "strategy": "Accounting Standards and final accounts first. Partnership practised to full-solution fluency." },
+    { "paperId": "p07", "duration": "3 hours", "structureNote": "Verify which statute and which Finance Act amendments are examinable for your session — see the amendment watch in the tax knowledge base.", "writingTime": "Computation questions first; theory answers should be section-referenced and short.", "strategy": "GST (35%) and PGBP computations are the two biggest returns on effort." },
+    { "paperId": "p08", "duration": "3 hours", "structureNote": "Predominantly practical; theory is a small but reliable block.", "writingTime": "22–25 minutes per 10-mark problem, with a separate working-notes column.", "strategy": "Elements of cost, methods of costing and techniques are the three anchors. Target 25+ full problems a week." },
+    { "paperId": "p09", "duration": "3 hours", "structureNote": "Mixed theory and numerical; OR questions reward procedure.", "writingTime": "Numericals first, then structured theory answers.", "strategy": "OR/PPC (20%) and project management (15%) are numerical and predictable." },
+    { "paperId": "p10", "duration": "3 hours", "structureNote": "Accounting and auditing are 50:50.", "writingTime": "Accounting problems first while attention is highest.", "strategy": "Schedule III, cash flow and audit provisions carry the paper." },
+    { "paperId": "p11", "duration": "3 hours", "structureNote": "FM is 80%, analytics 20%.", "writingTime": "Ratio, capital budgeting and working capital first.", "strategy": "Master the four core numerical blocks before touching analytics theory." },
+    { "paperId": "p12", "duration": "3 hours", "structureNote": "Decision-oriented; presentation of the decision table matters.", "writingTime": "Marginal costing and decision questions first.", "strategy": "Marginal costing plus its applications is 30% — the single largest block in the course." }
+  ],
+  "recurringThemes": {
+    "disclaimer": "Professional judgement based on syllabus weight and topic structure. These are NOT confirmed examination questions and must never be treated as a leak, prediction guarantee or substitute for full-syllabus preparation.",
+    "themes": [
+      { "paperId": "p05", "theme": "Companies Act — board composition, appointment and disqualification of directors, and meetings", "likelihood": "high", "why": "Companies Act is 40% of the paper and these provisions are the most examinable subset." },
+      { "paperId": "p05", "theme": "Contract essentials, free consent and remedies for breach", "likelihood": "high", "why": "Foundational law that supports every other commercial law answer." },
+      { "paperId": "p05", "theme": "Ethics case study requiring a structured decision", "likelihood": "high", "why": "15% of the paper and answerable with a fixed structure." },
+      { "paperId": "p06", "theme": "Partnership admission or retirement with goodwill and revaluation", "likelihood": "high", "why": "20% of the paper and mechanically standard." },
+      { "paperId": "p06", "theme": "Accounting Standards — AS 2, AS 10, AS 19, AS 16", "likelihood": "high", "why": "20% of the paper and repeatedly examined in short and medium marks." },
+      { "paperId": "p06", "theme": "Final accounts with adjustments including abnormal loss", "likelihood": "high", "why": "The core skill of the paper." },
+      { "paperId": "p07", "theme": "Computation of total income and tax liability of an individual", "likelihood": "high", "why": "15% weight and the most reliable full computation." },
+      { "paperId": "p07", "theme": "Input tax credit eligibility, blocked credits and reversal", "likelihood": "high", "why": "Central to the 35% GST block." },
+      { "paperId": "p07", "theme": "Customs duty computation with assessable value", "likelihood": "medium", "why": "10% weight, formula-driven." },
+      { "paperId": "p08", "theme": "Process costing with normal and abnormal loss and equivalent production", "likelihood": "high", "why": "Highest-frequency practical question type in costing." },
+      { "paperId": "p08", "theme": "Variance analysis with reconciliation", "likelihood": "high", "why": "30% techniques block and standard format." },
+      { "paperId": "p08", "theme": "Overhead apportionment with reciprocal service departments", "likelihood": "medium", "why": "15% elements of cost block." },
+      { "paperId": "p09", "theme": "Linear programming formulation and graphical solution", "likelihood": "high", "why": "20% OR block." },
+      { "paperId": "p09", "theme": "PERT/CPM network with float and crashing", "likelihood": "high", "why": "15% project management block." },
+      { "paperId": "p10", "theme": "Cash flow statement and Schedule III presentation", "likelihood": "high", "why": "Core corporate accounting skills." },
+      { "paperId": "p10", "theme": "Auditor appointment, disqualification and reporting", "likelihood": "high", "why": "Auditing is 50% and these are section-specific, high-scoring answers." },
+      { "paperId": "p11", "theme": "Ratio analysis, capital budgeting and working capital estimation", "likelihood": "high", "why": "45% combined weight." },
+      { "paperId": "p12", "theme": "Marginal costing decisions — make or buy, key factor, shutdown", "likelihood": "high", "why": "30% decision block and the paper's core skill." },
+      { "paperId": "p12", "theme": "Transfer pricing with capacity constraints", "likelihood": "medium", "why": "Within the 30% decision block and frequently combined with performance measurement." }
+    ]
+  },
+  "questionLog": {
+    "purpose": "Record every question you attempt, from mocks or your own practice, so the analytics are based on evidence rather than memory.",
+    "fields": ["session", "paperId", "chapterId", "topic", "question (in your own words)", "marks", "difficulty", "questionType", "repeatedConcept (yes/no)", "amendmentInvolved", "suggestedAnswerReference", "yourScore", "timeTaken", "errorType"],
+    "errorTypes": ["Concept not understood", "Concept understood but forgotten", "Calculation error", "Misread the question", "Ran out of time", "Presentation/format", "Guessed"],
+    "seededExamples": [
+      { "session": "Practice — illustrative", "paperId": "p08", "chapterId": "p08-c06", "topic": "Process costing", "question": "Compute normal cost per unit and abnormal loss with given input, normal loss percentage and scrap value.", "marks": 5, "difficulty": "medium", "questionType": "problem", "repeatedConcept": true, "amendmentInvolved": false, "yourScore": 3, "timeTaken": "11 min", "errorType": "Calculation error", "note": "Illustrative entry only — replace with your own attempts." },
+      { "session": "Practice — illustrative", "paperId": "p05", "chapterId": "p05-c12", "topic": "Companies Act", "question": "Explain lifting of the corporate veil with five circumstances.", "marks": 6, "difficulty": "easy", "questionType": "theory", "repeatedConcept": true, "amendmentInvolved": false, "yourScore": 5, "timeTaken": "8 min", "errorType": "Presentation/format", "note": "Illustrative entry only — replace with your own attempts." }
+    ]
+  },
+  "mockPlan": [
+    { "id": "mock-01", "stage": "Baseline", "timing": "Now — before intensive revision", "scope": "One full paper, open book allowed", "purpose": "Establish an honest baseline and identify the weakest chapters.", "reviewRequirement": "Log every question and classify every error." },
+    { "id": "mock-02", "stage": "Chapter tests", "timing": "Weekly for 8 weeks", "scope": "One chapter, 30 minutes, closed book", "purpose": "Build retrieval strength and expose gaps early.", "reviewRequirement": "Below 60% means re-study the chapter before moving on." },
+    { "id": "mock-03", "stage": "Sectional", "timing": "Weeks 9–16", "scope": "Half paper, 90 minutes, closed book", "purpose": "Practise time allocation across question types.", "reviewRequirement": "Score each answer against the marking pattern, not against your intent." },
+    { "id": "mock-04", "stage": "Full-length", "timing": "Weeks 17–26", "scope": "Full paper, 3 hours, exam conditions, no interruptions", "purpose": "Simulate the real paper including fatigue and time pressure.", "reviewRequirement": "Full review within 48 hours, error log updated, revision plan amended." },
+    { "id": "mock-05", "stage": "Final sprint", "timing": "Last 3 weeks", "scope": "Alternate days: full paper or focused weak-area drill", "purpose": "Consolidate and protect against decay.", "reviewRequirement": "No new topics; only weak areas, formula recall and past errors." }
+  ],
+  "analyticsSpec": {
+    "chapterHeatmap": "Computed from two separate sources: (1) indicative marks per chapter derived from published section weights, and (2) your own logged attempts. The two are never combined into a single misleading score.",
+    "questionFrequency": "Derived from your question log, not from an invented claim about past papers.",
+    "weaknessAnalysis": "A chapter is weak when your logged accuracy is below 60% and your attempts are at least 3. Fewer than 3 attempts is 'insufficient evidence', not 'strong'.",
+    "revisionPriority": "Priority = indicative marks × (1 − your accuracy) × recency of failure. Chapters with no attempts are flagged as unknown rather than assumed.",
+    "mockRecommendation": "Recommends the next mock type based on attempts, accuracy and time since the last full-length paper."
+  },
+  "predictions": [
+    { "id": "pred-01", "paperId": "p05", "statement": "A Companies Act question on directors or meetings is very likely to appear in some form.", "confidence": "high", "basis": "40% section weight and the density of examinable provisions.", "label": "Prediction — not confirmed information" },
+    { "id": "pred-02", "paperId": "p07", "statement": "At least one question will require you to state the law applicable to a specific date, given the 1961/2025 Act transition.", "confidence": "medium", "basis": "The transition is the most significant recent change in direct tax and examiners test amendment awareness.", "label": "Prediction — not confirmed information" },
+    { "id": "pred-03", "paperId": "p08", "statement": "A process costing or variance analysis problem will carry at least 10 marks.", "confidence": "high", "basis": "Structural weight of techniques and methods sections.", "label": "Prediction — not confirmed information" },
+    { "id": "pred-04", "paperId": "p12", "statement": "A decision-making question combining a limiting factor with contribution ranking is likely.", "confidence": "high", "basis": "Decision tools are 30% and key factor analysis is the standard vehicle.", "label": "Prediction — not confirmed information" }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "scope": ["p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20"],
+  "syllabus": "ICMAI Syllabus 2022",
+  "lastReviewed": "2026-11-02",
+  "note": "Priority 3 — after Intermediate. Full chapter maps are in papers.json. Content here covers the anchor chapters so that the Final papers are usable now, with the rest deliberately marked for build-out.",
+  "chapters": [
+    {
+      "id": "p13-c02",
+      "paperId": "p13",
+      "status": "complete",
+      "summary": "The IBC, 2016 provides a time-bound corporate insolvency resolution process. The resolution professional, committee of creditors and NCLT are the institutional spine, with liquidation as the fallback.",
+      "keyTerms": [
+        { "term": "CIRP", "definition": "Corporate Insolvency Resolution Process — a maximum 330-day process including extensions, to resolve insolvency through a resolution plan." },
+        { "term": "Financial creditor", "definition": "A person to whom a financial debt is owed, including the assignee of such debt; can initiate CIRP." },
+        { "term": "Operational creditor", "definition": "A person to whom an operational debt (goods or services) is owed; faces higher thresholds for initiation." },
+        { "term": "Committee of creditors", "definition": "The body of financial creditors that decides on the resolution plan by a 66% vote." },
+        { "term": "Moratorium", "definition": "A statutory freeze on suits, enforcement and asset transfer once CIRP is admitted." },
+        { "term": "Avoidance transactions", "definition": "Preferential transactions, undervalued transactions and extortionate credit transactions that can be reversed." }
+      ],
+      "formulas": [
+        { "name": "CIRP timeline", "expression": "180 days + 90 days extension (NCLT) + further extension up to 330 days total", "meaning": "Beyond the outer limit, liquidation ordinarily follows.", "example": "Admission on 1 January 2026 → 180 days ends 30 June 2026." },
+        { "name": "Resolution plan approval", "expression": "66% of the committee of creditors by value, then NCLT approval", "meaning": "A plan must also meet the statutory minimum recovery for operational creditors.", "example": "CoC members holding 70% of debt approve → plan proceeds to NCLT." }
+      ],
+      "questions": [
+        { "id": "p13-c02-q1", "q": "Explain the corporate insolvency resolution process under the IBC, 2016 from default to resolution plan.", "type": "theory", "marks": 10, "difficulty": "hard", "answer": "A financial or operational creditor files an application on default (threshold as notified). NCLT admits if the default exists and the application is complete; admission triggers a moratorium, a public announcement, and suspension of the board with management vesting in the interim resolution professional. The IRP collates claims, constitutes the committee of creditors, and appoints a resolution professional. The RP runs the business as a going concern, invites resolution plans, and the CoC approves a plan by 66% by value. The plan must comply with the Code and be approved by NCLT, failing which liquidation follows. Avoidance transactions can be challenged. The process is time-bound, with 180 days initially and an outer limit of 330 days including extensions.", "tags": ["IBC", "insolvency"] }
+      ]
+    },
+    {
+      "id": "p14-c04",
+      "paperId": "p14",
+      "status": "complete",
+      "summary": "Portfolio theory quantifies diversification. Risk is reduced through imperfect correlation, and performance is evaluated on risk-adjusted measures rather than raw returns.",
+      "keyTerms": [
+        { "term": "Systematic and unsystematic risk", "definition": "Market-wide risk that cannot be diversified away versus firm-specific risk that can." },
+        { "term": "Markowitz efficient frontier", "definition": "The set of portfolios offering the highest expected return for each level of risk." },
+        { "term": "Beta", "definition": "Sensitivity of a security's returns to market returns; the measure of systematic risk." },
+        { "term": "Sharpe ratio", "definition": "(Rp − Rf) / σp — excess return per unit of total risk." },
+        { "term": "Treynor ratio", "definition": "(Rp − Rf) / βp — excess return per unit of systematic risk." },
+        { "term": "Jensen's alpha", "definition": "Rp − [Rf + β(Rm − Rf)] — excess return over the CAPM prediction." }
+      ],
+      "formulas": [
+        { "name": "Portfolio expected return", "expression": "E(Rp) = Σ wi × E(Ri)", "meaning": "Weighted average of security returns.", "example": "60% at 14% + 40% at 9% = 12%." },
+        { "name": "Portfolio risk (two assets)", "expression": "σp = √(w1²σ1² + w2²σ2² + 2w1w2ρσ1σ2)", "meaning": "Lower correlation reduces portfolio risk; at ρ = −1 risk can be eliminated.", "example": "w 50:50, σ1 20%, σ2 10%, ρ 0.3 → σp = 12.4%." },
+        { "name": "Sharpe and Treynor", "expression": "Sharpe = (Rp − Rf)/σp; Treynor = (Rp − Rf)/βp", "meaning": "Use Sharpe for a well-diversified portfolio, Treynor for a portfolio that is part of a larger fund.", "example": "Rp 16%, Rf 6%, σp 20%, β 1.2 → Sharpe 0.50, Treynor 8.33%." },
+        { "name": "Jensen's alpha", "expression": "α = Rp − [Rf + β(Rm − Rf)]", "meaning": "Positive alpha indicates outperformance after adjusting for systematic risk.", "example": "Rp 16%, Rf 6%, β 1.2, Rm 13% → α = 16 − 14.4 = 1.6%." }
+      ],
+      "questions": [
+        { "id": "p14-c04-q1", "q": "Two securities have expected returns of 15% and 10% with standard deviations of 22% and 14%. Compute portfolio risk at correlation coefficients of +1, 0 and −1 with equal weights.", "type": "problem", "marks": 8, "difficulty": "hard", "answer": "Equal weights. At ρ=+1: σp = 0.5×22 + 0.5×14 = 18%. At ρ=0: σp = √(0.25×484 + 0.25×196) = √170 = 13.04%. At ρ=−1: σp = |0.5×22 − 0.5×14| = 4%. Expected return is 12.5% in every case. This demonstrates that diversification benefit depends entirely on correlation, not on the number of securities alone.", "tags": ["portfolio", "risk"] }
+      ]
+    },
+    {
+      "id": "p14-c05",
+      "paperId": "p14",
+      "status": "outline",
+      "summary": "Derivatives — forwards, futures, options and swaps — transfer risk. Exam questions require payoff computation, hedging design and an understanding of pricing intuition.",
+      "keyTerms": [
+        { "term": "Forward vs futures", "definition": "Forwards are customised OTC contracts with counterparty risk; futures are standardised, exchange-traded and margined." },
+        { "term": "Call and put payoff", "definition": "Call buyer payoff = max(S − K, 0); put buyer payoff = max(K − S, 0)." },
+        { "term": "Interest rate parity", "expression": "F/S = (1 + rh)/(1 + rf)", "definition": "Links spot and forward rates to interest differentials." },
+        { "term": "Swap", "definition": "An agreement to exchange cash flow streams, commonly fixed for floating interest or currencies." }
+      ]
+    },
+    {
+      "id": "p15-c08",
+      "paperId": "p15",
+      "status": "complete",
+      "summary": "Transfer pricing requires that cross-border transactions between associated enterprises be priced at arm's length. Method selection, comparability analysis and documentation are the examinable core.",
+      "keyTerms": [
+        { "term": "Associated enterprise", "definition": "Enterprises related through participation, control or management, as defined in section 92A." },
+        { "term": "Arm's length price", "definition": "The price that would have been charged between independent parties in comparable circumstances." },
+        { "term": "CUP method", "definition": "Comparable uncontrolled price — the most direct method, comparing prices of comparable transactions." },
+        { "term": "TNMM", "definition": "Transactional net margin method — compares net profit margins relative to an appropriate base such as sales or cost." },
+        { "term": "Advance pricing agreement", "definition": "A pre-agreed pricing methodology for future transactions, providing certainty." }
+      ],
+      "formulas": [
+        { "name": "Arm's length range", "expression": "If multiple comparables are used, the arm's length price is the 35th percentile to 65th percentile range; otherwise the arithmetic mean with the notified tolerance band", "meaning": "Verify the current tolerance and percentile rules — they change by notification.", "example": "Comparable margins 4%, 6%, 8%, 10% → a median-based approach is typically applied." },
+        { "name": "TNMM margin", "expression": "Net margin = Operating profit / Appropriate base (sales, cost or assets)", "meaning": "The tested party should be the less complex entity.", "example": "Operating profit ₹3 crore on cost ₹25 crore → 12% cost-plus margin." }
+      ],
+      "questions": [
+        { "id": "p15-c08-q1", "q": "Explain the methods for determining the arm's length price and the order of application.", "type": "theory", "marks": 8, "difficulty": "hard", "answer": "The methods are: comparable uncontrolled price, resale price, cost plus, profit split, transactional net margin, and any other method prescribed. The most appropriate method must be selected having regard to the nature of the transaction, availability and reliability of data, and the degree of comparability; the legislation does not mandate a rigid hierarchy, but the CUP method is preferred where reliable comparables exist. The analysis requires functional, asset and risk comparability, adjustment for differences, and documentation. Where more than one price results, the arm's length range or mean with tolerance applies. Records must be maintained and the accountant's report filed where required.", "tags": ["transfer pricing", "international tax"] }
+      ]
+    },
+    {
+      "id": "p16-c03",
+      "paperId": "p16",
+      "status": "complete",
+      "summary": "Target costing works backwards from the market price to an allowable cost. Life-cycle costing widens the cost horizon, and Kaizen costing drives continuous reduction during production.",
+      "keyTerms": [
+        { "term": "Target cost", "definition": "Competitive market price minus desired profit — the cost the product must achieve." },
+        { "term": "Cost gap", "definition": "Estimated current cost minus target cost; the amount to be closed through value engineering." },
+        { "term": "Value engineering", "definition": "Redesigning the product or process to achieve required function at lower cost." },
+        { "term": "Life-cycle costing", "definition": "Accumulating all costs over a product's life — design, manufacture, distribution, service and disposal." },
+        { "term": "Kaizen costing", "definition": "Continuous, incremental cost reduction applied during the manufacturing phase." }
+      ],
+      "formulas": [
+        { "name": "Target cost", "expression": "Target cost = Target selling price − Target profit margin", "meaning": "Derived from market conditions, not from internal cost.", "example": "Price ₹2,000; required 20% margin → target cost ₹1,600." },
+        { "name": "Cost gap", "expression": "Cost gap = Estimated current cost − Target cost", "meaning": "Positive gap must be closed before launch.", "example": "Estimated ₹1,780 − target ₹1,600 = ₹180 gap." },
+        { "name": "Life-cycle cost per unit", "expression": "Life-cycle cost per unit = Total life-cycle costs / Total expected units", "meaning": "Includes design and disposal costs that conventional costing ignores.", "example": "Total ₹4.5 crore over 1,00,000 units → ₹450 per unit." }
+      ],
+      "questions": [
+        { "id": "p16-c03-q1", "q": "A product can be sold at ₹1,500 with a required 15% margin. Current estimated cost is ₹1,420. Compute the cost gap and outline how to close it.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Target cost = 1,500 × 0.85 = ₹1,275. Cost gap = 1,420 − 1,275 = ₹145 per unit (10.2% of target cost). Close it through value engineering (remove non-value-adding function), component redesign or standardisation, supplier renegotiation based on volume commitments, process automation to cut labour content, and design for manufacturability and assembly. Quantify each initiative and state that the residual gap must be closed before launch, otherwise the product fails the strategic test.", "tags": ["target costing", "strategic cost management"] }
+      ]
+    },
+    {
+      "id": "p17-c01",
+      "paperId": "p17",
+      "status": "complete",
+      "summary": "Cost audit verifies cost records and cost statements for accuracy and compliance. It is the CMA's distinctive statutory function, governed by the Companies Act and the Cost Records and Audit Rules.",
+      "keyTerms": [
+        { "term": "Cost audit", "definition": "An audit of cost accounting records and cost statements to verify accuracy, completeness and compliance with Cost Accounting Standards." },
+        { "term": "Cost auditor", "definition": "A cost accountant in practice appointed by the Board with the prior approval of the members, holding a certificate of practice." },
+        { "term": "Cost audit report", "definition": "The formal report in the prescribed form, with annexures, submitted to the Board and filed with the Central Government." },
+        { "term": "Cost records", "definition": "Records relating to utilisation of materials, labour and other items of cost, maintained under section 148 read with the Rules." },
+        { "term": "Cost Accounting Standards", "definition": "ICMAI standards that provide the measurement framework against which cost records are audited." }
+      ],
+      "formulas": [
+        { "name": "Capacity utilisation", "expression": "Capacity utilisation = Actual production / Installed (or normal) capacity × 100", "meaning": "A core cost-audit observation area, distinguishing installed, normal and actual capacity.", "example": "Actual 72,000 MT against installed 90,000 MT = 80%." }
+      ],
+      "questions": [
+        { "id": "p17-c01-q1", "q": "Distinguish between cost audit and financial audit.", "type": "theory", "marks": 6, "difficulty": "medium", "answer": "Financial audit verifies the true and fair view of financial statements for shareholders and is governed by the Companies Act and auditing standards, performed by a chartered accountant. Cost audit verifies the accuracy of cost records and cost statements, the reasonableness of cost allocation and compliance with cost accounting standards and cost audit rules, performed by a cost accountant. The financial audit focuses on external reporting and statutory compliance; the cost audit focuses on efficiency, cost control, capacity utilisation, variance analysis and management information. Cost audit reports are submitted to the Board and filed with the government, and can identify inefficiencies that a financial audit would not surface.", "tags": ["cost audit", "comparison"] }
+      ]
+    },
+    {
+      "id": "p18-c06",
+      "paperId": "p18",
+      "status": "complete",
+      "summary": "Ind AS 103 requires the acquisition method for business combinations: identify the acquirer, determine the acquisition date, recognise and measure identifiable assets and liabilities at fair value, and recognise goodwill or a bargain purchase gain.",
+      "keyTerms": [
+        { "term": "Business combination", "definition": "A transaction in which an acquirer obtains control of one or more businesses." },
+        { "term": "Control [Ind AS 110]", "definition": "Power over the investee, exposure to variable returns, and the ability to use power to affect those returns." },
+        { "term": "Goodwill", "definition": "Consideration transferred plus NCI plus previously held interest, minus net identifiable assets acquired." },
+        { "term": "Bargain purchase gain", "definition": "Where the net identifiable assets exceed the consideration, the excess is recognised in profit or loss after reassessment." },
+        { "term": "Non-controlling interest", "definition": "The equity in a subsidiary not attributable to the parent; measured at fair value or proportionate share of net assets." },
+        { "term": "Common control combination", "definition": "A combination of entities under the same control, outside the scope of Ind AS 103; pooled values are used, with no goodwill." }
+      ],
+      "formulas": [
+        { "name": "Goodwill", "expression": "Goodwill = Consideration transferred + Fair value of NCI + Fair value of previously held interest − Fair value of net identifiable assets acquired", "meaning": "Measure identifiable assets and liabilities at acquisition-date fair value.", "example": "Consideration ₹50 crore + NCI ₹8 crore − net assets ₹48 crore = ₹10 crore goodwill." },
+        { "name": "Bargain purchase gain", "expression": "Gain = Net identifiable assets − (Consideration + NCI)", "meaning": "Recognise in P&L only after reassessing the identification and measurement.", "example": "Net assets ₹30 crore vs consideration ₹26 crore → gain ₹4 crore." },
+        { "name": "Consolidated net assets and NCI at reporting date", "expression": "NCI = NCI at acquisition + NCI share of post-acquisition profits and OCI − NCI share of dividends", "meaning": "Applies under the proportionate-share method.", "example": "NCI at acquisition ₹8 crore + 25% of post-acquisition profit ₹2 crore = ₹10 crore." }
+      ],
+      "examples": [
+        {
+          "title": "Consolidation elimination",
+          "scenario": "Parent owns 80% of Subsidiary. Subsidiary's net assets at acquisition were ₹40 crore; at year end ₹52 crore. Parent's cost of investment ₹36 crore. NCI measured at proportionate share.",
+          "steps": ["Goodwill = 36 + (20% × 40 = 8) − 40 = ₹4 crore.", "Post-acquisition increase in net assets = ₹12 crore; group share 80% = ₹9.6 crore; NCI share ₹2.4 crore.", "NCI at year end = 8 + 2.4 = ₹10.4 crore."],
+          "result": "Consolidated net assets include the subsidiary's ₹52 crore with goodwill ₹4 crore, eliminations of the investment, and NCI of ₹10.4 crore within equity."
+        }
+      ],
+      "questions": [
+        { "id": "p18-c06-q1", "q": "P acquires 75% of S for ₹60 crore when S's fair value of net identifiable assets is ₹64 crore. NCI is measured at fair value of ₹14 crore. Compute goodwill and explain the treatment.", "type": "problem", "marks": 6, "difficulty": "medium", "answer": "Goodwill = 60 + 14 − 64 = ₹10 crore. If NCI were measured at the proportionate share (25% × 64 = ₹16 crore), goodwill would be 60 + 16 − 64 = ₹12 crore, with the difference representing the goodwill attributable to NCI. The choice of NCI measurement is an accounting policy election applied consistently. Goodwill is not amortised but tested for impairment annually under Ind AS 36.", "tags": ["Ind AS 103", "consolidation"] },
+        { "id": "p18-c06-q2", "q": "Explain why a common control combination is outside the scope of Ind AS 103.", "type": "theory", "marks": 5, "difficulty": "hard", "answer": "A common control combination is not a transaction at arm's length — the same party controls both entities before and after, so there is no genuine acquisition and no basis for measuring fair value reliably. Ind AS 103 therefore excludes it. The pooling-of-interests approach is applied: assets and liabilities are carried at their existing book values, comparative periods are restated as if the combination had always existed, and no goodwill arises. Any difference between consideration and share capital is adjusted in equity.", "tags": ["Ind AS 103", "common control"] }
+      ],
+      "pitfalls": ["Measuring identifiable assets at book value instead of fair value in an Ind AS 103 combination.", "Creating a bargain purchase gain without first reassessing the measurement."]
+    },
+    {
+      "id": "p18-c08",
+      "paperId": "p18",
+      "status": "outline",
+      "summary": "Consolidated financial statements present the parent and subsidiaries as a single economic entity under Ind AS 110, with uniform policies, full elimination of intra-group balances and transactions, and separate presentation of NCI.",
+      "keyTerms": [
+        { "term": "Control model", "definition": "Power, exposure to variable returns, and link between power and returns — the sole consolidation criterion." },
+        { "term": "Associate [Ind AS 28]", "definition": "Significant influence, presumed at 20% or more of voting power; accounted by the equity method." },
+        { "term": "Joint arrangement [Ind AS 111]", "definition": "Joint operation (recognise share of assets, liabilities, revenue and expenses) or joint venture (equity method)." },
+        { "term": "Uniform accounting policies", "definition": "Consolidation requires adjustment of subsidiary policies to the group's policies." }
+      ]
+    },
+    {
+      "id": "p19-c02",
+      "paperId": "p19",
+      "status": "outline",
+      "summary": "Advanced GST centres on input tax credit mechanics, valuation and procedure. Rule 42 and 43 apportionment and refund of unutilised credit are the highest-value computational areas.",
+      "keyTerms": [
+        { "term": "Rule 42", "definition": "Apportionment of ITC on inputs and input services used partly for exempt supplies or non-business purposes." },
+        { "term": "Rule 43", "definition": "Apportionment of ITC on capital goods used commonly for taxable and exempt supplies over 60 months." },
+        { "term": "Inverted duty structure", "definition": "Where input tax rates exceed output tax rates, generating accumulated credit for which refund may be claimed." },
+        { "term": "Zero-rated supply", "definition": "Exports and supplies to SEZ units or developers, with refund of unutilised credit or supply under bond/LUT." }
+      ]
+    }
+  ]
+}

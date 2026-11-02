@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "purpose": "Maps every academic subject and professional domain to the papers, chapters and skills that teach it, so that one concept can be traced across the whole system.",
+    "lastReviewed": "2026-11-02"
+  },
+  "categories": [
+    { "id": "corporate-law", "name": "Law, Governance and Ethics" },
+    { "id": "financial-reporting", "name": "Financial Reporting and Accounting" },
+    { "id": "cost-management", "name": "Cost and Management Accounting" },
+    { "id": "finance", "name": "Finance and Strategic Finance" },
+    { "id": "taxation", "name": "Taxation" },
+    { "id": "audit", "name": "Audit and Assurance" },
+    { "id": "management", "name": "Strategy and Operations" },
+    { "id": "analytics", "name": "Data, Analytics and Technology" }
+  ],
+  "subjects": [
+    {
+      "id": "s-accounting-fundamentals", "name": "Accounting Fundamentals", "category": "financial-reporting",
+      "description": "Double entry, accrual concepts, final accounts and the accounting equation. The base layer for every other reporting subject.",
+      "papers": ["p02", "p06", "p10"], "chapters": ["p02-c01", "p02-c02", "p02-c06", "p06-c01", "p06-c04"],
+      "skills": ["skill-excel"], "status": "complete"
+    },
+    {
+      "id": "s-accounting-standards", "name": "Accounting Standards (AS)", "category": "financial-reporting",
+      "description": "The 12 specified standards for Paper 6 plus the standards examined in Paper 10. Recognition, measurement and disclosure for each.",
+      "papers": ["p06", "p10"], "chapters": ["p06-c13", "p10-c05"], "skills": ["skill-financial-modelling"], "status": "complete"
+    },
+    {
+      "id": "s-ind-as", "name": "Ind AS — Fundamentals and Advanced Applications", "category": "financial-reporting",
+      "description": "Converged standards: framework, presentation, revenue, leases, financial instruments, impairment, business combinations and consolidation.",
+      "papers": ["p18"], "chapters": ["p18-c01", "p18-c02", "p18-c03", "p18-c06", "p18-c08", "p18-c09"], "skills": ["skill-financial-modelling"], "status": "outline"
+    },
+    {
+      "id": "s-corporate-accounting", "name": "Corporate Accounting", "category": "financial-reporting",
+      "description": "Share capital, debentures, Schedule III presentation, cash flow statements and sector accounts.",
+      "papers": ["p10"], "chapters": ["p10-c01", "p10-c02", "p10-c03", "p10-c04"], "skills": ["skill-excel", "skill-tally"], "status": "complete"
+    },
+    {
+      "id": "s-financial-reporting", "name": "Financial Reporting", "category": "financial-reporting",
+      "description": "Preparation, presentation and interpretation of general purpose financial statements, including consolidation and recent developments.",
+      "papers": ["p06", "p10", "p18"], "chapters": ["p06-c04", "p10-c02", "p18-c10"], "skills": ["skill-financial-modelling", "skill-power-bi"], "status": "in-progress"
+    },
+    {
+      "id": "s-companies-act", "name": "Companies Act, 2013", "category": "corporate-law",
+      "description": "Incorporation, constitutional documents, capital, directors, meetings, charges, dividends, restructuring, winding up and audit provisions. 40% of Paper 5.",
+      "papers": ["p01", "p05", "p13"], "chapters": ["p05-c12", "p13-c01", "p01-c07", "p10-c07"],
+      "skills": [], "status": "complete", "examWeight": "40% of Paper 5"
+    },
+    {
+      "id": "s-corporate-laws", "name": "Corporate and Economic Laws", "category": "corporate-law",
+      "description": "IBC, SEBI, competition, FEMA, banking and insurance regulation, MSME, cyber law and AML.",
+      "papers": ["p13"], "chapters": ["p13-c02", "p13-c03", "p13-c04", "p13-c05", "p13-c06", "p13-c07", "p13-c08", "p13-c09", "p13-c10"],
+      "skills": [], "status": "outline"
+    },
+    {
+      "id": "s-contracts", "name": "Commercial Law — Contracts and Transactions", "category": "corporate-law",
+      "description": "Contract Act, Sale of Goods, Negotiable Instruments, Partnership and LLP.",
+      "papers": ["p01", "p05"], "chapters": ["p05-c02", "p05-c03", "p05-c04", "p05-c05", "p05-c06", "p01-c02"],
+      "skills": [], "status": "complete"
+    },
+    {
+      "id": "s-industrial-law", "name": "Industrial and Labour Law", "category": "corporate-law",
+      "description": "Factories Act, gratuity, PF, ESI and the Code on Wages. 15% of Paper 5 and heavily memory-based.",
+      "papers": ["p05"], "chapters": ["p05-c07", "p05-c08", "p05-c09", "p05-c10", "p05-c11"],
+      "skills": [], "status": "complete"
+    },
+    {
+      "id": "s-business-ethics", "name": "Business Ethics and Governance", "category": "corporate-law",
+      "description": "Ethical theory, emotional intelligence, the professional code, conflicts of interest, whistle-blowing and governance mechanisms. 15% of Paper 5.",
+      "papers": ["p05", "p13"], "chapters": ["p05-c13", "p13-c03"], "skills": ["skill-communication"],
+      "status": "complete", "examWeight": "15% of Paper 5"
+    },
+    {
+      "id": "s-cost-accounting", "name": "Cost Accounting", "category": "cost-management",
+      "description": "Cost ascertainment, methods and techniques — the core discipline of the CMA qualification.",
+      "papers": ["p02", "p08"], "chapters": ["p08-c01", "p08-c02", "p08-c03", "p08-c04", "p08-c05", "p08-c06", "p08-c07", "p08-c08"],
+      "skills": ["skill-advanced-excel"], "status": "complete"
+    },
+    {
+      "id": "s-cost-techniques", "name": "Costing Techniques and Control", "category": "cost-management",
+      "description": "Standard costing, variance analysis, budgeting, marginal costing, learning curves and cost reduction.",
+      "papers": ["p08", "p12", "p16"], "chapters": ["p08-c09", "p08-c10", "p08-c11", "p08-c12", "p12-c06", "p12-c07"],
+      "skills": ["skill-advanced-excel", "skill-power-bi"], "status": "complete"
+    },
+    {
+      "id": "s-management-accounting", "name": "Management Accounting", "category": "cost-management",
+      "description": "Decision support: relevant costing, CVP, transfer pricing, divisional performance, responsibility accounting and decision theory.",
+      "papers": ["p12"], "chapters": ["p12-c01", "p12-c02", "p12-c03", "p12-c04", "p12-c05", "p12-c08", "p12-c09", "p12-c10"],
+      "skills": ["skill-advanced-excel", "skill-power-bi"], "status": "complete"
+    },
+    {
+      "id": "s-strategic-cost", "name": "Strategic Cost Management", "category": "cost-management",
+      "description": "Value chain, ABC/ABM, target and life-cycle costing, throughput accounting, pricing and strategic performance measurement.",
+      "papers": ["p16"], "chapters": ["p16-c01", "p16-c02", "p16-c03", "p16-c04", "p16-c05", "p16-c06"],
+      "skills": ["skill-financial-modelling"], "status": "outline"
+    },
+    {
+      "id": "s-financial-management", "name": "Financial Management", "category": "finance",
+      "description": "Ratio analysis, cost of capital, capital budgeting, working capital and financing decisions. 80% of Paper 11.",
+      "papers": ["p11"], "chapters": ["p11-c01", "p11-c02", "p11-c03", "p11-c04", "p11-c05", "p11-c06", "p11-c07"],
+      "skills": ["skill-financial-modelling", "skill-advanced-excel"], "status": "complete"
+    },
+    {
+      "id": "s-strategic-finance", "name": "Strategic Financial Management", "category": "finance",
+      "description": "Investment decisions, security analysis, portfolio management, derivatives, risk management and international finance.",
+      "papers": ["p14"], "chapters": ["p14-c01", "p14-c02", "p14-c03", "p14-c04", "p14-c05", "p14-c06", "p14-c07", "p14-c08", "p14-c09"],
+      "skills": ["skill-financial-modelling", "skill-python"], "status": "outline"
+    },
+    {
+      "id": "s-direct-tax", "name": "Direct Taxation", "category": "taxation",
+      "description": "Income tax computation across the five heads, deductions, and corporate/individual assessment. 50% of Paper 7 and 60% of Paper 15.",
+      "papers": ["p07", "p15"], "chapters": ["p07-c01", "p07-c02", "p07-c03", "p07-c04", "p07-c05", "p07-c06", "p07-c07", "p15-c01", "p15-c03", "p15-c05"],
+      "skills": [], "status": "complete", "amendmentRisk": "high"
+    },
+    {
+      "id": "s-international-tax", "name": "International Taxation", "category": "taxation",
+      "description": "DTAA, permanent establishment, transfer pricing, BEPS and GAAR. 40% of Paper 15.",
+      "papers": ["p15"], "chapters": ["p15-c07", "p15-c08", "p15-c09"], "skills": [], "status": "outline"
+    },
+    {
+      "id": "s-indirect-tax", "name": "Indirect Taxation", "category": "taxation",
+      "description": "GST and Customs — the supply concept, credit mechanics, valuation, procedure and litigation.",
+      "papers": ["p07", "p19"], "chapters": ["p07-c08", "p07-c09", "p07-c10", "p19-c01", "p19-c02", "p19-c03", "p19-c04", "p19-c05", "p19-c06"],
+      "skills": ["skill-ai-automation"], "status": "complete", "amendmentRisk": "high"
+    },
+    {
+      "id": "s-gst", "name": "Goods and Services Tax", "category": "taxation",
+      "description": "Registration, supply, place and time of supply, valuation, input tax credit, returns, refunds and appeals. 35% of Paper 7 and 70% of Paper 19.",
+      "papers": ["p07", "p19"], "chapters": ["p07-c09", "p19-c02", "p19-c03", "p19-c04"],
+      "skills": ["skill-ai-automation"], "status": "complete", "amendmentRisk": "high"
+    },
+    {
+      "id": "s-customs", "name": "Customs Law and Practice", "category": "taxation",
+      "description": "Levy, valuation, procedures, warehousing, drawback and litigation. 10% of Paper 7 and 30% of Paper 19.",
+      "papers": ["p07", "p19"], "chapters": ["p07-c10", "p19-c05", "p19-c06"], "skills": [], "status": "complete"
+    },
+    {
+      "id": "s-auditing", "name": "Auditing and Assurance", "category": "audit",
+      "description": "Audit concepts, evidence, risk, the Companies Act audit provisions, audit reports and internal audit. 50% of Paper 10.",
+      "papers": ["p10", "p17"], "chapters": ["p10-c06", "p10-c07", "p10-c08", "p10-c09", "p10-c10"],
+      "skills": ["skill-advanced-excel", "skill-power-query"], "status": "complete", "examWeight": "50% of Paper 10"
+    },
+    {
+      "id": "s-cost-audit", "name": "Cost and Management Audit", "category": "audit",
+      "description": "Cost audit, management audit, internal and operational audit, forensic audit and AML. The CMA's signature practice area.",
+      "papers": ["p17"], "chapters": ["p17-c01", "p17-c02", "p17-c03", "p17-c04", "p17-c05", "p17-c06", "p17-c07", "p17-c08", "p17-c09"],
+      "skills": ["skill-advanced-excel", "skill-data-ai"], "status": "outline"
+    },
+    {
+      "id": "s-strategic-management", "name": "Strategic Management", "category": "management",
+      "description": "Strategic analysis, formulation, implementation and digital strategy. 40% of Paper 9.",
+      "papers": ["p09"], "chapters": ["p09-c08", "p09-c09", "p09-c10", "p09-c11"], "skills": [], "status": "complete"
+    },
+    {
+      "id": "s-operations-management", "name": "Operations Management", "category": "management",
+      "description": "Operations planning, OR applications, quality, project management and maintenance. 60% of Paper 9.",
+      "papers": ["p09"], "chapters": ["p09-c01", "p09-c02", "p09-c03", "p09-c04", "p09-c05", "p09-c06", "p09-c07"],
+      "skills": ["skill-advanced-excel"], "status": "complete"
+    },
+    {
+      "id": "s-business-analytics", "name": "Business Data Analytics", "category": "analytics",
+      "description": "The data lifecycle, cleaning, visualisation and modelling for business decisions. 20% of Paper 11 and the bridge to the analytics academy.",
+      "papers": ["p11"], "chapters": ["p11-c08", "p11-c09", "p11-c10", "p11-c11"],
+      "skills": ["skill-power-bi", "skill-sql", "skill-python"], "status": "complete"
+    }
+  ]
+}
